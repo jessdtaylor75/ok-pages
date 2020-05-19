@@ -1,0 +1,60 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-title>Create Profile</ion-title>
+    <ion-buttons slot="end">
+      <!-- IF THERE IS NO PROFILE, CANCELLING GOES WHERE? -->
+      <!--      <ion-button fill="clear" routerLink="/scan" color="primary">-->
+      <!--        Cancel-->
+      <!--      </ion-button>-->
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="ion-text-center">
+    <br>
+    <ion-row class="ion-justify-content-center">
+      <div class="profile-pic-frame">
+        <ion-avatar class="profile-pic">
+            <ion-icon name="person-circle-outline" color="medium" class="profile-pic"></ion-icon>
+        </ion-avatar>
+      </div>
+    </ion-row>
+    <ion-button color="primary" size="small" fill="clear" >
+      Add Picture
+    </ion-button>
+  </div>
+  <ion-list>
+    <ion-item>
+      <ion-label position="floating" color="medium">First name</ion-label>
+      <ion-input type="text" value=""></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating" color="medium">Last name</ion-label>
+      <ion-input type="text" value=""></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating" color="medium">Email address</ion-label>
+      <ion-input type="text" value="" email="true">
+      </ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating" color="medium">Mobile number</ion-label>
+      <ion-input type="text" value=""></ion-input>
+    </ion-item>
+    <ion-item lines="none">
+      <ion-text class="text-smallest" color="medium">
+        Changing your email address will require verification in order to continue using AerPass
+      </ion-text>
+    </ion-item>
+  </ion-list>
+
+</ion-content>
+
+<ion-footer class="ion-no-border">
+  <ion-toolbar>
+    <ion-button expand="block" class="pad15">
+      Continue
+    </ion-button>
+  </ion-toolbar>
+</ion-footer>
