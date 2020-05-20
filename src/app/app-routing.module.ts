@@ -59,6 +59,10 @@ const routes: Routes = [
     path: 'add-id',
     loadChildren: () => import('./add-id/add-id.module').then( m => m.AddIdPageModule)
   },
+  {
+    path: 'verify-identity',
+    loadChildren: () => import('./verify-identity/verify-identity.module').then(m => m.VerifyIdentityPageModule)
+  },
 ];
 
 @NgModule({
