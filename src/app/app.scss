@@ -14,6 +14,20 @@
   font-size: .8rem;
 }
 
+.field-label {
+  font-size: .5rem;
+  color: #92949c;
+}
+
+.section-header {
+  font-size: 1.3rem;
+  font-weight: bolder;
+}
+
+.pad-top3 {
+  padding: 3vw 0 3vw 0;
+}
+
 .pad5 {
   padding: 0 5vw 0 5vw;
 }
@@ -39,22 +53,27 @@
   width: -moz-available; /* WebKit-based browsers will ignore this. */
 }
 
-.profile-pic {
-  width: 35vw;
-  height: 35vw;
-  background-color: white;
-  border-radius: 50%;
-  position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+ion-icon {
+  font-size: 18pt;
+  color: #000000;
 }
 
-.profile-pic-frame {
+.fab-icon {
+  font-size: 30pt;
+  color: #ffffff;
+}
+
+p {
+  font-size: 1em;
+  color: #92949c;
+}
+
+.profile-pic {
   width: 36vw;
   height: 36vw;
-  background-color: #2c99e8;
+  background-color: white;
   border-radius: 50%;
+  border: .5vw solid #2c99e8;
   display: inline-block;
 }
 

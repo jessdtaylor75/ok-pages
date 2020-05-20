@@ -8,12 +8,8 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'profile-home',
+    redirectTo: 'home',
     pathMatch: 'full'
-  },
-  {
-    path: 'view-profile',
-    loadChildren: () => import('./view-profile/view-profile.module').then( m => m.ViewProfilePageModule)
   },
   {
     path: 'profile',
@@ -22,6 +18,30 @@ const routes: Routes = [
   {
     path: 'profile-home',
     loadChildren: () => import('./profile-home/profile-home.module').then( m => m.ProfileHomePageModule)
+  },
+  {
+    path: 'view-personal-info',
+    loadChildren: () => import('./view-personal-info/view-personal-info.module').then( m => m.ViewPersonalInfoPageModule)
+  },
+  {
+    path: 'edit-personal-info',
+    loadChildren: () => import('./edit-personal-info/edit-personal-info.module').then( m => m.EditPersonalInfoPageModule)
+  },
+  {
+    path: 'view-address-list',
+    loadChildren: () => import('./view-address-list/view-address-list.module').then( m => m.ViewAddressListPageModule)
+  },
+  {
+    path: 'view-address',
+    loadChildren: () => import('./view-address/view-address.module').then( m => m.ViewAddressPageModule)
+  },
+  {
+    path: 'edit-address',
+    loadChildren: () => import('./edit-address/edit-address.module').then( m => m.EditAddressPageModule)
+  },
+  {
+    path: 'add-address',
+    loadChildren: () => import('./add-address/add-address.module').then( m => m.AddAddressPageModule)
   },
 ];
 
