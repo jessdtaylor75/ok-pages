@@ -43,6 +43,22 @@ const routes: Routes = [
     path: 'add-address',
     loadChildren: () => import('./add-address/add-address.module').then( m => m.AddAddressPageModule)
   },
+  {
+    path: 'view-id-list',
+    loadChildren: () => import('./view-id-list/view-id-list.module').then( m => m.ViewIdListPageModule)
+  },
+  {
+    path: 'view-id',
+    loadChildren: () => import('./view-id/view-id.module').then( m => m.ViewIdPageModule)
+  },
+  {
+    path: 'edit-id',
+    loadChildren: () => import('./edit-id/edit-id.module').then( m => m.EditIdPageModule)
+  },
+  {
+    path: 'add-id',
+    loadChildren: () => import('./add-id/add-id.module').then( m => m.AddIdPageModule)
+  },
 ];
 
 @NgModule({
