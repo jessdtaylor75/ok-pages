@@ -1,11 +1,16 @@
 <ion-header class="ion-no-border">
   <ion-toolbar>
     <ion-buttons slot="start">
-      <ion-button>
+      <ion-button routerLink="/view-address-list">
         <ion-icon name="arrow-back-outline"></ion-icon>
       </ion-button>
     </ion-buttons>
     <ion-title>Jess Taylor</ion-title>
+    <ion-buttons slot="end">
+      <ion-button routerLink="/edit-address">
+        <ion-icon name="pencil-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
@@ -26,7 +31,7 @@
     <ion-item>
       <ion-label>
         <h3 class="field-label">Address line 1</h3>
-        <H2>197 2nd Ave Floor 5</H2>H2>
+        <H2>197 2nd Ave Floor 5</H2>
       </ion-label>
     </ion-item>
     <ion-item>

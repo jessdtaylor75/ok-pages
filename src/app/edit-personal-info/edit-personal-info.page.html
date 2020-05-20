@@ -24,20 +24,20 @@
   <ion-list>
     <ion-item>
       <ion-label position="stacked" color="medium">Nickname</ion-label>
-      <ion-input type="text" value="">Jess</ion-input>
+      <ion-input type="text" value="Jess"></ion-input>
     </ion-item>
     <ion-item>
       <ion-row>
         <ion-col>
           <div>
             <ion-label position="stacked" color="medium">First name</ion-label>
-            <ion-input type="text" value="">Jesse</ion-input>
+            <ion-input type="text" value="Jesse"></ion-input>
           </div>
         </ion-col>
         <ion-col>
           <div>
             <ion-label position="stacked" color="medium">Middle name</ion-label>
-            <ion-input type="text" value="">Daniel</ion-input>
+            <ion-input type="text" value="Daniel"></ion-input>
           </div>
         </ion-col>
       </ion-row>
@@ -47,7 +47,7 @@
         <ion-col>
           <div>
             <ion-label position="stacked" color="medium">Last name</ion-label>
-            <ion-input type="text" value="">Taylor</ion-input>
+            <ion-input type="text" value="Taylor"></ion-input>
           </div>
         </ion-col>
         <ion-col>
@@ -60,11 +60,11 @@
     </ion-item>
     <ion-item>
       <ion-label position="stacked" color="medium">Email address</ion-label>
-      <ion-input type="email" value="" email="true">jess@aerpass.com</ion-input>
+      <ion-input type="email" value="jess@aerpass.com" email="true"></ion-input>
     </ion-item>
     <ion-item>
       <ion-label position="stacked" color="medium">Mobile number</ion-label>
-      <ion-input type="text" value="">+1 (631) 697-8856</ion-input>
+      <ion-input type="text" value="+1 (631) 697-8856"></ion-input>
     </ion-item>
     <ion-item lines="none">
       <ion-text class="text-smallest" color="medium">
@@ -73,8 +73,11 @@
     </ion-item>
   </ion-list>
 
-  <div class="ion-padding">
-    <ion-button expand="block" type="submit" class="pad10">Save Changes</ion-button>
-  </div>
-
 </ion-content>
+<ion-footer class="ion-no-border">
+  <ion-toolbar>
+    <ion-button expand="block" class="pad15">
+      Save Changes
+    </ion-button>
+  </ion-toolbar>
+</ion-footer>

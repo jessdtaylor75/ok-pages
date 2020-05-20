@@ -1,7 +1,7 @@
 <ion-header class="ion-no-border">
   <ion-toolbar>
     <ion-buttons slot="start">
-      <ion-button>
+      <ion-button routerLink="/view-address">
         <ion-label color="medium">Cancel</ion-label>
       </ion-button>
     </ion-buttons>
@@ -127,8 +127,12 @@
     </ion-item>
   </ion-list>
 
-  <div class="ion-padding">
-    <ion-button expand="block" type="submit" class="pad10">Save Changes</ion-button>
-  </div>
 
 </ion-content>
+<ion-footer class="ion-no-border">
+  <ion-toolbar>
+    <ion-button expand="block" class="pad15" routerLink="/view-address">
+      Save Changes
+    </ion-button>
+  </ion-toolbar>
+</ion-footer>
