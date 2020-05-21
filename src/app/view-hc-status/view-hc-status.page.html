@@ -13,14 +13,41 @@
     <div class="ion-text-center">
       <br>
       <ion-row class="ion-justify-content-center">
-        <ion-avatar class="profile-pic">
-          <img src="/assets/jess-taylor-profile.jpg">
-        </ion-avatar>
+        <div class="profile-frame">
+          <ion-avatar class="profile-pic">
+            <img src="/assets/jess-taylor-profile.jpg">
+          </ion-avatar>
+        </div>
       </ion-row>
       <div class="pad-top3">
-        <ion-text class="section-header" color="primary">Testing</ion-text>
+        <ion-text class="section-header" color="primary"></ion-text>
       </div>
     </div>
-
-
+    <div class="ion-text-center">
+      <ion-row class="ion-justify-content-center">
+        <div class="display-qr" routerLink="/hc-status-display">
+            <img src="/assets/AP-QRcode-clear.png" />
+        </div>
+      </ion-row>
+      <div class="pad-top3">
+        <ion-text>Scan QR Code for Status</ion-text>
+      </div>
+    </div>
+    <div class="ion-text-center">
+      <ion-row class="ion-justify-content-center">
+        <ion-chip outline color="dark">
+          <ion-button color="medium" size="small" fill="clear">
+            Request Status
+          </ion-button>
+          <ion-button color="light" size="small" fill="dark">
+            My Status
+          </ion-button>
+          <!-- <ion-label>Request Status</ion-label>&nbsp;|&nbsp;
+          <ion-label>My Status</ion-label> -->
+        </ion-chip>
+      </ion-row>
+      <div class="pad-top3">
+        <ion-text></ion-text>
+      </div>
+    </div>
   </ion-content>

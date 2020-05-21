@@ -74,8 +74,8 @@ p {
 }
 
 .profile-pic {
-  width: 36vw;
-  height: 36vw;
+  width: 34vw;
+  height: 34vw;
   border-radius: 50%;
   border: .5vw solid var(--ion-color-primary);
   display: inline-block;
@@ -83,10 +83,33 @@ p {
 
 .profile-frame {
   padding-top: .5vw;
-  width: 38vw;
-  height: 38vw;
+  width: 36vw;
+  height: 36vw;
   border-radius: 50%;
   border: .5vw solid var(--ion-color-primary);
+  display: inline-block;
+}
+
+.profile-pic-toolbar {
+  width: 8.5vw;
+  height: 8.5vw;
+  border-radius: 50%;
+  border: .25vw solid var(--ion-color-primary);
+  display: inline-block;
+}
+
+.profile-frame-toolbar {
+  padding-top: .25vw;
+  width: 9vw;
+  height: 9vw;
+  border-radius: 50%;
+  border: .25vw solid var(--ion-color-primary);
+  display: inline-block;
+}
+
+.display-qr {
+  width: 56vw;
+  height: 56vw;
   display: inline-block;
 }
 

@@ -111,6 +111,10 @@ const routes: Routes = [
     path: 'scan-email',
     loadChildren: () => import('./scan-email/scan-email.module').then( m => m.ScanEmailPageModule)
   },
+  {
+    path: 'hc-status-display',
+    loadChildren: () => import('./hc-status-display/hc-status-display.module').then( m => m.HcStatusDisplayPageModule)
+  },
 ];
 
 @NgModule({
