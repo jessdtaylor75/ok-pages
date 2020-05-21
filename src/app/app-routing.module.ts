@@ -60,48 +60,8 @@ const routes: Routes = [
     loadChildren: () => import('./add-id/add-id.module').then( m => m.AddIdPageModule)
   },
   {
-    path: 'view-bank-list',
-    loadChildren: () => import('./view-bank-list/view-bank-list.module').then( m => m.ViewBankListPageModule)
-  },
-  {
-    path: 'view-bank',
-    loadChildren: () => import('./view-bank/view-bank.module').then( m => m.ViewBankPageModule)
-  },
-  {
-    path: 'view-card1',
-    loadChildren: () => import('./view-card1/view-card1.module').then( m => m.ViewCard1PageModule)
-  },
-  {
-    path: 'view-card2',
-    loadChildren: () => import('./view-card2/view-card2.module').then( m => m.ViewCard2PageModule)
-  },
-  {
-    path: 'view-health-info',
-    loadChildren: () => import('./view-health-info/view-health-info.module').then( m => m.ViewHealthInfoPageModule)
-  },
-  {
-    path: 'view-hc-status',
-    loadChildren: () => import('./view-hc-status/view-hc-status.module').then( m => m.ViewHcStatusPageModule)
-  },
-  {
-    path: 'view-insurance',
-    loadChildren: () => import('./view-insurance/view-insurance.module').then( m => m.ViewInsurancePageModule)
-  },
-  {
-    path: 'edit-insurance',
-    loadChildren: () => import('./edit-insurance/edit-insurance.module').then( m => m.EditInsurancePageModule)
-  },
-  {
-    path: 'add-insurance',
-    loadChildren: () => import('./add-insurance/add-insurance.module').then( m => m.AddInsurancePageModule)
-  },
-  {
-    path: 'no-insurance',
-    loadChildren: () => import('./no-insurance/no-insurance.module').then( m => m.NoInsurancePageModule)
-  },
-  {
-    path: 'view-test-list',
-    loadChildren: () => import('./view-test-list/view-test-list.module').then( m => m.ViewTestListPageModule)
+    path: 'verify-identity',
+    loadChildren: () => import('./verify-identity/verify-identity.module').then(m => m.VerifyIdentityPageModule)
   },
 ];
 
