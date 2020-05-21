@@ -1,0 +1,28 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-title color="light">Verify Email</ion-title>
+    <ion-buttons slot="end">
+      <ion-button color="primary" routerLink="/profile" routerDirection="root" fill="clear">
+        Cancel
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-row class="scanner-wrapper">
+    <img src="/assets/scanner-bg.png" alt="scanner">
+  </ion-row>
+  <ion-text color="light" class="upper-third ion-text-center text-smaller">
+    Check your email for the QR code we sent to
+    <ion-text color="primary">jess@aerpass.com</ion-text>
+  </ion-text>
+
+  <ion-row class="lower-third ion-justify-content-center">
+    <ion-text class="text-small ion-text-center" color="light">
+      Didn't receive the email?<br>
+      <ion-button fill="clear" routerLink="">Resend</ion-button>
+    </ion-text>
+  </ion-row>
+
+</ion-content>

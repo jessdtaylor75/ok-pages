@@ -63,6 +63,10 @@ const routes: Routes = [
     path: 'verify-identity',
     loadChildren: () => import('./verify-identity/verify-identity.module').then(m => m.VerifyIdentityPageModule)
   },
+  {
+    path: 'scan-email',
+    loadChildren: () => import('./scan-email/scan-email.module').then( m => m.ScanEmailPageModule)
+  },
 ];
 
 @NgModule({
