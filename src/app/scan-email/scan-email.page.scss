@@ -39,14 +39,3 @@ ion-content, ion-header, ion-toolbar, ion-avatar, ion-row {
   height: 40px;
 }
 
-.scanner-wrapper{
-  height: 100%;
-  width: 100%;
-  position: relative;
-  overflow: hidden;
-}
-.scanner-wrapper img{
-  position: absolute;
-  top:-100%; left:0; right: 0; bottom:-100%;
-  margin: auto;
-}

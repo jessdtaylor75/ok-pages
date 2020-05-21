@@ -81,6 +81,25 @@ p {
   display: inline-block;
 }
 
+.profile-frame {
+  padding-top: .5vw;
+  width: 38vw;
+  height: 38vw;
+  border-radius: 50%;
+  border: .5vw solid var(--ion-color-primary);
+  display: inline-block;
+}
+
+.hv-center {
+  text-align: center;
+
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
 :root {
   --ion-color-primary: #2c99e8;
   --ion-color-primary-rgb: 44,153,232;
