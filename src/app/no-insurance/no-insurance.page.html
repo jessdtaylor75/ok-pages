@@ -1,0 +1,50 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button routerLink="/view-health-info">
+        <ion-icon name="arrow-back-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Jess Taylor</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="ion-text-center">
+    <br>
+    <ion-row class="ion-justify-content-center">
+      <ion-avatar class="profile-pic">
+        <img src="/assets/jess-taylor-profile.jpg">
+      </ion-avatar>
+    </ion-row>
+    <div class="pad-top3">
+      <ion-text class="section-header" color="primary">Health Insurance</ion-text>
+    </div>
+  </div>
+
+  <ion-list>
+    <ion-item>
+      <ion-label>
+        <h3 class="field-label">Provider</h3>
+        <H2 color="medium">NONE</H2>
+      </ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>
+        <h3 class="field-label">Member ID</h3>
+        <H2 color="medium">&bull;&bull;&bull;&bull;</H2>
+      </ion-label>
+      <ion-label slot="end" align="right">
+        <h3 class="field-label">Verified</h3>
+        <ion-icon name="checkmark-circle-outline" color="light"></ion-icon>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button routerLink="/add-insurance">
+      <ion-icon name="add-outline" class="fab-icon"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
+</ion-content>

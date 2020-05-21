@@ -67,6 +67,7 @@
       <ion-input type="tel" value=""></ion-input>
     </ion-item>
     <ion-item lines="none">
+      <ion-icon name="alert-circle-outline" color="danger" slot="start"></ion-icon>
       <ion-text class="text-smallest" color="medium">
         Your email address must be verified in order to start using AerPass.
       </ion-text>
@@ -77,7 +78,7 @@
 
 <ion-footer class="ion-no-border">
   <ion-toolbar>
-    <ion-button expand="block" class="pad15">
+    <ion-button expand="block" class="pad15" routerLink="/profile-home">
       Continue
     </ion-button>
   </ion-toolbar>

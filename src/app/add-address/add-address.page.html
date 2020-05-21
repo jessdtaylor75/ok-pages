@@ -35,7 +35,7 @@
         <ion-col>
           <div>
             <ion-label position="stacked" color="medium">City</ion-label>
-            <ion-input type="text" value=""></ion-input>
+            <ion-input type="text" value="">New York</ion-input>
           </div>
         </ion-col>
         <ion-col>
@@ -110,16 +110,14 @@
         <ion-col>
           <div>
             <ion-label position="stacked" color="medium">Post code</ion-label>
-            <ion-input type="text" value=""></ion-input>
+            <ion-input type="text" value="">10003</ion-input>
           </div>
         </ion-col>
         <ion-col>
           <div align="right">
             <ion-label position="stacked" color="medium">Country</ion-label>
-            <ion-select multiple="true" cancelText="Cancel" okText="Select">
-              <ion-select-option value="United States">AL</ion-select-option>
-              <ion-select-option value="Canada">AK</ion-select-option>
-              <ion-select-option value="Mexico">AS</ion-select-option>
+            <ion-select value="United States" multiple="true" cancelText="Cancel" okText="Select">
+              <ion-select-option value="United States">USA</ion-select-option>
             </ion-select>
           </div>
         </ion-col>
@@ -131,7 +129,7 @@
 <ion-footer class="ion-no-border">
   <ion-toolbar>
     <ion-button expand="block" class="pad15" routerLink="/view-address-list">
-      Save Changes
+      Save Address
     </ion-button>
   </ion-toolbar>
 </ion-footer>

@@ -1,9 +1,60 @@
-<ion-header>
+<ion-header class="ion-no-border">
   <ion-toolbar>
-    <ion-title>view-id</ion-title>
+    <ion-buttons slot="start">
+      <ion-button routerLink="/view-id-list">
+        <ion-icon name="arrow-back-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Jess Taylor</ion-title>
+    <ion-buttons slot="end">
+      <ion-button routerLink="/edit-id">
+        <ion-icon name="pencil-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+  <div class="ion-text-center">
+    <br>
+    <ion-row class="ion-justify-content-center">
+      <ion-avatar class="profile-pic">
+        <img src="/assets/jess-taylor-profile.jpg">
+      </ion-avatar>
+    </ion-row>
+    <div class="pad-top3">
+      <ion-text class="section-header" color="primary">AerPass ID</ion-text>
+    </div>
+  </div>
+  <ion-divider></ion-divider>
+  <ion-list>
+    <ion-item>
+      <ion-label>
+        <h3 class="field-label">ID name</h3>
+        <H2>Jess Taylor - Work</H2>
+      </ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>
+        <h3 class="field-label">Email address</h3>
+        <H2>jess@aerpass.com</H2>
+      </ion-label>
+      <ion-label slot="end" align="right">
+        <h3 class="field-label">Verified</h3>
+        <ion-icon name="checkmark-circle-outline" color="success"></ion-icon>
+      </ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-text class="text-smallest" color="medium">
+        Changing your email address will require verification in order to use AerPass with this ID.
+      </ion-text>
+    </ion-item>
+    <ion-item lines="none">
+      <ion-label color="dark">Delete ID</ion-label>
+      <ion-label slot="end" align="right">
+        <ion-icon name="trash-outline"></ion-icon>
+      </ion-label>
+    </ion-item>
+  </ion-list>
 
 </ion-content>

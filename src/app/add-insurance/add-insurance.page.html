@@ -1,0 +1,49 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button routerLink="/view-insurance" routerDirection="back">
+        <ion-label color="medium">Cancel</ion-label>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Add Provider</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="ion-text-center">
+    <br>
+    <ion-row class="ion-justify-content-center">
+      <ion-avatar class="profile-pic">
+        <img src="/assets/jess-taylor-profile.jpg">
+      </ion-avatar>
+    </ion-row>
+    <div class="pad-top3">
+      <ion-text class="section-header" color="primary">Health Insurance</ion-text>
+    </div>
+  </div>
+
+  <ion-list>
+    <ion-item>
+      <ion-label position="stacked" color="medium">Provider</ion-label>
+      <ion-input type="text" value=""></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked" color="medium">Member ID</ion-label>
+      <ion-input type="number" value=""></ion-input>
+    </ion-item>
+    <ion-item lines="none">
+      <ion-icon name="alert-circle-outline" color="danger" slot="start"></ion-icon>
+      <ion-text class="text-smallest" color="medium">
+        Your member ID must be verified in order to start using AerPass with this insurance.
+      </ion-text>
+    </ion-item>
+  </ion-list>
+
+</ion-content>
+<ion-footer class="ion-no-border">
+  <ion-toolbar>
+    <ion-button expand="block" class="pad15" routerLink="/view-insurance">
+      Save Insurance
+    </ion-button>
+  </ion-toolbar>
+</ion-footer>
