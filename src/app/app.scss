@@ -20,12 +20,9 @@
 }
 
 .section-header {
-  font-size: 1.3rem;
   font-weight: bolder;
-}
-
-.pad-top3 {
-  padding: 3vw 0 3vw 0;
+  display: flex;
+  justify-content: center;
 }
 
 .pad5 {
@@ -88,6 +85,7 @@ p {
   width: 36vw;
   height: 36vw;
   border: .5vw solid var(--ion-color-primary);
+  margin-bottom: 3vw;
 }
 
 .profile-pic-toolbar {
