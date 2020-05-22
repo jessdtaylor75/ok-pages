@@ -22,6 +22,7 @@
 }
 
 .section-header {
+  margin-top: 3vw;
   font-weight: bolder;
   display: flex;
   justify-content: center;
@@ -53,22 +54,15 @@
 }
 
 ion-icon {
-  font-size: 18pt;
-  color: var(--ion-color-dark);
+  font-size: 1.5rem;
 }
 
-.fab-icon {
-  font-size: 30pt;
-  color: var(--ion-color-light);
-}
-
-.bank-icon {
-  font-size: 30pt;
-  color: var(--ion-color-dark);
+.larger-icon {
+  font-size: 2.5rem;
 }
 
 p {
-  font-size: 1em;
+  font-size: 1rem;
   color: var(--ion-color-medium);
 }
 
@@ -87,7 +81,6 @@ p {
   width: 36vw;
   height: 36vw;
   border: .5vw solid var(--ion-color-primary);
-  margin-bottom: 3vw;
 }
 
 .profile-pic-toolbar {
