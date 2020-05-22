@@ -19,6 +19,7 @@
   display: block;
   color: var(--ion-color-medium);
   margin-bottom: .5vw;
+  white-space: nowrap;
 }
 
 .section-header {
@@ -40,25 +41,26 @@
   padding: 0 15vw 0 15vw;
 }
 
-.icon-lg {
-  font-size: 15rem;
-}
-
-.icon-medium {
-  font-size: 8rem;
-}
-
-.stretch {
-  width: 100%;
-  width: -moz-available; /* WebKit-based browsers will ignore this. */
-}
 
 ion-icon {
   font-size: 1.5rem;
 }
 
-.larger-icon {
+.icon-larger {
   font-size: 2.5rem;
+}
+
+.icon-big {
+  font-size: 8rem;
+}
+
+.icon-huge {
+  font-size: 15rem;
+}
+
+.stretch {
+  width: 100%;
+  width: -moz-available; /* WebKit-based browsers will ignore this. */
 }
 
 p {
