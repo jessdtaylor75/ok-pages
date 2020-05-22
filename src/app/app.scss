@@ -14,12 +14,16 @@
   font-size: .8rem;
 }
 
-.field-label {
+.aer-label {
   font-size: .8rem;
   display: block;
   color: var(--ion-color-medium);
-  margin-bottom: .5vw;
   white-space: nowrap;
+}
+
+.field-label {
+  @extend .aer-label;
+  margin-bottom: .5vw;
 }
 
 .section-header {
