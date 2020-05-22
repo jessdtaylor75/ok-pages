@@ -115,6 +115,14 @@ const routes: Routes = [
     path: 'hc-status-display',
     loadChildren: () => import('./hc-status-display/hc-status-display.module').then( m => m.HcStatusDisplayPageModule)
   },
+  {
+    path: 'view-test-details',
+    loadChildren: () => import('./view-test-details/view-test-details.module').then( m => m.ViewTestDetailsPageModule)
+  },
+  {
+    path: 'add-test',
+    loadChildren: () => import('./add-test/add-test.module').then( m => m.AddTestPageModule)
+  },
 ];
 
 @NgModule({
