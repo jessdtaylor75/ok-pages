@@ -15,16 +15,38 @@
       <img src="/assets/jess-taylor-profile.jpg" class="profile-pic">
     </ion-avatar>
   </ion-row>
+  <ion-text class="section-header" color="primary">
+    Health Check
+  </ion-text>
   <ion-text class="section-header" color="primary"></ion-text>
   <div class="ion-text-center">
     <ion-row class="ion-justify-content-center">
       <ion-icon name="checkmark-circle-outline" class="display-qr" color="success"></ion-icon>
     </ion-row>
     <div class="pad-top3">
-      <ion-text>COVID-Clear</ion-text><br>
-      <ion-button color="primary" size="small" fill="clear">Last test: 6/14/2020</ion-button>
+      <ion-text>COVID-Clear</ion-text><br/>
+      <ion-button color="primary" size="small" fill="clear">Last test: 6/14/2020</ion-button><br/>&nbsp;
     </div>
   </div>
-
-
+  <div class="ion-text-center">
+    <ion-row class="ion-justify-content-center">
+      <ion-chip outline color="dark">
+        <ion-button color="medium" size="small" fill="clear">
+          <ion-label class="text-smallest">Request Status</ion-label>
+        </ion-button>
+        <ion-button color="light" size="small" fill="dark">
+          <ion-label class="text-smallest">My Status</ion-label>
+        </ion-button>
+        <!-- <ion-label>Request Status</ion-label>&nbsp;|&nbsp;
+        <ion-label>My Status</ion-label> -->
+      </ion-chip>
+    </ion-row>
+    <ion-row class="ion-justify-content-evenly">
+      <ion-text>&nbsp;</ion-text>
+    </ion-row>
+    <ion-row class="ion-justify-content-evenly">
+      <ion-icon name="mail-outline"></ion-icon>
+      <ion-icon name="share-outline"></ion-icon>
+    </ion-row>
+  </div>
 </ion-content>

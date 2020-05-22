@@ -15,6 +15,9 @@
         <img src="/assets/jess-taylor-profile.jpg" class="profile-pic">
       </ion-avatar>
     </ion-row>
+    <ion-text class="section-header" color="primary">
+      Health Check
+    </ion-text>
     <ion-text class="section-header" color="primary"></ion-text>
     <div class="ion-text-center">
       <ion-row class="ion-justify-content-center">
@@ -22,25 +25,29 @@
             <img src="/assets/AP-QRcode-clear.png" />
         </div>
       </ion-row>
-      <div class="pad-top3">
-        <ion-text>Scan QR Code for Status</ion-text>
+      <div>
+        <ion-text class="text-smallest"><br/>Scan QR Code for Status<br/>&nbsp;</ion-text>
       </div>
     </div>
     <div class="ion-text-center">
       <ion-row class="ion-justify-content-center">
         <ion-chip outline color="dark">
           <ion-button color="medium" size="small" fill="clear">
-            Request Status
+            <ion-label class="text-smallest">Request Status</ion-label>
           </ion-button>
           <ion-button color="light" size="small" fill="dark">
-            My Status
+            <ion-label class="text-smallest">My Status</ion-label>
           </ion-button>
           <!-- <ion-label>Request Status</ion-label>&nbsp;|&nbsp;
           <ion-label>My Status</ion-label> -->
         </ion-chip>
       </ion-row>
-      <div class="pad-top3">
-        <ion-text></ion-text>
-      </div>
+      <ion-row class="ion-justify-content-evenly">
+        <ion-text>&nbsp;</ion-text>
+      </ion-row>
+      <ion-row class="ion-justify-content-evenly">
+        <ion-icon name="mail-outline"></ion-icon>
+        <ion-icon name="share-outline"></ion-icon>
+      </ion-row>
     </div>
   </ion-content>
