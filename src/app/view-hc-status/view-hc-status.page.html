@@ -32,7 +32,7 @@
     <div class="ion-text-center">
       <ion-row class="ion-justify-content-center">
         <ion-chip outline color="dark">
-          <ion-button color="medium" size="small" fill="clear">
+          <ion-button color="medium" size="small" fill="clear" routerLink="/request-status">
             <ion-label class="text-smallest">Request Status</ion-label>
           </ion-button>
           <ion-button color="light" size="small" fill="dark">
@@ -46,8 +46,12 @@
         <ion-text>&nbsp;</ion-text>
       </ion-row>
       <ion-row class="ion-justify-content-evenly">
-        <ion-icon name="mail-outline"></ion-icon>
-        <ion-icon name="share-outline"></ion-icon>
+        <ion-button shape="circle" fill="clear">
+          <ion-icon name="mail-outline"></ion-icon>
+        </ion-button>
+        <ion-button shape="circle" fill="clear">
+          <ion-icon name="share-outline"></ion-icon>
+        </ion-button>
       </ion-row>
     </div>
   </ion-content>

@@ -1,0 +1,49 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button routerLink="/view-employer" routerDirection="back">
+        <ion-label color="medium">Cancel</ion-label>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Edit Employer</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="ion-text-center">
+    <br>
+    <ion-row class="ion-justify-content-center">
+      <ion-avatar class="profile-frame">
+        <img src="/assets/jess-taylor-profile.jpg" class="profile-pic">
+      </ion-avatar>
+    </ion-row>
+    <ion-button color="primary" size="small" fill="clear" >
+      Change Picture
+    </ion-button>
+  </div>
+
+  <ion-list>
+    <ion-item>
+      <ion-label position="stacked" color="medium">Employer name</ion-label>
+      <ion-input type="text" value="Aerius Inc."></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked" color="medium">Email address</ion-label>
+      <ion-input type="email" value="jess@aerpass.com" email="true"></ion-input>
+    </ion-item>
+    <ion-item lines="none">
+      <ion-icon name="alert-circle-outline" color="danger" slot="start"></ion-icon>
+      <ion-text class="text-smallest" color="medium">
+        Changing your email address will require verification in order to use this Employer.
+      </ion-text>
+    </ion-item>
+  </ion-list>
+
+</ion-content>
+<ion-footer class="ion-no-border">
+  <ion-toolbar>
+    <ion-button expand="block" class="pad15" routerLink="/view-employer">
+      Save Changes
+    </ion-button>
+  </ion-toolbar>
+</ion-footer>

@@ -123,6 +123,50 @@ const routes: Routes = [
     path: 'add-test',
     loadChildren: () => import('./add-test/add-test.module').then( m => m.AddTestPageModule)
   },
+  {
+    path: 'home-scanner',
+    loadChildren: () => import('./home-scanner/home-scanner.module').then( m => m.HomeScannerPageModule)
+  },
+  {
+    path: 'hc-status-clear',
+    loadChildren: () => import('./hc-status-clear/hc-status-clear.module').then( m => m.HcStatusClearPageModule)
+  },
+  {
+    path: 'hc-status-recovered',
+    loadChildren: () => import('./hc-status-recovered/hc-status-recovered.module').then( m => m.HcStatusRecoveredPageModule)
+  },
+  {
+    path: 'hc-status-pending',
+    loadChildren: () => import('./hc-status-pending/hc-status-pending.module').then( m => m.HcStatusPendingPageModule)
+  },
+  {
+    path: 'hc-status-c19positive',
+    loadChildren: () => import('./hc-status-c19positive/hc-status-c19positive.module').then( m => m.HcStatusC19positivePageModule)
+  },
+  {
+    path: 'view-employer-list',
+    loadChildren: () => import('./view-employer-list/view-employer-list.module').then( m => m.ViewEmployerListPageModule)
+  },
+  {
+    path: 'view-employer',
+    loadChildren: () => import('./view-employer/view-employer.module').then( m => m.ViewEmployerPageModule)
+  },
+  {
+    path: 'edit-employer',
+    loadChildren: () => import('./edit-employer/edit-employer.module').then( m => m.EditEmployerPageModule)
+  },
+  {
+    path: 'add-employer',
+    loadChildren: () => import('./add-employer/add-employer.module').then( m => m.AddEmployerPageModule)
+  },
+  {
+    path: 'no-employer',
+    loadChildren: () => import('./no-employer/no-employer.module').then( m => m.NoEmployerPageModule)
+  },
+  {
+    path: 'request-status',
+    loadChildren: () => import('./request-status/request-status.module').then( m => m.RequestStatusPageModule)
+  },
 ];
 
 @NgModule({

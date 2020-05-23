@@ -61,6 +61,10 @@ ion-icon {
   font-size: 15rem;
 }
 
+.icon-small {
+  font-size: 1rem;
+}
+
 .stretch {
   width: 100%;
   width: -moz-available; /* WebKit-based browsers will ignore this. */
@@ -75,7 +79,9 @@ p {
   width: 34vw;
   height: 34vw;
   border-radius: 50%;
-  border: .5vw solid var(--ion-color-primary);
+  border: 2pt solid var(--ion-color-primary);
+  text-align: center;
+  display: inline-block;
 }
 
 .profile-frame {
@@ -85,23 +91,16 @@ p {
   margin: 3vw;
   width: 36vw;
   height: 36vw;
-  border: .5vw solid var(--ion-color-primary);
+  border-radius: 50%;
+  border: 2pt solid var(--ion-color-primary);
 }
 
 .profile-pic-toolbar {
-  width: 8.5vw;
-  height: 8.5vw;
-  border-radius: 50%;
-  border: .25vw solid var(--ion-color-primary);
-  display: inline-block;
-}
-
-.profile-frame-toolbar {
-  padding-top: .25vw;
   width: 9vw;
   height: 9vw;
   border-radius: 50%;
-  border: .25vw solid var(--ion-color-primary);
+  border: 2pt solid var(--ion-color-primary);
+  text-align: center;
   display: inline-block;
 }
 
@@ -120,3 +119,4 @@ p {
   top: 50%;
   transform: translateY(-50%);
 }
+

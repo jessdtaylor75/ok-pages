@@ -1,0 +1,48 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button routerLink="/profile-home">
+        <ion-icon name="arrow-back-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Jess Taylor</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-row class="ion-justify-content-center">
+    <ion-avatar class="profile-frame">
+      <img src="/assets/jess-taylor-profile.jpg" class="profile-pic">
+    </ion-avatar>
+  </ion-row>
+  <ion-text class="section-header" color="primary">
+    Employers<br/>&nbsp;
+  </ion-text>
+  <ion-list>
+    <ion-item detail routerLink="/view-employer">
+      <ion-avatar>
+        <img src="/assets/jess-taylor-profile.jpg">
+      </ion-avatar>
+      <ion-label class="ion-padding-start">
+        Aerius Inc.
+        <div class="field-label">jess@aerpass.com</div>
+      </ion-label>
+    </ion-item>
+    <ion-item detail routerLink="/view-employer">
+      <ion-avatar>
+        <img src="/assets/jess-taylor-profile.jpg">
+      </ion-avatar>
+      <ion-label class="ion-padding-start">
+        Health Check
+        <div class="field-label">jtaylor@healthchecksystems.com</div>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button routerLink="/add-employer">
+      <ion-icon name="add-outline" class="icon-larger"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
+</ion-content>
