@@ -167,6 +167,18 @@ const routes: Routes = [
     path: 'request-status',
     loadChildren: () => import('./request-status/request-status.module').then( m => m.RequestStatusPageModule)
   },
+  {
+    path: 'legal-agreements',
+    loadChildren: () => import('./legal-agreements/legal-agreements.module').then( m => m.LegalAgreementsPageModule)
+  },
+  {
+    path: 'terms-and-conditions',
+    loadChildren: () => import('./terms-and-conditions/terms-and-conditions.module').then( m => m.TermsAndConditionsPageModule)
+  },
+  {
+    path: 'privacy-policy',
+    loadChildren: () => import('./privacy-policy/privacy-policy.module').then( m => m.PrivacyPolicyPageModule)
+  },
 ];
 
 @NgModule({

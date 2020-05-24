@@ -79,7 +79,7 @@ p {
   width: 34vw;
   height: 34vw;
   border-radius: 50%;
-  border: 2pt solid var(--ion-color-primary);
+  border: .5vw solid var(--ion-color-primary);
   text-align: center;
   display: inline-block;
 }
@@ -92,14 +92,14 @@ p {
   width: 36vw;
   height: 36vw;
   border-radius: 50%;
-  border: 2pt solid var(--ion-color-primary);
+  border: .5vw solid var(--ion-color-primary);
 }
 
 .profile-pic-toolbar {
   width: 9vw;
   height: 9vw;
   border-radius: 50%;
-  border: 2pt solid var(--ion-color-primary);
+  border: .25vw solid var(--ion-color-primary);
   text-align: center;
   display: inline-block;
 }
