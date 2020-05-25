@@ -8,7 +8,7 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'profile-home',
+    redirectTo: 'get-started',
     pathMatch: 'full'
   },
   {
@@ -182,6 +182,10 @@ const routes: Routes = [
   {
     path: 'payment-auth',
     loadChildren: () => import('./payment-auth/payment-auth.module').then( m => m.PaymentAuthPageModule)
+  },
+  {
+    path: 'about',
+    loadChildren: () => import('./about/about.module').then( m => m.AboutPageModule)
   },
 ];
 

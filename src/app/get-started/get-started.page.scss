@@ -1,0 +1,12 @@
+ion-content {
+  --overflow: hidden;
+}
+
+ion-slides {
+  --bullet-background: white;
+  --bullet-background-active: white;
+}
+
+li:not(:last-child) {
+  margin-bottom: .5em;
+}
