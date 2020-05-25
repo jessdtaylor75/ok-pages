@@ -172,10 +172,6 @@ const routes: Routes = [
     loadChildren: () => import('./terms-and-conditions/terms-and-conditions.module').then( m => m.TermsAndConditionsPageModule)
   },
   {
-    path: 'privacy-policy',
-    loadChildren: () => import('./privacy-policy/privacy-policy.module').then( m => m.PrivacyPolicyPageModule)
-  },
-  {
     path: 'get-started',
     loadChildren: () => import('./get-started/get-started.module').then( m => m.GetStartedPageModule)
   },
