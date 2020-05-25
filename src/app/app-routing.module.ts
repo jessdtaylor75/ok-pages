@@ -179,6 +179,10 @@ const routes: Routes = [
     path: 'privacy-policy',
     loadChildren: () => import('./privacy-policy/privacy-policy.module').then( m => m.PrivacyPolicyPageModule)
   },
+  {
+    path: 'get-started',
+    loadChildren: () => import('./get-started/get-started.module').then( m => m.GetStartedPageModule)
+  },
 ];
 
 @NgModule({
