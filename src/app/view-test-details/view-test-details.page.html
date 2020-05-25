@@ -1,11 +1,11 @@
 <ion-header class="ion-no-border">
   <ion-toolbar>
     <ion-buttons slot="start">
-      <ion-button routerLink="/view-test-list">
-        <ion-icon name="arrow-back-outline"></ion-icon>
-      </ion-button>
+      <ion-back-button defaultHref="/view-test-list"></ion-back-button>
     </ion-buttons>
-    <ion-title>Jess Taylor</ion-title>
+    <ion-title>
+    Test Details<br/>&nbsp;
+  </ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -15,9 +15,7 @@
       <img src="/assets/jess-taylor-profile.jpg" class="profile-pic">
     </ion-avatar>
   </ion-row>
-  <ion-text class="section-header" color="primary">
-    Test Details<br/>&nbsp;
-  </ion-text>
+  <ion-text class="section-header" color="primary">Jess Taylor</ion-text>
 
   <ion-list>
     <ion-item>
@@ -31,7 +29,7 @@
         <div class="field-label">Type</div>
         Serology - Antibody
       </ion-label>
-      <ion-note slot="end" align="right">
+      <ion-note slot="end" class="ion-text-end">
         <div class="field-label">Certified</div>
         <ion-icon name="shield-checkmark-outline" color="primary"></ion-icon>
       </ion-note>
@@ -41,7 +39,7 @@
         <div class="field-label">Result</div>
         Negative
       </ion-label>
-      <ion-note slot="end" align="right">
+      <ion-note slot="end" class="ion-text-end">
         <div class="field-label">Clear</div>
         <ion-icon name="checkmark-circle-outline" color="success"></ion-icon>
       </ion-note>
@@ -51,7 +49,7 @@
         <div class="field-label">Test Date</div>
         6/14/2020
       </ion-label>
-      <ion-label slot="end" align="right">
+      <ion-label slot="end" class="ion-text-end">
         <div class="field-label">Result Date</div>
         6/14/2020
       </ion-label>

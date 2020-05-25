@@ -1,11 +1,11 @@
 <ion-header class="ion-no-border">
   <ion-toolbar>
     <ion-buttons slot="start">
-      <ion-button routerLink="/profile-home" routerDirection="back">
-        <ion-icon name="arrow-back-outline"></ion-icon>
-      </ion-button>
+      <ion-back-button defaultHref="/profile-home"></ion-back-button>
     </ion-buttons>
-    <ion-title>Jess Taylor</ion-title>
+    <ion-title>
+    Personal Information<br/>&nbsp;
+  </ion-title>
     <ion-buttons slot="end">
       <ion-button routerLink="/edit-personal-info">
         <ion-icon name="pencil-outline"></ion-icon>
@@ -20,9 +20,7 @@
       <img src="/assets/jess-taylor-profile.jpg" class="profile-pic">
     </ion-avatar>
   </ion-row>
-  <ion-text class="section-header" color="primary">
-    Personal Information<br/>&nbsp;
-  </ion-text>
+  <ion-text class="section-header" color="primary">Jess Taylor</ion-text>
 
   <ion-list>
     <ion-item>
@@ -36,7 +34,7 @@
         <div class="field-label">Full name</div>
         Jesse Daniel Taylor
       </ion-label>
-      <ion-note slot="end" align="right">
+      <ion-note slot="end" class="ion-text-end">
         <div class="field-label">Verified</div>
         <ion-icon name="checkmark-circle-outline" color="success"></ion-icon>
       </ion-note>
@@ -46,7 +44,7 @@
         <div class="field-label">Email address</div>
         jess@aerpass.com
       </ion-label>
-      <ion-note slot="end" align="right">
+      <ion-note slot="end" class="ion-text-end">
         <div class="field-label">Verified</div>
         <ion-icon name="checkmark-circle-outline" color="success"></ion-icon>
       </ion-note>

@@ -1,11 +1,11 @@
 <ion-header class="ion-no-border">
   <ion-toolbar>
     <ion-buttons slot="start">
-      <ion-button routerLink="/view-address-list">
-        <ion-icon name="arrow-back-outline"></ion-icon>
-      </ion-button>
+      <ion-back-button defaultHref="/view-address-list"></ion-back-button>
     </ion-buttons>
-    <ion-title>Jess Taylor</ion-title>
+    <ion-title>
+    Address 1<br/>&nbsp;
+  </ion-title>
     <ion-buttons slot="end">
       <ion-button routerLink="/edit-address">
         <ion-icon name="pencil-outline"></ion-icon>
@@ -20,9 +20,7 @@
       <img src="/assets/jess-taylor-profile.jpg" class="profile-pic">
     </ion-avatar>
   </ion-row>
-  <ion-text class="section-header" color="primary">
-    Address 1<br/>&nbsp;
-  </ion-text>
+  <ion-text class="section-header" color="primary">Jess Taylor</ion-text>
   <ion-list>
     <ion-item>
       <ion-label>
@@ -41,7 +39,7 @@
         <div class="field-label">City</div>
         New York
       </ion-label>
-      <ion-label slot="end" align="right">
+      <ion-label slot="end" class="ion-text-end">
         <div class="field-label">State</div>
         NY
       </ion-label>
@@ -51,14 +49,14 @@
         <div class="field-label">Post Code</div>
         10003
       </ion-label>
-      <ion-label slot="end" align="right">
+      <ion-label slot="end" class="ion-text-end">
       <div class="field-label">Country</div>
       USA
       </ion-label>
     </ion-item>
     <ion-item lines="none">
       <ion-label color="dark">Delete Address </ion-label>
-      <ion-label slot="end" align="right">
+      <ion-label slot="end" class="ion-text-end">
         <ion-icon name="trash-outline"></ion-icon>
       </ion-label>
     </ion-item>
