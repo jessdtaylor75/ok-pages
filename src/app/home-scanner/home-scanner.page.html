@@ -1,9 +1,7 @@
 <ion-header class="ion-no-border">
   <ion-toolbar>
     <ion-buttons slot="start">
-      <ion-button color="light" routerLink="/profile-home" routerDirection="root" fill="clear">
-        <ion-icon name="reorder-three-outline" color="light"></ion-icon>
-      </ion-button>
+      <ion-menu-button></ion-menu-button>
     </ion-buttons>
     <ion-title class="ion-justify-content-center">
       <ion-button routerLink="/profile-home" routerDirection="root" fill="clear">
@@ -24,6 +22,11 @@
   <ion-row class="hv-center">
     <img src="/assets/scanner-bg.png" alt="scanner">
   </ion-row>
+
+  <div class="hv-center">
+    <ion-button routerLink="/payment-auth">Payment</ion-button><br/>
+    <ion-button>Login</ion-button>
+  </div>
 
   <ion-fab vertical="bottom" horizontal="end" slot="fixed">
     <ion-fab-button>

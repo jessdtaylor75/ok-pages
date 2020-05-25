@@ -12,10 +12,6 @@ const routes: Routes = [
     pathMatch: 'full'
   },
   {
-    path: 'profile',
-    loadChildren: () => import('./profile/profile.module').then( m => m.ProfilePageModule)
-  },
-  {
     path: 'profile-home',
     loadChildren: () => import('./profile-home/profile-home.module').then( m => m.ProfileHomePageModule)
   },
@@ -182,6 +178,10 @@ const routes: Routes = [
   {
     path: 'get-started',
     loadChildren: () => import('./get-started/get-started.module').then( m => m.GetStartedPageModule)
+  },
+  {
+    path: 'payment-auth',
+    loadChildren: () => import('./payment-auth/payment-auth.module').then( m => m.PaymentAuthPageModule)
   },
 ];
 
