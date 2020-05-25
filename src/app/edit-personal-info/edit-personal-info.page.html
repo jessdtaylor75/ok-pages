@@ -1,11 +1,14 @@
 <ion-header class="ion-no-border">
   <ion-toolbar>
     <ion-buttons slot="start">
+      <ion-back-button defaultHref="/profile-home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Edit Info</ion-title>
+    <ion-buttons slot="end">
       <ion-button routerLink="/view-personal-info" routerDirection="back">
         <ion-label>Cancel</ion-label>
       </ion-button>
     </ion-buttons>
-    <ion-title>Edit Info</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -22,13 +25,17 @@
   </div>
   <ion-list>
     <ion-item>
-      <ion-label position="stacked" color="medium">Display name</ion-label>
+      <ion-label position="stacked" color="medium">
+        Display name<ion-text color="danger">*</ion-text>
+      </ion-label>
       <ion-input type="text" value="Jess"></ion-input>
     </ion-item>
     <ion-item>
       <ion-row>
         <ion-col>
-          <ion-label position="stacked" color="medium">First name</ion-label>
+          <ion-label position="stacked" color="medium">
+            First name<ion-text color="danger">*</ion-text>
+          </ion-label>
           <ion-input type="text" value="Jesse"></ion-input>
         </ion-col>
         <ion-col>
@@ -40,7 +47,9 @@
     <ion-item>
       <ion-row>
         <ion-col>
-          <ion-label position="stacked" color="medium">Last name</ion-label>
+          <ion-label position="stacked" color="medium">
+            Last name<ion-text color="danger">*</ion-text>
+          </ion-label>
           <ion-input type="text" value="Taylor"></ion-input>
         </ion-col>
         <ion-col>
@@ -50,7 +59,9 @@
       </ion-row>
     </ion-item>
     <ion-item>
-      <ion-label position="stacked" color="medium">Email address</ion-label>
+      <ion-label position="stacked" color="medium">
+        Email address<ion-text color="danger">*</ion-text>
+      </ion-label>
       <ion-input type="email" value="jess@aerpass.com" email="true"></ion-input>
     </ion-item>
     <ion-item>
@@ -60,7 +71,9 @@
       </ion-text>
     </ion-item>
     <ion-item lines="none">
-      <ion-label position="stacked" color="medium">Mobile number</ion-label>
+      <ion-label position="stacked" color="medium">
+        Mobile number<ion-text color="danger">*</ion-text>
+      </ion-label>
       <ion-input type="text" value="+1 (631) 697-8856"></ion-input>
     </ion-item>
 
