@@ -2,7 +2,7 @@
   <ion-toolbar>
     <ion-title color="light">Verify Email</ion-title>
     <ion-buttons slot="end">
-      <ion-button color="primary" routerLink="/edit-personal-inf" routerDirection="root" fill="clear">
+      <ion-button color="primary" routerLink="/view-personal-info" routerDirection="root" fill="clear">
         Cancel
       </ion-button>
     </ion-buttons>
@@ -17,6 +17,10 @@
     Check your email for the QR code we sent to
     <ion-text color="primary">jess@aerpass.com</ion-text>
   </ion-text>
+
+  <div class="hv-center">
+    <ion-button expand="block" class="pad20" routerLink="/verify-email-success">Success!</ion-button>
+  </div>
 
   <ion-row class="lower-third ion-justify-content-center">
     <ion-text class="text-small ion-text-center" color="light">

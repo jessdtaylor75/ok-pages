@@ -24,8 +24,8 @@
   </ion-row>
 
   <div class="hv-center">
-    <ion-button routerLink="/payment-auth">Payment</ion-button><br/>
-    <ion-button>Login</ion-button>
+    <ion-button expand="block" class="pad20" routerLink="/payment-auth">Pay with AerPass</ion-button><br/>
+    <ion-button expand="block" class="pad20" routerLink="/login-auth">Login with AerPass</ion-button>
   </div>
 
   <ion-fab vertical="bottom" horizontal="end" slot="fixed">
@@ -33,7 +33,7 @@
       <ion-icon name="add-outline" size="large"></ion-icon>
     </ion-fab-button>
     <ion-fab-list side="top">
-      <ion-fab-button color="light">
+      <ion-fab-button color="light" routerLink="/view-hc-status">
         <ion-icon name="qr-code-outline" color="primary"></ion-icon>
       </ion-fab-button>
       <ion-label class="aer-label" color="light">Health<br/>Check</ion-label>

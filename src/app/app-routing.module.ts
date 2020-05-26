@@ -191,6 +191,30 @@ const routes: Routes = [
     path: 'payment-success',
     loadChildren: () => import('./payment-success/payment-success.module').then( m => m.PaymentSuccessPageModule)
   },
+  {
+    path: 'new-passcode',
+    loadChildren: () => import('./new-passcode/new-passcode.module').then( m => m.NewPasscodePageModule)
+  },
+  {
+    path: 'add-personal-info',
+    loadChildren: () => import('./add-personal-info/add-personal-info.module').then( m => m.AddPersonalInfoPageModule)
+  },
+  {
+    path: 'jumio1',
+    loadChildren: () => import('./jumio1/jumio1.module').then( m => m.Jumio1PageModule)
+  },
+  {
+    path: 'verify-email-success',
+    loadChildren: () => import('./verify-email-success/verify-email-success.module').then( m => m.VerifyEmailSuccessPageModule)
+  },
+  {
+    path: 'login-success',
+    loadChildren: () => import('./login-success/login-success.module').then( m => m.LoginSuccessPageModule)
+  },
+  {
+    path: 'login-auth',
+    loadChildren: () => import('./login-auth/login-auth.module').then( m => m.LoginAuthPageModule)
+  },
 ];
 
 @NgModule({
