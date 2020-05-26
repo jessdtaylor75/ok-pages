@@ -10,47 +10,46 @@
 </ion-header>
 
 <ion-content>
-  <div>
-    <img src="/assets/aerpass-merchant-blue.png" class="transaction-hero"  alt="Merchant"/>
+  <div class="hv-center">
+    <ion-item color="transparent" class="ion-align-items-baseline">
+      <ion-avatar class="merchant-logo">
+        <img src="/assets/aerpass-merchant-logo.png" alt="Merchant Logo">
+      </ion-avatar>
+      <ion-label class="ion-padding-start" color="light">
+        AerPass
+        <div class="address-label">
+          1905 15th St #1287<br/>
+          Boulder, CO 80302 &nbsp;&nbsp;USA
+        </div>
+      </ion-label>
+      <ion-note slot="end" class="ion-text-end">
+        &nbsp;&nbsp;
+        <div class="address-label">
+          720.306.5058<br/>
+          aerpass.com
+        </div>
+      </ion-note>
+    </ion-item>
+    <ion-item detail>
+      <ion-label>Amount</ion-label>
+      <ion-label slot="end" class="ion-text-end">$50.00</ion-label>
+    </ion-item>
+    <ion-item lines="none">
+      <ion-label position="stacked" class="field-label">Method</ion-label>
+      <ion-img src="/assets/cap-one.png" alt="Capital One" class="pad10"></ion-img>
+    </ion-item>
+    <ion-item detail routerLink="/choose-address">
+      <ion-label>
+        <div class="field-label">Shipping Address</div>
+        197 2nd Ave Floor 5<br>New York, NY 10003&nbsp;&nbsp;&nbsp;USA
+      </ion-label>
+    </ion-item>
   </div>
-  <ion-item color="transparent">
-    <ion-avatar class="merchant-logo">
-      <img src="/assets/jess-taylor-profile.jpg" alt="Profile Pic">
-    </ion-avatar>
-    <ion-label class="ion-padding-start">
-      AerPass
-      <div class="address-label">
-        1905 15th St #1287<br/>
-        Boulder, CO 80302 &nbsp;&nbsp;USA
-      </div>
-    </ion-label>
-    <ion-note slot="end" class="ion-text-end">
-      &nbsp;&nbsp;
-      <div class="address-label">
-        720.306.5058<br/>
-        aerpass.com
-      </div>
-    </ion-note>
-  </ion-item>
-  <ion-item>
-    <ion-label>Amount</ion-label>
-    <ion-label slot="end" class="ion-text-end">$50.00</ion-label>
-  </ion-item>
-  <ion-item lines="none">
-    <ion-label position="stacked" class="field-label">Method</ion-label>
-    <ion-img src="/assets/cap-one.png" alt="Capital One" class="pad10"></ion-img>
-  </ion-item>
-  <ion-item detail routerLink="/view-address-list">
-    <ion-label>
-      <div class="field-label">Shipping Address</div>
-      197 2nd Ave Floor 5<br>New York, NY 10003&nbsp;&nbsp;&nbsp;USA
-    </ion-label>
-  </ion-item>
 </ion-content>
 
 <ion-footer class="ion-no-border">
   <ion-toolbar>
-    <ion-button expand="block" class="pad15" routerLink="">
+    <ion-button expand="block" class="pad15" routerLink="/payment-success">
       Authorize
     </ion-button>
   </ion-toolbar>

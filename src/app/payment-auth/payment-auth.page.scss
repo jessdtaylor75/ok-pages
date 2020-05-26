@@ -1,6 +1,11 @@
 .address-label {
   font-size: .75rem;
   display: block;
-  color: var(--ion-color-medium);
+  color: var(--ion-color-light);
   white-space: nowrap;
+}
+
+ion-content {
+  --offset-top: 10vh;
+  --background: url(/assets/aerpass-merchant-blue.png) no-repeat center/cover fixed;
 }

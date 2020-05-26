@@ -183,6 +183,14 @@ const routes: Routes = [
     path: 'about',
     loadChildren: () => import('./about/about.module').then( m => m.AboutPageModule)
   },
+  {
+    path: 'choose-address',
+    loadChildren: () => import('./choose-address/choose-address.module').then( m => m.ChooseAddressPageModule)
+  },
+  {
+    path: 'payment-success',
+    loadChildren: () => import('./payment-success/payment-success.module').then( m => m.PaymentSuccessPageModule)
+  },
 ];
 
 @NgModule({
