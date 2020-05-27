@@ -37,8 +37,8 @@ export class AppComponent {
       src: '/assets/A-symbol.svg'
     },
     {
-      title: 'Sign-In',
-      url: '/scan',
+      title: 'Authorize Login / Payment',
+      url: '/home-scanner',
       icon: 'qr-code-outline'
     },
     {
