@@ -15,7 +15,7 @@
       <img src="/assets/jess-taylor-profile.jpg" class="profile-pic">
     </ion-avatar>
   </ion-row>
-  <ion-text class="section-header" color="primary">Jess Taylor</ion-text>
+  <ion-text class="section-header" color="primary">Jess Taylor<br/><br/></ion-text>
 
   <div class="ion-text-center">
     <ion-row class="ion-justify-content-center">
@@ -30,16 +30,16 @@
   </div>
   <div class="ion-text-center">
     <ion-row class="ion-justify-content-center">
-      <ion-chip outline color="dark">
-        <ion-button color="medium" size="small" fill="clear">
-          <ion-label class="text-smallest">Request Status</ion-label>
-        </ion-button>
-        <ion-button color="light" size="small" fill="dark">
-          <ion-label class="text-smallest">My Status</ion-label>
-        </ion-button>
-        <!-- <ion-label>Request Status</ion-label>&nbsp;|&nbsp;
-        <ion-label>My Status</ion-label> -->
-      </ion-chip>
+      <ion-toolbar>
+        <ion-segment value="my-status">
+          <ion-segment-button value="request-status" routerLink="/request-status">
+            <ion-label>Request Status</ion-label>
+          </ion-segment-button>
+          <ion-segment-button value="my-status">
+            <ion-label>My Status</ion-label>
+          </ion-segment-button>
+        </ion-segment>
+      </ion-toolbar>
     </ion-row>
     <ion-row class="ion-justify-content-evenly">
       <ion-text>&nbsp;</ion-text>

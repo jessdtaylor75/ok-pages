@@ -4,8 +4,8 @@
       <ion-back-button defaultHref="/profile-home"></ion-back-button>
     </ion-buttons>
     <ion-title>
-    Employers
-  </ion-title>
+      Biometrics & Security
+    </ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -17,30 +17,21 @@
   </ion-row>
   <ion-text class="section-header" color="primary">Jess Taylor<br/><br/></ion-text>
   <ion-list>
-    <ion-item detail routerLink="/view-employer">
-      <ion-avatar>
-        <img src="/assets/jess-taylor-profile.jpg">
-      </ion-avatar>
+    <ion-item>
+      <ion-icon name="finger-print-outline"></ion-icon>
       <ion-label class="ion-padding-start">
-        Aerius Inc.
-        <div class="field-label">jess@aerpass.com</div>
+        Device biometrics
+        <div class="field-label">Enable for enhanced security</div>
       </ion-label>
+      <ion-toggle slot="end" name="biometrics" color="success" checked></ion-toggle>
     </ion-item>
-    <ion-item detail routerLink="/view-employer">
-      <ion-avatar>
-        <img src="/assets/jess-taylor-profile.jpg">
-      </ion-avatar>
+    <ion-item detail routerLink="/new-passcode">
+      <ion-icon name="keypad"></ion-icon>
       <ion-label class="ion-padding-start">
-        Health Check
-        <div class="field-label">jtaylor@healthchecksystems.com</div>
+        Change Passcode
+        <div class="field-label">Passcode required for account recovery</div>
       </ion-label>
     </ion-item>
   </ion-list>
-
-  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
-    <ion-fab-button routerLink="/add-employer">
-      <ion-icon name="add-outline" class="icon-larger"></ion-icon>
-    </ion-fab-button>
-  </ion-fab>
 
 </ion-content>
