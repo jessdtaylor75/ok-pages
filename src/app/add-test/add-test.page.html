@@ -4,7 +4,7 @@
       <ion-back-button defaultHref="/view-test-list"></ion-back-button>
     </ion-buttons>
     <ion-title>
-      Test Details
+      Enter Test Results
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -20,46 +20,46 @@
   <ion-list>
     <ion-item>
       <ion-label>
-        <div class="field-label">Manufacturer / Lab</div>
-        PRA Health Sciences
+        <ion-searchbar value="Find Test"></ion-searchbar>
       </ion-label>
     </ion-item>
     <ion-item>
-      <ion-label>
-        <div class="field-label">Type</div>
-        Serology - Antibody
-      </ion-label>
-      <ion-note slot="end" class="ion-text-end">
-        <div class="field-label">Certified</div>
-        <ion-icon name="shield-checkmark-outline" color="primary"></ion-icon>
-      </ion-note>
+      <ion-label position="stacked" color="medium">Manufacturer / Lab</ion-label>
+      <ion-input type="text" value="PRA Health Sciences" color="medium"></ion-input>
     </ion-item>
     <ion-item>
-      <ion-label>
-        <div class="field-label">Result</div>
-        Negative
-      </ion-label>
-      <ion-note slot="end" class="ion-text-end">
-        <div class="field-label">Clear</div>
-        <ion-icon name="checkmark-circle-outline" color="success"></ion-icon>
-      </ion-note>
+      <ion-label position="stacked" color="medium">Type</ion-label>
+      <ion-input type="text" value="Serology - Antibody" color="medium"></ion-input>
     </ion-item>
     <ion-item>
-      <ion-label>
-        <div class="field-label">Test Date</div>
-        6/14/2020
-      </ion-label>
-      <ion-label slot="end" class="ion-text-end">
-        <div class="field-label">Result Date</div>
-        6/14/2020
-      </ion-label>
+      <ion-label position="stacked" color="medium">Result</ion-label>
+      <ion-input type="text" value=""></ion-input>
     </ion-item>
     <ion-item>
-      <ion-label>
-        <div class="field-label">Specimen ID</div>
-        078-988-9015-0
-      </ion-label>
+      <ion-grid>
+        <ion-row>
+          <ion-col size="6" class="ion-align-self-start">
+            <ion-label position="stacked" color="medium">Test Date</ion-label>
+            <ion-input type="date" value=""></ion-input>
+          </ion-col>
+          <ion-col size="6" class="ion-align-self-end">
+            <ion-label position="stacked" color="medium" class="ion-text-end">Result Date</ion-label>
+            <ion-input type="date" value="" class="ion-text-end"></ion-input>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked" color="medium">Specimen ID</ion-label>
+      <ion-input type="text" value=""></ion-input>
     </ion-item>
   </ion-list>
 
 </ion-content>
+<ion-footer class="ion-no-border">
+  <ion-toolbar>
+    <ion-button expand="block" class="pad15" routerLink="/scan-test">
+      Scan Report / Submit
+    </ion-button>
+  </ion-toolbar>
+</ion-footer>

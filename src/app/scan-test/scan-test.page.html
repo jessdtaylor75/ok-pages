@@ -1,0 +1,27 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-title color="light">Scan Test</ion-title>
+    <ion-buttons slot="end">
+      <ion-button color="primary" routerLink="/view-test-list" routerDirection="root" fill="clear">
+        Cancel
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-row class="hv-center">
+    <img src="/assets/scanner-blank.png" alt="scanner">
+  </ion-row>
+  <ion-text color="light" class="upper-third ion-text-center text-smaller">
+    Hold test card in the center of the frame below for automatic capture.
+  </ion-text>
+
+  <ion-row class="lower-third ion-justify-content-center">
+    <ion-text class="text-small ion-text-center" color="light">
+      Scanning a lab report?<br>
+      <ion-button fill="clear" routerLink="/test-success">Capture Manually</ion-button>
+    </ion-text>
+  </ion-row>
+
+</ion-content>

@@ -219,6 +219,14 @@ const routes: Routes = [
     path: 'biometrics-security',
     loadChildren: () => import('./biometrics-security/biometrics-security.module').then( m => m.BiometricsSecurityPageModule)
   },
+  {
+    path: 'scan-test',
+    loadChildren: () => import('./scan-test/scan-test.module').then( m => m.ScanTestPageModule)
+  },
+  {
+    path: 'test-success',
+    loadChildren: () => import('./test-success/test-success.module').then( m => m.TestSuccessPageModule)
+  },
 ];
 
 @NgModule({
