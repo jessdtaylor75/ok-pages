@@ -1,0 +1,54 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title class="ion-justify-content-center">
+      <ion-button routerLink="/profile-home" routerDirection="root" fill="clear">
+        <ion-avatar class="profile-pic-toolbar">
+          <img src="/assets/jess-taylor-profile.jpg">
+        </ion-avatar>
+      </ion-button>
+    </ion-title>
+    <ion-buttons slot="end">
+      <ion-button color="primary" routerLink="/profile-home" routerDirection="root" fill="clear">
+        <ion-icon name="notifications-outline" color="light"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen="true">
+  <ion-row class="hv-center">
+    <img src="/assets/scanner-bg.png" alt="scanner">
+  </ion-row>
+
+  <ion-text color="light" class="upper-third ion-text-center text-smaller">
+    Scan AerPass QR codes for password-free logins and to safely pay at verified merchants.
+  </ion-text>
+
+  <div class="hv-center">
+    <ion-button expand="block" class="pad20" routerLink="/payment-auth">Pay with AerPass</ion-button><br/>
+    <ion-button expand="block" class="pad20" routerLink="/login-auth">Login with AerPass</ion-button>
+  </div>
+
+  <ion-row class="lower-third ion-justify-content-center">
+    <ion-icon name="shield-checkmark-outline" color="primary"></ion-icon><br/>
+    <ion-text class="text-smaller ion-text-center" color="light">
+      None of your personally identifying information is ever exposed.
+    </ion-text>
+  </ion-row>
+
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button>
+      <ion-icon name="add-outline" size="large"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-list side="top">
+      <ion-fab-button color="light" routerLink="/view-hc-status">
+        <ion-icon name="qr-code-outline" color="primary"></ion-icon>
+      </ion-fab-button>
+      <ion-label class="aer-label" color="light">Health<br/>Check</ion-label>
+    </ion-fab-list>
+  </ion-fab>
+
+</ion-content>

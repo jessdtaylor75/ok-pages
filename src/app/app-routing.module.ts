@@ -227,6 +227,10 @@ const routes: Routes = [
     path: 'test-success',
     loadChildren: () => import('./test-success/test-success.module').then( m => m.TestSuccessPageModule)
   },
+  {
+    path: 'home-scanner-first-use',
+    loadChildren: () => import('./home-scanner-first-use/home-scanner-first-use.module').then( m => m.HomeScannerFirstUsePageModule)
+  },
 ];
 
 @NgModule({
