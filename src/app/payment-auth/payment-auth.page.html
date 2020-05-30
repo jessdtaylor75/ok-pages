@@ -36,7 +36,19 @@
     </ion-item>
     <ion-item lines="none">
       <ion-label position="stacked" class="field-label">Method</ion-label>
-      <ion-img src="/assets/cap-one.png" alt="Capital One" class="pad10"></ion-img>
+      <div class="pad10 pay-account-auth">
+        <img src="/assets/card-trans.png" class="pay-account-header">
+        <ion-item lines="none" color="transparent" class="ion-align-items-baseline">
+          <ion-avatar>
+            <img src="/assets/aerpass-merchant-logo.png">
+          </ion-avatar>
+          <ion-label class="ion-padding-start" color="light">AerPass Direct</ion-label>
+        </ion-item>
+      </div>
+      <!-- Set pay-account-auth img url var in app.scss to "aerpass-card.png" for bank payment type, and "cardbrand.svg" for card payment type -->
+      <!-- Avatar Options: "/aerpass-merchant-logo.png" or "bank-logo.png" or "null"-->
+      <!-- Label Options: "AerPass Direct" or "BankName &bull;&bull;&bull;&bull; 0331" -->
+      <!-- <ion-img src="/assets/card-trans.png" alt="default" class="pad10 pay-account-auth"></ion-img> -->
     </ion-item>
     <ion-item detail routerLink="/choose-address">
       <ion-label>
