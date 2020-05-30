@@ -216,4 +216,9 @@
 
     --ion-tab-bar-background: #1f1f1f;
   }
+
+  .dark-gradient {
+    background: linear-gradient(0deg,rgba(255,255,255,.4),hsla(0,100%,100%,0) 100%) !important;
+  }
+
 }

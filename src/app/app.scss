@@ -143,6 +143,7 @@ p {
   background-color: transparent;
   position: absolute;
   top: 13%;
+  //noinspection CssInvalidFunction
   margin-top: env(safe-area-inset-top);
   z-index: 2;
 }
@@ -189,7 +190,7 @@ p {
 }
 
 .auth-page {
-  --background: url(/assets/aerpass-merchant-blue.png) no-repeat center/cover fixed;
+  --background: var(--ion-background-color) url(/assets/aerpass-merchant-blue.png) no-repeat center/cover fixed;
 }
 
 .dark-gradient {
