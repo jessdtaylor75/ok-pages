@@ -12,4 +12,9 @@ export class ViewBankListPage implements OnInit {
   ngOnInit() {
   }
 
+  // noinspection JSUnusedLocalSymbols
+  onPlaidSuccess($event: any) {}
+
+  // noinspection JSUnusedLocalSymbols
+  onPlaidExit($event: any) {}
 }

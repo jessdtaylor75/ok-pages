@@ -7,13 +7,15 @@ import { IonicModule } from '@ionic/angular';
 import { ViewBankListPageRoutingModule } from './view-bank-list-routing.module';
 
 import { ViewBankListPage } from './view-bank-list.page';
+import { PlaidLinkModule } from 'ng-plaid-link';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    ViewBankListPageRoutingModule
+    ViewBankListPageRoutingModule,
+    PlaidLinkModule
   ],
   declarations: [ViewBankListPage]
 })

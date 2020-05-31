@@ -4,8 +4,8 @@
       <ion-back-button defaultHref="/profile-home"></ion-back-button>
     </ion-buttons>
     <ion-title>
-    Banks & Cards
-  </ion-title>
+      Banks & Cards
+    </ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -53,7 +53,13 @@
       <ion-icon name="add-outline" size="large"></ion-icon>
     </ion-fab-button>
     <ion-fab-list side="top">
-      <ion-fab-button color="light">
+      <ion-fab-button color="light" zenPlaidLink
+                      clientName="AerPass"
+                      env="sandbox"
+                      publicKey="90806ea4692059356e89c7f0e6ea7a"
+                      [countryCodes]="['US']"
+                      (Success)="onPlaidSuccess($event)"
+                      (Exit)="onPlaidExit($event)">
         <ion-icon src="/assets/savings.svg" color="primary"></ion-icon>
       </ion-fab-button>
       <ion-label class="aer-label" color="primary">Add Bank</ion-label>
