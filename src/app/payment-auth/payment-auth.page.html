@@ -35,21 +35,42 @@
       <ion-label slot="end" class="ion-text-end">$50.00</ion-label>
     </ion-item>
     <ion-item lines="none">
-      <ion-label position="stacked" class="field-label">Method</ion-label>
-      <div class="pad10 pay-account-auth">
-        <img src="/assets/card-trans.png" class="pay-account-header">
-        <ion-item lines="none" color="transparent" class="ion-align-items-baseline">
-          <ion-avatar>
-            <img src="/assets/aerpass-merchant-logo.png">
-          </ion-avatar>
-          <ion-label class="ion-padding-start" color="light">AerPass Direct</ion-label>
-        </ion-item>
-      </div>
-      <!-- Set pay-account-auth img url var in app.scss to "aerpass-card.png" for bank payment type, and "cardbrand.svg" for card payment type -->
-      <!-- Avatar Options: "/aerpass-merchant-logo.png" or "bank-logo.png" or "null"-->
-      <!-- Label Options: "AerPass Direct" or "BankName &bull;&bull;&bull;&bull; 0331" -->
-      <!-- <ion-img src="/assets/card-trans.png" alt="default" class="pad10 pay-account-auth"></ion-img> -->
+      <ion-label position="stacked" style="margin-bottom: 1vw">Method</ion-label>
+
+      <ion-slides style="width: 100%">
+
+        <ion-slide>
+          <div class="method">
+            <ion-item lines="none" color="transparent" class="card-size">
+              <ion-avatar>
+                <img src="/assets/aerpass-merchant-logo.png" alt="Merchant">
+              </ion-avatar>
+              <ion-label class="ion-padding-start" color="light">AerPass Direct</ion-label>
+            </ion-item>
+          </div>
+        </ion-slide>
+
+        <ion-slide>
+          <div class="method"
+               style="background: url(/assets/visa.svg) no-repeat center; background-size: contain;">
+            <ion-item lines="none" color="transparent" class="card-size">
+              <ion-avatar>
+                <img src="/assets/chase.png" alt="Merchant">
+              </ion-avatar>
+              <ion-label class="ion-padding-start" color="light">
+                Chase &bull;&bull;&bull;&bull; 0331
+              </ion-label>
+            </ion-item>
+          </div>
+        </ion-slide>
+
+      </ion-slides>
+
     </ion-item>
+    <!-- Set pay-account-auth img url var in app.scss to "aerpass-card.png" for bank payment type, and "cardbrand.svg" for card payment type -->
+    <!-- Avatar Options: "/aerpass-merchant-logo.png" or "bank-logo.png" or "null"-->
+    <!-- Label Options: "AerPass Direct" or "BankName &bull;&bull;&bull;&bull; 0331" -->
+    <!-- <ion-img src="/assets/card-trans.png" alt="default" class="pad10 pay-account-auth"></ion-img> -->
     <ion-item detail routerLink="/choose-address">
       <ion-label>
         <div class="field-label">Shipping Address</div>
