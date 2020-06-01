@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { PlaidAccountSubtypes } from 'ng-plaid-link/lib/interfaces';
 
 @Component({
   selector: 'app-view-bank-list',
@@ -6,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./view-bank-list.page.scss'],
 })
 export class ViewBankListPage implements OnInit {
+  plaidAccountSubtypes: PlaidAccountSubtypes = {depository: ['checking']};
 
   constructor() { }
 
@@ -14,7 +16,4 @@ export class ViewBankListPage implements OnInit {
 
   // noinspection JSUnusedLocalSymbols
   onPlaidSuccess($event: any) {}
-
-  // noinspection JSUnusedLocalSymbols
-  onPlaidExit($event: any) {}
 }

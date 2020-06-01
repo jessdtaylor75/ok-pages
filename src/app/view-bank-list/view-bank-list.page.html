@@ -58,8 +58,8 @@
                       env="sandbox"
                       publicKey="90806ea4692059356e89c7f0e6ea7a"
                       [countryCodes]="['US']"
-                      (Success)="onPlaidSuccess($event)"
-                      (Exit)="onPlaidExit($event)">
+                      [accountSubtypes]="plaidAccountSubtypes"
+                      (success)="onPlaidSuccess($event)">
         <ion-icon src="/assets/savings.svg" color="primary"></ion-icon>
       </ion-fab-button>
       <ion-label class="aer-label" color="primary">Add Bank</ion-label>
