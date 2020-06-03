@@ -13,3 +13,7 @@ $card-height: 55vw;
   width: $card-width;
   height: $card-height;
 }
+
+.card-top {
+  height: $card-height - 12vw;
+}

@@ -231,6 +231,10 @@ const routes: Routes = [
     path: 'home-scanner-first-use',
     loadChildren: () => import('./home-scanner-first-use/home-scanner-first-use.module').then( m => m.HomeScannerFirstUsePageModule)
   },
+  {
+    path: 'view-card3',
+    loadChildren: () => import('./view-card3/view-card3.module').then( m => m.ViewCard3PageModule)
+  },
 ];
 
 @NgModule({
