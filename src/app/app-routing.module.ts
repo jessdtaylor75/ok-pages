@@ -235,6 +235,14 @@ const routes: Routes = [
     path: 'view-card3',
     loadChildren: () => import('./view-card3/view-card3.module').then( m => m.ViewCard3PageModule)
   },
+  {
+    path: 'hc-result',
+    loadChildren: () => import('./hc-result/hc-result.module').then( m => m.HcResultPageModule)
+  },
+  {
+    path: 'hc-status-unknown',
+    loadChildren: () => import('./hc-status-unknown/hc-status-unknown.module').then( m => m.HcStatusUnknownPageModule)
+  },
 ];
 
 @NgModule({
