@@ -243,6 +243,18 @@ const routes: Routes = [
     path: 'hc-status-unknown',
     loadChildren: () => import('./hc-status-unknown/hc-status-unknown.module').then( m => m.HcStatusUnknownPageModule)
   },
+  {
+    path: 'payment-auth-safetypass',
+    loadChildren: () => import('./payment-auth-safetypass/payment-auth-safetypass.module').then( m => m.PaymentAuthSafetypassPageModule)
+  },
+  {
+    path: 'payment-success-safetypass',
+    loadChildren: () => import('./payment-success-safetypass/payment-success-safetypass.module').then( m => m.PaymentSuccessSafetypassPageModule)
+  },
+  {
+    path: 'login-auth-safetypass',
+    loadChildren: () => import('./login-auth-safetypass/login-auth-safetypass.module').then( m => m.LoginAuthSafetypassPageModule)
+  },
 ];
 
 @NgModule({

@@ -2,7 +2,7 @@ $card-width: 85vw;
 $card-height: 55vw;
 
 .method {
-  background: url(/assets/aerpass-card-gray.png) no-repeat center;
+  background: url(/assets/aerpass-card.png) no-repeat center;
   background-size: contain;
   width: $card-width;
   height: $card-height;
@@ -16,4 +16,8 @@ $card-height: 55vw;
 
 .card-top {
   height: $card-height - 12vw;
+}
+
+.auth-page-sp {
+  --background: url(/assets/Safety-PASS-hero.png) no-repeat center/cover fixed;
 }

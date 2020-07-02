@@ -17,3 +17,7 @@ $card-height: 55vw;
 .card-top {
   height: $card-height - 12vw;
 }
+
+.auth-page-sp {
+  --background: url(/assets/Safety-PASS-hero.png) no-repeat center/cover fixed;
+}

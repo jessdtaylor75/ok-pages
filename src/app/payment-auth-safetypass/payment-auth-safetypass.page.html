@@ -1,0 +1,118 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-title>Payment</ion-title>
+    <ion-buttons slot="end">
+      <ion-button href="https://www.webshield.io/">
+        <ion-label color="medium">Cancel</ion-label>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="auth-page-sp">
+  <div class="hv-center">
+    <ion-item lines="none" color="transparent" class="ion-align-items-baseline dark-gradient">
+      <ion-avatar class="merchant-logo">
+        <img src="/assets/Safety-PASS-Logo.png" alt="Merchant Logo">
+      </ion-avatar>
+      <ion-label class="ion-padding-start" color="light">
+        Safety PASS Network
+        <div class="address-label">
+          2 Embarcadero Center, 8th Fl<br/>
+          San Francisco, CA 94111 &nbsp;&nbsp;USA
+        </div>
+      </ion-label>
+      <ion-note slot="end" class="ion-text-end">
+        &nbsp;&nbsp;
+        <div class="address-label">
+          415.265.3250<br/>
+          webshield.io
+        </div>
+      </ion-note>
+    </ion-item>
+    <ion-item detail>
+      <ion-label>Amount</ion-label>
+      <ion-label slot="end" class="ion-text-end">$23.99</ion-label>
+    </ion-item>
+    <ion-item lines="none">
+      <ion-label position="stacked" style="margin-bottom: 1vw">Method</ion-label>
+
+      <ion-slides style="width: 100%">
+
+        <ion-slide>
+          <div class="method">
+            <div class="card-top"></div>
+            <ion-item lines="none" color="transparent" class="card-size">
+              <ion-avatar>
+                <img src="/assets/wellsfargo.png" alt="Merchant">
+              </ion-avatar>
+              <ion-label class="ion-padding-start" color="light">AerPass Direct &bull;&bull;&bull;&bull; 1111</ion-label>
+            </ion-item>
+          </div>
+        </ion-slide>
+
+        <ion-slide>
+          <div class="method"
+               style="background: url(/assets/visa.svg) no-repeat center; background-size: contain;">
+            <div class="card-top"></div>
+            <ion-item lines="none" color="transparent" class="card-size">
+              <ion-avatar>
+                <img src="/assets/chase.png" alt="Merchant">
+              </ion-avatar>
+              <ion-label class="ion-padding-start" color="light">
+                Visa &bull;&bull;&bull;&bull; 0331
+              </ion-label>
+            </ion-item>
+          </div>
+        </ion-slide>
+
+        <ion-slide>
+          <div class="method"
+               style="background: url(/assets/mastercard.svg) no-repeat center; background-size: contain;">
+            <div class="card-top"></div>
+            <ion-item lines="none" color="transparent" class="card-size">
+              <ion-avatar>
+                <img src="/assets/citi.png" alt="Merchant">
+              </ion-avatar>
+              <ion-label class="ion-padding-start" color="light">
+                MasterCard &bull;&bull;&bull;&bull; 6789
+              </ion-label>
+            </ion-item>
+          </div>
+        </ion-slide>
+
+        <ion-slide>
+          <div class="method"
+               style="background: url(/assets/amex.svg) no-repeat center; background-size: contain;">
+            <div class="card-top"></div>
+            <ion-item lines="none" color="transparent" class="card-size">
+              <ion-label class="ion-padding-start" color="light">
+                American Express &bull;&bull;&bull;&bull; 6789
+              </ion-label>
+            </ion-item>
+          </div>
+        </ion-slide>
+
+      </ion-slides>
+
+    </ion-item>
+    <!-- Set pay-account-auth img url var in app.scss to "aerpass-card.png" for bank payment type, and "cardbrand.svg" for card payment type -->
+    <!-- Avatar Options: "/aerpass-merchant-logo.png" or "bank-logo.png" or "null"-->
+    <!-- Label Options: "AerPass Direct" or "BankName &bull;&bull;&bull;&bull; 0331" -->
+    <!-- <ion-img src="/assets/card-trans.png" alt="default" class="pad10 pay-account-auth"></ion-img> -->
+    <ion-item detail routerLink="/choose-address">
+      <ion-label>
+        <div class="field-label">Shipping Address</div>
+        3040 Steiner St<br>San Francisco, CA 94123&nbsp;&nbsp;&nbsp;USA
+      </ion-label>
+    </ion-item>
+  </div>
+</ion-content>
+
+<ion-footer class="ion-no-border">
+  <ion-toolbar>
+    <ion-button expand="block" class="pad15" routerLink="/payment-success-safetypass">
+      Authorize
+    </ion-button>
+  </ion-toolbar>
+</ion-footer>
