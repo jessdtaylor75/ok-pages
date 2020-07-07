@@ -23,7 +23,7 @@
         <img src="/assets/PRA_Health.png">
       </ion-avatar>
       <ion-label class="ion-padding-start">
-        PRA Health
+        Vibrant America
         <div class="field-label">COVID-19 Antibody</div>
       </ion-label>
       <ion-note slot="end" class="ion-text-end">
@@ -47,7 +47,7 @@
         <img src="/assets/PRA_Health.png">
       </ion-avatar>
       <ion-label class="ion-padding-start">
-        PRA Health
+        LabCorp
         <div class="field-label">COVID-19 Molecular PCR</div>
       </ion-label>
       <ion-note slot="end" class="ion-text-end">
@@ -57,19 +57,9 @@
   </ion-list>
 
   <ion-fab vertical="bottom" horizontal="end" slot="fixed">
-    <ion-fab-button>
+    <ion-fab-button routerLink="/add-test">
       <ion-icon name="add-outline" size="large"></ion-icon>
     </ion-fab-button>
-    <ion-fab-list side="top">
-      <ion-fab-button color="light" routerLink="/scan-test">
-        <ion-icon name="scan-outline" color="primary"></ion-icon>
-      </ion-fab-button>
-      <ion-label class="aer-label" color="primary">Scan<br/>Test</ion-label>
-      <ion-fab-button color="light" routerLink="/add-test">
-        <ion-icon name="medical" color="primary"></ion-icon>
-      </ion-fab-button>
-      <ion-label class="aer-label" color="primary">Enter<br/>Test</ion-label>
-    </ion-fab-list>
   </ion-fab>
 
 </ion-content>

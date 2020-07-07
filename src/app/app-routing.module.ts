@@ -255,6 +255,14 @@ const routes: Routes = [
     path: 'login-auth-safetypass',
     loadChildren: () => import('./login-auth-safetypass/login-auth-safetypass.module').then( m => m.LoginAuthSafetypassPageModule)
   },
+  {
+    path: 'view-id2',
+    loadChildren: () => import('./view-id2/view-id2.module').then( m => m.ViewId2PageModule)
+  },
+  {
+    path: 'view-id3',
+    loadChildren: () => import('./view-id3/view-id3.module').then( m => m.ViewId3PageModule)
+  },
 ];
 
 @NgModule({

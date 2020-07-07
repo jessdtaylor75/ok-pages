@@ -11,30 +11,69 @@
 
 <ion-content>
   <ion-row class="ion-justify-content-center">
-    <ion-avatar class="profile-frame">
-      <img src="/assets/jess-taylor-profile.jpg" class="profile-pic">
-    </ion-avatar>
+    <ion-icon name="flask-outline" color="primary" class="icon-larger"></ion-icon>
   </ion-row>
-  <ion-text class="section-header" color="primary">Display Name<br/><br/></ion-text>
 
-  <ion-list>
+   <ion-list>
     <ion-item>
       <ion-label>
-        <ion-searchbar value="Find Test"></ion-searchbar>
+        <ion-searchbar value="Find Test by Email"></ion-searchbar>
       </ion-label>
     </ion-item>
+     <ion-item>
+       <ion-label position="stacked" color="medium">Type</ion-label>
+       <ion-select value="Type" interface="action-sheet">
+         <ion-select-option value="Molecular - Virus">Molecular - Virus</ion-select-option>
+         <ion-select-option value="Serology - Antibody">Serology - Antibody</ion-select-option>
+       </ion-select>
+     </ion-item>
     <ion-item>
       <ion-label position="stacked" color="medium">Manufacturer / Lab</ion-label>
-      <ion-input type="text" value="PRA Health Sciences" color="medium"></ion-input>
+      <ion-select>
+        <ion-select-option value="Abbott Laboratories">Abbott Laboratories</ion-select-option>
+        <ion-select-option value="Assure Tech">Assure Tech</ion-select-option>
+        <ion-select-option value="Autobio Diagnostics">Autobio Diagnostics</ion-select-option>
+        <ion-select-option value="Babson Diagnostics">Babson Diagnostics</ion-select-option>
+        <ion-select-option value="Beckman Coulter">Beckman Coulter</ion-select-option>
+        <ion-select-option value="Bio-Rad Laboratories">Bio-Rad Laboratories</ion-select-option>
+        <ion-select-option value="Biohit Healthcare (Hefei)">Biohit Healthcare (Hefei)</ion-select-option>
+        <ion-select-option value="Cellex">Cellex</ion-select-option>
+        <ion-select-option value="DiaSorin">DiaSorin</ion-select-option>
+        <ion-select-option value="Emory Medical Laboratories">Emory Medical Laboratories</ion-select-option>
+        <ion-select-option value="EUROIMMUN US">EUROIMMUN US</ion-select-option>
+        <ion-select-option value="Hangzhou Biotest Biotech">Hangzhou Biotest Biotech</ion-select-option>
+        <ion-select-option value="Hangzhou Laihe Biotech">Hangzhou Laihe Biotech</ion-select-option>
+        <ion-select-option value="Healgen Scientific">Healgen Scientific</ion-select-option>
+        <ion-select-option value="InBios International">InBios International</ion-select-option>
+        <ion-select-option value="Mount Sinai Laboratory">Mount Sinai Laboratory</ion-select-option>
+        <ion-select-option value="Ortho Clinical Diagnostics">Ortho Clinical Diagnostics</ion-select-option>
+        <ion-select-option value="Roche Diagnostics">Roche Diagnostics</ion-select-option>
+        <ion-select-option value="Sensing Self">Sensing Self</ion-select-option>
+        <ion-select-option value="Siemens Healthcare Diagnostics">Siemens Healthcare Diagnostics</ion-select-option>
+        <ion-select-option value="Vibrant America Clinical Labs">Vibrant America Clinical Labs</ion-select-option>
+        <ion-select-option value="Wadsworth Center, New York State Department of Health">Wadsworth Center, New York State Department of Health</ion-select-option>
+      </ion-select>
     </ion-item>
-    <ion-item>
-      <ion-label position="stacked" color="medium">Type</ion-label>
-      <ion-input type="text" value="Serology - Antibody" color="medium"></ion-input>
-    </ion-item>
-    <ion-item>
-      <ion-label position="stacked" color="medium">Result</ion-label>
-      <ion-input type="text" value=""></ion-input>
-    </ion-item>
+
+     <ion-item>
+       <ion-label position="stacked" color="medium">Result</ion-label>
+       <ion-select value="Result" interface="action-sheet">
+         <ion-select-option value="Positive IgG">Positive IgG</ion-select-option>
+         <ion-select-option value="Positive IgM + IgG">Positive IgM + IgG</ion-select-option>
+         <ion-select-option value="Positive IgM">Positive IgM</ion-select-option>
+         <ion-select-option value="Negative">Negative</ion-select-option>
+         <ion-select-option value="Invalid">Invalid</ion-select-option>
+       </ion-select>
+     </ion-item>
+     <!-- IF selected value of Type="Molecular - Virus" Replace Result item above with Result item below -->
+     <!-- <ion-item>
+       <ion-label position="stacked" color="medium">Result</ion-label>
+       <ion-select value="Result" interface="action-sheet">
+         <ion-select-option value="Positive SARS-CoV-2">Positive SARS-CoV-2</ion-select-option>
+         <ion-select-option value="Negative">Negative</ion-select-option>
+         <ion-select-option value="Invalid">Invalid</ion-select-option>
+       </ion-select>
+     </ion-item> -->
     <ion-item>
       <ion-grid>
         <ion-row>

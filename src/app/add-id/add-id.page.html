@@ -5,7 +5,7 @@
         <ion-label color="medium">Cancel</ion-label>
       </ion-button>
     </ion-buttons>
-    <ion-title>Add ID</ion-title>
+    <ion-title>Add Persona</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -14,7 +14,7 @@
     <br>
     <ion-row class="ion-justify-content-center">
         <ion-avatar class="profile-frame">
-          <img src="/assets/jess-taylor-profile.jpg" class="profile-pic">
+          <img src="/assets/blank-user-avatar.png" class="profile-pic">
         </ion-avatar>
     </ion-row>
     <ion-button color="primary" size="small" fill="clear" >
@@ -24,8 +24,17 @@
 
   <ion-list>
     <ion-item>
-      <ion-label position="stacked" color="medium">ID name</ion-label>
+      <ion-label position="stacked" color="medium">Persona name</ion-label>
       <ion-input type="text" value=""></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Type</ion-label>
+      <ion-select slot="end" value="01">
+        <ion-select-option value="01">Personal</ion-select-option>
+        <ion-select-option value="02">Business</ion-select-option>
+        <ion-select-option value="03">School</ion-select-option>
+        <ion-select-option value="04">Other</ion-select-option>
+      </ion-select>
     </ion-item>
     <ion-item>
       <ion-label position="stacked" color="medium">Email address</ion-label>
@@ -34,7 +43,7 @@
     <ion-item lines="none">
       <ion-icon name="alert-circle-outline" color="danger" slot="start"></ion-icon>
       <ion-text class="text-smallest" color="medium">
-        Your email address must be verified in order to start using AerPass with this ID.
+        Your email address must be verified in order to start using AerPass with this Persona.
       </ion-text>
     </ion-item>
   </ion-list>
@@ -43,7 +52,7 @@
 <ion-footer class="ion-no-border">
   <ion-toolbar>
     <ion-button expand="block" class="pad15" routerLink="/view-id-list">
-      Save ID
+      Save Persona
     </ion-button>
   </ion-toolbar>
 </ion-footer>
