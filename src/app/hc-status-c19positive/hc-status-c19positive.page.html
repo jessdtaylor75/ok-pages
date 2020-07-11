@@ -3,9 +3,9 @@
     <ion-buttons slot="start">
       <ion-back-button defaultHref="/view-health-info"></ion-back-button>
     </ion-buttons>
-    <ion-title>
-    Health Check
-  </ion-title>
+    <ion-title color="safetypass">
+      Safety PASS
+    </ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -18,12 +18,12 @@
   <ion-text class="section-header" color="primary">Display Name<br/><br/></ion-text>
   <div class="ion-text-center">
     <ion-row class="ion-justify-content-center">
-      <div class="display-qr" routerLink="/view-hc-status">
+      <div class="display-qr" routerLink="/hc-status-not-certified">
         <ion-icon name="alert-circle" class="display-qr" color="danger"></ion-icon>
       </div>
     </ion-row>
     <div class="pad-top3">
-      <ion-text>COVID-19 Active</ion-text><br/>
+      <ion-text>Restricted - Positive</ion-text><br/>
       <ion-button color="primary" size="small" fill="clear">Last test: 6/14/2020</ion-button>
     </div>
   </div>

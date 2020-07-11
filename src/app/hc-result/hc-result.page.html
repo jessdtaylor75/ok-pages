@@ -3,8 +3,8 @@
     <ion-buttons slot="start">
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
-    <ion-title>
-      Health Check
+    <ion-title color="safetypass">
+      Safety PASS
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -17,17 +17,97 @@
   </ion-row>
   <ion-text class="section-header" color="primary">Display Name<br/><br/></ion-text>
 
-  <div class="ion-text-center">
-    <ion-row class="ion-justify-content-center">
-      <div class="display-qr" routerLink="/hc-status-recovered">
-        <ion-icon name="checkmark-circle-outline" class="display-qr" color="success"></ion-icon>
+  <ion-slides style="width: 100%">
+
+    <ion-slide>
+      <div class="ion-text-center">
+      <ion-row class="ion-justify-content-center">
+        <ion-icon name="checkmark-done-circle" class="display-qr" color="success"></ion-icon>
+      </ion-row>
+      <div class="pad-top3">
+        <ion-text>Clear</ion-text><br/>&nbsp;
       </div>
-    </ion-row>
-    <div class="pad-top3">
-      <ion-text>COVID-19 Clear</ion-text><br/>
-      <ion-button color="primary" size="small" fill="clear">Last test: 6/14/2020</ion-button>
-    </div>
-  </div>
+      </div>
+    </ion-slide>
+
+    <ion-slide>
+      <div class="ion-text-center">
+        <ion-row class="ion-justify-content-center">
+          <ion-icon name="checkmark-done-circle-outline" class="display-qr" color="success"></ion-icon>
+        </ion-row>
+        <div class="pad-top3">
+          <ion-text>Clear</ion-text><br/>&nbsp;
+        </div>
+      </div>
+    </ion-slide>
+
+    <ion-slide>
+      <div class="ion-text-center">
+        <ion-row class="ion-justify-content-center">
+          <ion-icon name="checkmark-circle" class="display-qr" color="success"></ion-icon>
+        </ion-row>
+        <div class="pad-top3">
+          <ion-text>Clear</ion-text><br/>&nbsp;
+        </div>
+      </div>
+    </ion-slide>
+
+    <ion-slide>
+      <div class="ion-text-center">
+        <ion-row class="ion-justify-content-center">
+          <ion-icon name="warning" class="display-qr" color="warning"></ion-icon>
+        </ion-row>
+        <div class="pad-top3">
+          <ion-text>Clear - 12 Days</ion-text><br/>&nbsp;
+        </div>
+      </div>
+    </ion-slide>
+
+    <ion-slide>
+      <div class="ion-text-center">
+        <ion-row class="ion-justify-content-center">
+          <ion-icon name="warning" class="display-qr" color="warning"></ion-icon>
+        </ion-row>
+        <div class="pad-top3">
+          <ion-text>Pending</ion-text><br/>&nbsp;
+        </div>
+      </div>
+    </ion-slide>
+
+    <ion-slide>
+      <div class="ion-text-center">
+        <ion-row class="ion-justify-content-center">
+          <ion-icon name="alert-circle" class="display-qr" color="danger"></ion-icon>
+        </ion-row>
+        <div class="pad-top3">
+          <ion-text>Restricted</ion-text><br/>&nbsp;
+        </div>
+      </div>
+    </ion-slide>
+
+    <ion-slide>
+      <div class="ion-text-center">
+        <ion-row class="ion-justify-content-center">
+          <ion-icon name="alert-circle-outline" class="display-qr" color="danger"></ion-icon>
+        </ion-row>
+        <div class="pad-top3">
+          <ion-text>No Certificate</ion-text><br/>&nbsp;
+        </div>
+      </div>
+    </ion-slide>
+
+    <ion-slide>
+      <div class="ion-text-center">
+        <ion-row class="ion-justify-content-center">
+          <ion-icon name="help-circle" class="display-qr" color="hot"></ion-icon>
+        </ion-row>
+        <div class="pad-top3">
+          <ion-text>Unknown</ion-text><br/>&nbsp;
+        </div>
+      </div>
+    </ion-slide>
+
+  </ion-slides>
   <div class="ion-text-center">
     <ion-row class="ion-justify-content-evenly">
       <ion-text>&nbsp;</ion-text>

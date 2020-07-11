@@ -263,6 +263,14 @@ const routes: Routes = [
     path: 'view-id3',
     loadChildren: () => import('./view-id3/view-id3.module').then( m => m.ViewId3PageModule)
   },
+  {
+    path: 'view-hc-controls',
+    loadChildren: () => import('./view-hc-controls/view-hc-controls.module').then( m => m.ViewHcControlsPageModule)
+  },
+  {
+    path: 'hc-status-not-certified',
+    loadChildren: () => import('./hc-status-not-certified/hc-status-not-certified.module').then( m => m.HcStatusNotCertifiedPageModule)
+  },
 ];
 
 @NgModule({

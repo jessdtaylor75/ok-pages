@@ -26,10 +26,11 @@
   <div class="hv-center">
     <ion-button expand="block" class="pad20" routerLink="/login-auth">Login with AerPass</ion-button><br/>
     <ion-button expand="block" class="pad20" routerLink="/payment-auth">Pay with AerPass</ion-button><br/>
-    <ion-button expand="block" class="pad20" routerLink="/hc-result">AerPass Health Check</ion-button>
+    <ion-button expand="block" class="pad20" color="safetypass" routerLink="/hc-result">Scan Safety PASS</ion-button>
   </div>
 
   <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-label class="fab-label" color="light">Safety<br/>PASS</ion-label>
     <ion-fab-button routerLink="/view-hc-status">
       <ion-icon name="qr-code-outline"></ion-icon>
     </ion-fab-button>
