@@ -279,6 +279,14 @@ const routes: Routes = [
     path: 'enter-email',
     loadChildren: () => import('./enter-email/enter-email.module').then( m => m.EnterEmailPageModule)
   },
+  {
+    path: 'view-recovery-pass',
+    loadChildren: () => import('./view-recovery-pass/view-recovery-pass.module').then( m => m.ViewRecoveryPassPageModule)
+  },
+  {
+    path: 'biometrics-security-view',
+    loadChildren: () => import('./biometrics-security-view/biometrics-security-view.module').then( m => m.BiometricsSecurityViewPageModule)
+  },
 ];
 
 @NgModule({

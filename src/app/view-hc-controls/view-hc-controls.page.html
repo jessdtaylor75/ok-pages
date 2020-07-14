@@ -17,48 +17,48 @@
       </div>
     </ion-row>
     <div class="pad-top3">
-      <ion-text class="section-header" color="primary">Safety PASS Validation<br/><br/></ion-text>
+      <ion-text class="section-header" color="primary">How to Read Safety PASS Badges<br/><br/></ion-text>
     </div>
   </div>
   <ion-list>
     <ion-item>
-      <ion-label position="stacked" color="medium">Test Valid for [X] DAYS</ion-label>
+      <ion-label position="stacked" color="medium">Days between Negative results</ion-label>
       <ion-range min="1" max="14" step="1" value="7" pin color="dark">
-        <ion-icon slot="start" color="success" name="checkmark-circle-outline"></ion-icon>
-        <ion-icon slot="end" color="warning" name="warning-outline"></ion-icon>
+        <ion-icon slot="start" color="success" name="checkmark-circle"></ion-icon>
+        <ion-icon slot="end" color="warning" name="warning"></ion-icon>
       </ion-range>
     </ion-item>
     <ion-item>
       <ion-icon name="checkmark-done-circle" color="success" slot="start"></ion-icon>
-      <ion-label>Clear - Immune</ion-label>
+      <ion-label>Clear</ion-label><ion-text class="text-smallest" color="medium">Vaccinated</ion-text>
     </ion-item>
     <ion-item>
       <ion-icon name="checkmark-done-circle-outline" color="success" slot="start"></ion-icon>
-      <ion-label>Clear - A+</ion-label>
+      <ion-label>Clear</ion-label><ion-text class="text-smallest" color="medium">With Antibodies</ion-text>
     </ion-item>
     <ion-item>
       <ion-icon name="checkmark-circle" color="success" slot="start"></ion-icon>
-      <ion-label>Clear</ion-label>
+      <ion-label>Clear</ion-label><ion-text class="text-smallest" color="medium">Negative</ion-text>
     </ion-item>
     <ion-item>
       <ion-icon name="warning" color="warning" slot="start"></ion-icon>
-      <ion-label>Clear - [X] Days</ion-label>
+      <ion-label>Clear - [X] Days</ion-label><ion-text class="text-smallest" color="medium">Negative</ion-text>
     </ion-item>
     <ion-item>
       <ion-icon name="warning" color="warning" slot="start"></ion-icon>
-      <ion-label>Pending</ion-label>
+      <ion-label>Pending</ion-label><ion-text class="text-smallest" color="medium">Follow-up Required</ion-text>
     </ion-item>
     <ion-item>
       <ion-icon name="help-circle" color="hot" slot="start"></ion-icon>
-      <ion-label>Unknown</ion-label>
+      <ion-label>Unknown</ion-label><ion-text class="text-smallest" color="medium">No Data Submitted</ion-text>
     </ion-item>
     <ion-item>
       <ion-icon name="alert-circle" color="danger" slot="start"></ion-icon>
-      <ion-label>Restricted</ion-label>
+      <ion-label>Restricted</ion-label><ion-text class="text-smallest" color="medium">Positive</ion-text>
     </ion-item>
     <ion-item>
       <ion-icon name="alert-circle-outline" color="danger" slot="start"></ion-icon>
-      <ion-label>No Certificate</ion-label>
+      <ion-label>No Certificate</ion-label><ion-text class="text-smallest" color="medium">Certification Required</ion-text>
     </ion-item>
   </ion-list>
 
