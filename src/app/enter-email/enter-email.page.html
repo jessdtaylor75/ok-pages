@@ -1,0 +1,53 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-title>Create Account</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="ion-text-center">
+    <br>
+    <ion-row class="ion-justify-content-center">
+      <ion-avatar class="profile-frame">
+        <img src="/assets/aerpass-merchant-logo.png" class="profile-pic">
+      </ion-avatar>
+    </ion-row>
+    <ion-button color="primary" size="small" fill="clear" >
+      &nbsp;&nbsp;
+    </ion-button>
+  </div>
+
+  <ion-list>
+    <ion-item>
+      <ion-label position="stacked" color="medium">Display name</ion-label>
+      <ion-input type="text" value=""></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Type</ion-label>
+      <ion-select slot="end" value="01">
+        <ion-select-option value="01">Personal</ion-select-option>
+        <ion-select-option value="02">Business</ion-select-option>
+        <ion-select-option value="03">School</ion-select-option>
+        <ion-select-option value="04">Other</ion-select-option>
+      </ion-select>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked" color="medium">Email address</ion-label>
+      <ion-input type="email" value="" email="true"></ion-input>
+    </ion-item>
+    <ion-item lines="none">
+      <ion-icon name="alert-circle-outline" color="danger" slot="start"></ion-icon>
+      <ion-text class="text-smallest" color="medium">
+        Your email address must be verified in order to start using AerPass.
+      </ion-text>
+    </ion-item>
+  </ion-list>
+
+</ion-content>
+<ion-footer class="ion-no-border">
+  <ion-toolbar>
+    <ion-button expand="block" class="pad15" routerLink="/scan-email">
+      Create Account
+    </ion-button>
+  </ion-toolbar>
+</ion-footer>

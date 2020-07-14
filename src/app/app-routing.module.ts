@@ -271,6 +271,14 @@ const routes: Routes = [
     path: 'hc-status-not-certified',
     loadChildren: () => import('./hc-status-not-certified/hc-status-not-certified.module').then( m => m.HcStatusNotCertifiedPageModule)
   },
+  {
+    path: 'biometrics',
+    loadChildren: () => import('./biometrics/biometrics.module').then( m => m.BiometricsPageModule)
+  },
+  {
+    path: 'enter-email',
+    loadChildren: () => import('./enter-email/enter-email.module').then( m => m.EnterEmailPageModule)
+  },
 ];
 
 @NgModule({
