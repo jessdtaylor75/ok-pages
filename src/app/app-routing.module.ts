@@ -287,6 +287,22 @@ const routes: Routes = [
     path: 'biometrics-security-view',
     loadChildren: () => import('./biometrics-security-view/biometrics-security-view.module').then( m => m.BiometricsSecurityViewPageModule)
   },
+  {
+    path: 'verify-id-recovery',
+    loadChildren: () => import('./verify-id-recovery/verify-id-recovery.module').then( m => m.VerifyIdRecoveryPageModule)
+  },
+  {
+    path: 'scan-email-recovery',
+    loadChildren: () => import('./scan-email-recovery/scan-email-recovery.module').then( m => m.ScanEmailRecoveryPageModule)
+  },
+  {
+    path: 'jumio-recovery',
+    loadChildren: () => import('./jumio-recovery/jumio-recovery.module').then( m => m.JumioRecoveryPageModule)
+  },
+  {
+    path: 'enter-email-error',
+    loadChildren: () => import('./enter-email-error/enter-email-error.module').then( m => m.EnterEmailErrorPageModule)
+  },
 ];
 
 @NgModule({

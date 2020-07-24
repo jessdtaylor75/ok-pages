@@ -1,0 +1,41 @@
+@import '../app.scss';
+
+.upper-third {
+  @extend .stretch;
+  padding: 0 15vw 0 15vw;
+  background-color: transparent;
+  position: absolute;
+  top: 13%;
+  margin-top: env(safe-area-inset-top);
+  z-index: 2;
+}
+
+.lower-third {
+  @extend .stretch;
+  padding: 0 15vw 0 15vw;
+  background-color: transparent;
+  position: absolute;
+  top: 80%;
+  z-index: 2;
+}
+
+ion-content {
+  --overflow: hidden;
+  position: absolute;
+}
+
+ion-content, ion-header, ion-toolbar, ion-avatar, ion-row {
+  --background: transparent;
+}
+
+.center-avatar {
+  display: flex;
+  justify-content: center;
+  background: transparent;
+}
+
+.profile {
+  width: 40px;
+  height: 40px;
+}
+
