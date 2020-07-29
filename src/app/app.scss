@@ -88,6 +88,13 @@ p {
   color: var(--ion-color-medium);
 }
 
+.profile {
+  position: relative;
+  display: inline-block;
+  width: 36vw;
+  height: 36vw;
+}
+
 .profile-pic {
   width: 34vw;
   height: 34vw;
@@ -115,6 +122,13 @@ p {
   border: .25vw solid var(--ion-color-primary);
   text-align: center;
   display: inline-block;
+}
+
+.profile .btn {
+  position: absolute;
+  bottom: -5vw;
+  right: -2vw;
+  z-index: 9;
 }
 
 .display-qr {

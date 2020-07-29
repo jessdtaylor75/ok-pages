@@ -303,6 +303,38 @@ const routes: Routes = [
     path: 'enter-email-error',
     loadChildren: () => import('./enter-email-error/enter-email-error.module').then( m => m.EnterEmailErrorPageModule)
   },
+  {
+    path: 'passes-modal',
+    loadChildren: () => import('./passes-modal/passes-modal.module').then( m => m.PassesModalPageModule)
+  },
+  {
+    path: 'pass1',
+    loadChildren: () => import('./pass1/pass1.module').then( m => m.Pass1PageModule)
+  },
+  {
+    path: 'pass2',
+    loadChildren: () => import('./pass2/pass2.module').then( m => m.Pass2PageModule)
+  },
+  {
+    path: 'pass3',
+    loadChildren: () => import('./pass3/pass3.module').then( m => m.Pass3PageModule)
+  },
+  {
+    path: 'pass4',
+    loadChildren: () => import('./pass4/pass4.module').then( m => m.Pass4PageModule)
+  },
+  {
+    path: 'pass5',
+    loadChildren: () => import('./pass5/pass5.module').then( m => m.Pass5PageModule)
+  },
+  {
+    path: 'pass',
+    loadChildren: () => import('./pass/pass.module').then( m => m.PassPageModule)
+  },
+  {
+    path: 'pass6',
+    loadChildren: () => import('./pass6/pass6.module').then( m => m.Pass6PageModule)
+  },
 ];
 
 @NgModule({
