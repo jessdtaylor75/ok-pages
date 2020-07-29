@@ -335,6 +335,10 @@ const routes: Routes = [
     path: 'pass6',
     loadChildren: () => import('./pass6/pass6.module').then( m => m.Pass6PageModule)
   },
+  {
+    path: 'consent-docs',
+    loadChildren: () => import('./consent-docs/consent-docs.module').then( m => m.ConsentDocsPageModule)
+  },
 ];
 
 @NgModule({
