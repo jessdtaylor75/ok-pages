@@ -339,6 +339,10 @@ const routes: Routes = [
     path: 'consent-docs',
     loadChildren: () => import('./consent-docs/consent-docs.module').then( m => m.ConsentDocsPageModule)
   },
+  {
+    path: 'consent-document1',
+    loadChildren: () => import('./consent-document1/consent-document1.module').then( m => m.ConsentDocument1PageModule)
+  },
 ];
 
 @NgModule({

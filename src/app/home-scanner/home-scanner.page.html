@@ -12,7 +12,7 @@
     </ion-title>
     <ion-buttons slot="end">
       <ion-button color="primary" routerLink="/profile-home" routerDirection="root" fill="clear">
-        <ion-icon name="notifications-outline" color="light"></ion-icon>
+        <ion-icon name="paper-plane-outline" color="primary"></ion-icon>
       </ion-button>
     </ion-buttons>
   </ion-toolbar>
@@ -37,29 +37,32 @@
   </ion-row>-->
 
   <ion-fab vertical="bottom" horizontal="center" slot="fixed" edge>
-    <ion-label class="fab-label" color="light">Safety<br/>PASS</ion-label>
-    <ion-fab-button routerLink="/view-hc-status">
-      <ion-icon name="qr-code-outline"></ion-icon>
+    <ion-fab-button>
+      <ion-icon class="icon-fab" name="logo-usd"></ion-icon>
     </ion-fab-button>
-    <!-- <ion-fab-list side="top">
-      <ion-fab-button color="light" routerLink="/view-hc-status">
-        <ion-icon name="qr-code-outline" color="primary"></ion-icon>
+    <ion-fab-list side="top">
+      <ion-fab-button color="light" routerLink="/profile-home">
+        <ion-icon name="arrow-down-outline" color="primary"></ion-icon>
       </ion-fab-button>
-      <ion-label class="aer-label" color="light">Health<br/>Check</ion-label>
-    </ion-fab-list> -->
+      <ion-label class="aer-label" color="light">Request</ion-label>
+      <ion-fab-button color="light" routerLink="/profile-home">
+        <ion-icon name="arrow-up-outline" color="primary"></ion-icon>
+      </ion-fab-button>
+      <ion-label class="aer-label" color="light">Send</ion-label>
+    </ion-fab-list>
   </ion-fab>
 </ion-content>
 <ion-footer translucent="true">
   <ion-toolbar>
   <ion-buttons slot="start" class="ion-margin-bottom">
     <ion-button href="https://www.aerpass.com/safetypass">
-      <ion-icon src="/assets/shield-cross-outline.svg" color="safetypass"></ion-icon>
+      <ion-icon name="compass-outline" color="light"></ion-icon>
       <ion-label color="light">&nbsp;&nbsp;Check In</ion-label>
     </ion-button>
   </ion-buttons>
   <ion-buttons slot="end" class="ion-margin-bottom">
     <ion-button routerLink="/passes-modal">
-      <ion-icon src="/assets/A-symbol.svg" color="primary"></ion-icon>
+      <ion-icon name="qr-code-outline" color="light"></ion-icon>
       <ion-label color="light">&nbsp;&nbsp;Passes&nbsp;&nbsp;</ion-label>
     </ion-button>
   </ion-buttons>
