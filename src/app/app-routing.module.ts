@@ -343,6 +343,38 @@ const routes: Routes = [
     path: 'consent-document1',
     loadChildren: () => import('./consent-document1/consent-document1.module').then( m => m.ConsentDocument1PageModule)
   },
+  {
+    path: 'app-store',
+    loadChildren: () => import('./app-store/app-store.module').then( m => m.AppStorePageModule)
+  },
+  {
+    path: 'app-store-open',
+    loadChildren: () => import('./app-store-open/app-store-open.module').then( m => m.AppStoreOpenPageModule)
+  },
+  {
+    path: 'app-browser',
+    loadChildren: () => import('./app-browser/app-browser.module').then( m => m.AppBrowserPageModule)
+  },
+  {
+    path: 'app-browser-restmenu',
+    loadChildren: () => import('./app-browser-restmenu/app-browser-restmenu.module').then( m => m.AppBrowserRestmenuPageModule)
+  },
+  {
+    path: 'app-browser-spnet',
+    loadChildren: () => import('./app-browser-spnet/app-browser-spnet.module').then( m => m.AppBrowserSpnetPageModule)
+  },
+  {
+    path: 'app-email-client-verify',
+    loadChildren: () => import('./app-email-client-verify/app-email-client-verify.module').then( m => m.AppEmailClientVerifyPageModule)
+  },
+  {
+    path: 'app-email-client-find',
+    loadChildren: () => import('./app-email-client-find/app-email-client-find.module').then( m => m.AppEmailClientFindPageModule)
+  },
+  {
+    path: 'app-email-client-get',
+    loadChildren: () => import('./app-email-client-get/app-email-client-get.module').then( m => m.AppEmailClientGetPageModule)
+  },
 ];
 
 @NgModule({

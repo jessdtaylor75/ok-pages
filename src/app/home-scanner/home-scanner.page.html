@@ -24,9 +24,59 @@
   </ion-row>
 
   <div class="hv-center">
-    <ion-button expand="block" class="pad20" routerLink="/login-auth">Login with AerPass</ion-button><br/>
-    <ion-button expand="block" class="pad20" routerLink="/payment-auth">Pay with AerPass</ion-button><br/>
-    <ion-button expand="block" class="pad20" color="safetypass" routerLink="/hc-result">Scan Safety PASS</ion-button>
+    <ion-slides style="width: 100%">
+      <ion-slide>
+        <div class="ion-text-center">
+          <ion-row class="ion-justify-content-center">
+            <div class="display-qr">
+              <img src="/assets/ap-login-auth-qr.svg" routerLink="/login-auth" />
+            </div>
+          </ion-row>
+          <div>
+            <ion-text class="text-smallest">Scan QR Code to Login</ion-text>
+          </div>
+        </div>
+      </ion-slide>
+
+      <ion-slide>
+        <div class="ion-text-center">
+          <ion-row class="ion-justify-content-center">
+            <div class="display-qr">
+              <img src="/assets/ap-payment-auth-qr.svg" routerLink="/payment-auth" />
+            </div>
+          </ion-row>
+          <div>
+            <ion-text class="text-smallest">Scan QR Code to Pay</ion-text>
+          </div>
+        </div>
+      </ion-slide>
+
+      <ion-slide>
+        <div class="ion-text-center">
+          <ion-row class="ion-justify-content-center">
+            <div class="display-qr">
+              <img src="/assets/ap-safety-pass-result-qr.svg" routerLink="/hc-result" />
+            </div>
+          </ion-row>
+          <div>
+            <ion-text class="text-smallest">Scan QR Code for Status</ion-text>
+          </div>
+        </div>
+      </ion-slide>
+
+      <ion-slide>
+        <div class="ion-text-center">
+          <ion-row class="ion-justify-content-center">
+            <div class="display-qr">
+              <img src="/assets/app-browser-menu-slanted-door-qr.svg" routerLink="/app-browser-restmenu" />
+            </div>
+          </ion-row>
+          <div>
+            <ion-text class="text-smallest">Scan QR Code for Menu</ion-text>
+          </div>
+        </div>
+      </ion-slide>
+    </ion-slides>
   </div>
 
   <!--<ion-row class="lower-third ion-justify-content-center">
@@ -59,7 +109,7 @@
 <ion-footer translucent="true">
   <ion-toolbar>
   <ion-buttons slot="start" class="ion-margin-bottom">
-    <ion-button href="https://www.aerpass.com/safetypass">
+    <ion-button routerLink="/app-browser">
       <ion-icon name="compass-outline" color="primary"></ion-icon>
       <ion-label color="primary">&nbsp;&nbsp;Check In</ion-label>
     </ion-button>
