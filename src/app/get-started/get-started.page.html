@@ -17,17 +17,6 @@
             Let's get started
           </ion-text>
         </ion-row>
-        <ion-row class="pad20">
-          <ion-text class="text">&nbsp;&nbsp;</ion-text>
-        </ion-row>
-        <ion-row class="pad20">
-          <ion-text class="text">&nbsp;&nbsp;</ion-text>
-        </ion-row>
-        <ion-toolbar color="primary">
-          <ion-button expand="block" color="primary" class="pad15" routerLink="/biometrics">
-            Skip Intro & Setup Account
-          </ion-button>
-        </ion-toolbar>
       </ion-grid>
     </ion-slide>
     <ion-slide>
@@ -87,15 +76,14 @@
             <li>Access to AerPass is linked to your device biometrics.</li>
           </ul>
         </ion-row>
-        <ion-row class="pad20">
-          <ion-text>&nbsp;&nbsp;</ion-text>
-        </ion-row>
-        <ion-toolbar color="primary">
-          <ion-button expand="block" color="light" class="pad15" routerLink="/biometrics">
-            Setup Account
-          </ion-button>
-        </ion-toolbar>
       </ion-grid>
     </ion-slide>
   </ion-slides>
 </ion-content>
+<ion-footer class="ion-no-border">
+  <ion-toolbar color="primary">
+    <ion-button expand="block" color="light" class="pad15 ion-margin-bottom" routerLink="/biometrics">
+      Activate AerPass
+    </ion-button>
+  </ion-toolbar>
+</ion-footer>

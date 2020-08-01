@@ -379,6 +379,10 @@ const routes: Routes = [
     path: 'app-browser-first-checkin',
     loadChildren: () => import('./app-browser-first-checkin/app-browser-first-checkin.module').then( m => m.AppBrowserFirstCheckinPageModule)
   },
+  {
+    path: 'app-browser-map',
+    loadChildren: () => import('./app-browser-map/app-browser-map.module').then( m => m.AppBrowserMapPageModule)
+  },
 ];
 
 @NgModule({
