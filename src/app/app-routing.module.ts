@@ -375,6 +375,10 @@ const routes: Routes = [
     path: 'app-email-client-get',
     loadChildren: () => import('./app-email-client-get/app-email-client-get.module').then( m => m.AppEmailClientGetPageModule)
   },
+  {
+    path: 'app-browser-first-checkin',
+    loadChildren: () => import('./app-browser-first-checkin/app-browser-first-checkin.module').then( m => m.AppBrowserFirstCheckinPageModule)
+  },
 ];
 
 @NgModule({
