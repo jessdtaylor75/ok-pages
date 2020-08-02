@@ -383,6 +383,14 @@ const routes: Routes = [
     path: 'app-browser-map',
     loadChildren: () => import('./app-browser-map/app-browser-map.module').then( m => m.AppBrowserMapPageModule)
   },
+  {
+    path: 'privacy-policy',
+    loadChildren: () => import('./privacy-policy/privacy-policy.module').then( m => m.PrivacyPolicyPageModule)
+  },
+  {
+    path: 'delete-account',
+    loadChildren: () => import('./delete-account/delete-account.module').then( m => m.DeleteAccountPageModule)
+  },
 ];
 
 @NgModule({
