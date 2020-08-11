@@ -391,6 +391,10 @@ const routes: Routes = [
     path: 'delete-account',
     loadChildren: () => import('./delete-account/delete-account.module').then( m => m.DeleteAccountPageModule)
   },
+  {
+    path: 'view-check-ins',
+    loadChildren: () => import('./view-check-ins/view-check-ins.module').then( m => m.ViewCheckInsPageModule)
+  },
 ];
 
 @NgModule({
