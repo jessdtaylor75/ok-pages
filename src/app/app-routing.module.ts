@@ -395,6 +395,10 @@ const routes: Routes = [
     path: 'view-check-ins',
     loadChildren: () => import('./view-check-ins/view-check-ins.module').then( m => m.ViewCheckInsPageModule)
   },
+  {
+    path: 'first-options',
+    loadChildren: () => import('./first-options/first-options.module').then( m => m.FirstOptionsPageModule)
+  },
 ];
 
 @NgModule({
