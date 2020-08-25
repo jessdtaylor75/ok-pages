@@ -399,6 +399,10 @@ const routes: Routes = [
     path: 'first-options',
     loadChildren: () => import('./first-options/first-options.module').then( m => m.FirstOptionsPageModule)
   },
+  {
+    path: 'verify-mobile-number-success',
+    loadChildren: () => import('./verify-mobile-number-success/verify-mobile-number-success.module').then( m => m.VerifyMobileNumberSuccessPageModule)
+  },
 ];
 
 @NgModule({
