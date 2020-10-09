@@ -1,6 +1,6 @@
 <ion-header class="ion-no-border">
   <ion-toolbar>
-    <ion-title>Create Smart ID</ion-title>
+    <ion-title>Create Account</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -19,23 +19,17 @@
 
   <ion-list>
     <ion-item>
-      <ion-label position="stacked" color="medium">Display name</ion-label>
-      <ion-input type="text" value=""></ion-input>
+      <ion-label position="floating" color="medium">Display name <ion-text color="danger">*</ion-text></ion-label>
+      <ion-input></ion-input>
     </ion-item>
     <ion-item>
-      <ion-label position="stacked" color="medium">Email address</ion-label>
-      <ion-input type="email" value="" email="true"></ion-input>
-    </ion-item>
-    <ion-item>
-      <ion-label position="stacked" color="medium">
-        Mobile number
-      </ion-label>
-      <ion-input type="text" value=""></ion-input>
+      <ion-label position="floating" color="medium">Email address <ion-text color="danger">*</ion-text></ion-label>
+      <ion-input type="email" email="true"></ion-input>
     </ion-item>
     <ion-item lines="none">
       <ion-icon name="alert-circle-outline" color="danger" slot="start"></ion-icon>
       <ion-text class="text-smallest" color="medium">
-        Your email address and mobile number must be verified in order to start using AerPass.
+        Your email address must be verified in order to start using AerPass.
       </ion-text>
     </ion-item>
   </ion-list>
@@ -44,10 +38,10 @@
 <ion-footer class="ion-no-border">
   <ion-toolbar>
     <ion-button expand="block" class="pad15 ion-margin-bottom" routerLink="/app-email-client-find">
-      Create Smart ID
+      Create Account
     </ion-button>
     <ion-button expand="block" class="pad15 ion-margin-bottom" color="hot" routerLink="/enter-email-error">
-      Recover Smart ID
+      Recover Account
     </ion-button>
   </ion-toolbar>
 </ion-footer>

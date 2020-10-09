@@ -411,6 +411,14 @@ const routes: Routes = [
     path: 'checkin-success',
     loadChildren: () => import('./checkin-success/checkin-success.module').then( m => m.CheckinSuccessPageModule)
   },
+  {
+    path: 'view-hc-alerts',
+    loadChildren: () => import('./view-hc-alerts/view-hc-alerts.module').then( m => m.ViewHcAlertsPageModule)
+  },
+  {
+    path: 'view-notifications',
+    loadChildren: () => import('./view-notifications/view-notifications.module').then( m => m.ViewNotificationsPageModule)
+  },
 ];
 
 @NgModule({
