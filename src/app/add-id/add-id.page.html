@@ -5,7 +5,7 @@
         <ion-label color="medium">Cancel</ion-label>
       </ion-button>
     </ion-buttons>
-    <ion-title>Add Persona</ion-title>
+    <ion-title>Add Identity</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -24,16 +24,17 @@
 
   <ion-list>
     <ion-item>
-      <ion-label position="stacked" color="medium">Persona name</ion-label>
+      <ion-label position="stacked" color="medium">Identity name</ion-label>
       <ion-input type="text" value=""></ion-input>
     </ion-item>
     <ion-item>
       <ion-label>Type</ion-label>
       <ion-select slot="end" value="01">
         <ion-select-option value="01">Personal</ion-select-option>
-        <ion-select-option value="02">Business</ion-select-option>
-        <ion-select-option value="03">School</ion-select-option>
-        <ion-select-option value="04">Other</ion-select-option>
+        <ion-select-option value="02">Professional</ion-select-option>
+        <ion-select-option value="03">Educational</ion-select-option>
+        <ion-select-option value="04">Government</ion-select-option>
+        <ion-select-option value="05">Other</ion-select-option>
       </ion-select>
     </ion-item>
     <ion-item>
@@ -52,7 +53,7 @@
 <ion-footer class="ion-no-border">
   <ion-toolbar>
     <ion-button expand="block" class="pad15 ion-margin-bottom" routerLink="/view-id-list">
-      Save Persona
+      Save Identity
     </ion-button>
   </ion-toolbar>
 </ion-footer>

@@ -403,6 +403,14 @@ const routes: Routes = [
     path: 'verify-mobile-number-success',
     loadChildren: () => import('./verify-mobile-number-success/verify-mobile-number-success.module').then( m => m.VerifyMobileNumberSuccessPageModule)
   },
+  {
+    path: 'profile-code',
+    loadChildren: () => import('./profile-code/profile-code.module').then( m => m.ProfileCodePageModule)
+  },
+  {
+    path: 'checkin-success',
+    loadChildren: () => import('./checkin-success/checkin-success.module').then( m => m.CheckinSuccessPageModule)
+  },
 ];
 
 @NgModule({

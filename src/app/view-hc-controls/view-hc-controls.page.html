@@ -4,65 +4,76 @@
       <ion-back-button defaultHref="/view-health-info"></ion-back-button>
     </ion-buttons>
     <ion-title color="safetypass">
-      Info & Settings
+      Settings
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <div class="ion-text-center">
-    <ion-row class="ion-justify-content-center">
-      <div class="partner-hero">
-        <ion-img src="/assets/logo-safety-pass-01.png"></ion-img>
-      </div>
-    </ion-row>
-    <div class="pad-top3">
-      <ion-text class="section-header" color="primary">How to Read Safety PASS Badges<br/><br/></ion-text>
-    </div>
-  </div>
+  <ion-row class="ion-justify-content-center">
+    <ion-icon name="settings-outline" color="primary" class="icon-larger"></ion-icon>
+  </ion-row>
   <ion-list>
+    <ion-list-header>Safe Space Requirements</ion-list-header>
     <ion-item>
-      <ion-label position="stacked" color="medium">Days between Negative results</ion-label>
-      <ion-range min="1" max="14" step="1" value="7" pin color="dark">
-        <ion-icon slot="start" color="success" name="checkmark-circle"></ion-icon>
-        <ion-icon slot="end" color="warning" name="warning"></ion-icon>
-      </ion-range>
+      <ion-text class="text-smallest">Configure the settings below to control how you want SafetyPASS to validate badges for your own space.</ion-text>
     </ion-item>
+    <ion-list-header>
+      <ion-text class="text-smallest">Vaccination Status</ion-text>
+    </ion-list-header>
     <ion-item>
       <ion-icon name="checkmark-done-circle" color="success" slot="start"></ion-icon>
-      <ion-label>Clear</ion-label><ion-text class="text-smallest" color="medium">Vaccinated</ion-text>
+      <ion-label>Vaccinated</ion-label>
+      <ion-toggle slot="end" name="antibodies" color="primary" disabled></ion-toggle>
     </ion-item>
+    <ion-list-header>
+      <ion-text class="text-smallest">Testing Status</ion-text>
+    </ion-list-header>
     <ion-item>
       <ion-icon name="checkmark-done-circle-outline" color="success" slot="start"></ion-icon>
-      <ion-label>Clear</ion-label><ion-text class="text-smallest" color="medium">With Antibodies</ion-text>
+      <ion-label>Positive for Antibodies</ion-label>
+      <ion-toggle slot="end" name="antibodies" color="primary" checked></ion-toggle>
     </ion-item>
     <ion-item>
       <ion-icon name="checkmark-circle" color="success" slot="start"></ion-icon>
-      <ion-label>Clear</ion-label><ion-text class="text-smallest" color="medium">Negative</ion-text>
+      <ion-label>Negative Virus Test</ion-label>
+      <ion-toggle slot="end" name="antibodies" color="primary" checked></ion-toggle>
     </ion-item>
     <ion-item>
       <ion-icon name="warning" color="warning" slot="start"></ion-icon>
-      <ion-label>Clear - [X] Days</ion-label><ion-text class="text-smallest" color="medium">Negative</ion-text>
+      <ion-label>
+        <ion-text class="text-smallest">Max age of Negative Test</ion-text>
+      </ion-label>
+      <ion-select slot="end" value="03">
+        <ion-select-option value="01">1 Day</ion-select-option>
+        <ion-select-option value="02">2 Days</ion-select-option>
+        <ion-select-option value="03">3 Days</ion-select-option>
+        <ion-select-option value="04">4 Days</ion-select-option>
+        <ion-select-option value="05">5 Days</ion-select-option>
+        <ion-select-option value="06">6 Days</ion-select-option>
+        <ion-select-option value="07">7 Days</ion-select-option>
+      </ion-select>
     </ion-item>
-    <ion-item>
-      <ion-icon name="warning" color="warning" slot="start"></ion-icon>
-      <ion-label>Pending</ion-label><ion-text class="text-smallest" color="medium">Follow-up Required</ion-text>
-    </ion-item>
-    <ion-item>
-      <ion-icon name="help-circle" color="hot" slot="start"></ion-icon>
-      <ion-label>Unknown</ion-label><ion-text class="text-smallest" color="medium">No Data Submitted</ion-text>
-    </ion-item>
-    <ion-item>
-      <ion-icon name="alert-circle" color="danger" slot="start"></ion-icon>
-      <ion-label>Restricted</ion-label><ion-text class="text-smallest" color="medium">Positive</ion-text>
-    </ion-item>
-    <ion-item>
-      <ion-icon name="alert-circle-outline" color="danger" slot="start"></ion-icon>
-      <ion-label>No Certificate</ion-label><ion-text class="text-smallest" color="medium">Certification Required</ion-text>
-    </ion-item>
+    <ion-list-header>
+      <ion-text class="text-smallest">Anonymous Exposure Notifications</ion-text>
+    </ion-list-header>
     <ion-item>
       <ion-icon src="/assets/shield-cross-outline.svg" color="safetypass" slot="start"></ion-icon>
-      <ion-label>Checked In</ion-label><ion-text class="text-smallest" color="medium">Checked in for Exposure Alerts</ion-text>
+      <ion-label>Exposure Notifications</ion-label>
+      <ion-toggle slot="end" name="antibodies" color="primary" checked></ion-toggle>
+    </ion-item>
+    <ion-list-header>
+      <ion-text class="text-smallest">Optional Safety Requirements</ion-text>
+    </ion-list-header>
+    <ion-item>
+      <ion-icon name="compass-outline" slot="start"></ion-icon>
+      <ion-label>Location Check-in</ion-label>
+      <ion-toggle slot="end" name="antibodies" color="primary"></ion-toggle>
+    </ion-item>
+    <ion-item>
+      <ion-icon name="help-circle-outline" slot="start"></ion-icon>
+      <ion-label>Symptom Questionnaire</ion-label>
+      <ion-toggle slot="end" name="antibodies" color="primary"></ion-toggle>
     </ion-item>
   </ion-list>
 

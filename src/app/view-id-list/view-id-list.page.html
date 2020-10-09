@@ -4,18 +4,25 @@
       <ion-back-button defaultHref="/profile-home"></ion-back-button>
     </ion-buttons>
     <ion-title>
-      AerPass Personas
+      AerPass Identities
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
   <ion-row class="ion-justify-content-center">
-    <ion-avatar class="profile-frame">
-      <img src="/assets/jess-taylor-profile.jpg" class="profile-pic">
-    </ion-avatar>
+    <div class="profile">
+      <ion-avatar class="profile-frame">
+        <img src="/assets/jess-taylor-profile.jpg" class="profile-pic" alt="Profile Pic">
+      </ion-avatar>
+      <div class="btn">
+        <ion-fab-button size="small" color="light" translucent="true" routerLink="/profile-code">
+          <ion-icon name="qr-code-outline" color="primary"></ion-icon>
+        </ion-fab-button>
+      </div>
+    </div>
   </ion-row>
-  <ion-text class="section-header" color="primary">Display Name<br/><br/></ion-text>
+  <ion-text class="section-header" color="primary">&nbsp;&nbsp;<br/>Display Name<br/><br/></ion-text>
   <ion-list>
     <ion-item detail routerLink="/view-id">
         <ion-avatar>
