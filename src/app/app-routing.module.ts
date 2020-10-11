@@ -419,6 +419,10 @@ const routes: Routes = [
     path: 'view-notifications',
     loadChildren: () => import('./view-notifications/view-notifications.module').then( m => m.ViewNotificationsPageModule)
   },
+  {
+    path: 'hc-access-scanner',
+    loadChildren: () => import('./hc-access-scanner/hc-access-scanner.module').then( m => m.HcAccessScannerPageModule)
+  },
 ];
 
 @NgModule({
