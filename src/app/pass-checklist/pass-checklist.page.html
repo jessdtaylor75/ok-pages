@@ -1,0 +1,57 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/passes-modal"></ion-back-button>
+    </ion-buttons>
+    <ion-title color="safetypass">
+      SafetyPASS Checklist
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-row class="ion-justify-content-center">
+    <ion-icon src="/assets/shield-cross-outline.svg" color="safetypass" class="icon-larger"></ion-icon>
+  </ion-row>
+  <ion-list>
+    <ion-list-header>Safe Space Requirements</ion-list-header>
+    <ion-item>
+      <ion-text class="text-smallest">The following actions must be completed prior to arrival in order to gain entry.</ion-text>
+    </ion-item>
+    <!--<ion-list-header>
+      <ion-text class="text-smallest">Vaccination Status</ion-text>
+    </ion-list-header>
+    <ion-item>
+      <ion-icon name="checkmark-done-circle" color="success"></ion-icon>
+      <ion-label class="ion-padding-start">Vaccinated</ion-label>
+      <ion-toggle slot="end" name="antibodies" color="primary" disabled></ion-toggle>
+    </ion-item>-->
+    <ion-list-header>
+      <ion-text class="text-smallest">Health Status</ion-text>
+    </ion-list-header>
+    <ion-item>
+      <ion-checkbox checked="true" color="primary"></ion-checkbox>
+      <ion-label class="ion-padding-start">Negative Virus Test</ion-label>
+      <ion-note class="text-smallest" color="safetypass">Max age: 3 Days</ion-note>
+    </ion-item>
+    <ion-list-header>
+      <ion-text class="text-smallest">Anonymous Exposure Alerts</ion-text>
+    </ion-list-header>
+    <ion-item>
+      <ion-checkbox checked="true" color="primary"></ion-checkbox>
+      <ion-label class="ion-padding-start">Enrolled for Exposure Alerts</ion-label>
+    </ion-item>
+    <ion-list-header>
+      <ion-text class="text-smallest">Optional Actions</ion-text>
+    </ion-list-header>
+    <ion-item>
+      <ion-checkbox color="primary"></ion-checkbox>
+      <ion-label class="ion-padding-start">Location Check-in</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-checkbox color="primary"></ion-checkbox>
+      <ion-label class="ion-padding-start">Symptom Questionnaire</ion-label>
+    </ion-item>
+  </ion-list>
+
+</ion-content>

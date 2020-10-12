@@ -423,6 +423,10 @@ const routes: Routes = [
     path: 'hc-access-scanner',
     loadChildren: () => import('./hc-access-scanner/hc-access-scanner.module').then( m => m.HcAccessScannerPageModule)
   },
+  {
+    path: 'pass-checklist',
+    loadChildren: () => import('./pass-checklist/pass-checklist.module').then( m => m.PassChecklistPageModule)
+  },
 ];
 
 @NgModule({
