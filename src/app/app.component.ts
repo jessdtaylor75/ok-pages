@@ -19,7 +19,7 @@ export class AppComponent {
     {
       title: 'Profile',
       url: '/profile-home',
-      icon: 'home'
+      src: '/assets/A-symbol.svg'
     },
     {
       title: 'Personal Info',
@@ -27,23 +27,18 @@ export class AppComponent {
       icon: 'person-circle-outline'
     },
     {
-      title: 'Verify Email Address',
-      url: '/scan-email',
-      icon: 'scan'
-    },
-    {
-      title: 'Verify ID',
-      url: '/verify-identity',
-      src: '/assets/A-symbol.svg'
-    },
-    {
-      title: 'Authorize Login / Payment',
+      title: 'Scan to Login / Pay',
       url: '/home-scanner',
-      icon: 'qr-code-outline'
+      icon: 'scan-outline'
+    },
+    {
+      title: 'Safe Access Scanner',
+      url: '/hc-access-scanner',
+      icon: 'scan-outline'
     },
     {
       title: 'Terms & Conditions',
-      url: '/terms-and-conditions',
+      url: '/legal-agreements',
       icon: 'document-text-outline'
     },
     {
