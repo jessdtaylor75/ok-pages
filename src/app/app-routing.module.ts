@@ -427,6 +427,14 @@ const routes: Routes = [
     path: 'pass-checklist',
     loadChildren: () => import('./pass-checklist/pass-checklist.module').then( m => m.PassChecklistPageModule)
   },
+  {
+    path: 'order-test',
+    loadChildren: () => import('./order-test/order-test.module').then( m => m.OrderTestPageModule)
+  },
+  {
+    path: 'test-location',
+    loadChildren: () => import('./test-location/test-location.module').then( m => m.TestLocationPageModule)
+  },
 ];
 
 @NgModule({

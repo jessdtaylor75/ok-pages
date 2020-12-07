@@ -1,0 +1,59 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/view-health-info"></ion-back-button>
+    </ion-buttons>
+    <ion-title color="safetypass">
+      Order Test
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="hv-center">
+    <ion-item lines="none" color="transparent" class="ion-align-items-baseline">
+      <ion-avatar class="merchant-logo">
+        <img src="/assets/aerpass-merchant-logo.png" alt="Merchant Logo">
+      </ion-avatar>
+      <ion-label class="ion-padding-start">
+        AerPass
+      </ion-label>
+      <ion-note slot="end" class="ion-text-end">
+        Details&nbsp;
+        <ion-icon name="chevron-down-outline"></ion-icon>
+      </ion-note>
+    </ion-item>
+    <ion-row class="ion-justify-content-center">
+      <div class="purchase-hero">
+        <ion-img src="/assets/ab-carestart.png"></ion-img>
+      </div>
+    </ion-row>
+    <ion-text class="section-header" color="primary">CareStart Rapid Antigen Test</ion-text>
+    <ion-row class="ion-justify-content-center">
+      <text class="text-large">$25.00</text>
+    </ion-row>
+    <ion-item class="ion-margin-top" lines="none" detail routerLink="/test-location">
+      <ion-label>
+        <div class="field-label">Testing Location</div>
+        CVS Pharmacy<br>
+        <ion-text class="text-smallest">123 4th Ave<br>New York, NY 10001&nbsp;&nbsp;&nbsp;USA</ion-text>
+      </ion-label>
+    </ion-item>
+  </div>
+
+</ion-content>
+
+<ion-footer class="ion-no-border">
+  <ion-toolbar>
+    <ion-button expand="block" class="pad15 ion-margin-bottom" color="dark">
+      <ion-icon name="logo-apple"></ion-icon>
+      &nbsp;Pay
+    </ion-button>
+  </ion-toolbar>
+  <ion-toolbar>
+    <ion-button expand="block" class="pad15 ion-margin-bottom" routerLink="/payment-auth">
+      <ion-icon src="/assets/A-symbol.svg"></ion-icon>
+      &nbsp;&nbsp;Money
+    </ion-button>
+  </ion-toolbar>
+</ion-footer>

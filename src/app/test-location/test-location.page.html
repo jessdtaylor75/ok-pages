@@ -1,0 +1,81 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/payment-auth"></ion-back-button>
+    </ion-buttons>
+    <ion-title color="safetypass">
+      Choose Location
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-row class="ion-padding">
+    <H2>Select your testing location</H2>
+    <ion-text class="text-smaller">You will be notified when your test kit arrives.</ion-text>
+  </ion-row>
+  <ion-row class="ion-justify-content-center">
+    <ion-toolbar>
+      <ion-segment value="list">
+        <ion-segment-button value="list">
+          <ion-label>View List</ion-label>
+        </ion-segment-button>
+        <ion-segment-button value="map">
+          <ion-label>View Map</ion-label>
+        </ion-segment-button>
+      </ion-segment>
+    </ion-toolbar>
+  </ion-row>
+  <ion-list>
+    <ion-item routerLink="/order-test">
+      <ion-label>
+        <div class="field-label">1.1 Miles</div>
+        CVS Pharmacy<br>
+        <ion-text class="text-smallest">123 4th Ave<br>New York, NY 10001&nbsp;&nbsp;&nbsp;USA</ion-text>
+      </ion-label>
+    </ion-item>
+    <ion-item routerLink="/order-test">
+      <ion-label>
+        <div class="field-label">1.1 Miles</div>
+        CVS Pharmacy<br>
+        <ion-text class="text-smallest">123 4th Ave<br>New York, NY 10001&nbsp;&nbsp;&nbsp;USA</ion-text>
+      </ion-label>
+    </ion-item>
+    <ion-item detail routerLink="/order-test">
+      <ion-label>
+        <div class="field-label">1.4 Miles</div>
+        CVS Pharmacy<br>
+        <ion-text class="text-smallest">123 4th Ave<br>New York, NY 10001&nbsp;&nbsp;&nbsp;USA</ion-text>
+      </ion-label>
+    </ion-item>
+    <ion-item detail routerLink="/order-test">
+      <ion-label>
+        <div class="field-label">1.8 Miles</div>
+        CVS Pharmacy<br>
+        <ion-text class="text-smallest">123 4th Ave<br>New York, NY 10001&nbsp;&nbsp;&nbsp;USA</ion-text>
+      </ion-label>
+    </ion-item>
+    <ion-item detail routerLink="/order-test">
+      <ion-label>
+        <div class="field-label">2.1 Miles</div>
+        CVS Pharmacy<br>
+        <ion-text class="text-smallest">123 4th Ave<br>New York, NY 10001&nbsp;&nbsp;&nbsp;USA</ion-text>
+      </ion-label>
+    </ion-item>
+    <ion-item detail routerLink="/order-test">
+      <ion-label>
+        <div class="field-label">2.5 Miles</div>
+        CVS Pharmacy<br>
+        <ion-text class="text-smallest">123 4th Ave<br>New York, NY 10001&nbsp;&nbsp;&nbsp;USA</ion-text>
+      </ion-label>
+    </ion-item>
+    <ion-item detail routerLink="/order-test">
+      <ion-label>
+        <div class="field-label">3.2 Miles</div>
+        CVS Pharmacy<br>
+        <ion-text class="text-smallest">123 4th Ave<br>New York, NY 10001&nbsp;&nbsp;&nbsp;USA</ion-text>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+
+</ion-content>
