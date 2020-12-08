@@ -435,6 +435,14 @@ const routes: Routes = [
     path: 'test-location',
     loadChildren: () => import('./test-location/test-location.module').then( m => m.TestLocationPageModule)
   },
+  {
+    path: 'vaccine-signup',
+    loadChildren: () => import('./vaccine-signup/vaccine-signup.module').then( m => m.VaccineSignupPageModule)
+  },
+  {
+    path: 'vaccine-success',
+    loadChildren: () => import('./vaccine-success/vaccine-success.module').then( m => m.VaccineSuccessPageModule)
+  },
 ];
 
 @NgModule({
