@@ -443,6 +443,10 @@ const routes: Routes = [
     path: 'vaccine-success',
     loadChildren: () => import('./vaccine-success/vaccine-success.module').then( m => m.VaccineSuccessPageModule)
   },
+  {
+    path: 'add-card',
+    loadChildren: () => import('./add-card/add-card.module').then( m => m.AddCardPageModule)
+  },
 ];
 
 @NgModule({

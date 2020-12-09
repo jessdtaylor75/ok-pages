@@ -16,19 +16,28 @@
   <ion-list>
     <ion-list-header>Safe Space Requirements</ion-list-header>
     <ion-item>
-      <ion-text class="text-smallest">The following actions must be completed prior to arrival in order to gain entry.</ion-text>
+      <ion-text class="text-smallest">The following requirements must be met prior to arrival in order to gain entry.</ion-text>
     </ion-item>
-    <!--<ion-list-header>
+    <ion-list-header>
       <ion-text class="text-smallest">Vaccination Status</ion-text>
     </ion-list-header>
     <ion-item>
-      <ion-icon name="checkmark-done-circle" color="success"></ion-icon>
+      <ion-checkbox checked="true" color="primary"></ion-checkbox>
       <ion-label class="ion-padding-start">Vaccinated</ion-label>
-      <ion-toggle slot="end" name="antibodies" color="primary" disabled></ion-toggle>
-    </ion-item>-->
+    </ion-item>
+    <ion-item lines="none" class="ion-text-center">
+      <ion-label>
+        <ion-text class="text-smallest">- OR -</ion-text>
+      </ion-label>
+    </ion-item>
     <ion-list-header>
       <ion-text class="text-smallest">Health Status</ion-text>
     </ion-list-header>
+    <ion-item>
+      <ion-checkbox checked="true" color="primary"></ion-checkbox>
+      <ion-label class="ion-padding-start">Recovered with Antibodies</ion-label>
+      <ion-note class="text-smallest">- OR -</ion-note>
+    </ion-item>
     <ion-item>
       <ion-checkbox checked="true" color="primary"></ion-checkbox>
       <ion-label class="ion-padding-start">Negative Virus Test</ion-label>
