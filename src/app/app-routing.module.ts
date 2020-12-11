@@ -447,6 +447,10 @@ const routes: Routes = [
     path: 'add-card',
     loadChildren: () => import('./add-card/add-card.module').then( m => m.AddCardPageModule)
   },
+  {
+    path: 'my-hc-status',
+    loadChildren: () => import('./my-hc-status/my-hc-status.module').then( m => m.MyHcStatusPageModule)
+  },
 ];
 
 @NgModule({

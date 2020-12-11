@@ -14,7 +14,7 @@
     <ion-icon name="settings-outline" color="primary" class="icon-larger"></ion-icon>
   </ion-row>
   <ion-list>
-    <ion-list-header>Safe Space Requirements</ion-list-header>
+    <ion-list-header>Safe Access Requirements</ion-list-header>
     <ion-item>
       <ion-text class="text-smallest">Configure the settings below to control how you want SafetyPASS to validate badges for your safe space.</ion-text>
     </ion-item>
@@ -26,19 +26,12 @@
       <ion-label class="ion-padding-start">Vaccinated</ion-label>
       <ion-toggle slot="end" name="vaccinated" color="primary" checked></ion-toggle>
     </ion-item>
-    <ion-item lines="none" class="ion-text-center">
-      <ion-label>
-        <ion-text class="text-smallest">- OR -</ion-text>
-      </ion-label>
-    </ion-item>
+    <ion-row class="ion-justify-content-center">
+      <ion-text class="text-smallest">- OR -</ion-text>
+    </ion-row>
     <ion-list-header>
       <ion-text class="text-smallest">Testing Status</ion-text>
     </ion-list-header>
-    <ion-item>
-      <ion-icon name="checkmark-done-circle-outline" color="success"></ion-icon>
-      <ion-label class="ion-padding-start">Recovered with Antibodies</ion-label>
-      <ion-toggle slot="end" name="antibodies" color="primary" checked></ion-toggle>
-    </ion-item>
     <ion-item>
       <ion-icon name="checkmark-circle" color="success"></ion-icon>
       <ion-label class="ion-padding-start">Negative Virus Test</ion-label>
@@ -59,26 +52,32 @@
         <ion-select-option value="07">7 Days</ion-select-option>
       </ion-select>
     </ion-item>
+    <ion-row class="ion-justify-content-center">
+      <ion-text class="text-smallest">- OR -</ion-text>
+    </ion-row>
+    <ion-item>
+      <ion-icon name="checkmark-done-circle-outline" color="success"></ion-icon>
+      <ion-label class="ion-padding-start">Recovered</ion-label>
+      <ion-toggle slot="end" name="recovered" color="primary" checked></ion-toggle>
+    </ion-item>
+    <ion-row class="ion-justify-content-center">
+      <ion-text class="text-smallest">- AND -</ion-text>
+    </ion-row>
     <ion-list-header>
       <ion-text class="text-smallest">Anonymous Exposure Alerts</ion-text>
     </ion-list-header>
     <ion-item>
       <ion-icon name="alert-circle-outline"></ion-icon>
-      <ion-label class="ion-padding-start">Exposure Alerts</ion-label>
+      <ion-label class="ion-padding-start">Enrolled for Alerts</ion-label>
       <ion-toggle slot="end" name="exposure" color="primary" checked></ion-toggle>
     </ion-item>
     <ion-list-header>
-      <ion-text class="text-smallest">Optional Safety Requirements</ion-text>
+      <ion-text class="text-smallest">Safe Paths</ion-text>
     </ion-list-header>
     <ion-item>
-      <ion-icon name="compass-outline"></ion-icon>
-      <ion-label class="ion-padding-start">Location Check-in</ion-label>
+      <ion-icon name="heart-circle-outline"></ion-icon>
+      <ion-label class="ion-padding-start">Safe Paths Activated</ion-label>
       <ion-toggle slot="end" name="location" color="primary"></ion-toggle>
-    </ion-item>
-    <ion-item>
-      <ion-icon name="help-circle-outline"></ion-icon>
-      <ion-label class="ion-padding-start">Symptom Questionnaire</ion-label>
-      <ion-toggle slot="end" name="questionnaire" color="primary"></ion-toggle>
     </ion-item>
     <ion-item lines="none" class="ion-padding-top ion-margin-end">
       <ion-text class="text-smallest" color="medium">
