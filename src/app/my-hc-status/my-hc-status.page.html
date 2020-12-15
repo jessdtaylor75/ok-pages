@@ -104,7 +104,7 @@
     <ion-item>
       <ion-icon name="alert-circle-outline"></ion-icon>
       <ion-label class="ion-padding-start">Enrolled for Alerts</ion-label>
-      <ion-toggle slot="end" name="location" color="primary" checked></ion-toggle>
+      <ion-checkbox slot="end" checked></ion-checkbox>
     </ion-item>
     <ion-list-header>
       <ion-text class="text-smallest">Safe Paths</ion-text>
@@ -112,7 +112,15 @@
     <ion-item>
       <ion-icon name="heart-circle-outline"></ion-icon>
       <ion-label class="ion-padding-start">Safe Paths Active</ion-label>
-      <ion-toggle slot="end" name="location" color="primary"></ion-toggle>
+      <ion-checkbox slot="end"></ion-checkbox>
     </ion-item>
   </ion-list>
 </ion-content>
+<ion-footer class="ion-no-border">
+  <ion-toolbar>
+    <ion-button expand="block" class="pad15 ion-margin-bottom">
+      <ion-icon name="reload-outline"></ion-icon>
+      &nbsp;&nbsp;Sync Health Check Data
+    </ion-button>
+  </ion-toolbar>
+</ion-footer>
