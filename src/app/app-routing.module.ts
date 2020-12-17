@@ -451,6 +451,10 @@ const routes: Routes = [
     path: 'my-hc-status',
     loadChildren: () => import('./my-hc-status/my-hc-status.module').then( m => m.MyHcStatusPageModule)
   },
+  {
+    path: 'connect-hc-test',
+    loadChildren: () => import('./connect-hc-test/connect-hc-test.module').then( m => m.ConnectHcTestPageModule)
+  },
 ];
 
 @NgModule({

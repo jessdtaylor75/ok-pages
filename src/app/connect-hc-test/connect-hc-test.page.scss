@@ -1,0 +1,43 @@
+$card-width: 85vw;
+$card-height: 55vw;
+
+.method {
+  background: url(/assets/aerpass-card.png) no-repeat center;
+  background-size: contain;
+  width: $card-width;
+  height: $card-height;
+  padding: 0 5vw 0 5vw;
+}
+
+.card-size {
+  width: $card-width;
+  height: $card-height;
+}
+
+.card-top {
+  height: $card-height - 12vw;
+}
+
+.profile-pic-auth {
+  width: 34vw;
+  height: 34vw;
+  border-radius: 50%;
+  border: .5vw solid var(--ion-color-light);
+  text-align: center;
+  display: inline-block;
+}
+
+.profile-frame-auth {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3vw;
+  width: 36vw;
+  height: 36vw;
+  border-radius: 50%;
+  border: .5vw solid var(--ion-color-light);
+}
+
+.auth-page-sp {
+  --background: url(/assets/Safety-PASS-hero.png) no-repeat center/cover fixed;
+}
