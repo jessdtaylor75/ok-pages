@@ -24,7 +24,7 @@
     <ion-item>
       <ion-icon name="checkmark-done-circle" color="success"></ion-icon>
       <ion-label class="ion-padding-start">Vaccinated</ion-label>
-      <ion-toggle slot="end" name="vaccinated" color="primary" checked></ion-toggle>
+      <ion-icon name="checkmark-circle" color="success" slot="end"></ion-icon>
     </ion-item>
     <ion-row class="ion-justify-content-center">
       <ion-text class="text-smallest">- OR -</ion-text>
@@ -33,7 +33,7 @@
       <ion-text class="text-smallest">Testing Status</ion-text>
     </ion-list-header>
     <ion-item>
-      <ion-icon name="checkmark-circle" color="success"></ion-icon>
+      <ion-icon name="checkmark-circle-outline" color="success"></ion-icon>
       <ion-label class="ion-padding-start">Negative Virus Test</ion-label>
       <ion-toggle slot="end" name="negative" color="primary" checked></ion-toggle>
     </ion-item>
@@ -69,7 +69,7 @@
     <ion-item>
       <ion-icon name="alert-circle-outline"></ion-icon>
       <ion-label class="ion-padding-start">Enrolled for Alerts</ion-label>
-      <ion-toggle slot="end" name="exposure" color="primary" checked></ion-toggle>
+      <ion-toggle slot="end" name="exposure" color="primary"></ion-toggle>
     </ion-item>
     <ion-list-header>
       <ion-text class="text-smallest">Safe Paths</ion-text>
@@ -89,9 +89,8 @@
 </ion-content>
 <ion-footer class="ion-no-border">
   <ion-toolbar>
-    <ion-button expand="block" class="pad15 ion-margin-bottom" color="safetypass" routerLink="/my-hc-status">
-      <ion-icon src="/assets/shield-cross-outline.svg"></ion-icon>
-      &nbsp;&nbsp;View My Status
+    <ion-button expand="block" class="pad15 ion-margin-bottom" routerLink="/view-health-info">
+      Save Changes
     </ion-button>
   </ion-toolbar>
 </ion-footer>
