@@ -455,6 +455,10 @@ const routes: Routes = [
     path: 'connect-hc-test',
     loadChildren: () => import('./connect-hc-test/connect-hc-test.module').then( m => m.ConnectHcTestPageModule)
   },
+  {
+    path: 'qr-sample-data',
+    loadChildren: () => import('./qr-sample-data/qr-sample-data.module').then( m => m.QrSampleDataPageModule)
+  },
 ];
 
 @NgModule({

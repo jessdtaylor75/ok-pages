@@ -37,6 +37,11 @@ export class AppComponent {
       icon: 'scan-outline'
     },
     {
+      title: 'Sample QR Data',
+      url: '/qr-sample-data',
+      icon: 'qr-code-outline'
+    },
+    {
       title: 'Terms & Conditions',
       url: '/legal-agreements',
       icon: 'document-text-outline'
