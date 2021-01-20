@@ -459,6 +459,10 @@ const routes: Routes = [
     path: 'qr-sample-data',
     loadChildren: () => import('./qr-sample-data/qr-sample-data.module').then( m => m.QrSampleDataPageModule)
   },
+  {
+    path: 'home-map',
+    loadChildren: () => import('./home-map/home-map.module').then( m => m.HomeMapPageModule)
+  },
 ];
 
 @NgModule({
