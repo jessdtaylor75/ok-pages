@@ -1,18 +1,13 @@
 <ion-header class="ion-no-border">
   <ion-toolbar>
     <ion-buttons slot="start">
-      <ion-menu-button></ion-menu-button>
+      <ion-back-button defaultHref="/hc-patient-check-in"></ion-back-button>
     </ion-buttons>
     <ion-text class="ion-text-center">
       <ion-title class="ion-justify-content-center" color="primary">
-        Venue Mode
+        Patient Session
       </ion-title>
     </ion-text>
-    <ion-buttons slot="end">
-      <ion-button color="primary" routerLink="/view-notifications" routerDirection="root" fill="clear">
-        <ion-icon name="paper-plane-outline" color="primary"></ion-icon>
-      </ion-button>
-    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
@@ -22,18 +17,19 @@
   </ion-row>
   <ion-slides style="width: 100%">
     <ion-slide>
-      <ion-row class="ion-justify-content-center">
-        <ion-avatar class="venue-frame">
-          <img src="/assets/msg-1.jpg" class="venue-pic">
-        </ion-avatar>
-      </ion-row>
-    </ion-slide>
-    <ion-slide>
-      <ion-row class="ion-justify-content-center">
-        <ion-avatar class="venue-frame">
-          <img src="/assets/met-1.jpg" class="venue-pic">
-        </ion-avatar>
-      </ion-row>
+      <div>
+        <ion-row class="ion-justify-content-center">
+          <ion-avatar class="venue-frame">
+            <img src="/assets/jess-taylor-profile.jpg" class="venue-pic">
+          </ion-avatar>
+        </ion-row>
+        <ion-row class="ion-justify-content-center">
+          <ion-text color="primary"><br/>First Middle Surname</ion-text>
+        </ion-row>
+        <ion-row class="ion-justify-content-center">
+          <ion-text color="light" class="text-smaller">Diagnostic</ion-text>
+        </ion-row>
+      </div>
     </ion-slide>
   </ion-slides>
   <div class="v-center">
@@ -43,11 +39,24 @@
         <div class="ion-text-center">
           <ion-row class="ion-justify-content-center">
             <div class="display-qr">
-              <img src="/assets/ap-safety-pass-result-qr.svg" routerLink="/hc-result" />
+              <img src="/assets/ap-safety-pass-result-qr.svg" routerLink="/hc-confirm-sample" />
             </div>
           </ion-row>
           <div>
-            <ion-text class="text-smallest" color="primary">Scan QR Code to Validate</ion-text>
+            <ion-text class="text-smallest" color="primary">Scan Sample Code</ion-text>
+          </div>
+        </div>
+      </ion-slide>
+
+      <ion-slide>
+        <div class="ion-text-center">
+          <ion-row class="ion-justify-content-center">
+            <div class="display-qr">
+              <img src="/assets/ap-safety-pass-result-qr.svg" routerLink="/hc-confirm-vaccine" />
+            </div>
+          </ion-row>
+          <div>
+            <ion-text class="text-smallest" color="primary">Scan Vaccine Lot Code</ion-text>
           </div>
         </div>
       </ion-slide>
@@ -64,16 +73,16 @@
 <ion-footer translucent="true">
   <ion-toolbar>
     <ion-buttons slot="start" class="ion-margin-bottom">
-      <ion-button routerLink="/app-browser-map">
+      <!-- <ion-button routerLink="/app-browser-map">
         <ion-icon name="compass-outline" color="primary"></ion-icon>
         <ion-label color="primary">&nbsp;&nbsp;Check In</ion-label>
-      </ion-button>
+      </ion-button> -->
     </ion-buttons>
     <ion-buttons slot="end" class="ion-margin-bottom">
-      <ion-button routerLink="/passes-modal">
+      <!-- <ion-button routerLink="/passes-modal">
         <ion-icon name="qr-code-outline" color="primary"></ion-icon>
         <ion-label color="primary">&nbsp;&nbsp;Events&nbsp;&nbsp;</ion-label>
-      </ion-button>
+      </ion-button> -->
     </ion-buttons>
   </ion-toolbar>
 </ion-footer>

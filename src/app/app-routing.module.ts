@@ -463,6 +463,34 @@ const routes: Routes = [
     path: 'home-map',
     loadChildren: () => import('./home-map/home-map.module').then( m => m.HomeMapPageModule)
   },
+  {
+    path: 'hc-clinical-scanner',
+    loadChildren: () => import('./hc-clinical-scanner/hc-clinical-scanner.module').then( m => m.HcClinicalScannerPageModule)
+  },
+  {
+    path: 'hc-patient-check-in',
+    loadChildren: () => import('./hc-patient-check-in/hc-patient-check-in.module').then( m => m.HcPatientCheckInPageModule)
+  },
+  {
+    path: 'hc-vaccine-admin',
+    loadChildren: () => import('./hc-vaccine-admin/hc-vaccine-admin.module').then( m => m.HcVaccineAdminPageModule)
+  },
+  {
+    path: 'hc-enter-result',
+    loadChildren: () => import('./hc-enter-result/hc-enter-result.module').then( m => m.HcEnterResultPageModule)
+  },
+  {
+    path: 'hc-clinical-scanner-patient',
+    loadChildren: () => import('./hc-clinical-scanner-patient/hc-clinical-scanner-patient.module').then( m => m.HcClinicalScannerPatientPageModule)
+  },
+  {
+    path: 'hc-confirm-vaccine',
+    loadChildren: () => import('./hc-confirm-vaccine/hc-confirm-vaccine.module').then( m => m.HcConfirmVaccinePageModule)
+  },
+  {
+    path: 'hc-confirm-sample',
+    loadChildren: () => import('./hc-confirm-sample/hc-confirm-sample.module').then( m => m.HcConfirmSamplePageModule)
+  },
 ];
 
 @NgModule({

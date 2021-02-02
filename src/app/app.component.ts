@@ -32,8 +32,13 @@ export class AppComponent {
       icon: 'scan-outline'
     },
     {
-      title: 'Safe Access Scanner',
+      title: 'Venue Mode',
       url: '/hc-access-scanner',
+      icon: 'scan-outline'
+    },
+    {
+      title: 'Clinical Mode',
+      url: '/hc-clinical-scanner',
       icon: 'scan-outline'
     },
     {

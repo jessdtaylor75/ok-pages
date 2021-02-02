@@ -1,16 +1,16 @@
 <ion-header class="ion-no-border">
   <ion-toolbar>
     <ion-buttons slot="start">
-      <ion-back-button defaultHref="/view-health-info"></ion-back-button>
+      <ion-back-button defaultHref="/view-health-info">Done</ion-back-button>
     </ion-buttons>
     <ion-title color="safetypass">
-      Order Test
+      Get Tested
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-  <div class="v-center">
+<ion-content fullscreen="true">
+  <!-- <div class="v-center">
     <ion-row class="ion-justify-content-center">
       <div class="pad10">
         <ion-img src="/assets/ab-carestart.png"></ion-img>
@@ -42,11 +42,13 @@
         12:45 PM
       </ion-label>
     </ion-item>
+  </div> -->
+  <div>
+    <iframe src="https://safetypass.sandbox.webshield.io/" width="100%" height="812pt"></iframe>
   </div>
-
 </ion-content>
 
-<ion-footer class="ion-no-border">
+<!-- <ion-footer class="ion-no-border">
   <ion-toolbar>
     <ion-button expand="block" class="pad15 ion-margin-bottom" color="dark">
       <ion-icon name="logo-apple"></ion-icon>
@@ -59,4 +61,4 @@
       &nbsp;&nbsp;Money
     </ion-button>
   </ion-toolbar>
-</ion-footer>
+</ion-footer> -->

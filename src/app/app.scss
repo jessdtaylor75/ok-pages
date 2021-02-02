@@ -146,6 +146,26 @@ ion-menu-button {
   z-index: 9;
 }
 
+.venue-pic {
+  width: 28.5vw;
+  height: 28.5vw;
+  border-radius: 50%;
+  border: .5vw solid var(--ion-color-primary);
+  text-align: center;
+  display: inline-block;
+}
+
+.venue-frame {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  //margin-top: 3vw;
+  width: 30vw;
+  height: 30vw;
+  border-radius: 50%;
+  border: .5vw solid var(--ion-color-primary);
+}
+
 .display-qr {
   width: 56vw;
   height: 56vw;

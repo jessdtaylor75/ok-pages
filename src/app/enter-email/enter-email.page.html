@@ -27,15 +27,20 @@
     <ion-item lines="none">
       <ion-icon name="alert-circle-outline" color="danger" slot="start"></ion-icon>
       <ion-text class="text-smallest" color="medium">
-        Your email address must be verified in order to start using AerPass.
+        We must verify that you are in control of your email address in order to start using AerPass.
       </ion-text>
     </ion-item>
   </ion-list>
 
 </ion-content>
 <ion-footer class="ion-no-border">
+  <ion-row class="pad15">
+    <ion-text class="ion-text-justify">
+      Create your AerPass account, then check your email for the activation message.<br>
+    </ion-text>
+  </ion-row>
   <ion-toolbar>
-    <ion-button expand="block" class="pad15 ion-margin-bottom" routerLink="/app-email-client-find">
+    <ion-button expand="block" class="pad15 ion-margin-vertical" routerLink="/app-email-client-find">
       Create Account
     </ion-button>
     <!-- <ion-button expand="block" class="pad15 ion-margin-bottom" color="outline" routerLink="/enter-email-error">
