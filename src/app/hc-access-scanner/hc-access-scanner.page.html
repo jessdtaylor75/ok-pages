@@ -3,14 +3,10 @@
     <ion-buttons slot="start">
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
-    <ion-text class="ion-text-center">
-      <ion-title class="ion-justify-content-center" color="primary">
-        Venue Mode
-      </ion-title>
-    </ion-text>
+
     <ion-buttons slot="end">
       <ion-button color="primary" routerLink="/view-notifications" routerDirection="root" fill="clear">
-        <ion-icon name="paper-plane-outline" color="primary"></ion-icon>
+        <ion-icon name="notifications-outline" color="primary"></ion-icon>
       </ion-button>
     </ion-buttons>
   </ion-toolbar>
@@ -20,22 +16,24 @@
   <ion-row class="v-center">
     <img src="/assets/scanner-bg.png" alt="scanner">
   </ion-row>
-  <ion-slides style="width: 100%">
-    <ion-slide>
-      <ion-row class="ion-justify-content-center">
-        <ion-avatar class="venue-frame">
-          <img src="/assets/msg-1.jpg" class="venue-pic">
-        </ion-avatar>
-      </ion-row>
-    </ion-slide>
-    <ion-slide>
-      <ion-row class="ion-justify-content-center">
-        <ion-avatar class="venue-frame">
-          <img src="/assets/met-1.jpg" class="venue-pic">
-        </ion-avatar>
-      </ion-row>
-    </ion-slide>
-  </ion-slides>
+  <div class="hero-top">
+    <ion-slides>
+      <ion-slide>
+        <ion-row class="ion-justify-content-center">
+          <ion-avatar class="venue-frame">
+            <img src="/assets/msg-1.jpg" class="venue-pic">
+          </ion-avatar>
+        </ion-row>
+      </ion-slide>
+      <ion-slide>
+        <ion-row class="ion-justify-content-center">
+          <ion-avatar class="venue-frame">
+            <img src="/assets/met-1.jpg" class="venue-pic">
+          </ion-avatar>
+        </ion-row>
+      </ion-slide>
+    </ion-slides>
+  </div>
   <div class="v-center">
     <ion-slides style="width: 100%">
 

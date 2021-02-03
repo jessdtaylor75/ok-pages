@@ -2,6 +2,10 @@ ion-menu-button {
   color: var(--ion-color-primary);
 }
 
+ion-title {
+  color: var(--ion-color-primary);
+}
+
 .text-large {
   font-size: 2.4rem;
 }
@@ -193,6 +197,17 @@ ion-menu-button {
   top: 50%;
   transform: translateY(-50%);
   display: block;
+}
+
+.hero-top {
+  @extend .stretch;
+  padding: 0 15vw 0 15vw;
+  background-color: transparent;
+  position: absolute;
+  top: 3%;
+  //noinspection CssInvalidFunction
+  margin-top: env(safe-area-inset-top);
+  z-index: 2;
 }
 
 .upper-third {

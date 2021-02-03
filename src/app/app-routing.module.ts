@@ -491,6 +491,10 @@ const routes: Routes = [
     path: 'hc-confirm-sample',
     loadChildren: () => import('./hc-confirm-sample/hc-confirm-sample.module').then( m => m.HcConfirmSamplePageModule)
   },
+  {
+    path: 'success',
+    loadChildren: () => import('./success/success.module').then( m => m.SuccessPageModule)
+  },
 ];
 
 @NgModule({

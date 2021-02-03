@@ -3,11 +3,6 @@
     <ion-buttons slot="start">
       <ion-back-button defaultHref="/hc-patient-check-in"></ion-back-button>
     </ion-buttons>
-    <ion-text class="ion-text-center">
-      <ion-title class="ion-justify-content-center" color="primary">
-        Patient Session
-      </ion-title>
-    </ion-text>
   </ion-toolbar>
 </ion-header>
 
@@ -15,23 +10,19 @@
   <ion-row class="v-center">
     <img src="/assets/scanner-bg.png" alt="scanner">
   </ion-row>
-  <ion-slides style="width: 100%">
-    <ion-slide>
-      <div>
-        <ion-row class="ion-justify-content-center">
-          <ion-avatar class="venue-frame">
-            <img src="/assets/jess-taylor-profile.jpg" class="venue-pic">
-          </ion-avatar>
-        </ion-row>
-        <ion-row class="ion-justify-content-center">
-          <ion-text color="primary"><br/>First Middle Surname</ion-text>
-        </ion-row>
-        <ion-row class="ion-justify-content-center">
-          <ion-text color="light" class="text-smaller">Diagnostic</ion-text>
-        </ion-row>
-      </div>
-    </ion-slide>
-  </ion-slides>
+    <div class="hero-top">
+      <ion-row class="ion-justify-content-center">
+        <ion-avatar class="venue-frame">
+          <img src="/assets/jess-taylor-profile.jpg" class="venue-pic">
+        </ion-avatar>
+      </ion-row>
+      <ion-row class="section-header">
+        <ion-text color="primary">First Middle Surname</ion-text>
+      </ion-row>
+      <ion-row class="ion-justify-content-center">
+        <ion-text color="light" class="text-smaller">Diagnostic Test</ion-text>
+      </ion-row>
+    </div>
   <div class="v-center">
     <ion-slides style="width: 100%">
 
