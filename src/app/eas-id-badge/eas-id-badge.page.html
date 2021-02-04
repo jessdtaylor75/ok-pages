@@ -1,0 +1,62 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/eas-profile-home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>
+      ID Badge
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-row class="ion-justify-content-center">
+    <ion-avatar class="profile-frame">
+      <img src="/assets/jonathan-hare-profile.png" class="profile-pic">
+    </ion-avatar>
+  </ion-row>
+  <ion-text class="section-header" color="primary">Jonathan Hare<br/><br/></ion-text>
+
+  <div class="ion-text-center">
+    <ion-row class="ion-justify-content-center">
+      <div class="display-qr">
+        <img src="/assets/sp-code01.svg" />
+      </div>
+    </ion-row>
+    <div>
+      <ion-text class="text-smallest"><br/>Scan Code to Verify<br/><br/></ion-text>
+    </div>
+  </div>
+
+  <div class="ion-text-center">
+    <ion-row class="ion-justify-content-center">
+      <ion-toolbar>
+        <ion-segment value="display">
+          <ion-segment-button value="scan" routerLink="/eas-home-scanner">
+            <ion-label>Scan</ion-label>
+          </ion-segment-button>
+          <ion-segment-button value="display">
+            <ion-label>Display</ion-label>
+          </ion-segment-button>
+        </ion-segment>
+      </ion-toolbar>
+    </ion-row>
+    <ion-row class="ion-justify-content-evenly">
+      <ion-text>&nbsp;</ion-text>
+    </ion-row>
+    <ion-row class="ion-justify-content-evenly">
+      <ion-button shape="circle" fill="clear">
+        <ion-icon name="mail-outline"></ion-icon>
+      </ion-button>
+      <ion-button shape="circle" fill="clear">
+        <ion-icon name="share-outline"></ion-icon>
+      </ion-button>
+    </ion-row>
+  </div>
+
+  <ion-fab vertical="bottom" horizontal="center" slot="fixed">
+    <ion-fab-button routerLink="/eas-home-scanner" routerDirection="root">
+      <ion-icon class="icon-fab" name="close-outline"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+</ion-content>

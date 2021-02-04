@@ -499,6 +499,34 @@ const routes: Routes = [
     path: 'easy-access',
     loadChildren: () => import('./easy-access/easy-access.module').then( m => m.EasyAccessPageModule)
   },
+  {
+    path: 'eas-get-started',
+    loadChildren: () => import('./eas-get-started/eas-get-started.module').then( m => m.EasGetStartedPageModule)
+  },
+  {
+    path: 'eas-home-scanner',
+    loadChildren: () => import('./eas-home-scanner/eas-home-scanner.module').then( m => m.EasHomeScannerPageModule)
+  },
+  {
+    path: 'eas-profile-home',
+    loadChildren: () => import('./eas-profile-home/eas-profile-home.module').then( m => m.EasProfileHomePageModule)
+  },
+  {
+    path: 'eas-safetypass-badge',
+    loadChildren: () => import('./eas-safetypass-badge/eas-safetypass-badge.module').then( m => m.EasSafetypassBadgePageModule)
+  },
+  {
+    path: 'eas-my-sp-status',
+    loadChildren: () => import('./eas-my-sp-status/eas-my-sp-status.module').then( m => m.EasMySpStatusPageModule)
+  },
+  {
+    path: 'eas-id-badge',
+    loadChildren: () => import('./eas-id-badge/eas-id-badge.module').then( m => m.EasIdBadgePageModule)
+  },
+  {
+    path: 'eas-personal-info',
+    loadChildren: () => import('./eas-personal-info/eas-personal-info.module').then( m => m.EasPersonalInfoPageModule)
+  },
 ];
 
 @NgModule({
