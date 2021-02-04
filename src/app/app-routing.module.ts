@@ -495,6 +495,10 @@ const routes: Routes = [
     path: 'success',
     loadChildren: () => import('./success/success.module').then( m => m.SuccessPageModule)
   },
+  {
+    path: 'easy-access',
+    loadChildren: () => import('./easy-access/easy-access.module').then( m => m.EasyAccessPageModule)
+  },
 ];
 
 @NgModule({
