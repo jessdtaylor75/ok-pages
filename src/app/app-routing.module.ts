@@ -527,6 +527,10 @@ const routes: Routes = [
     path: 'eas-personal-info',
     loadChildren: () => import('./eas-personal-info/eas-personal-info.module').then( m => m.EasPersonalInfoPageModule)
   },
+  {
+    path: 'raven-get-started',
+    loadChildren: () => import('./raven-get-started/raven-get-started.module').then( m => m.RavenGetStartedPageModule)
+  },
 ];
 
 @NgModule({
