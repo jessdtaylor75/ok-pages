@@ -17,6 +17,11 @@ export class AppComponent {
       icon: 'play-outline'
     },
     {
+      title: 'RAVEN Onboarding',
+      url: '/raven-get-started',
+      src: '/assets/RavenBird.svg'
+    },
+    {
       title: 'Profile',
       url: '/profile-home',
       src: '/assets/A-symbol.svg'

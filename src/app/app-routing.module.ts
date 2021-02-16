@@ -531,6 +531,10 @@ const routes: Routes = [
     path: 'raven-get-started',
     loadChildren: () => import('./raven-get-started/raven-get-started.module').then( m => m.RavenGetStartedPageModule)
   },
+  {
+    path: 'hc-patient-modal',
+    loadChildren: () => import('./hc-patient-modal/hc-patient-modal.module').then( m => m.HcPatientModalPageModule)
+  },
 ];
 
 @NgModule({

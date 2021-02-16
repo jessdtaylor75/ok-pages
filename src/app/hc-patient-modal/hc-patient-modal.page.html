@@ -1,10 +1,12 @@
 <ion-header class="ion-no-border">
   <ion-toolbar>
     <ion-buttons slot="start">
-      <ion-back-button defaultHref="/hc-clinical-scanner"></ion-back-button>
+      <ion-button routerLink="/hc-clinical-scanner-patient" routerDirection="root">
+        <ion-icon name="close-outline"></ion-icon>
+      </ion-button>
     </ion-buttons>
     <ion-title>
-      Patient Check in
+      Patient Information
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -80,29 +82,5 @@
       <ion-label>Privacy & Data Sharing</ion-label>
     </ion-item>
   </ion-list>
-</ion-content>
 
-<ion-footer class="ion-no-border">
-  <div class="ion-text-center">
-    <ion-row class="ion-justify-content-center">
-      <ion-text class="ion-text-center">Appointment Type<br/>&nbsp;&nbsp;</ion-text>
-    </ion-row>
-    <ion-row class="ion-justify-content-center">
-      <ion-toolbar>
-        <ion-segment value="diagnostic">
-          <ion-segment-button value="diagnostic">
-            <ion-label>Diagnostic</ion-label>
-          </ion-segment-button>
-          <ion-segment-button value="vaccination">
-            <ion-label>Vaccination</ion-label>
-          </ion-segment-button>
-        </ion-segment>
-      </ion-toolbar>
-    </ion-row>
-  </div>
-  <ion-toolbar>
-    <ion-button expand="block" class="pad15 ion-margin-vertical" routerLink="/hc-clinical-scanner-patient">
-      Check in
-    </ion-button>
-  </ion-toolbar>
-</ion-footer>
+</ion-content>
