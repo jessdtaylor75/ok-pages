@@ -535,6 +535,14 @@ const routes: Routes = [
     path: 'hc-patient-modal',
     loadChildren: () => import('./hc-patient-modal/hc-patient-modal.module').then( m => m.HcPatientModalPageModule)
   },
+  {
+    path: 'app-email-appt-choose',
+    loadChildren: () => import('./app-email-appt-choose/app-email-appt-choose.module').then( m => m.AppEmailApptChoosePageModule)
+  },
+  {
+    path: 'app-email-appt-confirm',
+    loadChildren: () => import('./app-email-appt-confirm/app-email-appt-confirm.module').then( m => m.AppEmailApptConfirmPageModule)
+  },
 ];
 
 @NgModule({

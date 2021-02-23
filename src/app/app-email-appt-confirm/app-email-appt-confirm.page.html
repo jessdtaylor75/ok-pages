@@ -1,0 +1,78 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button color="medium" defaultHref="/app-email-client-find"></ion-back-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-button color="medium"><ion-icon name="archive-outline"></ion-icon></ion-button>
+      <ion-button color="medium"><ion-icon name="trash-outline"></ion-icon></ion-button>
+      <ion-button color="medium"><ion-icon name="mail-outline"></ion-icon></ion-button>
+      <ion-button color="medium"><ion-icon name="ellipsis-horizontal"></ion-icon></ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen="true">
+  <h4 class="ion-padding">COVID–19 Vaccine – Appointment Confirmed</h4>
+  <ion-item lines="none">
+    <ion-avatar slot="start">
+      <img src="/assets/aerpass-merchant-logo.png">
+    </ion-avatar>
+    <ion-label>
+      <div class="field-label">no-reply&nbsp;&nbsp;7:45 PM </div>
+      <div class="field-label">to username@aerpass.com</div>
+    </ion-label>
+    <ion-icon slot="end" name="ellipsis-horizontal"></ion-icon>
+  </ion-item>
+  <ion-row class="ion-padding">
+    <ion-text class="text-smallest">
+      <p>Hello AerPass User,</p>
+      <p>Your appointment to receive your COVID-19 vaccine is confirmed. Please use your <a routerLink="/app-store"><b>AerPass app</b></a> to check-in or bring this email with you to your appointment and make sure that the code below (black square image) and your appointment ID are accessible on your phone or visible on a printed copy.</p>
+    </ion-text>
+  </ion-row>
+  <ion-row class="pad20">
+    <ion-card routerLink="/app-store">
+      <img src="/assets/ap-validate-email-qr.png" />
+    </ion-card>
+  </ion-row>
+  <ion-row class="ion-padding">
+    <ion-text class="text-smallest">
+      <p>Scheduling Confirmation:</p>
+      <p><b>Name:</b> AerPass User<br/>
+      <b>Email:</b> username@aerpass.com<br/>
+      <b>Appointment ID:</b> 315428-K7P3S<br/>
+      <b>Clinic Location:</b><br/>
+        Cape May County-Avalon Community Hall<br/>
+        3001 Avalon Ave<br/>
+        Avalon, NJ 08202<br/>
+      <b>Start Time:</b> 4/05/2021 11:30 AM EST<br/>
+        <b>End Time:</b> 4/05/2021 11:45 AM EST</p>
+      <p>You can change your appointment by clicking on this <a href="">link</a><br/>
+        You can cancel your appointment by clicking on this <a href="">link</a></p>
+      <p>Thank you!</p>
+      <p>New Jersey Department of Health</p>
+    </ion-text>
+  </ion-row>
+  <ion-row class="ion-justify-content-center ion-margin-top">
+    <ion-icon class="icon-larger" src="/assets/A-symbol.svg" color="primary"></ion-icon>
+  </ion-row>
+
+</ion-content>
+
+<ion-footer class="ion-no-border ion-margin-bottom">
+  <ion-toolbar>
+    <ion-grid>
+      <ion-row>
+        <ion-col size="4">
+          <ion-button size="small" color="medium" fill="outline" expand="block"><ion-icon name="return-up-back-outline"></ion-icon>&nbsp;&nbsp;Reply</ion-button>
+        </ion-col>
+        <ion-col size="4">
+          <ion-button size="small" color="medium" fill="outline" expand="block"><ion-icon name="return-up-back-outline"></ion-icon>&nbsp;&nbsp;Reply all</ion-button>
+        </ion-col>
+        <ion-col size="4">
+          <ion-button size="small" color="medium" fill="outline" expand="block"><ion-icon name="return-up-forward-outline"></ion-icon>&nbsp;&nbsp;Forward</ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
+</ion-footer>

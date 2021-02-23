@@ -1,0 +1,81 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button color="medium" defaultHref="/app-email-client-find"></ion-back-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-button color="medium"><ion-icon name="archive-outline"></ion-icon></ion-button>
+      <ion-button color="medium"><ion-icon name="trash-outline"></ion-icon></ion-button>
+      <ion-button color="medium"><ion-icon name="mail-outline"></ion-icon></ion-button>
+      <ion-button color="medium"><ion-icon name="ellipsis-horizontal"></ion-icon></ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen="true">
+  <h4 class="ion-padding">COVID-19 Vaccine - Schedule Your Appointment</h4>
+  <ion-item lines="none">
+    <ion-avatar slot="start">
+      <img src="/assets/aerpass-merchant-logo.png">
+    </ion-avatar>
+    <ion-label>
+      <div class="field-label">no-reply&nbsp;&nbsp;7:45 PM </div>
+      <div class="field-label">to username@aerpass.com</div>
+    </ion-label>
+    <ion-icon slot="end" name="ellipsis-horizontal"></ion-icon>
+  </ion-item>
+  <ion-row class="ion-padding">
+    <ion-text class="text-smallest">
+      <p>Hello,</p>
+      <p>It is now time to schedule your appointment to get a COVID-19 vaccine.</p>
+      <p>Please select an option below to schedule your appointment. Once your appointment is scheduled, you will receive a confirmation email with your appointment details.</p>
+    </ion-text>
+  </ion-row>
+  <ion-row>
+    <ion-toolbar>
+      <ion-button expand="block" class="pad15" fill="outline" color="primary" routerLink="/payment-success">
+        <ion-label class="text-smallest">
+          Mon. 04/05/2021 - 11:30 AM
+        </ion-label>
+      </ion-button>
+      <ion-button expand="block" class="pad15" fill="outline" color="primary" routerLink="/payment-success">
+        <ion-label class="text-smallest">
+          Mon. 04/05/2021 - 1:30 PM
+        </ion-label>
+      </ion-button>
+      <ion-button expand="block" class="pad15" fill="outline" color="primary" routerLink="/payment-success">
+        <ion-label class="text-smallest">
+          Tues. 04/06/2021 - 9:30 AM
+        </ion-label>
+      </ion-button>
+      <ion-button expand="block" class="pad15" fill="outline" color="safetypass" routerLink="/payment-success">
+        <ion-icon name="calendar-outline" color="safetypass"></ion-icon>
+        <ion-label class="ion-padding-start text-smallest">
+          See Additional Appointments
+        </ion-label>
+      </ion-button>
+    </ion-toolbar>
+  </ion-row>
+  <ion-row class="ion-justify-content-center ion-margin-top">
+    <ion-icon class="icon-larger" src="/assets/A-symbol.svg" color="primary"></ion-icon>
+  </ion-row>
+
+</ion-content>
+
+<ion-footer class="ion-no-border ion-margin-bottom">
+  <ion-toolbar>
+    <ion-grid>
+      <ion-row>
+        <ion-col size="4">
+          <ion-button size="small" color="medium" fill="outline" expand="block"><ion-icon name="return-up-back-outline"></ion-icon>&nbsp;&nbsp;Reply</ion-button>
+        </ion-col>
+        <ion-col size="4">
+          <ion-button size="small" color="medium" fill="outline" expand="block"><ion-icon name="return-up-back-outline"></ion-icon>&nbsp;&nbsp;Reply all</ion-button>
+        </ion-col>
+        <ion-col size="4">
+          <ion-button size="small" color="medium" fill="outline" expand="block"><ion-icon name="return-up-forward-outline"></ion-icon>&nbsp;&nbsp;Forward</ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
+</ion-footer>
