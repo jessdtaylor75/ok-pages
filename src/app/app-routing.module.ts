@@ -543,6 +543,10 @@ const routes: Routes = [
     path: 'app-email-appt-confirm',
     loadChildren: () => import('./app-email-appt-confirm/app-email-appt-confirm.module').then( m => m.AppEmailApptConfirmPageModule)
   },
+  {
+    path: 'view-identity',
+    loadChildren: () => import('./view-identity/view-identity.module').then( m => m.ViewIdentityPageModule)
+  },
 ];
 
 @NgModule({

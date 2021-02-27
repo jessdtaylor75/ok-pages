@@ -17,40 +17,35 @@
   </ion-row>
   <ion-text class="section-header" color="primary">Display Name<br/><br/></ion-text>
 
-      <div class="ion-text-center">
-        <ion-row class="ion-justify-content-center">
-          <div class="display-qr">
-            <img src="/assets/sp-code01.svg" />
-          </div>
-        </ion-row>
-        <div>
-          <ion-text class="text-smallest"><br/>Scan Code to Verify<br/><br/></ion-text>
-        </div>
-      </div>
-
   <div class="ion-text-center">
     <ion-row class="ion-justify-content-center">
-      <ion-toolbar>
-        <ion-segment value="display">
-          <ion-segment-button value="scan" routerLink="/home-scanner">
-            <ion-label>Scan</ion-label>
-          </ion-segment-button>
-          <ion-segment-button value="display">
-            <ion-label>Display</ion-label>
-          </ion-segment-button>
-        </ion-segment>
-      </ion-toolbar>
+      <div class="display-qr">
+        <img src="/assets/sp-code01.svg" />
+      </div>
     </ion-row>
-    <ion-row class="ion-justify-content-evenly">
-      <ion-text>&nbsp;</ion-text>
-    </ion-row>
-    <ion-row class="ion-justify-content-evenly">
-      <ion-button shape="circle" fill="clear">
-        <ion-icon name="mail-outline"></ion-icon>
-      </ion-button>
-      <ion-button shape="circle" fill="clear">
-        <ion-icon name="share-outline"></ion-icon>
-      </ion-button>
-    </ion-row>
+    <div>
+      <ion-text class="text-smallest"><br/>Scan Code to Verify<br/><br/></ion-text>
+    </div>
   </div>
+
+  <ion-row class="lower-third ion-justify-content-center">
+    <ion-button expand="block" class="pad20" fill="outline" color="safetypass" routerLink="/view-hc-status">
+      <ion-icon src="/assets/shield-cross-outline.svg" color="safetypass"></ion-icon>
+      <ion-text>&nbsp;&nbsp;Display SafetyPASS</ion-text>
+    </ion-button>
+  </ion-row>
+
 </ion-content>
+
+<ion-footer class="ion-no-border ion-margin-bottom">
+  <ion-row class="ion-justify-content-evenly">
+    <ion-button shape="circle" fill="clear" routerLink="/view-identity">
+      <ion-icon name="caret-up-circle-outline"></ion-icon>
+      <ion-label class="ion-padding-start">View</ion-label>
+    </ion-button>
+    <ion-button shape="circle" fill="clear">
+      <ion-icon name="share-outline"></ion-icon>
+      <ion-label class="ion-padding-start">Share</ion-label>
+    </ion-button>
+  </ion-row>
+</ion-footer>

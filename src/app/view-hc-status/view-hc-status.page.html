@@ -137,38 +137,24 @@
 
     </ion-slides>
 
-    <div class="ion-text-center">
-      <ion-row class="ion-justify-content-center">
-        <ion-toolbar>
-          <ion-segment value="display">
-            <ion-segment-button value="scan" routerLink="/home-scanner">
-              <ion-label>Scan</ion-label>
-            </ion-segment-button>
-            <ion-segment-button value="display">
-              <ion-label>Display</ion-label>
-            </ion-segment-button>
-          </ion-segment>
-        </ion-toolbar>
-      </ion-row>
-      <ion-row class="ion-justify-content-evenly">
-        <ion-text>&nbsp;</ion-text>
-      </ion-row>
-      <ion-row class="ion-justify-content-evenly">
-        <ion-button shape="circle" fill="clear">
-          <ion-icon name="mail-outline"></ion-icon>
-        </ion-button>
-        <ion-button shape="circle" fill="clear" routerLink="/qr-sample-data">
-          <ion-icon name="share-outline"></ion-icon>
-        </ion-button>
-      </ion-row>
-    </div>
+    <ion-row class="lower-third ion-justify-content-center">
+      <ion-button expand="block" class="pad20" fill="outline" color="safetypass" routerLink="/view-hc-status">
+        <ion-icon src="/assets/shield-cross-outline.svg" color="safetypass"></ion-icon>
+        <ion-text>&nbsp;&nbsp;Refresh SafetyPASS</ion-text>
+      </ion-button>
+    </ion-row>
+
   </ion-content>
 
-<ion-footer class="ion-no-border">
-  <ion-toolbar>
-    <ion-button expand="block" class="pad15 ion-margin-bottom" color="safetypass" routerLink="/my-hc-status">
-      <ion-icon src="/assets/shield-cross-outline.svg"></ion-icon>
-      &nbsp;&nbsp;View My Status
+<ion-footer class="ion-no-border ion-margin-bottom">
+  <ion-row class="ion-justify-content-evenly">
+    <ion-button shape="circle" fill="clear" routerLink="/my-hc-status">
+      <ion-icon name="caret-up-circle-outline"></ion-icon>
+      <ion-label class="ion-padding-start">View</ion-label>
+    </ion-button >
+    <ion-button shape="circle" fill="clear" routerLink="/qr-sample-data">
+      <ion-icon name="share-outline"></ion-icon>
+      <ion-label class="ion-padding-start">Share</ion-label>
     </ion-button>
-  </ion-toolbar>
+  </ion-row>
 </ion-footer>
