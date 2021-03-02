@@ -10,79 +10,20 @@
 </ion-header>
 
 <ion-content>
-  <!-- The following slides are merely the options that can be returned on page load based on comparing User's current status (based on User's in-app data and settings) with the Safe Access Requirements of the event or venue ID passed on load. -->
-  <ion-slides style="width: 100%">
-    <ion-slide>
-      <div class="ion-text-center">
-        <ion-row class="ion-margin-top ion-justify-content-center">
-          <ion-icon name="checkmark-done-circle" class="icon-big" color="success"></ion-icon>
-        </ion-row>
-        <ion-row class="ion-justify-content-center">
-          <ion-text>Clear</ion-text>
-        </ion-row>
+  <ion-row class="ion-justify-content-center">
+    <div class="profile">
+      <ion-avatar class="profile-frame">
+        <img src="/assets/jess-taylor-profile.jpg" class="profile-pic" alt="Profile Pic">
+      </ion-avatar>
+      <div class="btn">
+        <ion-fab-button size="small" color="light" translucent="true">
+          <ion-label color="primary">:30</ion-label>
+        </ion-fab-button>
       </div>
-    </ion-slide>
-    <ion-slide>
-      <div class="ion-text-center">
-        <ion-row class="ion-margin-top ion-justify-content-center">
-          <ion-icon name="checkmark-circle" class="icon-big" color="success"></ion-icon>
-        </ion-row>
-        <ion-row class="ion-justify-content-center">
-          <ion-text>Clear</ion-text>
-        </ion-row>
-      </div>
-    </ion-slide>
-    <ion-slide>
-      <div class="ion-text-center">
-        <ion-row class="ion-margin-top ion-justify-content-center">
-          <ion-icon name="checkmark-done-circle-outline" class="icon-big" color="success"></ion-icon>
-        </ion-row>
-        <ion-row class="ion-justify-content-center">
-          <ion-text>Clear</ion-text>
-        </ion-row>
-      </div>
-    </ion-slide>
-    <ion-slide>
-      <div class="ion-text-center">
-        <ion-row class="ion-margin-top ion-justify-content-center">
-          <ion-icon name="checkmark-circle-outline" class="icon-big" color="success"></ion-icon>
-        </ion-row>
-        <ion-row class="ion-justify-content-center">
-          <ion-text>Clear</ion-text>
-        </ion-row>
-      </div>
-    </ion-slide>
-    <ion-slide>
-      <div class="ion-text-center">
-        <ion-row class="ion-margin-top ion-justify-content-center">
-          <ion-icon name="warning" class="icon-big" color="warning"></ion-icon>
-        </ion-row>
-        <ion-row class="ion-justify-content-center">
-          <ion-text>See Checklist</ion-text>
-        </ion-row>
-      </div>
-    </ion-slide>
-    <ion-slide>
-      <div class="ion-text-center">
-        <ion-row class="ion-margin-top ion-justify-content-center">
-          <ion-icon name="warning-outline" class="icon-big" color="hot"></ion-icon>
-        </ion-row>
-        <ion-row class="ion-justify-content-center">
-          <ion-text>Restricted</ion-text>
-        </ion-row>
-      </div>
-    </ion-slide>
-    <ion-slide>
-      <div class="ion-text-center">
-        <ion-row class="ion-margin-top ion-justify-content-center">
-          <ion-icon name="warning" class="icon-big" color="danger"></ion-icon>
-        </ion-row>
-        <ion-row class="ion-justify-content-center">
-          <ion-text>Restricted</ion-text>
-        </ion-row>
-      </div>
-    </ion-slide>
-  </ion-slides>
+    </div>
+  </ion-row>
+  <ion-text class="section-header" color="primary"><br/>Display Name<br/><br/></ion-text>
+
   <ion-list>
     <ion-item>
       <ion-text class="text-smallest">The following elements are the drivers of my SafetyPASS.</ion-text>
@@ -93,7 +34,7 @@
     <ion-item>
       <ion-icon name="checkmark-done-circle" color="success"></ion-icon>
       <ion-label class="ion-padding-start">Vaccinated</ion-label>
-      <ion-icon name="checkmark-circle" color="primary" slot="end"></ion-icon>
+      <ion-note>02/23/2021</ion-note>
     </ion-item>
     <ion-list-header>
       <ion-text class="text-smallest">My Health Check Status</ion-text>
@@ -101,7 +42,7 @@
     <ion-item lines="none">
       <ion-icon name="checkmark-circle-outline" color="success"></ion-icon>
       <ion-label class="ion-padding-start">Last Negative Virus Test</ion-label>
-      <ion-note>02/02/2021</ion-note>
+      <ion-note>03/02/2021</ion-note>
     </ion-item>
     <ion-item>
       <ion-icon name="checkmark-done-circle-outline" color="success"></ion-icon>
@@ -126,11 +67,3 @@
     </ion-item>
   </ion-list>
 </ion-content>
-<ion-footer class="ion-no-border">
-  <ion-toolbar>
-    <ion-button expand="block" class="pad15 ion-margin-bottom">
-      <ion-icon name="reload-outline"></ion-icon>
-      &nbsp;&nbsp;Sync Health Data
-    </ion-button>
-  </ion-toolbar>
-</ion-footer>
