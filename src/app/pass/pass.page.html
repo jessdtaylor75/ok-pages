@@ -12,6 +12,13 @@
 <ion-content>
   <ion-content fullscreen>
     <ion-card>
+      <ion-row class="ion-justify-content-center">
+        <div class="profile">
+          <ion-avatar class="profile-frame">
+            <img src="/assets/jess-taylor-profile.jpg" class="profile-pic" alt="Profile Pic">
+          </ion-avatar>
+        </div>
+      </ion-row>
       <img src="/assets/p0-eventbrite-mobile-ticket.png" />
     </ion-card>
   </ion-content>
@@ -19,13 +26,20 @@
 
 <ion-footer class="ion-no-border">
   <ion-toolbar>
-    <ion-button expand="block" class="pad15 ion-margin-bottom" fill="outline" color="dark" routerLink="/pass-checklist">
-      <ion-icon src="/assets/shield-cross-outline.svg" color="safetypass"></ion-icon>
-      &nbsp;&nbsp;SafetyPASS Checklist&nbsp;&nbsp;
-      <ion-icon name="checkmark-circle-outline"></ion-icon>
-    </ion-button>
-    <ion-button expand="block" class="pad15 ion-margin-bottom" routerLink="/home-scanner" routerDirection="back">
-      Done
-    </ion-button>
+    <ion-grid>
+      <ion-row>
+        <ion-col size="6">
+          <ion-button expand="block" class="ion-margin-bottom" fill="outline" color="primary" routerLink="/pass-checklist">
+            <ion-icon src="/assets/shield-cross-outline.svg" color="safetypass"></ion-icon>
+            &nbsp;&nbsp;Checklist
+          </ion-button>
+        </ion-col>
+        <ion-col size="6">
+          <ion-button expand="block" class="ion-margin-bottom" fill="outline" color="primary" routerLink="/home-scanner" routerDirection="back">
+            <ion-icon name="close-outline" color="primary"></ion-icon>&nbsp;&nbsp;Done
+          </ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
   </ion-toolbar>
 </ion-footer>
