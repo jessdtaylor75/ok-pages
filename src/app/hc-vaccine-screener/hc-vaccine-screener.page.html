@@ -1,0 +1,142 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/hc-clinical-scanner"></ion-back-button>
+    </ion-buttons>
+    <ion-title>
+      Vaccination
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-row class="ion-justify-content-center">
+    <div class="profile">
+      <ion-avatar class="profile-frame">
+        <img src="/assets/jess-taylor-profile.jpg" class="profile-pic" alt="Profile Pic">
+      </ion-avatar>
+      <div class="btn">
+        <ion-fab-button size="small" color="light" translucent="true">
+          <ion-icon name="checkmark-circle-outline" color="success"></ion-icon>
+        </ion-fab-button>
+      </div>
+    </div>
+  </ion-row>
+  <ion-text class="section-header" color="primary">
+    &nbsp;&nbsp;<br/>
+  </ion-text>
+  <ion-list>
+    <ion-item>
+      <ion-label>
+        <div class="field-label">Full name</div>
+        FIRST MIDDLE SURNAME
+      </ion-label>
+      <ion-note slot="end" class="ion-text-end">
+        <div class="field-label">Verified</div>
+        <ion-icon name="checkmark-circle-outline" color="success"></ion-icon>
+      </ion-note>
+    </ion-item>
+    <ion-item>
+      <ion-label>
+        <div class="field-label">DOB</div>
+        09/17/1972
+      </ion-label>
+      <ion-note slot="end" class="ion-text-end">
+        <div class="field-label">Verified</div>
+        <ion-icon name="checkmark-circle-outline" color="success"></ion-icon>
+      </ion-note>
+    </ion-item>
+    <ion-item>
+      <ion-label>
+        <div class="field-label">Email address</div>
+        username@aerpass.com
+      </ion-label>
+      <ion-note slot="end" class="ion-text-end">
+        <div class="field-label">Verified</div>
+        <ion-icon name="checkmark-circle-outline" color="success"></ion-icon>
+      </ion-note>
+    </ion-item>
+    <ion-item>
+      <ion-label>
+        <div class="field-label">Mobile number</div>
+        +1 (321) 456-7890
+      </ion-label>
+      <ion-note slot="end" class="ion-text-end">
+        <div class="field-label">Verified</div>
+        <ion-icon name="checkmark-circle-outline" color="success"></ion-icon>
+      </ion-note>
+    </ion-item>
+  </ion-list>
+  <ion-list>
+    <ion-item class="ion-margin-top" lines="none">
+      <ion-label>
+        Screening Questions
+      </ion-label>
+    </ion-item>
+    <ion-item lines="none">
+      <ion-label position="stacked" class="field-label ion-text-wrap">Are you sick today?</ion-label>
+      <ion-segment>
+        <ion-segment-button value="yes">Yes</ion-segment-button>
+        <ion-segment-button value="no">No</ion-segment-button>
+      </ion-segment>
+    </ion-item>
+    <ion-item lines="none">
+      <ion-label position="stacked" class="field-label ion-text-wrap">Do you have allergies to medications, food, eggs, yeast, a vaccine component, or latex?</ion-label>
+      <ion-segment>
+        <ion-segment-button value="yes">Yes</ion-segment-button>
+        <ion-segment-button value="no">No</ion-segment-button>
+      </ion-segment>
+    </ion-item>
+    <ion-item lines="none">
+      <ion-label position="stacked" class="field-label ion-text-wrap">Have you ever had a serious reaction after receiving a vaccination?</ion-label>
+      <ion-segment>
+        <ion-segment-button value="yes">Yes</ion-segment-button>
+        <ion-segment-button value="no">No</ion-segment-button>
+      </ion-segment>
+    </ion-item>
+    <ion-item lines="none">
+      <ion-label position="stacked" class="field-label ion-text-wrap">Has any physician or healthcare professional ever cautioned or warned you about receiving certain vaccines or receiving vaccines outside of a medical setting?</ion-label>
+      <ion-segment>
+        <ion-segment-button value="yes">Yes</ion-segment-button>
+        <ion-segment-button value="no">No</ion-segment-button>
+      </ion-segment>
+    </ion-item>
+    <ion-item lines="none">
+      <ion-label position="stacked" class="field-label ion-text-wrap">Do you have a long-term health problem such as heart disease, lung disease, liver disease, asthma, kidney disease, metabolic disease (e.g. diabetes), anemia, or other blood disorder?</ion-label>
+      <ion-segment>
+        <ion-segment-button value="yes">Yes</ion-segment-button>
+        <ion-segment-button value="no">No</ion-segment-button>
+      </ion-segment>
+    </ion-item>
+    <ion-item lines="none">
+      <ion-label position="stacked" class="field-label ion-text-wrap">Have you had a seizure or a brain or nervous system problem or Guillain-Barré syndrome?</ion-label>
+      <ion-segment>
+        <ion-segment-button value="yes">Yes</ion-segment-button>
+        <ion-segment-button value="no">No</ion-segment-button>
+      </ion-segment>
+    </ion-item>
+    <ion-item lines="none">
+      <ion-label position="stacked" class="field-label ion-text-wrap">Are you pregnant or is there a chance you could become pregnant during the next month?</ion-label>
+      <ion-segment>
+        <ion-segment-button value="yes">Yes</ion-segment-button>
+        <ion-segment-button value="no">No</ion-segment-button>
+      </ion-segment>
+    </ion-item>
+    <ion-item lines="none">
+      <ion-label position="stacked" class="field-label ion-text-wrap">Do you have a history of fainting, particularly with vaccines?</ion-label>
+      <ion-segment>
+        <ion-segment-button value="yes">Yes</ion-segment-button>
+        <ion-segment-button value="no">No</ion-segment-button>
+      </ion-segment>
+    </ion-item>
+    <ion-item>&nbsp;</ion-item>
+  </ion-list>
+</ion-content>
+
+<ion-footer class="ion-no-border">
+  <ion-toolbar>
+    <ion-button expand="block" class="pad15 ion-margin-vertical" routerLink="/hc-clinical-scanner-patient">
+      Check in
+    </ion-button>
+  </ion-toolbar>
+</ion-footer>

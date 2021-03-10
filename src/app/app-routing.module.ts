@@ -547,6 +547,14 @@ const routes: Routes = [
     path: 'view-identity',
     loadChildren: () => import('./view-identity/view-identity.module').then( m => m.ViewIdentityPageModule)
   },
+  {
+    path: 'hc-vaccine-screener',
+    loadChildren: () => import('./hc-vaccine-screener/hc-vaccine-screener.module').then( m => m.HcVaccineScreenerPageModule)
+  },
+  {
+    path: 'hc-test-screener',
+    loadChildren: () => import('./hc-test-screener/hc-test-screener.module').then( m => m.HcTestScreenerPageModule)
+  },
 ];
 
 @NgModule({

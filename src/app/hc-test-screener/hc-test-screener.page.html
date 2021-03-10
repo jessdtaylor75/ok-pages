@@ -4,7 +4,7 @@
       <ion-back-button defaultHref="/hc-clinical-scanner"></ion-back-button>
     </ion-buttons>
     <ion-title>
-      Patient Check in
+      Diagnostic
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -68,38 +68,61 @@
     </ion-item>
   </ion-list>
   <ion-list>
-    <ion-list-header class="field-label">
-      Consents
-    </ion-list-header>
-    <ion-item lines="none">
-      <ion-icon name="checkmark-circle" color="primary" slot="start"></ion-icon>
-      <ion-label>Medical</ion-label>
+    <ion-item class="ion-margin-top" lines="none">
+      <ion-label>
+        Screening Questions
+      </ion-label>
     </ion-item>
     <ion-item lines="none">
-      <ion-icon name="checkmark-circle" color="primary" slot="start"></ion-icon>
-      <ion-label>Privacy & Data Sharing</ion-label>
+      <ion-label position="stacked" class="field-label ion-text-wrap">Is this your first COVID-19 test?</ion-label>
+      <ion-segment>
+        <ion-segment-button value="yes">Yes</ion-segment-button>
+        <ion-segment-button value="no">No</ion-segment-button>
+      </ion-segment>
     </ion-item>
+    <ion-item lines="none">
+      <ion-label position="stacked" class="field-label ion-text-wrap">Are you sick today?</ion-label>
+      <ion-segment>
+        <ion-segment-button value="yes">Yes</ion-segment-button>
+        <ion-segment-button value="no">No</ion-segment-button>
+      </ion-segment>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked" class="field-label">
+        If Yes, symptoms
+      </ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Date symptoms began</ion-label>
+      <ion-datetime placeholder="Select Date"></ion-datetime>
+    </ion-item>
+    <ion-item lines="none">
+      <ion-label position="stacked" class="field-label ion-text-wrap">Do you have a long-term health problem such as heart disease, lung disease, liver disease, asthma, kidney disease, metabolic disease (e.g. diabetes), anemia, or other blood disorder?</ion-label>
+      <ion-segment>
+        <ion-segment-button value="yes">Yes</ion-segment-button>
+        <ion-segment-button value="no">No</ion-segment-button>
+      </ion-segment>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked" class="field-label">
+        If Yes, condition(s)
+      </ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+
+    <ion-item lines="none">
+      <ion-label position="stacked" class="field-label ion-text-wrap">Are you pregnant?</ion-label>
+      <ion-segment>
+        <ion-segment-button value="yes">Yes</ion-segment-button>
+        <ion-segment-button value="no">No</ion-segment-button>
+      </ion-segment>
+    </ion-item>
+    <ion-item>&nbsp;</ion-item>
   </ion-list>
 </ion-content>
 
 <ion-footer class="ion-no-border">
-  <div class="ion-text-center">
-    <ion-row class="ion-justify-content-center">
-      <ion-text class="ion-text-center">Appointment Type<br/>&nbsp;&nbsp;</ion-text>
-    </ion-row>
-    <ion-row class="ion-justify-content-center">
-      <ion-toolbar>
-        <ion-segment value="diagnostic">
-          <ion-segment-button value="diagnostic" routerLink="/hc-test-screener">
-            <ion-label>Diagnostic</ion-label>
-          </ion-segment-button>
-          <ion-segment-button value="vaccination" routerLink="/hc-vaccine-screener">
-            <ion-label>Vaccination</ion-label>
-          </ion-segment-button>
-        </ion-segment>
-      </ion-toolbar>
-    </ion-row>
-  </div>
   <ion-toolbar>
     <ion-button expand="block" class="pad15 ion-margin-vertical" routerLink="/hc-clinical-scanner-patient">
       Check in
