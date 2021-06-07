@@ -555,6 +555,14 @@ const routes: Routes = [
     path: 'hc-test-screener',
     loadChildren: () => import('./hc-test-screener/hc-test-screener.module').then( m => m.HcTestScreenerPageModule)
   },
+  {
+    path: 'activate-card',
+    loadChildren: () => import('./activate-card/activate-card.module').then( m => m.ActivateCardPageModule)
+  },
+  {
+    path: 'activate-card-success',
+    loadChildren: () => import('./activate-card-success/activate-card-success.module').then( m => m.ActivateCardSuccessPageModule)
+  },
 ];
 
 @NgModule({
