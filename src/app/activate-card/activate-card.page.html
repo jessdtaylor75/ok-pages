@@ -9,7 +9,7 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content class="auth-page">
+<ion-content>
   <ion-row class="ion-justify-content-center">
     <div class="profile">
       <ion-avatar class="profile-frame">
@@ -22,10 +22,12 @@
       </div>
     </div>
   </ion-row>
-
-  <div class="v-center">
+    <ion-text class="section-header" color="primary">
+      <br/>Display Name<br/><br/>
+    </ion-text>
+  <ion-list>
     <ion-item lines="none">
-      <ion-label position="stacked" style="margin-bottom: 1vw">Method</ion-label>
+      <ion-label position="stacked" style="margin-bottom: 1vw">Select Payment Method</ion-label>
 
       <ion-slides style="width: 100%">
 
@@ -90,13 +92,13 @@
     <!-- Avatar Options: "/aerpass-merchant-logo.png" or "bank-logo.png" or "null"-->
     <!-- Label Options: "AerPass Direct" or "BankName &bull;&bull;&bull;&bull; 0331" -->
     <!-- <ion-img src="/assets/card-trans.png" alt="default" class="pad10 pay-account-auth"></ion-img> -->
-    <ion-item detail routerLink="/choose-address">
+    <!-- <ion-item detail routerLink="/choose-address">
       <ion-label>
         <div class="field-label">Shipping Address</div>
         123 4th Ave Apt 5<br>New York, NY 10001&nbsp;&nbsp;&nbsp;USA
       </ion-label>
-    </ion-item>
-  </div>
+    </ion-item> -->
+  </ion-list>
 </ion-content>
 
 <ion-footer class="ion-no-border">
@@ -105,7 +107,7 @@
   </ion-row>
   <ion-row class="ion-justify-content-center">
     <ion-text class="text-smallest" color="medium">
-      Private Transaction.<br/><br/>
+      Secure Transaction.<br/><br/>
     </ion-text>
   </ion-row>
   <ion-toolbar>
