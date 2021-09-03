@@ -27,6 +27,13 @@ ion-content {
   height: 56.5vw;
 }
 
+.profile-home .btn {
+  position: absolute;
+  bottom: 1vw;
+  right: 1vw;
+  z-index: 9;
+}
+
 .profile-pic-home {
   width: 54vw;
   height: 54vw;

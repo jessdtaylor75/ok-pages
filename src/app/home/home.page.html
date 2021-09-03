@@ -20,27 +20,43 @@
 
   <div id="container-top">
     <ion-row class="ion-justify-content-center">
-      <div class="profile-home">
-        <ion-avatar class="profile-frame-home">
-          <img src="/assets/jess-taylor-profile.jpg" class="profile-pic-home" alt="Profile Pic" routerLink="/profile-home" routerDirection="root">
-        </ion-avatar>
+      <div class="ion-text-center">
+        <ion-row class="ion-justify-content-center">
+          <div class="profile-home">
+            <ion-avatar class="profile-frame-home">
+              <img src="/assets/jess-taylor-profile.jpg" class="profile-pic-home" alt="Profile Pic" routerLink="/profile-home" routerDirection="root">
+            </ion-avatar>
+            <div class="btn">
+              <ion-fab-button color="light" translucent="true">
+                <ion-icon name="qr-code-outline" color="primary"></ion-icon>
+              </ion-fab-button>
+            </div>
+          </div>
+        </ion-row>
+        <ion-text class="section-header" color="light">
+          Display Name
+        </ion-text>
       </div>
     </ion-row>
   </div>
   <div id="containter-bottom">
     <ion-row class="ion-justify-content-center">
       <div class="ion-text-center">
-        <div class="ion-margin-bottom">
-          <ion-text class="text-small" color="primary">SafetyPASS</ion-text>
-        </div>
         <ion-row class="ion-justify-content-center">
           <div class="display-qr">
             <img src="/assets/ap-safety-pass-result-qr.svg" routerLink="/hc-result" />
           </div>
         </ion-row>
-        <div>
-          <ion-text class="text-smallest" color="primary">Scan QR Code to Validate</ion-text>
-        </div>
+        <ion-toolbar>
+          <ion-segment color="light" value="safetypass">
+            <ion-segment-button value="safetypass">
+              <ion-label color="safetypass">SafetyPASS</ion-label>
+            </ion-segment-button>
+            <ion-segment-button value="altpass">
+              <ion-label color="primary">Alternate</ion-label>
+            </ion-segment-button>
+          </ion-segment>
+        </ion-toolbar>
       </div>
     </ion-row>
   </div>
@@ -49,15 +65,15 @@
 
 <ion-tab-bar slot="bottom" color="raven">
   <ion-tab-button routerLink="/home" routerDirection="back">
-    <ion-label>SafetyPASS</ion-label>
-    <ion-icon src="/assets/shield-cross-outline.svg" color="primary"></ion-icon>
+    <ion-label color="safetypass">SafetyPASS</ion-label>
+    <ion-icon src="/assets/shield-cross-outline.svg" color="safetypass"></ion-icon>
   </ion-tab-button>
   <ion-tab-button routerLink="/home-scanner" routerDirection="root">
-    <ion-label>Scanner</ion-label>
+    <ion-label color="primary">Scanner</ion-label>
     <ion-icon name="scan-outline" color="primary"></ion-icon>
   </ion-tab-button>
   <ion-tab-button routerLink="/passes-modal" routerDirection="forward">
-    <ion-label>Wallet</ion-label>
+    <ion-label color="primary">Wallet</ion-label>
     <ion-icon name="wallet-outline" color="primary"></ion-icon>
   </ion-tab-button>
 </ion-tab-bar>

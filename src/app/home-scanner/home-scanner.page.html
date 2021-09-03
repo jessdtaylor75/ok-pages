@@ -19,10 +19,22 @@
 <ion-content fullscreen="true">
   <div id="container-top">
     <ion-row class="ion-justify-content-center">
-      <div class="profile-home">
-        <ion-avatar class="profile-frame-home">
-          <img src="/assets/jess-taylor-profile.jpg" class="profile-pic-home" alt="Profile Pic" routerLink="/profile-home" routerDirection="root">
-        </ion-avatar>
+      <div class="ion-text-center">
+        <ion-row class="ion-justify-content-center">
+          <div class="profile-home">
+            <ion-avatar class="profile-frame-home">
+              <img src="/assets/jess-taylor-profile.jpg" class="profile-pic-home" alt="Profile Pic" routerLink="/profile-home" routerDirection="root">
+            </ion-avatar>
+            <div class="btn">
+              <ion-fab-button color="light" translucent="true">
+                <ion-icon name="qr-code-outline" color="primary"></ion-icon>
+              </ion-fab-button>
+            </div>
+          </div>
+        </ion-row>
+        <ion-text class="section-header" color="light">
+          Display Name
+        </ion-text>
       </div>
     </ion-row>
   </div>
@@ -30,9 +42,9 @@
   <div id="containter-bottom">
     <img src="/assets/scanner-bg-raven.png" alt="scanner">
   </div>
-  <div class="v-center">
+  <!--<div class="v-center">
     <ion-text class="text-small" color="light">Scan Code</ion-text>
-  </div>
+  </div>-->
   <!--<div class="hero-top">
     <ion-row class="ion-justify-content-center">
       <div class="profile">
@@ -100,17 +112,18 @@
   </ion-row>-->
 
 </ion-content>
+
 <ion-tab-bar slot="bottom" color="raven">
   <ion-tab-button routerLink="/home" routerDirection="back">
-    <ion-label>SafetyPASS</ion-label>
-    <ion-icon src="/assets/shield-cross-outline.svg" color="primary"></ion-icon>
+    <ion-label color="safetypass">SafetyPASS</ion-label>
+    <ion-icon src="/assets/shield-cross-outline.svg" color="safetypass"></ion-icon>
   </ion-tab-button>
   <ion-tab-button routerLink="/home-scanner" routerDirection="root">
-    <ion-label>Scanner</ion-label>
+    <ion-label color="primary">Scanner</ion-label>
     <ion-icon name="scan-outline" color="primary"></ion-icon>
   </ion-tab-button>
   <ion-tab-button routerLink="/passes-modal" routerDirection="forward">
-    <ion-label>Wallet</ion-label>
+    <ion-label color="primary">Wallet</ion-label>
     <ion-icon name="wallet-outline" color="primary"></ion-icon>
   </ion-tab-button>
 </ion-tab-bar>
