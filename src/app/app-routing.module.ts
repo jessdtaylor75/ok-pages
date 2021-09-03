@@ -563,6 +563,10 @@ const routes: Routes = [
     path: 'activate-card-success',
     loadChildren: () => import('./activate-card-success/activate-card-success.module').then( m => m.ActivateCardSuccessPageModule)
   },
+  {
+    path: 'pass1-details',
+    loadChildren: () => import('./pass1-details/pass1-details.module').then( m => m.Pass1DetailsPageModule)
+  },
 ];
 
 @NgModule({
