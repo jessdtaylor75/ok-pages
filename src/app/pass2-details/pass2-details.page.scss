@@ -1,0 +1,9 @@
+ion-content {
+  --overflow: hidden;
+  --background: url(/assets/sse-andyc-raven3.jpg) no-repeat center;
+  background-size: contain;
+}
+
+ion-header, ion-toolbar, ion-avatar, ion-row {
+  --background: transparent;
+}

@@ -14,6 +14,11 @@ ion-title {
   font-size: 1.7rem;
 }
 
+.text-strong {
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+
 .text-small {
   font-size: 1.3rem;
 }
@@ -230,6 +235,16 @@ ion-title {
   width: 70vw;
   height: 56vw;
   display: inline-block;
+}
+
+.display-details .base {
+  position: absolute;
+  bottom: 0;
+}
+
+.bg-light-blur {
+  --background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(2px);
 }
 
 .transaction-hero {

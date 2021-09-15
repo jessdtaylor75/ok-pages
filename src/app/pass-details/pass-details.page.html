@@ -20,8 +20,8 @@
               <img src="/assets/LA-profile-image.jpg" class="profile-pic-home" alt="Profile Pic" routerLink="/profile-home" routerDirection="root">
             </ion-avatar>
             <div class="btn">
-              <ion-fab-button color="success" routerLink="/pass-checklist">
-                <ion-icon name="checkmark-sharp" class="icon-fab"></ion-icon>
+              <ion-fab-button color="danger" routerLink="/pass-checklist-stop">
+                <ion-icon name="warning-outline" class="icon-fab" color="dark"></ion-icon>
               </ion-fab-button>
             </div>
           </div>
@@ -97,7 +97,7 @@
         </ion-row>
         <ion-toolbar>
           <ion-segment color="light" value="details">
-            <ion-segment-button value="qr-code" routerLink="/pass1">
+            <ion-segment-button value="qr-code" routerLink="/pass">
               <ion-label color="primary">Pass Code</ion-label>
             </ion-segment-button>
             <ion-segment-button value="details">
