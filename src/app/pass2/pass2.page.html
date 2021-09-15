@@ -4,42 +4,69 @@
       <ion-back-button defaultHref="/passes-modal"></ion-back-button>
     </ion-buttons>
     <ion-title>
-      Rangers vs. Devils
+      Andy C All Night
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-  <ion-content fullscreen>
-    <ion-card>
-      <ion-row class="ion-justify-content-center">
-        <div class="profile">
-          <ion-avatar class="profile-frame">
-            <img src="/assets/LA-profile-image.jpg" class="profile-pic" alt="Profile Pic">
-          </ion-avatar>
-        </div>
-      </ion-row>
-      <img src="/assets/p2-nhl-mobile-ticket.png" class="pass-detail" alt="pass"/>
-    </ion-card>
-  </ion-content>
+<ion-content [fullscreen]="true">
+
+  <div id="container-top">
+    <ion-row class="ion-justify-content-center">
+      <div class="ion-text-center">
+        <ion-row class="ion-justify-content-center">
+          <div class="profile-home">
+            <ion-avatar class="profile-frame-home">
+              <img src="/assets/LA-profile-image.jpg" class="profile-pic-home" alt="Profile Pic" routerLink="/profile-home" routerDirection="root">
+            </ion-avatar>
+            <div class="btn">
+              <ion-fab-button color="warning" routerLink="/pass-checklist-fix">
+                <ion-icon name="warning-outline" class="icon-fab"></ion-icon>
+              </ion-fab-button>
+            </div>
+          </div>
+        </ion-row>
+        <ion-text class="section-header" color="light">
+          Leon Atkins
+        </ion-text>
+      </div>
+    </ion-row>
+  </div>
+  <div id="container-bottom">
+    <ion-row class="ion-justify-content-center">
+      <div class="ion-text-center">
+        <ion-row class="ion-justify-content-center">
+          <div class="display-qr">
+            <ion-icon name="warning" class="icon-huge" color="warning" routerLink="/pass-checklist-fix"></ion-icon>
+          </div>
+        </ion-row>
+        <ion-toolbar>
+          <ion-segment color="light" value="qr-code">
+            <ion-segment-button value="qr-code">
+              <ion-label color="primary">Pass Code</ion-label>
+            </ion-segment-button>
+            <ion-segment-button value="details" routerLink="/pass2-details">
+              <ion-label color="primary">Details</ion-label>
+            </ion-segment-button>
+          </ion-segment>
+        </ion-toolbar>
+      </div>
+    </ion-row>
+  </div>
+
 </ion-content>
 
-<ion-footer class="ion-no-border">
-  <ion-toolbar>
-    <ion-grid>
-      <ion-row>
-        <ion-col size="6">
-          <ion-button expand="block" class="ion-margin-bottom" fill="outline" color="primary" routerLink="/pass-checklist">
-            <ion-icon src="/assets/shield-cross-outline.svg" color="safetypass"></ion-icon>
-            &nbsp;&nbsp;Checklist
-          </ion-button>
-        </ion-col>
-        <ion-col size="6">
-          <ion-button expand="block" class="ion-margin-bottom" fill="outline" color="primary" routerLink="/home-scanner" routerDirection="back">
-            <ion-icon name="close-outline" color="primary"></ion-icon>&nbsp;&nbsp;Done
-          </ion-button>
-        </ion-col>
-      </ion-row>
-    </ion-grid>
-  </ion-toolbar>
-</ion-footer>
+<ion-tab-bar slot="bottom" color="raven" class="ion-padding-bottom">
+  <ion-tab-button routerLink="/home" routerDirection="back">
+    <ion-label color="safetypass">SafetyPASS</ion-label>
+    <ion-icon src="/assets/shield-cross-outline.svg" color="safetypass"></ion-icon>
+  </ion-tab-button>
+  <ion-tab-button routerLink="/home-scanner" routerDirection="root">
+    <ion-label color="primary">Scanner</ion-label>
+    <ion-icon name="scan-outline" color="primary"></ion-icon>
+  </ion-tab-button>
+  <ion-tab-button routerLink="/passes-modal" routerDirection="forward">
+    <ion-label color="primary">Wallet</ion-label>
+    <ion-icon name="wallet-outline" color="primary"></ion-icon>
+  </ion-tab-button>
+</ion-tab-bar>

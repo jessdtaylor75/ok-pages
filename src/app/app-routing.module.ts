@@ -567,6 +567,14 @@ const routes: Routes = [
     path: 'pass1-details',
     loadChildren: () => import('./pass1-details/pass1-details.module').then( m => m.Pass1DetailsPageModule)
   },
+  {
+    path: 'pass-checklist-fix',
+    loadChildren: () => import('./pass-checklist-fix/pass-checklist-fix.module').then( m => m.PassChecklistFixPageModule)
+  },
+  {
+    path: 'pass-checklist-stop',
+    loadChildren: () => import('./pass-checklist-stop/pass-checklist-stop.module').then( m => m.PassChecklistStopPageModule)
+  },
 ];
 
 @NgModule({

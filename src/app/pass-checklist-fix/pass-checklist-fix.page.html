@@ -12,10 +12,10 @@
 <ion-content>
   <div class="ion-text-center">
     <ion-row class="ion-margin-top ion-justify-content-center">
-      <ion-icon name="checkmark-circle" class="icon-big" color="success"></ion-icon>
+      <ion-icon name="warning" class="icon-big" color="warning"></ion-icon>
     </ion-row>
     <ion-row class="ion-justify-content-center">
-      <ion-text>Clear</ion-text>
+      <ion-text>See Checklist</ion-text>
     </ion-row>
   </div>
   <!-- Items on this view will either be visible or not based on the Safe Access Requirements of the event or venue ID passed on load. -->
@@ -58,10 +58,10 @@
     <ion-list-header>
       <ion-text class="text-smallest">Location Services</ion-text>
     </ion-list-header>
-    <ion-item>
+    <ion-item color="warning">
       <ion-icon name="location-outline"></ion-icon>
       <ion-label class="ion-padding-start">Location Service Active</ion-label>
-      <ion-toggle slot="end" name="negative" color="primary" checked></ion-toggle>
+      <ion-toggle slot="end" name="negative" color="primary"></ion-toggle>
     </ion-item>
   </ion-list>
 </ion-content>
