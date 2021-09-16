@@ -95,33 +95,21 @@
             </ion-toolbar>
           </ion-card>
         </ion-row>
-        <ion-toolbar>
-          <ion-segment color="light" value="details">
-            <ion-segment-button value="qr-code" routerLink="/pass1">
-              <ion-label color="primary">Pass Code</ion-label>
-            </ion-segment-button>
-            <ion-segment-button value="details">
-              <ion-label color="primary">Details</ion-label>
-            </ion-segment-button>
-          </ion-segment>
-        </ion-toolbar>
       </div>
     </ion-row>
   </div>
 
 </ion-content>
 
-<ion-tab-bar slot="bottom" color="raven">
-  <ion-tab-button routerLink="/home" routerDirection="back">
-    <ion-label color="safetypass">SafetyPASS</ion-label>
-    <ion-icon src="/assets/shield-cross-outline.svg" color="safetypass"></ion-icon>
-  </ion-tab-button>
-  <ion-tab-button routerLink="/home-scanner" routerDirection="root">
-    <ion-label color="primary">Scanner</ion-label>
-    <ion-icon name="scan-outline" color="primary"></ion-icon>
-  </ion-tab-button>
-  <ion-tab-button routerLink="/passes-modal" routerDirection="forward">
-    <ion-label color="primary">Wallet</ion-label>
-    <ion-icon name="wallet-outline" color="primary"></ion-icon>
-  </ion-tab-button>
-</ion-tab-bar>
+<ion-footer>
+  <ion-toolbar>
+    <ion-segment color="light" value="details">
+      <ion-segment-button value="qr-code" routerLink="/pass1">
+        <ion-label color="primary">Pass Code</ion-label>
+      </ion-segment-button>
+      <ion-segment-button value="details">
+        <ion-label color="primary">Details</ion-label>
+      </ion-segment-button>
+    </ion-segment>
+  </ion-toolbar>
+</ion-footer>
