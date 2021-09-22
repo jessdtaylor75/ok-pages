@@ -242,6 +242,12 @@ ion-title {
   bottom: 0;
 }
 
+.display-boarding-pass {
+  width: 90vw;
+  height: 56vw;
+  display: inline-block;
+}
+
 .bg-light-blur {
   --background: rgba(255, 255, 255, 0.7);
   backdrop-filter: blur(2px);

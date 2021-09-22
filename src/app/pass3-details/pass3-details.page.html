@@ -36,8 +36,8 @@
     <ion-row class="ion-justify-content-center">
       <div class="ion-text-center">
         <ion-row class="ion-justify-content-center">
-          <div class="display-boarding-pass" routerLink="/pass3-details">
-            <img src="/assets/pass-ba-qr.png" alt="pass3" />
+          <div class="display-boarding-pass">
+            <img src="/assets/pass3-ba.png" alt="pass3" />
           </div>
         </ion-row>
       </div>
@@ -48,11 +48,11 @@
 
 <ion-footer>
   <ion-toolbar>
-    <ion-segment color="light" value="qr-code">
-      <ion-segment-button value="qr-code">
+    <ion-segment color="light" value="details">
+      <ion-segment-button value="qr-code" routerLink="/pass3">
         <ion-label color="primary">Pass Code</ion-label>
       </ion-segment-button>
-      <ion-segment-button value="details" routerLink="/pass3-details">
+      <ion-segment-button value="details">
         <ion-label color="primary">Details</ion-label>
       </ion-segment-button>
     </ion-segment>

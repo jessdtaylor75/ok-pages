@@ -583,6 +583,10 @@ const routes: Routes = [
     path: 'pass2-details',
     loadChildren: () => import('./pass2-details/pass2-details.module').then( m => m.Pass2DetailsPageModule)
   },
+  {
+    path: 'pass3-details',
+    loadChildren: () => import('./pass3-details/pass3-details.module').then( m => m.Pass3DetailsPageModule)
+  },
 ];
 
 @NgModule({
