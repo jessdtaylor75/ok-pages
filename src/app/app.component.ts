@@ -27,12 +27,12 @@ export class AppComponent {
       icon: 'person-circle-outline'
     },
     {
-      title: 'Scan to Login / Pay',
+      title: 'Home Scanner',
       url: '/home-scanner',
       icon: 'scan-outline'
     },
     {
-      title: 'Venue Mode',
+      title: 'Verifier Mode',
       url: '/hc-access-scanner',
       icon: 'scan-outline'
     },
@@ -47,7 +47,7 @@ export class AppComponent {
       icon: 'qr-code-outline'
     },
     {
-      title: 'Terms & Conditions',
+      title: 'Legal Agreements',
       url: '/legal-agreements',
       icon: 'document-text-outline'
     },
