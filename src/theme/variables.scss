@@ -276,3 +276,21 @@
   --ion-color-shade: var(--ion-color-raven-shade);
   --ion-color-tint: var(--ion-color-raven-tint);
 }
+
+:root {
+  --ion-color-milconnect: #49356a;
+  --ion-color-milconnect-rgb: 73,53,106;
+  --ion-color-milconnect-contrast: #ffffff;
+  --ion-color-milconnect-contrast-rgb: 255,255,255;
+  --ion-color-milconnect-shade: #402f5d;
+  --ion-color-milconnect-tint: #5b4979;
+}
+
+.ion-color-milconnect {
+  --ion-color-base: var(--ion-color-milconnect);
+  --ion-color-base-rgb: var(--ion-color-milconnect-rgb);
+  --ion-color-contrast: var(--ion-color-milconnect-contrast);
+  --ion-color-contrast-rgb: var(--ion-color-milconnect-contrast-rgb);
+  --ion-color-shade: var(--ion-color-milconnect-shade);
+  --ion-color-tint: var(--ion-color-milconnect-tint);
+}
