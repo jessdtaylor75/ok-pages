@@ -45,7 +45,7 @@
     </ion-item>
     <ion-item detail routerLink="/view-bank-list">
       <ion-icon name="card-outline"></ion-icon>
-      <ion-label class="ion-padding-start">Banks & Cards</ion-label>
+      <ion-label class="ion-padding-start">Payment Methods</ion-label>
     </ion-item>
     <ion-item detail routerLink="/passes-modal">
       <ion-icon name="wallet-outline"></ion-icon>
@@ -53,18 +53,18 @@
     </ion-item>
     <ion-item-divider color="light"></ion-item-divider>
     <ion-item detail routerLink="/view-health-info">
-      <ion-icon src="/assets/shield-cross-outline.svg" color="safetypass"></ion-icon>
-      <ion-label class="ion-padding-start" color="safetypass">SafetyPASS</ion-label>
+      <ion-icon src="/assets/links-mark.svg" color="milconnect"></ion-icon>
+      <ion-label class="ion-padding-start" color="milconnect">MilitaryDeals</ion-label>
     </ion-item>
-    <ion-item detail routerLink="/view-hc-controls">
+    <!--<ion-item detail routerLink="/view-hc-controls">
       <ion-icon name="settings-outline"></ion-icon>
       <ion-label class="ion-padding-start">Safe Space Settings</ion-label>
-    </ion-item>
+    </ion-item>-->
     <ion-item-divider color="light"></ion-item-divider>
-    <!-- <ion-item detail routerLink="/biometrics-security">
+    <!--<ion-item detail routerLink="/biometrics-security">
       <ion-icon name="finger-print-outline"></ion-icon>
       <ion-label class="ion-padding-start">Biometrics & Security</ion-label>
-    </ion-item> -->
+    </ion-item>-->
     <ion-item detail routerLink="/legal-agreements">
       <ion-icon name="documents-outline"></ion-icon>
       <ion-label class="ion-padding-start">Legal Agreements</ion-label>
@@ -77,8 +77,8 @@
 
 <ion-tab-bar slot="bottom">
   <ion-tab-button routerLink="/home" routerDirection="back">
-    <ion-label color="safetypass">SafetyPASS</ion-label>
-    <ion-icon src="/assets/shield-cross-outline.svg" color="safetypass"></ion-icon>
+    <ion-label color="primary">Primary ID</ion-label>
+    <ion-icon src="/assets/links-mark.svg" color="primary"></ion-icon>
   </ion-tab-button>
   <ion-tab-button routerLink="/home-scanner" routerDirection="root">
     <ion-label color="primary">Scanner</ion-label>
