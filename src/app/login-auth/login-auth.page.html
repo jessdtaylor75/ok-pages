@@ -1,4 +1,4 @@
-<ion-header class="ion-no-border">
+<!--<ion-header class="ion-no-border">
   <ion-toolbar>
     <ion-title>Login</ion-title>
     <ion-buttons slot="end">
@@ -7,9 +7,9 @@
       </ion-button>
     </ion-buttons>
   </ion-toolbar>
-</ion-header>
+</ion-header>-->
 
-<ion-content class="auth-page">
+<ion-content [fullscreen]="true" class="auth-page">
   <div class="v-center">
     <ion-item lines="none" color="transparent" class="ion-align-items-baseline dark-gradient">
       <ion-avatar class="merchant-logo">
@@ -18,12 +18,12 @@
       <ion-label class="ion-padding-start" color="light">
         www.aerpass.com
         <div class="address-label">
-          Website login request
+          UserConnect request
         </div>
       </ion-label>
     </ion-item>
     <ion-item>
-      <ion-label class="ion-text-center section-header" color="primary">Login as:</ion-label>
+      <ion-label class="ion-text-center section-header" color="primary">Connect as:</ion-label>
     </ion-item>
     <ion-item lines="none">
       <ion-label position="stacked" style="margin-bottom: 1vw">Identity</ion-label>
@@ -75,25 +75,45 @@
       </ion-slides>
 
     </ion-item>
-    <ion-item>
+    <ion-item lines="none">
       <ion-checkbox color="primary"></ion-checkbox>
       <ion-label class="ion-padding-start">Default identity for this service</ion-label>
     </ion-item>
+    <ion-grid>
+      <ion-row>
+        <ion-col size="6">
+          <ion-fab horizontal="center">
+            <ion-fab-button color="success" routerLink="/login-success">
+              <ion-icon name="checkmark" class="icon-fab"></ion-icon>
+            </ion-fab-button>
+            <ion-label class="aer-label">Authorize</ion-label>
+          </ion-fab>
+        </ion-col>
+        <ion-col size="6">
+          <ion-fab horizontal="center">
+            <ion-fab-button color="cancel" routerLink="/home-scanner" routerDirection="back">
+              <ion-icon name="close" class="icon-fab"></ion-icon>
+            </ion-fab-button>
+            <ion-label class="aer-label">Cancel</ion-label>
+          </ion-fab>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
   </div>
 </ion-content>
 
 <ion-footer class="ion-no-border">
   <ion-row class="ion-justify-content-center">
-    <ion-icon name="shield-checkmark-outline" class="icon-larger" color="primary"></ion-icon>
+    <ion-icon name="shield-checkmark-outline" class="icon-larger" color="primary" routerLink="/payment-auth"></ion-icon>
   </ion-row>
   <ion-row class="ion-justify-content-center">
     <ion-text class="text-smallest" color="medium">
       Service Certified.<br/><br/>
     </ion-text>
   </ion-row>
-  <ion-toolbar>
+  <!--<ion-toolbar>
     <ion-button expand="block" class="pad15 ion-margin-bottom" routerLink="/login-success">
       Authorize
     </ion-button>
-  </ion-toolbar>
+  </ion-toolbar>-->
 </ion-footer>
