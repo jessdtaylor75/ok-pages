@@ -6,11 +6,6 @@ ion-title {
   color: var(--ion-color-primary);
 }
 
-.mc1 {
-  border: var(--ion-color-army-star);
-  border-width: 2pt;
-}
-
 .text-large {
   font-size: 2.4rem;
 }
@@ -360,4 +355,24 @@ ion-title {
 
 .brand {
   width: 26vw;
+}
+
+//MilitaryConnect branding
+.profile-pic-pid {
+  width: 54vw;
+  height: 54vw;
+  border-radius: 50%;
+  border: 2pt solid var(--ion-color-army-star);
+  text-align: center;
+  display: inline-block;
+}
+
+.profile-frame-pid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56.5vw;
+  height: 56.5vw;
+  border-radius: 50%;
+  border: 2pt solid var(--ion-color-army-star);
 }
