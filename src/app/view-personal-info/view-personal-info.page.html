@@ -40,7 +40,7 @@
     <ion-item>
       <ion-label>
         <div class="field-label">Full name</div>
-        FIRST MIDDLE SURNAME
+        First Middle Surname
       </ion-label>
       <ion-note slot="end" class="ion-text-end">
         <div class="field-label">Verified</div>
@@ -83,6 +83,19 @@
         123 4th Ave Apt 5<br>New York, NY 10001&nbsp;&nbsp;&nbsp;USA
       </ion-label>
     </ion-item>
+    <ion-item><!--//only appears AFTER MilitaryConnect enrollment// -->
+      <ion-avatar>
+        <img src="/assets/star-us-army.png" alt="US Army" />
+      </ion-avatar>
+      <ion-label class="ion-padding-start">
+        <div class="field-label">Military Service</div>
+        US Army
+      </ion-label>
+      <ion-note slot="end" class="ion-text-end">
+        <div class="field-label">Verified</div>
+        <ion-icon name="checkmark-circle-outline" color="success"></ion-icon>
+      </ion-note>
+    </ion-item>
     <ion-item routerLink="/verify-identity">
       <ion-icon name="alert-circle-outline" color="danger"></ion-icon>
       <ion-text class="ion-padding-start text-smallest" color="medium">
@@ -107,5 +120,11 @@
       </ion-item-options>
     </ion-item-sliding>
   </ion-list>
+
+  <ion-fab vertical="bottom" horizontal="center" slot="fixed">
+    <ion-fab-button>
+      <ion-icon name="add-outline" size="large"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
 
 </ion-content>

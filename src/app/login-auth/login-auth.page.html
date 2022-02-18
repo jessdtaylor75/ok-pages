@@ -1,15 +1,13 @@
-<!--<ion-header class="ion-no-border">
+<ion-header class="ion-no-border">
   <ion-toolbar>
-    <ion-title>Login</ion-title>
-    <ion-buttons slot="end">
-      <ion-button routerLink="/home-scanner" routerDirection="back">
-        <ion-label color="medium">Cancel</ion-label>
-      </ion-button>
-    </ion-buttons>
+    <ion-title>Connect</ion-title>
   </ion-toolbar>
 </ion-header>-->
 
-<ion-content [fullscreen]="true" class="auth-page">
+<ion-content fullscreen="true" class="auth-page">
+  <div class="upper-third ion-text-center">
+    <ion-icon src="/assets/A-symbol-blue.svg" class="icon-bigger"></ion-icon>
+  </div>
   <div class="v-center">
     <ion-item lines="none" color="transparent" class="ion-align-items-baseline dark-gradient">
       <ion-avatar class="merchant-logo">
@@ -18,7 +16,7 @@
       <ion-label class="ion-padding-start" color="light">
         www.aerpass.com
         <div class="address-label">
-          UserConnect request
+          Sign in request
         </div>
       </ion-label>
     </ion-item>
@@ -33,13 +31,13 @@
         <ion-slide>
           <div class="method">
             <ion-row class="ion-justify-content-center">
-              <ion-avatar class="profile-frame-auth">
-                <img src="/assets/jess-taylor-profile.jpg" class="profile-pic-auth" alt="Profile Pic">
+              <ion-avatar class="profile-frame">
+                <img src="/assets/jess-taylor-profile.jpg" class="profile-pic" alt="Profile Pic">
               </ion-avatar>
             </ion-row>
             <ion-row class="ion-justify-content-center">
-              <ion-text color="light">Display Name - Work</ion-text><br/>
-              <ion-text class="text-smaller" color="light">username@aerpass.com</ion-text>
+              <ion-text color="white">Display Name - Work</ion-text><br/>
+              <ion-text class="text-smaller" color="white">username@aerpass.com</ion-text>
             </ion-row>
           </div>
         </ion-slide>
@@ -47,13 +45,13 @@
         <ion-slide>
           <div class="method">
             <ion-row class="ion-justify-content-center">
-              <ion-avatar class="profile-frame-auth">
-                <img src="/assets/jess-taylor-profile.jpg" class="profile-pic-auth" alt="Profile Pic">
+              <ion-avatar class="profile-frame">
+                <img src="/assets/jess-taylor-profile.jpg" class="profile-pic" alt="Profile Pic">
               </ion-avatar>
             </ion-row>
             <ion-row class="ion-justify-content-center">
-              <ion-text color="light">Display Name - Personal</ion-text><br/>
-              <ion-text class="text-smaller" color="light">username@gmail.com</ion-text>
+              <ion-text color="white">Display Name - Personal</ion-text><br/>
+              <ion-text class="text-smaller" color="white">username@gmail.com</ion-text>
             </ion-row>
           </div>
         </ion-slide>
@@ -61,13 +59,13 @@
         <ion-slide>
           <div class="method">
             <ion-row class="ion-justify-content-center">
-              <ion-avatar class="profile-frame-auth">
-                <img src="/assets/jess-taylor-profile.jpg" class="profile-pic-auth" alt="Profile Pic">
+              <ion-avatar class="profile-frame">
+                <img src="/assets/jess-taylor-profile.jpg" class="profile-pic" alt="Profile Pic">
               </ion-avatar>
             </ion-row>
             <ion-row class="ion-justify-content-center">
-              <ion-text color="light">Admin - AerPass</ion-text><br/>
-              <ion-text class="text-smaller" color="light">admin@aerpass.com</ion-text>
+              <ion-text color="white">Admin - AerPass</ion-text><br/>
+              <ion-text class="text-smaller" color="white">admin@aerpass.com</ion-text>
             </ion-row>
           </div>
         </ion-slide>
@@ -84,9 +82,9 @@
         <ion-col size="6">
           <ion-fab horizontal="center">
             <ion-fab-button color="success" routerLink="/login-success">
-              <ion-icon name="checkmark" class="icon-fab"></ion-icon>
+              <ion-icon name="checkmark-sharp" class="icon-fab"></ion-icon>
             </ion-fab-button>
-            <ion-label class="aer-label">Authorize</ion-label>
+            <ion-label class="aer-label" color="white">Authorize</ion-label>
           </ion-fab>
         </ion-col>
         <ion-col size="6">
@@ -94,7 +92,7 @@
             <ion-fab-button color="cancel" routerLink="/home-scanner" routerDirection="back">
               <ion-icon name="close" class="icon-fab"></ion-icon>
             </ion-fab-button>
-            <ion-label class="aer-label">Cancel</ion-label>
+            <ion-label class="aer-label" color="white">Cancel</ion-label>
           </ion-fab>
         </ion-col>
       </ion-row>
@@ -104,16 +102,6 @@
 
 <ion-footer class="ion-no-border">
   <ion-row class="ion-justify-content-center">
-    <ion-icon name="shield-checkmark-outline" class="icon-larger" color="primary" routerLink="/payment-auth"></ion-icon>
+    <ion-icon name="logo-usd" class="icon-larger" color="medium" routerLink="/payment-auth"></ion-icon>
   </ion-row>
-  <ion-row class="ion-justify-content-center">
-    <ion-text class="text-smallest" color="medium">
-      Service Certified.<br/><br/>
-    </ion-text>
-  </ion-row>
-  <!--<ion-toolbar>
-    <ion-button expand="block" class="pad15 ion-margin-bottom" routerLink="/login-success">
-      Authorize
-    </ion-button>
-  </ion-toolbar>-->
 </ion-footer>

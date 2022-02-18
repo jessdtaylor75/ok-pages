@@ -1,21 +1,19 @@
-<!--<ion-header class="ion-no-border">
+<ion-header class="ion-no-border">
   <ion-toolbar>
     <ion-title>Payment</ion-title>
-    <ion-buttons slot="end">
-      <ion-button routerLink="/home-scanner" routerDirection="back">
-        <ion-label color="medium">Cancel</ion-label>
-      </ion-button>
-    </ion-buttons>
   </ion-toolbar>
-</ion-header>-->
+</ion-header>
 
-<ion-content class="auth-page">
+<ion-content fullscreen="true" class="auth-page">
+  <div class="upper-third ion-text-center">
+    <ion-icon src="/assets/A-symbol-blue.svg" class="icon-bigger"></ion-icon>
+  </div>
   <div class="v-center">
     <ion-item lines="none" color="transparent" class="ion-align-items-baseline dark-gradient">
       <ion-avatar class="merchant-logo">
         <img src="/assets/aerpass-merchant-logo.png" alt="Merchant Logo">
       </ion-avatar>
-      <ion-label class="ion-padding-start" color="light">
+      <ion-label class="ion-padding-start" color="white">
         AerPass
         <div class="address-label">
           1905 15th St #1287<br/>
@@ -41,12 +39,14 @@
 
         <ion-slide>
           <div class="method">
-            <div class="card-top"></div>
+            <div class="card-top ion-padding-top ion-justify-content-center">
+              <ion-icon src="/assets/A-symbol-blue.svg" class="icon-big"></ion-icon>
+            </div>
             <ion-item lines="none" color="transparent" class="card-size">
               <ion-avatar>
                 <img src="/assets/wellsfargo.png" alt="Merchant">
               </ion-avatar>
-              <ion-label class="ion-padding-start" color="light">AerPass Direct &bull;&bull;&bull;&bull; 1111</ion-label>
+              <ion-label class="ion-padding-start" color="light">Wells Fargo &bull;&bull;&bull;&bull; 1111</ion-label>
             </ion-item>
           </div>
         </ion-slide>
@@ -111,9 +111,9 @@
         <ion-col size="6">
           <ion-fab horizontal="center">
             <ion-fab-button color="success" routerLink="/payment-success">
-              <ion-icon name="checkmark" class="icon-fab"></ion-icon>
+              <ion-icon name="checkmark-sharp" class="icon-fab"></ion-icon>
             </ion-fab-button>
-            <ion-label class="aer-label">Authorize</ion-label>
+            <ion-label class="aer-label" color="white">Authorize</ion-label>
           </ion-fab>
         </ion-col>
         <ion-col size="6">
@@ -121,7 +121,7 @@
             <ion-fab-button color="cancel" routerLink="/home-scanner" routerDirection="back">
               <ion-icon name="close" class="icon-fab"></ion-icon>
             </ion-fab-button>
-            <ion-label class="aer-label">Cancel</ion-label>
+            <ion-label class="aer-label" color="white">Cancel</ion-label>
           </ion-fab>
         </ion-col>
       </ion-row>
@@ -134,13 +134,8 @@
     <ion-icon name="shield-checkmark-outline" class="icon-larger" color="primary"></ion-icon>
   </ion-row>
   <ion-row class="ion-justify-content-center">
-    <ion-text class="text-smallest" color="medium">
-      Merchant Certified.<br/><br/>
+    <ion-text class="text-smallest" color="white">
+      Verified Merchant
     </ion-text>
   </ion-row>
-  <!--<ion-toolbar>
-    <ion-button expand="block" class="pad15 ion-margin-bottom" routerLink="/payment-success">
-      Authorize
-    </ion-button>
-  </ion-toolbar>-->
 </ion-footer>
