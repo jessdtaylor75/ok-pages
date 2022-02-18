@@ -6,6 +6,10 @@ ion-title {
   color: var(--ion-color-primary);
 }
 
+ion-avatar {
+  border: .25vw solid var(--ion-color-white);
+}
+
 .text-large {
   font-size: 2.4rem;
 }
