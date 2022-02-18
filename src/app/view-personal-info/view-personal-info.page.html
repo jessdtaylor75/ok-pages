@@ -4,7 +4,7 @@
       <ion-back-button defaultHref="/profile-home"></ion-back-button>
     </ion-buttons>
     <ion-title>
-    Personal Information
+    Personal Info
   </ion-title>
     <ion-buttons slot="end">
       <ion-button routerLink="/edit-personal-info">
@@ -36,6 +36,7 @@
         <div class="field-label">Display name</div>
         Display Name
       </ion-label>
+      <!--//only appears AFTER MilitaryConnect enrollment// -->
       <ion-avatar slot="end">
         <img src="/assets/star-us-army.png" alt="US Army" />
       </ion-avatar>
@@ -46,18 +47,8 @@
         First Middle Surname
       </ion-label>
       <ion-note slot="end" class="ion-text-end">
-        <div class="field-label">Verified</div>
-        <ion-icon name="checkmark-circle-outline" color="success"></ion-icon>
-      </ion-note>
-    </ion-item>
-    <ion-item>
-      <ion-label>
-        <div class="field-label">DOB</div>
-        09/17/1972
-      </ion-label>
-      <ion-note slot="end" class="ion-text-end">
-        <div class="field-label">Verified</div>
-        <ion-icon name="checkmark-circle-outline" color="success"></ion-icon>
+        <!--<div class="field-label">Verified</div>-->
+        <ion-icon name="checkmark-circle-outline" color="primary"></ion-icon>
       </ion-note>
     </ion-item>
     <ion-item>
@@ -66,8 +57,8 @@
         username@aerpass.com
       </ion-label>
       <ion-note slot="end" class="ion-text-end">
-        <div class="field-label">Verified</div>
-        <ion-icon name="checkmark-circle-outline" color="success"></ion-icon>
+        <!--<div class="field-label">Verified</div>-->
+        <ion-icon name="checkmark-circle-outline" color="primary"></ion-icon>
       </ion-note>
     </ion-item>
     <ion-item>
@@ -76,27 +67,28 @@
         +1 (321) 456-7890
       </ion-label>
       <ion-note slot="end" class="ion-text-end">
-        <div class="field-label">Verified</div>
-        <ion-icon name="checkmark-circle-outline" color="success"></ion-icon>
+        <!--<div class="field-label">Verified</div>-->
+        <ion-icon name="checkmark-circle-outline" color="primary"></ion-icon>
       </ion-note>
     </ion-item>
-    <ion-item detail routerLink="/view-address-list">
+    <ion-item>
       <ion-label>
-        <div class="field-label">Shipping addresses</div>
-        123 4th Ave Apt 5<br>New York, NY 10001&nbsp;&nbsp;&nbsp;USA
+        <div class="field-label">DOB</div>
+        09/17/1972
       </ion-label>
+      <ion-note slot="end" class="ion-text-end">
+        <!--<div class="field-label">Verified</div>-->
+        <ion-icon name="checkmark-circle-outline" color="primary"></ion-icon>
+      </ion-note>
     </ion-item>
     <ion-item><!--//only appears AFTER MilitaryConnect enrollment// -->
-      <!--<ion-avatar>
-        <img src="/assets/star-us-army.png" alt="US Army" />
-      </ion-avatar>-->
-      <ion-label class="ion-padding-start">
+      <ion-label>
         <div class="field-label">Military Service</div>
         US Army
       </ion-label>
       <ion-note slot="end" class="ion-text-end">
-        <div class="field-label">Verified</div>
-        <ion-icon name="checkmark-circle-outline" color="success"></ion-icon>
+        <!--<div class="field-label">Verified</div>-->
+        <ion-icon name="checkmark-circle-outline" color="primary"></ion-icon>
       </ion-note>
     </ion-item>
     <ion-item routerLink="/verify-identity">
@@ -131,10 +123,20 @@
     </ion-item>
   </ion-list>
 
-  <ion-fab vertical="bottom" horizontal="center" slot="fixed">
+  <!--<ion-fab vertical="bottom" horizontal="center" slot="fixed">
     <ion-fab-button>
       <ion-icon name="add-outline" size="large"></ion-icon>
     </ion-fab-button>
-  </ion-fab>
+    <ion-fab-list side="top">
+      <ion-fab-button color="milconnect">
+        <ion-icon src="/assets/links-mark.svg" color="light"></ion-icon>
+      </ion-fab-button>
+      <ion-label class="aer-label" color="primary">Military</ion-label>
+      <ion-fab-button color="light" routerLink="/add-card">
+        <ion-icon name="card-outline" color="primary"></ion-icon>
+      </ion-fab-button>
+      <ion-label class="aer-label" color="primary">Add Code</ion-label>
+    </ion-fab-list>
+  </ion-fab>-->
 
 </ion-content>
