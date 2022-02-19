@@ -9,7 +9,7 @@
     <ion-icon src="/assets/A-symbol-blue.svg" class="icon-bigger"></ion-icon>
   </div>
   <div class="v-center">
-    <ion-item lines="none" color="transparent" class="ion-align-items-baseline dark-gradient">
+    <ion-item lines="none" color="transparent" class="ion-align-items-baseline glass-blur">
       <ion-avatar class="merchant-logo">
         <img src="/assets/aerpass-merchant-logo.png" alt="Merchant Logo">
       </ion-avatar>
@@ -28,12 +28,12 @@
         </div>
       </ion-note>
     </ion-item>
-    <ion-item detail>
-      <ion-label>Amount</ion-label>
-      <ion-label slot="end" class="ion-text-end">$25.00</ion-label>
+    <ion-item color="transparent" class="glass-blur">
+      <ion-label color="white">Amount</ion-label>
+      <ion-label slot="end" class="ion-text-end" color="white">$25.00</ion-label>
     </ion-item>
-    <ion-item lines="none">
-      <ion-label position="stacked" style="margin-bottom: 1vw">Method</ion-label>
+    <ion-item color="transparent" class="glass-blur" lines="none">
+      <ion-label position="stacked" style="margin-bottom: 1vw" color="white">Method</ion-label>
 
       <ion-slides style="width: 100%">
 
@@ -46,7 +46,7 @@
               <ion-avatar>
                 <img src="/assets/wellsfargo.png" alt="Merchant">
               </ion-avatar>
-              <ion-label class="ion-padding-start" color="light">Wells Fargo &bull;&bull;&bull;&bull; 1111</ion-label>
+              <ion-label class="ion-padding-start" color="white">Wells Fargo &bull;&bull;&bull;&bull; 1111</ion-label>
             </ion-item>
           </div>
         </ion-slide>
@@ -59,7 +59,7 @@
               <ion-avatar>
                 <img src="/assets/chase.png" alt="Merchant">
               </ion-avatar>
-              <ion-label class="ion-padding-start" color="light">
+              <ion-label class="ion-padding-start" color="white">
                 Visa &bull;&bull;&bull;&bull; 0331
               </ion-label>
             </ion-item>
@@ -74,7 +74,7 @@
               <ion-avatar>
                 <img src="/assets/citi.png" alt="Merchant">
               </ion-avatar>
-              <ion-label class="ion-padding-start" color="light">
+              <ion-label class="ion-padding-start" color="white">
                 MasterCard &bull;&bull;&bull;&bull; 6789
               </ion-label>
             </ion-item>
@@ -86,7 +86,7 @@
                style="background: url(/assets/amex.svg) no-repeat center; background-size: contain;">
             <div class="card-top"></div>
             <ion-item lines="none" color="transparent" class="card-size">
-              <ion-label class="ion-padding-start" color="light">
+              <ion-label class="ion-padding-start" color="white">
                 American Express &bull;&bull;&bull;&bull; 6789
               </ion-label>
             </ion-item>
@@ -100,11 +100,16 @@
     <!-- Avatar Options: "/aerpass-merchant-logo.png" or "bank-logo.png" or "null"-->
     <!-- Label Options: "AerPass Direct" or "BankName &bull;&bull;&bull;&bull; 0331" -->
     <!-- <ion-img src="/assets/card-trans.png" alt="default" class="pad10 pay-account-auth"></ion-img> -->
-    <ion-item detail routerLink="/choose-address">
-      <ion-label>
+    <ion-item color="transparent" class="glass-blur" routerLink="/choose-address" detail>
+      <ion-label color="white">
         <div class="field-label">Shipping Address</div>
         123 4th Ave Apt 5<br>New York, NY 10001&nbsp;&nbsp;&nbsp;USA
       </ion-label>
+      <ion-note color="white">
+        <div class="address-label">
+          Change
+        </div>
+      </ion-note>
     </ion-item>
     <ion-grid>
       <ion-row>
@@ -131,11 +136,9 @@
 
 <ion-footer class="ion-no-border">
   <ion-row class="ion-justify-content-center">
-    <ion-icon name="shield-checkmark-outline" class="icon-larger" color="primary"></ion-icon>
-  </ion-row>
-  <ion-row class="ion-justify-content-center">
+    <ion-icon name="shield-checkmark-outline" class="icon-small" color="white"></ion-icon>
     <ion-text class="text-smallest" color="white">
-      Verified Merchant
+      &nbsp;&nbsp;Verified Merchant
     </ion-text>
   </ion-row>
 </ion-footer>

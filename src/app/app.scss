@@ -297,7 +297,7 @@ ion-avatar {
   padding: 0 15vw 0 15vw;
   background-color: transparent;
   position: absolute;
-  top: 13%;
+  top: 5%;
   //noinspection CssInvalidFunction
   margin-top: env(safe-area-inset-top);
   z-index: 2;
@@ -338,6 +338,11 @@ ion-avatar {
 
 .auth-page {
   --background: url(/assets/aerpass-merchant-ultra.png) no-repeat center/cover fixed;
+}
+
+.glass-blur {
+  background: rgba(0,0,0,.5);
+  backdrop-filter: blur(5px);
 }
 
 .dark-gradient {
