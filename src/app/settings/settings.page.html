@@ -18,16 +18,48 @@
   </ion-row>
   <ion-row class="ion-justify-content-center"><ion-text>&nbsp;</ion-text></ion-row>
 
-  <ion-list>
+  <!-- Only appears if user has one or more group flags in their profile -->
+  <ion-radio-group value="default">
+    <ion-list-header>
+      <ion-label>Theme</ion-label>
+    </ion-list-header>
+    <ion-list>
+      <ion-item>
+        <ion-icon src="/assets/A-symbol.svg"></ion-icon>
+        <ion-label class="ion-padding-start">Default</ion-label>
+        <ion-radio slot="end" value="default"></ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-icon src="/assets/links-mark.svg"></ion-icon>
+        <ion-label class="ion-padding-start">MilitaryConnect</ion-label>
+        <ion-radio slot="end" value="milconnect"></ion-radio>
+      </ion-item>
+    </ion-list>
+  </ion-radio-group>
+  <ion-radio-group value="auto">
+    <ion-list-header>
+      <ion-label>Mode</ion-label>
+    </ion-list-header>
+    <ion-list>
+      <ion-item>
+        <ion-icon src="/assets/invert-mode-outline.svg"></ion-icon>
+        <ion-label class="ion-padding-start">Auto</ion-label>
+        <ion-radio slot="end" value="auto"></ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-icon src="/assets/invert-mode-outline.svg"></ion-icon>
+        <ion-label class="ion-padding-start">Light</ion-label>
+        <ion-radio slot="end" value="light"></ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-icon src="/assets/invert-mode-outline.svg"></ion-icon>
+        <ion-label class="ion-padding-start">Dark</ion-label>
+        <ion-radio slot="end" value="dark"></ion-radio>
+      </ion-item>
+    </ion-list>
+  </ion-radio-group>
+  <!--<ion-list>
     <ion-item>
-      <ion-icon src="/assets/invert-mode-outline.svg"></ion-icon>
-      <ion-label class="ion-padding-start">
-        App Branding
-        <div class="field-label">Enable on membership views</div>
-      </ion-label>
-      <ion-toggle slot="end" name="biometrics" color="primary" checked></ion-toggle>
-    </ion-item>
-    <!--<ion-item>
       <ion-icon name="scan-outline"></ion-icon>
       <ion-label class="ion-padding-start">
         Facial verification
@@ -53,22 +85,6 @@
         <ion-select-option value="09">$9,000</ion-select-option>
         <ion-select-option value="10">$10,000</ion-select-option>
       </ion-select>
-    </ion-item>-->
-  </ion-list>
-  <!-- Only appears if user has one or more group flags in their profile -->
-  <ion-radio-group value="default">
-    <ion-list>
-      <ion-item>
-        <ion-icon src="/assets/A-symbol.svg"></ion-icon>
-        <ion-label class="ion-padding-start">Default</ion-label>
-        <ion-radio slot="end" value="default"></ion-radio>
-      </ion-item>
-      <ion-item>
-        <ion-icon src="/assets/links-mark.svg"></ion-icon>
-        <ion-label class="ion-padding-start">MilitaryConnect</ion-label>
-        <ion-radio slot="end" value="milconnect"></ion-radio>
-      </ion-item>
-    </ion-list>
-  </ion-radio-group>
-
+    </ion-item>
+  </ion-list>-->
 </ion-content>
