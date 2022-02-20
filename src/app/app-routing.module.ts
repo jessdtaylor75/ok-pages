@@ -591,6 +591,10 @@ const routes: Routes = [
     path: 'view-idcard-list',
     loadChildren: () => import('./view-idcard-list/view-idcard-list.module').then( m => m.ViewIdcardListPageModule)
   },
+  {
+    path: 'settings',
+    loadChildren: () => import('./settings/settings.module').then( m => m.SettingsPageModule)
+  },
 ];
 
 @NgModule({

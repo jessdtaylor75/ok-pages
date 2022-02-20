@@ -4,28 +4,30 @@
       <ion-back-button defaultHref="/profile-home"></ion-back-button>
     </ion-buttons>
     <ion-title>
-      Biometrics & Security
+      Settings
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
   <ion-row class="ion-justify-content-center">
-    <ion-avatar class="profile-frame">
-      <img src="/assets/jess-taylor-profile.jpg" class="profile-pic">
-    </ion-avatar>
+    <ion-icon src="/assets/A-symbol.svg" class="icon-big" color="primary"></ion-icon>
   </ion-row>
-  <ion-text class="section-header" color="primary">Display Name<br/><br/></ion-text>
+  <ion-row class="ion-justify-content-center">
+    <ion-icon name="ellipsis-horizontal"></ion-icon>
+  </ion-row>
+  <ion-row class="ion-justify-content-center"><ion-text>&nbsp;</ion-text></ion-row>
+
   <ion-list>
     <ion-item>
-      <ion-icon name="finger-print-outline"></ion-icon>
+      <ion-icon src="/assets/invert-mode-outline.svg"></ion-icon>
       <ion-label class="ion-padding-start">
-        Device biometrics
-        <div class="field-label">Enable for enhanced security</div>
+        App Branding
+        <div class="field-label">Enable on membership views</div>
       </ion-label>
       <ion-toggle slot="end" name="biometrics" color="primary" checked></ion-toggle>
     </ion-item>
-    <ion-item>
+    <!--<ion-item>
       <ion-icon name="scan-outline"></ion-icon>
       <ion-label class="ion-padding-start">
         Facial verification
@@ -51,7 +53,22 @@
         <ion-select-option value="09">$9,000</ion-select-option>
         <ion-select-option value="10">$10,000</ion-select-option>
       </ion-select>
-    </ion-item>
+    </ion-item>-->
   </ion-list>
+  <!-- Only appears if user has one or more group flags in their profile -->
+  <ion-radio-group value="default">
+    <ion-list>
+      <ion-item>
+        <ion-icon src="/assets/A-symbol.svg"></ion-icon>
+        <ion-label class="ion-padding-start">Default</ion-label>
+        <ion-radio slot="end" value="default"></ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-icon src="/assets/links-mark.svg"></ion-icon>
+        <ion-label class="ion-padding-start">MilitaryConnect</ion-label>
+        <ion-radio slot="end" value="milconnect"></ion-radio>
+      </ion-item>
+    </ion-list>
+  </ion-radio-group>
 
 </ion-content>

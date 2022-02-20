@@ -27,24 +27,14 @@ export class AppComponent {
       icon: 'person-circle-outline'
     },
     {
-      title: 'Home Scanner',
+      title: 'Scanner',
       url: '/home-scanner',
       icon: 'scan-outline'
     },
     {
-      title: 'Verifier Mode',
-      url: '/hc-access-scanner',
-      icon: 'scan-outline'
-    },
-    {
-      title: 'Clinical Mode',
-      url: '/hc-clinical-scanner',
-      icon: 'scan-outline'
-    },
-    {
-      title: 'Sample QR Data',
-      url: '/qr-sample-data',
-      icon: 'qr-code-outline'
+      title: 'MilitaryDeals',
+      url: '/app-browser',
+      src: '/assets/links-mark.svg'
     },
     {
       title: 'Legal Agreements',
