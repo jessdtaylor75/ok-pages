@@ -8,11 +8,11 @@
         <img class="brand" src="/assets/mconnect-logo-white.svg">
       </ion-title>
     </ion-text>
-    <ion-buttons slot="end">
+    <!--<ion-buttons slot="end">
       <ion-button color="primary" routerLink="/app-email-client-find" routerDirection="root" fill="clear">
         <ion-icon name="notifications-outline" color="primary"></ion-icon>
       </ion-button>
-    </ion-buttons>
+    </ion-buttons>-->
   </ion-toolbar>
 </ion-header>
 
@@ -27,8 +27,8 @@
               <img src="/assets/jess-taylor-profile.jpg" class="profile-pic-pid" alt="Profile Pic" routerLink="/profile-home" routerDirection="root">
             </ion-avatar>
             <div class="btn">
-              <ion-fab-button color="dark" translucent="true" routerLink="/view-id-list">
-                <ion-icon name="star-sharp" color="army-star" class="icon-fab"></ion-icon>
+              <ion-fab-button color="army-black" translucent="true" routerLink="/view-idcard-list">
+                <ion-icon src="/assets/links-mark.svg" color="army-star" class="icon-fab"></ion-icon>
               </ion-fab-button>
             </div>
           </div>
@@ -53,7 +53,7 @@
               <ion-label color="primary">Military ID</ion-label>
             </ion-segment-button>
             <ion-segment-button value="altpass">
-              <ion-label color="primary">State ID</ion-label>
+              <ion-label color="primary">SafetyPASS</ion-label>
             </ion-segment-button>
           </ion-segment>
         </ion-toolbar>
@@ -65,15 +65,19 @@
 
 <ion-tab-bar slot="bottom" color="raven">
   <ion-tab-button routerLink="/home" routerDirection="back">
-    <ion-label color="primary">Primary ID</ion-label>
-    <ion-icon src="/assets/links-mark.svg" color="primary"></ion-icon>
+    <ion-label color="secondary">Display ID</ion-label>
+    <ion-icon src="/assets/links-mark.svg" color="secondary"></ion-icon>
   </ion-tab-button>
   <ion-tab-button routerLink="/home-scanner" routerDirection="root">
     <ion-label color="primary">Scanner</ion-label>
     <ion-icon name="scan-outline" color="primary"></ion-icon>
   </ion-tab-button>
-  <ion-tab-button routerLink="/passes-modal" routerDirection="forward">
+  <!--<ion-tab-button routerLink="/passes-modal" routerDirection="forward">
     <ion-label color="primary">Wallet</ion-label>
     <ion-icon name="wallet-outline" color="primary"></ion-icon>
+  </ion-tab-button>-->
+  <ion-tab-button routerLink="/profile-home" routerDirection="forward">
+    <ion-label color="primary">Profile</ion-label>
+    <ion-icon name="person-circle-outline" color="primary"></ion-icon>
   </ion-tab-button>
 </ion-tab-bar>
