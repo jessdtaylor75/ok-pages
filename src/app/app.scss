@@ -367,6 +367,14 @@ ion-avatar {
   width: 26vw;
 }
 
+.flip-horizontally {
+  transform: scaleX(-1);
+}
+
+.rotate-90 {
+  transform: rotate(90deg);
+}
+
 //MilitaryConnect branding
 .profile-pic-pid {
   width: 54vw;
