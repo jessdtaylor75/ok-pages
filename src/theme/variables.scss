@@ -546,3 +546,21 @@
   --ion-color-shade: var(--ion-color-hulu-pop-shade);
   --ion-color-tint: var(--ion-color-hulu-pop-tint);
 }
+
+:root {
+  --ion-color-spot-green: #1db954;
+  --ion-color-spot-green-rgb: 29,185,84;
+  --ion-color-spot-green-contrast: #ffffff;
+  --ion-color-spot-green-contrast-rgb: 255,255,255;
+  --ion-color-spot-green-shade: #1aa34a;
+  --ion-color-spot-green-tint: #34c065;
+}
+
+.ion-color-spot-green {
+  --ion-color-base: var(--ion-color-spot-green);
+  --ion-color-base-rgb: var(--ion-color-spot-green-rgb);
+  --ion-color-contrast: var(--ion-color-spot-green-contrast);
+  --ion-color-contrast-rgb: var(--ion-color-spot-green-contrast-rgb);
+  --ion-color-shade: var(--ion-color-spot-green-shade);
+  --ion-color-tint: var(--ion-color-spot-green-tint);
+}
