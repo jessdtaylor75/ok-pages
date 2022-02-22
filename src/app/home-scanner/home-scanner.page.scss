@@ -1,4 +1,4 @@
-ion-content, ion-toolbar, ion-avatar, ion-row, {
+ion-content, ion-toolbar, ion-avatar, ion-row, ion-tab-bar, {
   --background: transparent;
 }
 
@@ -25,4 +25,8 @@ ion-content {
 #container-bottom {
   //background: url("/assets/scanner-bg-container-bottom.png");
   overflow: hidden;
+}
+
+ion-tab-bar {
+  background: rgba(5,16,51,0.75);
 }

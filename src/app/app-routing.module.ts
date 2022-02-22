@@ -595,6 +595,10 @@ const routes: Routes = [
     path: 'settings',
     loadChildren: () => import('./settings/settings.module').then( m => m.SettingsPageModule)
   },
+  {
+    path: 'military-connect',
+    loadChildren: () => import('./military-connect/military-connect.module').then( m => m.MilitaryConnectPageModule)
+  },
 ];
 
 @NgModule({

@@ -12,21 +12,21 @@
         </ion-button>
       </ion-title>
     </ion-text>
-    <ion-buttons slot="end">
+    <!--<ion-buttons slot="end">
       <ion-button color="primary" routerLink="/view-notifications" routerDirection="root" fill="clear">
         <ion-icon name="notifications-outline" color="primary"></ion-icon>
       </ion-button>
-    </ion-buttons>
+    </ion-buttons>-->
   </ion-toolbar>
 </ion-header>
 
 <ion-content fullscreen="true">
   <ion-row class="v-center">
-    <img src="/assets/scanner-bg.png" alt="scanner">
+    <img src="/assets/scanner-bg-raven.png" alt="scanner">
   </ion-row>
 
   <ion-text color="light" class="upper-third ion-text-center text-smaller">
-    Scan AerPass QR codes for password-free logins and to safely pay at verified merchants.
+    Scan AERPASS QR codes for password-free logins and to safely pay at verified merchants.
   </ion-text>
 
   <div class="v-center">
@@ -38,9 +38,6 @@
               <img src="/assets/ap-login-auth-qr.svg" routerLink="/login-auth" />
             </div>
           </ion-row>
-          <div>
-            <ion-text class="text-smallest" color="primary">Scan QR Code to Login</ion-text>
-          </div>
         </div>
       </ion-slide>
 
@@ -51,93 +48,37 @@
               <img src="/assets/ap-payment-auth-qr.svg" routerLink="/payment-auth" />
             </div>
           </ion-row>
-          <div>
-            <ion-text class="text-smallest" color="primary">Scan QR Code to Pay</ion-text>
-          </div>
         </div>
       </ion-slide>
 
       <ion-slide>
         <div class="ion-text-center">
           <ion-row class="ion-justify-content-center">
-            <div class="display-qr">
-              <img src="/assets/ap-safety-pass-result-qr.svg" routerLink="/hc-result" />
-            </div>
+            <button class="corner-button">M</button>
           </ion-row>
-          <div>
-            <ion-text class="text-smallest" color="primary">Scan QR Code to Validate</ion-text>
-          </div>
         </div>
       </ion-slide>
 
-      <ion-slide>
-        <div class="ion-text-center">
-          <ion-row class="ion-justify-content-center">
-            <div class="display-qr">
-              <img src="/assets/app-browser-safety-pass-checkin-qr.svg" routerLink="/connect-hc-test" />
-            </div>
-          </ion-row>
-          <div>
-            <ion-text class="text-smallest" color="primary">Scan Code to Connect Test</ion-text>
-          </div>
-        </div>
-      </ion-slide>
-
-      <ion-slide>
-        <div class="ion-text-center">
-          <ion-row class="ion-justify-content-center">
-            <div class="display-qr">
-              <img src="/assets/app-browser-menu-slanted-door-qr.svg" routerLink="/app-browser-restmenu" />
-            </div>
-          </ion-row>
-          <div>
-            <ion-text class="text-smallest" color="primary">Scan QR Code for Menu</ion-text>
-          </div>
-        </div>
-      </ion-slide>
     </ion-slides>
   </div>
 
-  <ion-row class="lower-third ion-justify-content-center">
-    <ion-button expand="block" class="pad20" color="light" routerLink="/verify-identity">
-      <ion-icon src="/assets/shield-cross-outline.svg" color="safetypass"></ion-icon>
-      <ion-text color="safetypass">&nbsp;&nbsp;Display SafetyPASS</ion-text>
-    </ion-button>
-  </ion-row>
-
-  <ion-fab vertical="bottom" horizontal="center" slot="fixed" edge>
-    <ion-fab-button routerLink="/profile-code">
-      <ion-icon class="icon-fab" name="qr-code-outline"></ion-icon>
-    </ion-fab-button>
-    <!--<ion-fab-list side="top">
-      <ion-fab-button color="light" routerLink="/profile-home">
-        <ion-icon name="arrow-down-outline" color="primary"></ion-icon>
-      </ion-fab-button>
-      <ion-label class="fab-label">Request</ion-label>
-      <ion-fab-button color="light" routerLink="/profile-home">
-        <ion-icon name="arrow-up-outline" color="primary"></ion-icon>
-      </ion-fab-button>
-      <ion-label class="fab-label">Send</ion-label>
-      <ion-fab-button color="light" routerLink="/profile-home">
-        <ion-icon name="logo-usd" color="primary"></ion-icon>
-      </ion-fab-button>
-      <ion-label class="fab-label">Balance</ion-label>
-    </ion-fab-list>-->
-  </ion-fab>
 </ion-content>
-<ion-footer translucent="true">
-  <ion-toolbar>
-    <ion-buttons slot="start" class="ion-margin-bottom">
-      <ion-button routerLink="/home-map" routerDirection="back">
-        <ion-icon name="compass-outline" color="primary"></ion-icon>
-        <ion-label color="primary">&nbsp;&nbsp;Map&nbsp;</ion-label>
-      </ion-button>
-    </ion-buttons>
-    <ion-buttons slot="end" class="ion-margin-bottom">
-      <ion-button routerLink="/passes-modal">
-        <ion-icon name="wallet-outline" color="primary"></ion-icon>
-        <ion-label color="primary">&nbsp;&nbsp;Wallet&nbsp;</ion-label>
-      </ion-button>
-    </ion-buttons>
-  </ion-toolbar>
-</ion-footer>
+
+<ion-tab-bar slot="bottom" class="tab-blur">
+  <ion-tab-button routerLink="/home" routerDirection="back">
+    <ion-label color="white">ID Badge</ion-label>
+    <ion-icon name="qr-code-outline" color="white"></ion-icon>
+  </ion-tab-button>
+  <ion-tab-button routerLink="/home-scanner" routerDirection="root">
+    <ion-label color="primary">Scanner</ion-label>
+    <ion-icon name="scan-outline" color="primary"></ion-icon>
+  </ion-tab-button>
+  <!--<ion-tab-button routerLink="/passes-modal" routerDirection="forward">
+    <ion-label color="primary">Wallet</ion-label>
+    <ion-icon name="wallet-outline" color="primary"></ion-icon>
+  </ion-tab-button>-->
+  <ion-tab-button routerLink="/profile-home" routerDirection="forward">
+    <ion-label color="white">Profile</ion-label>
+    <ion-icon name="person-outline" color="white"></ion-icon>
+  </ion-tab-button>
+</ion-tab-bar>
