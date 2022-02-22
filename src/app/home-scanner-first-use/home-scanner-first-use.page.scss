@@ -22,8 +22,8 @@ ion-tab-bar {
 
 $bg: #051033;
 $fg: #0096ff;
-$border-width: .3rem;
-$corner-size: 6rem;
+$border-width: 1.2vw;
+$corner-size: 32vw;
 $dur: .3s;
 
 body {
@@ -31,20 +31,18 @@ body {
 }
 
 .corner-button {
-  font-family: 'Lato', sans-serif;
-  letter-spacing: .02rem;
-  cursor: pointer;
+  width: 68vw;
+  height: 68vw;
   background: transparent;
   border: $border-width solid currentColor;
   padding: 1.5rem 2rem;
-  font-size: 10rem;
   color: $fg;
   position: relative;
   transition: color $dur;
-  z-index: 1;
+  z-index: 2;
 
   &:hover {
-    color: #00b8fc;
+    color: #0096ff;
     &::before { width: 0; }
     &::after { height: 0; }
   }
@@ -62,7 +60,7 @@ body {
   //the 101% is because of a pixel rounding issue in firefox
   &::before {
     width: calc(100% - #{$corner-size});
-    height: calc(101% + #{$border-width * 2});
+    height: calc(100% + #{$border-width * 2});
     top: -$border-width;
     left: 50%;
     transform: translateX(-50%);
@@ -74,4 +72,20 @@ body {
     top: 50%;
     transform: translateY(-50%);
   }
+}
+
+/* Triangle */
+.polygon1 {
+  -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+/* X */
+.polygon2 {
+  -webkit-clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+  clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+}
+/* Star */
+.polygon3 {
+  -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
 }
