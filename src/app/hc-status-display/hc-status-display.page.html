@@ -1,56 +1,83 @@
 <ion-header class="ion-no-border">
-  <ion-toolbar>
+  <ion-toolbar color="raven">
     <ion-buttons slot="start">
-      <ion-back-button defaultHref="/view-health-info"></ion-back-button>
+      <ion-menu-button color="white"></ion-menu-button>
     </ion-buttons>
-    <ion-title color="safetypass">
-      Safety PASS
-    </ion-title>
+    <ion-text class="ion-text-center">
+      <ion-title class="ion-justify-content-center">
+        <img class="brand" src="/assets/mconnect-logo-white.svg">
+      </ion-title>
+    </ion-text>
+    <!--<ion-buttons slot="end">
+      <ion-button color="primary" routerLink="/app-email-client-find" routerDirection="root" fill="clear">
+        <ion-icon name="notifications-outline" color="primary"></ion-icon>
+      </ion-button>
+    </ion-buttons>-->
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-  <ion-row class="ion-justify-content-center">
-    <ion-avatar class="profile-frame">
-      <img src="/assets/jess-taylor-profile.jpg" class="profile-pic">
-    </ion-avatar>
-  </ion-row>
-  <ion-text class="section-header" color="primary">Display Name<br/><br/></ion-text>
+<ion-content [fullscreen]="true" color="raven">
 
-  <div class="ion-text-center">
+  <div id="container-top">
     <ion-row class="ion-justify-content-center">
-      <div class="display-qr" routerLink="/hc-status-clear">
-        <ion-icon name="checkmark-done-circle" class="display-qr" color="success"></ion-icon>
+      <div class="ion-text-center">
+        <ion-row class="ion-justify-content-center">
+          <div class="profile-home">
+            <ion-avatar class="profile-frame-pid">
+              <img src="/assets/jess-taylor-profile.jpg" class="profile-pic-pid" alt="Profile Pic" routerLink="/profile-home" routerDirection="root">
+            </ion-avatar>
+            <div class="btn">
+              <ion-fab-button color="airforce-blue" translucent="true" routerLink="/hc-status-not-certified">
+                <ion-icon src="/assets/links-mark.svg" color="airforce-silver" class="icon-fab"></ion-icon>
+              </ion-fab-button>
+            </div>
+          </div>
+        </ion-row>
+        <ion-text class="section-header" color="white">
+          Jane Fentum
+        </ion-text>
       </div>
     </ion-row>
-    <div class="pad-top3">
-      <ion-text>Clear - Immune</ion-text><br/>
-      <ion-button color="primary" size="small" fill="clear">Vaccinated: 12/1/2020</ion-button>
-    </div>
   </div>
-  <div class="ion-text-center">
+  <div id="container-bottom">
     <ion-row class="ion-justify-content-center">
-      <ion-toolbar>
-        <ion-segment value="my-status">
-          <ion-segment-button value="request-status" routerLink="/request-status">
-            <ion-label>Request Status</ion-label>
-          </ion-segment-button>
-          <ion-segment-button value="my-status">
-            <ion-label>My Status</ion-label>
-          </ion-segment-button>
-        </ion-segment>
-      </ion-toolbar>
-    </ion-row>
-    <ion-row class="ion-justify-content-evenly">
-      <ion-text>&nbsp;</ion-text>
-    </ion-row>
-    <ion-row class="ion-justify-content-evenly">
-      <ion-button shape="circle" fill="clear">
-        <ion-icon name="mail-outline"></ion-icon>
-      </ion-button>
-      <ion-button shape="circle" fill="clear">
-        <ion-icon name="share-outline"></ion-icon>
-      </ion-button>
+      <div class="ion-text-center">
+        <ion-row class="ion-justify-content-center">
+          <div class="display-qr">
+            <img src="/assets/ap-safety-pass-result-qr.svg" routerLink="/hc-result" />
+          </div>
+        </ion-row>
+        <ion-toolbar color="transparent">
+          <ion-segment value="military" color="light">
+            <ion-segment-button value="military">
+              <ion-label color="airforce-silver">Military ID</ion-label>
+            </ion-segment-button>
+            <ion-segment-button value="altpass">
+              <ion-label color="airforce-silver">SafetyPASS</ion-label>
+            </ion-segment-button>
+          </ion-segment>
+        </ion-toolbar>
+      </div>
     </ion-row>
   </div>
+
 </ion-content>
+
+<ion-tab-bar slot="bottom" color="raven">
+  <ion-tab-button routerLink="/home" routerDirection="back">
+    <ion-label color="airforce-silver">Display ID</ion-label>
+    <ion-icon name="qr-code-outline" color="airforce-silver"></ion-icon>
+  </ion-tab-button>
+  <ion-tab-button routerLink="/home-scanner" routerDirection="root">
+    <ion-label color="white">Scanner</ion-label>
+    <ion-icon name="scan-outline" color="white"></ion-icon>
+  </ion-tab-button>
+  <!--<ion-tab-button routerLink="/passes-modal" routerDirection="forward">
+    <ion-label color="primary">Wallet</ion-label>
+    <ion-icon name="wallet-outline" color="primary"></ion-icon>
+  </ion-tab-button>-->
+  <ion-tab-button routerLink="/profile-home" routerDirection="forward">
+    <ion-label color="white">Profile</ion-label>
+    <ion-icon name="person-circle-outline" color="white"></ion-icon>
+  </ion-tab-button>
+</ion-tab-bar>
