@@ -1,5 +1,6 @@
 ion-content, ion-header, ion-toolbar, ion-avatar, ion-row, ion-tab-bar, {
   --background: transparent;
+//  --background:rgba(5,16,51,0.75);
 }
 
 ion-content {
@@ -16,76 +17,47 @@ ion-content {
   z-index: 9;
 }
 
-ion-tab-bar {
+.scan-top {
+  height: 50vh;
+  width: 100vw;
   background: rgba(5,16,51,0.75);
 }
 
-$bg: #051033;
-$fg: #0096ff;
-$border-width: 1.2vw;
-$corner-size: 32vw;
-$dur: .3s;
-
-body {
-  background: $bg;
-}
-
-.corner-button {
-  width: 68vw;
+.scan-bezel {
   height: 68vw;
-  background: transparent;
-  border: $border-width solid currentColor;
-  padding: 1.5rem 2rem;
-  color: $fg;
-  position: relative;
-  transition: color $dur;
-  z-index: 2;
-
-  &:hover {
-    color: #0096ff;
-    &::before { width: 0; }
-    &::after { height: 0; }
-  }
-  &:active {
-    border-width: $border-width / 2;
-  }
-
-  &::before, &::after {
-    content: '';
-    position: absolute;
-    background: $bg;
-    z-index: -1;
-    transition: all $dur;
-  }
-  //the 101% is because of a pixel rounding issue in firefox
-  &::before {
-    width: calc(100% - #{$corner-size});
-    height: calc(100% + #{$border-width * 2});
-    top: -$border-width;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-  &::after {
-    height: calc(100% - #{$corner-size});
-    width: calc(101% + #{$border-width * 2});
-    left: -$border-width;
-    top: 50%;
-    transform: translateY(-50%);
-  }
+  width: 100vw;
+//  background-color: rgba(5,16,51,0.75);
+  display: flex;
 }
 
-/* Triangle */
-.polygon1 {
-  -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+.scan-lr {
+  height: 68vw;
+  width: 16vw;
+  padding: 0;
+  background-color: rgba(5,16,51,0.75);
 }
-/* X */
-.polygon2 {
-  -webkit-clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
-  clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+
+.scan-frame {
+  height: 68vw;
+  width: 68vw;
+  text-align: center;
+  background-color: var(--ion-color-primary);
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  -webkit-mask-position: center;
+  mask-position: center;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  mask-image: url("/assets/scan-frame.svg");
+//  clip-path: inset(0% 16%);
 }
-/* Star */
-.polygon3 {
-  -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
-  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+
+.scan-bottom {
+  height: 50vh;
+  width: 100vw;
+  background: rgba(5,16,51,0.75);
+}
+
+ion-tab-bar {
+  background: rgba(5,16,51,0.75);
 }
