@@ -5,11 +5,15 @@
     </ion-buttons>
     <ion-text class="ion-text-center">
       <ion-title class="ion-justify-content-center">
-        <img class="brand" src="/assets/aerpass-white.svg">
+        <ion-button routerLink="/profile-home" routerDirection="root" fill="clear">
+          <ion-avatar class="profile-pic-toolbar">
+            <img src="/assets/jess-taylor-profile.jpg">
+          </ion-avatar>
+        </ion-button>
       </ion-title>
     </ion-text>
     <!--<ion-buttons slot="end">
-      <ion-button color="primary" routerLink="/app-email-client-find" routerDirection="root" fill="clear">
+      <ion-button color="primary" routerLink="/view-notifications" routerDirection="root" fill="clear">
         <ion-icon name="notifications-outline" color="primary"></ion-icon>
       </ion-button>
     </ion-buttons>-->
@@ -17,52 +21,36 @@
 </ion-header>
 
 <ion-content fullscreen="true">
-  <div id="container-top">
-    <ion-row class="ion-justify-content-center">
-      <div class="ion-text-center">
-        <ion-row class="ion-justify-content-center">
-          <div class="profile-home">
-            <ion-avatar class="profile-frame-home">
-              <img src="/assets/jess-taylor-profile.jpg" class="profile-pic-home" alt="Profile Pic" routerLink="/profile-home" routerDirection="root">
-            </ion-avatar>
-            <div class="btn">
-              <ion-fab-button color="light" translucent="true" routerLink="/login-auth">
-                <ion-icon name="qr-code-outline" color="primary" class="icon-fab"></ion-icon>
-              </ion-fab-button>
-            </div>
-          </div>
-        </ion-row>
-        <ion-text class="section-header" color="white">
-          Jane Fentum
-        </ion-text>
-      </div>
-    </ion-row>
-  </div>
-
-  <div id="container-bottom">
-    <div id="scanner-bg">
-      <img src="/assets/scanner-bg-container-bottom.png" alt="scanner">
+  <div class="v-center">
+    <div class="ion-text-center">
+      <ion-row class="scan-top"></ion-row>
+      <ion-row class="ion-justify-content-center">
+        <div class="scan-bezel">
+          <div class="scan-lr"></div>
+          <div class="scan-frame"></div>
+          <div class="scan-lr"></div>
+        </div>
+      </ion-row>
+      <ion-row class="scan-bottom">
+        <ion-grid>
+          <ion-row class="ion-justify-content-center">
+            <ion-text class="text-smaller ion-text-center" color="white">
+              Scan&nbsp;&nbsp;<ion-icon src="/assets/A-symbol.svg" class="icon-small nudge-down" color="white"></ion-icon>&nbsp;&nbsp;Code
+            </ion-text>
+          </ion-row>
+        </ion-grid>
+      </ion-row>
     </div>
   </div>
-  <!--<div class="v-center">
-    <ion-text class="text-small" color="light">Scan Code</ion-text>
-  </div>-->
-  <!--<div class="hero-top">
-    <ion-row class="ion-justify-content-center">
-      <div class="profile">
-        <ion-avatar class="profile-frame">
-          <img src="/assets/jess-taylor-profile.jpg" class="profile-pic" alt="Profile Pic" routerLink="/profile-home" routerDirection="root">
-        </ion-avatar>
-        <div class="btn">
-          <ion-fab-button size="small" color="light" translucent="true" routerLink="/profile-code">
-            <ion-icon name="qr-code-outline" color="primary"></ion-icon>
-          </ion-fab-button>
-        </div>
-      </div>
-    </ion-row>
-  </div>-->
+  <!--<ion-row class="v-center ion-justify-content-center">
+    <img src="/assets/scanner-bg-raven.png" alt="scanner">
+  </ion-row>-->
 
-  <!--<div class="v-center">
+  <ion-text color="light" class="upper-third ion-text-center text-smaller">
+    Scan AERPASS QR codes for password-free logins and to safely pay at verified merchants.
+  </ion-text>
+
+  <div class="v-center">
     <ion-slides style="width: 100%">
       <ion-slide>
         <div class="ion-text-center">
@@ -71,9 +59,6 @@
               <img src="/assets/ap-login-auth-qr.svg" routerLink="/login-auth" />
             </div>
           </ion-row>
-          <div>
-            <ion-text class="text-smallest" color="primary">Scan QR Code to Login</ion-text>
-          </div>
         </div>
       </ion-slide>
 
@@ -84,34 +69,15 @@
               <img src="/assets/ap-payment-auth-qr.svg" routerLink="/payment-auth" />
             </div>
           </ion-row>
-          <div>
-            <ion-text class="text-smallest" color="primary">Scan QR Code to Pay</ion-text>
-          </div>
-        </div>
-      </ion-slide>
-
-      <ion-slide>
-        <div class="ion-text-center">
-          <ion-row class="ion-justify-content-center">
-            <div class="display-qr">
-              <img src="/assets/ap-safety-pass-result-qr.svg" routerLink="/hc-result" />
-            </div>
-          </ion-row>
-          <div>
-            <ion-text class="text-smallest" color="primary">Scan QR Code to Validate</ion-text>
-          </div>
         </div>
       </ion-slide>
 
     </ion-slides>
-  </div>-->
+  </div>
 
-  <!--<ion-row class="lower-third ion-justify-content-center">
-    <ion-button expand="block" class="pad20" color="light" routerLink="/view-hc-status">
-      <ion-icon src="/assets/shield-cross-outline.svg" color="safetypass"></ion-icon>
-      <ion-text color="safetypass">&nbsp;&nbsp;SafetyPASS Badge</ion-text>
-    </ion-button>
-  </ion-row>-->
+  <ion-row class="lower-third ion-justify-content-center">
+    <ion-icon src="/assets/A-symbol.svg" class="icon-larger" color="primary"></ion-icon>
+  </ion-row>
 
 </ion-content>
 

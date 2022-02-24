@@ -1,25 +1,56 @@
 <ion-header class="ion-no-border">
   <ion-toolbar>
-    <ion-title color="light">Verify Email</ion-title>
-    <ion-buttons slot="end">
-      <ion-button color="primary" routerLink="/view-personal-info" routerDirection="root" fill="clear">
-        Cancel
-      </ion-button>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
     </ion-buttons>
+    <ion-text class="ion-text-center">
+      <ion-title class="ion-justify-content-center">
+        Verify Email
+      </ion-title>
+    </ion-text>
+    <!--<ion-buttons slot="end">
+      <ion-button color="primary" routerLink="/view-notifications" routerDirection="root" fill="clear">
+        <ion-icon name="notifications-outline" color="primary"></ion-icon>
+      </ion-button>
+    </ion-buttons>-->
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-  <ion-row class="v-center">
-    <img src="/assets/scanner-bg.png" alt="scanner">
-  </ion-row>
+<ion-content fullscreen="true">
+  <div class="v-center">
+    <div class="ion-text-center">
+      <ion-row class="scan-top"></ion-row>
+      <ion-row class="ion-justify-content-center">
+        <div class="scan-bezel">
+          <div class="scan-lr"></div>
+          <div class="scan-frame"></div>
+          <div class="scan-lr"></div>
+        </div>
+      </ion-row>
+      <ion-row class="scan-bottom">
+        <ion-grid>
+          <ion-row class="ion-justify-content-center">
+            <ion-text class="text-smaller ion-text-center" color="white">
+              Scan&nbsp;&nbsp;<ion-icon src="/assets/A-symbol.svg" class="icon-small nudge-down" color="white"></ion-icon>&nbsp;&nbsp;Code
+            </ion-text>
+          </ion-row>
+        </ion-grid>
+      </ion-row>
+    </div>
+  </div>
   <ion-text color="light" class="upper-third ion-text-center text-smaller">
     Check your email for the QR code we sent to
     <ion-text color="primary">user@domain.com</ion-text>
   </ion-text>
 
   <div class="v-center">
-    <ion-button expand="block" class="pad20" routerLink="/verify-email-success">Success!</ion-button>
+    <div class="ion-text-center">
+      <ion-row class="ion-justify-content-center">
+        <div class="display-qr">
+          <img src="/assets/ap-login-auth-qr.svg" routerLink="/verify-email-success" />
+        </div>
+      </ion-row>
+    </div>
   </div>
 
   <ion-row class="lower-third ion-justify-content-center">
@@ -28,5 +59,21 @@
       <ion-button fill="clear" routerLink="">Resend</ion-button>
     </ion-text>
   </ion-row>
-
 </ion-content>
+
+<ion-tab-bar slot="bottom" class="tab-blur">
+  <ion-tab-button routerLink="/home" routerDirection="back">
+    <ion-label color="white">ID Badge</ion-label>
+    <ion-icon name="qr-code-outline" color="white"></ion-icon>
+  </ion-tab-button>
+  <ion-tab-button routerLink="/home-scanner" routerDirection="root">
+    <ion-label color="primary">Scanner</ion-label>
+    <ion-icon name="scan-outline" color="primary"></ion-icon>
+  </ion-tab-button>
+  <ion-tab-button routerLink="/profile-home" routerDirection="forward">
+    <ion-label color="white">Profile</ion-label>
+    <ion-icon name="person-outline" color="white"></ion-icon>
+  </ion-tab-button>
+</ion-tab-bar>
+
+

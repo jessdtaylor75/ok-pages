@@ -26,7 +26,6 @@ ion-content {
 .scan-bezel {
   height: 68vw;
   width: 100vw;
-//  background-color: rgba(5,16,51,0.75);
   display: flex;
 }
 
@@ -49,7 +48,6 @@ ion-content {
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
   mask-image: url("/assets/scan-frame.svg");
-//  clip-path: inset(0% 16%);
 }
 
 .scan-bottom {

@@ -1,30 +1,59 @@
-ion-content, ion-toolbar, ion-avatar, ion-row, ion-tab-bar, {
+ion-content, ion-header, ion-toolbar, ion-avatar, ion-row, ion-tab-bar, {
   --background: transparent;
-}
-
-ion-header {
-  background: rgba(5,16,51,0.75);
+  //  --background:rgba(5,16,51,0.75);
 }
 
 ion-content {
   --overflow: hidden;
 }
 
-#scanner-bg {
-  object-fit: cover;
-  overflow: hidden;
-  width: 100%;
-  height: 100%;
-  z-index: -9;
+.upper-third {
+  @extend .stretch!optional;
+  padding: 0 15vw 0 15vw;
+  background-color: transparent;
+  position: absolute;
+  top: 13%;
+  margin-top: env(safe-area-inset-top);
+  z-index: 9;
 }
 
-#container-top {
+.scan-top {
+  height: 50vh;
+  width: 100vw;
   background: rgba(5,16,51,0.75);
 }
 
-#container-bottom {
-  //background: url("/assets/scanner-bg-container-bottom.png");
-  overflow: hidden;
+.scan-bezel {
+  height: 68vw;
+  width: 100vw;
+  display: flex;
+}
+
+.scan-lr {
+  height: 68vw;
+  width: 16vw;
+  padding: 0;
+  background-color: rgba(5,16,51,0.75);
+}
+
+.scan-frame {
+  height: 68vw;
+  width: 68vw;
+  text-align: center;
+  background-color: var(--ion-color-primary);
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  -webkit-mask-position: center;
+  mask-position: center;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  mask-image: url("/assets/scan-frame.svg");
+}
+
+.scan-bottom {
+  height: 50vh;
+  width: 100vw;
+  background: rgba(5,16,51,0.75);
 }
 
 ion-tab-bar {
