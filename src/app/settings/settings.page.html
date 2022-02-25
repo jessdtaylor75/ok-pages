@@ -21,18 +21,43 @@
   <!-- Only appears if user has one or more group flags in their profile -->
   <ion-radio-group value="default">
     <ion-list-header>
-      <ion-label>Theme</ion-label>
+      <ion-label>App Icon & Theme</ion-label>
     </ion-list-header>
     <ion-list>
       <ion-item>
-        <ion-icon src="/assets/A-symbol.svg"></ion-icon>
-        <ion-label class="ion-padding-start">Default</ion-label>
+        <ion-icon src="/assets/A-symbol.svg" color="primary"></ion-icon>
+        <ion-label class="ion-padding-start" color="primary">Default</ion-label>
         <ion-radio slot="end" value="default"></ion-radio>
       </ion-item>
       <ion-item>
-        <ion-icon src="/assets/links-mark.svg"></ion-icon>
-        <ion-label class="ion-padding-start">MilitaryConnect</ion-label>
+        <ion-icon src="/assets/links-mark.svg" color="milconnect"></ion-icon>
+        <ion-label class="ion-padding-start" color="milconnect">MilitaryConnect</ion-label>
         <ion-radio slot="end" value="milconnect" color="milconnect"></ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-icon src="/assets/links-mark.svg" color="army-star"></ion-icon>
+        <ion-label class="ion-padding-start" color="army-black">US Army</ion-label>
+        <ion-radio slot="end" value="us-army" color="army-star"></ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-icon src="/assets/links-mark.svg" color="navy-gold"></ion-icon>
+        <ion-label class="ion-padding-start" color="navy-blue">US Navy</ion-label>
+        <ion-radio slot="end" value="us-navy" color="navy-gold"></ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-icon src="/assets/links-mark.svg" color="airforce-silver"></ion-icon>
+        <ion-label class="ion-padding-start" color="airforce-blue">US Air Force</ion-label>
+        <ion-radio slot="end" value="us-airforce" color="airforce-silver"></ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-icon src="/assets/links-mark.svg" color="marine-gold"></ion-icon>
+        <ion-label class="ion-padding-start" color="marine-crimson">US Marines</ion-label>
+        <ion-radio slot="end" value="us-marines" color="marine-gold"></ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-icon src="/assets/links-mark.svg" color="coastguard-blue"></ion-icon>
+        <ion-label class="ion-padding-start" color="coastguard-red">US Coast Guard</ion-label>
+        <ion-radio slot="end" value="us-coastguard" color="coastguard-blue"></ion-radio>
       </ion-item>
     </ion-list>
   </ion-radio-group>
