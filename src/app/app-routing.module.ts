@@ -599,6 +599,10 @@ const routes: Routes = [
     path: 'military-connect',
     loadChildren: () => import('./military-connect/military-connect.module').then( m => m.MilitaryConnectPageModule)
   },
+  {
+    path: 'home-scanner-milconnect',
+    loadChildren: () => import('./home-scanner-milconnect/home-scanner-milconnect.module').then( m => m.HomeScannerMilconnectPageModule)
+  },
 ];
 
 @NgModule({
