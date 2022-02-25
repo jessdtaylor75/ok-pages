@@ -5,7 +5,7 @@
         <ion-label color="medium">Cancel</ion-label>
       </ion-button>
     </ion-buttons>
-    <ion-title>Edit Persona</ion-title>
+    <ion-title>Edit Identity</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -24,17 +24,8 @@
 
   <ion-list>
     <ion-item>
-      <ion-label position="stacked" color="medium">Persona name</ion-label>
+      <ion-label position="stacked" color="medium">Display name</ion-label>
       <ion-input type="text" value="Display Name"></ion-input>
-    </ion-item>
-    <ion-item>
-      <ion-label>Type</ion-label>
-      <ion-select slot="end" value="02">
-        <ion-select-option value="01">Personal</ion-select-option>
-        <ion-select-option value="02">Business</ion-select-option>
-        <ion-select-option value="03">School</ion-select-option>
-        <ion-select-option value="04">Other</ion-select-option>
-      </ion-select>
     </ion-item>
     <ion-item>
       <ion-label position="stacked" color="medium">Email address</ion-label>
@@ -43,7 +34,7 @@
     <ion-item lines="none">
       <ion-icon name="alert-circle-outline" color="danger" slot="start"></ion-icon>
       <ion-text class="text-smallest" color="medium">
-        Changing your email address will require verification in order to use this Persona.
+        Changing your email address will require verification in order to use this Identity.
       </ion-text>
     </ion-item>
   </ion-list>

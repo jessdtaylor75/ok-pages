@@ -91,13 +91,13 @@
         <ion-icon name="checkmark-circle-outline" color="primary"></ion-icon>
       </ion-note>
     </ion-item>
-    <ion-item routerLink="/verify-identity">
+    <!--<ion-item routerLink="/verify-identity">
       <ion-icon name="alert-circle-outline" color="danger"></ion-icon>
       <ion-text class="ion-padding-start text-smallest" color="medium">
         Your AerPass Vault requires ID verification.<br/>
         Please verify ID to access Vault services.
       </ion-text>
-    </ion-item>
+    </ion-item>-->
     <ion-item-sliding>
       <ion-item detail>
         <ion-label color="dark">
@@ -140,3 +140,10 @@
   </ion-fab>-->
 
 </ion-content>
+<ion-footer class="ion-no-border">
+  <ion-toolbar>
+    <ion-button expand="block" class="pad15 ion-margin-bottom" fill="outline" routerLink="/profile-home">
+      Done
+    </ion-button>
+  </ion-toolbar>
+</ion-footer>
