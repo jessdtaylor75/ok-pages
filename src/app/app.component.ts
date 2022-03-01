@@ -46,15 +46,16 @@ export class AppComponent {
       url: '/about',
       icon: 'information-circle-outline'
     },
-    // {
-    //   title: 'Login',
-    //   url: '/login',
-    //   icon: 'log-in-outline'
-    // },
-    // {
-    //   title: 'Success Login',
-    //   url: '/success-login',
-    // },
+    {
+      title: 'MC Sign-in demo',
+      url: '/app-browser-first-checkin',
+      icon: 'log-in-outline'
+    },
+    {
+      title: 'AP Sign-in demo',
+      url: '/app-browser-map',
+      icon: 'log-in-outline'
+    },
   ];
 
   constructor(

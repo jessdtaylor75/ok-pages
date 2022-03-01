@@ -1,23 +1,87 @@
 <ion-header class="ion-no-border">
-  <ion-toolbar translucent="true">
+  <ion-toolbar>
     <ion-buttons slot="start">
-      <ion-back-button defaultHref="/profile-home"></ion-back-button>
+      <ion-back-button defaultHref="/easy-access"></ion-back-button>
     </ion-buttons>
-    <ion-title>
-      Menu
-    </ion-title>
+    <ion-title>Verification Form</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content fullscreen="true">
-  <div>
-    <iframe src="https://slanteddoor.com/food.php#dinner" width="100%" height="812pt"></iframe>
-  </div>
-</ion-content>
-<ion-footer>
+<ion-content>
+  <ion-row class="ion-justify-content-center">
+    <ion-icon src="/assets/links-mark.svg" class="icon-big" color="milconnect"></ion-icon>
+  </ion-row>
+  <ion-row class="ion-justify-content-center">
+    <ion-icon name="ellipsis-horizontal"></ion-icon>
+  </ion-row>
+  <ion-row class="ion-justify-content-center"><ion-text>&nbsp;</ion-text></ion-row>
+
+  <ion-list>
+    <ion-item>
+      <ion-label position="stacked" color="medium">
+        Display Name
+      </ion-label>
+      <ion-input type="text" value="Jane Sullivan"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked" color="medium">
+        Full name
+      </ion-label>
+      <ion-grid>
+        <ion-row>
+          <ion-col size="4">
+            <ion-input type="text" placeholder="Jane"></ion-input>
+          </ion-col>
+          <ion-col size="4">
+            <ion-input type="text" placeholder="Middle"></ion-input>
+          </ion-col>
+          <ion-col size="4">
+            <ion-input type="text" placeholder="Sullivan"></ion-input>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked" color="medium">
+        Date of Birth
+      </ion-label>
+      <ion-input type="text" placeholder="Mo/Da/Year"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked" color="medium">
+        Date during which you were in service
+      </ion-label>
+      <ion-input type="text" placeholder="Mo/Da/Year"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked" color="medium">
+        Mobile number for your authenticator app
+      </ion-label>
+      <ion-input type="text" value="+1 (321) 456-7890"></ion-input>
+    </ion-item>
+  </ion-list>
   <ion-toolbar>
-    <ion-button expand="block" class="pad15 ion-margin-bottom" routerLink="/home-scanner">
-      Done
+    <ion-button expand="block" class="pad15 ion-margin-top" color="milconnect" routerLink="/app-email-client-find">
+      Submit
     </ion-button>
+  </ion-toolbar>
+
+</ion-content>
+
+<ion-footer class="ion-no-border">
+  <ion-toolbar>
+    <ion-grid>
+      <ion-row>
+        <ion-col size="4">
+          <ion-button size="small" color="medium" fill="outline" expand="block" routerLink="/app-browser-first-checkin" routerDirection="back"><ion-icon name="return-up-back-outline"></ion-icon>&nbsp;&nbsp;Back</ion-button>
+        </ion-col>
+        <ion-col size="4">
+          <ion-button size="small" color="medium" fill="outline" expand="block" routerLink="/app-browser"><ion-icon name="return-up-forward-outline"></ion-icon>&nbsp;&nbsp;MC Deals</ion-button>
+        </ion-col>
+        <ion-col size="4">
+          <ion-button size="small" color="medium" fill="outline" expand="block" routerLink="/edit-personal-info"><ion-icon name="return-up-forward-outline"></ion-icon>&nbsp;&nbsp;Skip</ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
   </ion-toolbar>
 </ion-footer>

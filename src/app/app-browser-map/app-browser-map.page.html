@@ -1,54 +1,54 @@
 <ion-header class="ion-no-border">
   <ion-toolbar>
     <ion-buttons slot="start">
-      <ion-back-button defaultHref="/home-scanner"></ion-back-button>
+      <ion-back-button color="medium" defaultHref="/home-scanner"></ion-back-button>
     </ion-buttons>
-    <ion-title color="safetypass">
-      SafetyPASS Check In
-    </ion-title>
+    <ion-title color="medium">User Connect</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content fullscreen="true">
-  <ion-card>
-    <img src="assets/google-map-msg.png" />
-    <ion-card-header>
-      <ion-card-subtitle>Check-in</ion-card-subtitle>
-      <ion-card-title class="text-smaller">Madison Square Garden</ion-card-title>
-    </ion-card-header>
-  <ion-card-content>
-    <ion-row>
-      <ion-text class="text-smallest">
-        Billed as the "world's most famous arena" hosts pro sports, concerts & other big events.
-      </ion-text>
-    </ion-row>
-    <ion-row>
-      &nbsp;&nbsp;
-    </ion-row>
-    <ion-row>
-      <ion-icon name="location-outline" color="primary"></ion-icon>
-      <ion-text class="ion-padding-start text-smallest">
-        4 Pennsylvania Plaza, New York, NY 10001
-      </ion-text>
-    </ion-row>
-    <ion-row>
-      <ion-item>
-        <ion-label position="floating" color="medium">How many in your party? <ion-text color="danger">*</ion-text></ion-label>
-        <ion-input></ion-input>
-      </ion-item>
-    </ion-row>
-  </ion-card-content>
-  </ion-card>
-</ion-content>
-<ion-footer>
+  <h3 class="ion-text-center">Use AERPASS</h3>
+  <h5 class="ion-text-center">
+    to continue to <span style="color: var(--ion-color-secondary)">1800Flowers Sign-In</span>
+  </h5>
+  <ion-row class="ion-justify-content-center">
+    <ion-text class="ion-text-center">
+      &nbsp;&nbsp;<br/>&nbsp;&nbsp;
+    </ion-text>
+  </ion-row>
+  <!--<ion-row class="pad10">
+    <ion-card routerLink="/verify-email-success">
+      <ion-card-content class="ion-text-center">Scan QR code to sign-in</ion-card-content>
+      <img src="/assets/ap-validate-email-qr.png" />
+    </ion-card>
+  </ion-row>-->
   <ion-toolbar>
-    <ion-button expand="block" class="pad15 ion-margin-bottom" fill="outline" color="dark" routerLink="/pass-checklist">
-      <ion-icon src="/assets/shield-cross-outline.svg" color="safetypass"></ion-icon>
-      &nbsp;&nbsp;SafetyPASS Checklist&nbsp;&nbsp;
-      <ion-icon name="checkmark-circle-outline"></ion-icon>
-    </ion-button>
-    <ion-button expand="block" class="pad15 ion-margin-bottom" routerLink="/checkin-success">
-      Check In
+    <ion-button expand="block" class="pad15" color="milconnect" routerLink="/login-auth">
+      Connect with&nbsp;&nbsp;
+      <ion-img src="/assets/aerpass-white.svg" alt="AERPASS"></ion-img>
     </ion-button>
   </ion-toolbar>
-</ion-footer>
+  <!--<ion-row class="ion-justify-content-center">
+    <ion-icon class="icon-larger" src="/assets/links-mark.svg" color="milconnect"></ion-icon>
+  </ion-row>-->
+  <ion-row class="ion-justify-content-center">
+    <ion-text class="ion-text-center text-smaller">
+      &nbsp;&nbsp;<br/>
+      Not a member?<br/>&nbsp;&nbsp;
+    </ion-text>
+  </ion-row>
+  <ion-toolbar>
+    <ion-button expand="block" class="pad15" color="tertiary" fill="outline" routerLink="/login-auth">
+      Get&nbsp;&nbsp;
+      <ion-icon src="/assets/A-symbol.svg" color="tertiary"></ion-icon>&nbsp;
+      AERPASS
+    </ion-button>
+  </ion-toolbar>
+  <ion-row class="pad5">
+    <ion-text class="ion-text-justify text-smallest">
+      &nbsp;&nbsp;<br/>
+      To continue, AERPASS will share your display name, email address, language preference, and online ID picture with 1800Flowers Sign-in. Before using this app, you can review 1800Flowers Sign-In's <span style="color: var(--ion-color-secondary)">privacy policy</span> and <span style="color: var(--ion-color-secondary)">terms of service</span>.<br/>&nbsp;
+    </ion-text>
+  </ion-row>
+</ion-content>
