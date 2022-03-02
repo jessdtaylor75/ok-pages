@@ -1,46 +1,40 @@
 <ion-header class="ion-no-border">
   <ion-toolbar>
     <ion-buttons slot="start">
-      <ion-button routerLink="/view-insurance" routerDirection="back">
-        <ion-label color="medium">Cancel</ion-label>
-      </ion-button>
+      <ion-back-button color="medium" defaultHref="/home-scanner"></ion-back-button>
     </ion-buttons>
-    <ion-title>Add Provider</ion-title>
+    <ion-title color="medium">MilitaryConnect-Web</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-  <ion-row class="ion-justify-content-center">
-    <ion-avatar class="profile-frame">
-      <img src="/assets/jess-taylor-profile.jpg" class="profile-pic">
-    </ion-avatar>
-  </ion-row>
-  <ion-text class="section-header" color="primary">
-    Health Insurance<br/><br/>
-  </ion-text>
-
-  <ion-list>
-    <ion-item>
-      <ion-label position="stacked" color="medium">Provider</ion-label>
-      <ion-input type="text" value=""></ion-input>
-    </ion-item>
-    <ion-item>
-      <ion-label position="stacked" color="medium">Member ID</ion-label>
-      <ion-input type="number" value=""></ion-input>
-    </ion-item>
-    <ion-item lines="none">
-      <ion-icon name="alert-circle-outline" color="danger" slot="start"></ion-icon>
-      <ion-text class="text-smallest" color="medium">
-        Your member ID must be verified in order to start using AerPass with this insurance.
+<ion-content fullscreen="true">
+  <div class="v-center">
+    <h5 class="ion-text-center">
+      Connect to <span style="color: var(--ion-color-secondary)">1800Flowers Sign-In</span>
+    </h5>
+    <ion-row class="pad15">
+      <ion-card routerLink="/login-auth">
+        <ion-card-content class="ion-text-center">Scan QR code to connect</ion-card-content>
+        <img src="/assets/ap-validate-email-qr.png" />
+      </ion-card>
+    </ion-row>
+    <ion-row class="ion-justify-content-center">
+      <ion-text class="ion-text-center text-smaller">
+        Not a member?<br/>&nbsp;&nbsp;
       </ion-text>
-    </ion-item>
-  </ion-list>
-
+    </ion-row>
+    <ion-toolbar>
+      <ion-button expand="block" class="pad15" color="milconnect" fill="outline" routerLink="/easy-access">
+        Join&nbsp;&nbsp;
+        <ion-icon src="/assets/links-mark.svg" color="milconnect"></ion-icon>&nbsp;
+        MilitaryConnect
+      </ion-button>
+    </ion-toolbar>
+    <ion-row class="pad5">
+      <ion-text class="ion-text-justify text-smallest">
+        &nbsp;&nbsp;<br/>
+        To continue, MilitaryConnect will share your display name, email address, language preference, and profile picture with 1800Flowers Sign-in. Before using this app, you can review 1800Flowers Sign-In's <span style="color: var(--ion-color-secondary)">privacy policy</span> and <span style="color: var(--ion-color-secondary)">terms of service</span>.<br/>&nbsp;
+      </ion-text>
+    </ion-row>
+  </div>
 </ion-content>
-<ion-footer class="ion-no-border">
-  <ion-toolbar>
-    <ion-button expand="block" class="pad15 ion-margin-bottom" routerLink="/view-insurance">
-      Save Insurance
-    </ion-button>
-  </ion-toolbar>
-</ion-footer>

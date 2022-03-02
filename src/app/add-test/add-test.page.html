@@ -1,105 +1,49 @@
 <ion-header class="ion-no-border">
   <ion-toolbar>
     <ion-buttons slot="start">
-      <ion-back-button defaultHref="/view-test-list"></ion-back-button>
+      <ion-back-button color="medium" defaultHref="/home-scanner"></ion-back-button>
     </ion-buttons>
-    <ion-title color="safetypass">
-      Enter Test Results
-    </ion-title>
+    <ion-title color="medium">User Connect-Web</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-  <ion-row class="ion-justify-content-center">
-    <ion-icon name="flask-outline" color="primary" class="icon-larger"></ion-icon>
-  </ion-row>
-
-   <ion-list>
-    <ion-item>
-      <ion-label>
-        <ion-searchbar value="Find Test by Email"></ion-searchbar>
-      </ion-label>
-    </ion-item>
-     <ion-item>
-       <ion-label position="stacked" color="medium">Type</ion-label>
-       <ion-select value="Type" interface="action-sheet">
-         <ion-select-option value="Molecular - Virus">Antigen - Virus</ion-select-option>
-         <ion-select-option value="Molecular - Virus">Molecular - Virus</ion-select-option>
-         <ion-select-option value="Serology - Antibody">Serology - Antibody</ion-select-option>
-       </ion-select>
-     </ion-item>
-    <ion-item>
-      <ion-label position="stacked" color="medium">Manufacturer / Lab</ion-label>
-      <ion-select>
-        <ion-select-option value="Abbott Laboratories">Abbott Laboratories</ion-select-option>
-        <ion-select-option value="Assure Tech">Assure Tech</ion-select-option>
-        <ion-select-option value="Autobio Diagnostics">Autobio Diagnostics</ion-select-option>
-        <ion-select-option value="Babson Diagnostics">Babson Diagnostics</ion-select-option>
-        <ion-select-option value="Beckman Coulter">Beckman Coulter</ion-select-option>
-        <ion-select-option value="Bio-Rad Laboratories">Bio-Rad Laboratories</ion-select-option>
-        <ion-select-option value="Biohit Healthcare (Hefei)">Biohit Healthcare (Hefei)</ion-select-option>
-        <ion-select-option value="Cellex">Cellex</ion-select-option>
-        <ion-select-option value="DiaSorin">DiaSorin</ion-select-option>
-        <ion-select-option value="Emory Medical Laboratories">Emory Medical Laboratories</ion-select-option>
-        <ion-select-option value="EUROIMMUN US">EUROIMMUN US</ion-select-option>
-        <ion-select-option value="Hangzhou Biotest Biotech">Hangzhou Biotest Biotech</ion-select-option>
-        <ion-select-option value="Hangzhou Laihe Biotech">Hangzhou Laihe Biotech</ion-select-option>
-        <ion-select-option value="Healgen Scientific">Healgen Scientific</ion-select-option>
-        <ion-select-option value="InBios International">InBios International</ion-select-option>
-        <ion-select-option value="Mount Sinai Laboratory">Mount Sinai Laboratory</ion-select-option>
-        <ion-select-option value="Ortho Clinical Diagnostics">Ortho Clinical Diagnostics</ion-select-option>
-        <ion-select-option value="Roche Diagnostics">Roche Diagnostics</ion-select-option>
-        <ion-select-option value="Sensing Self">Sensing Self</ion-select-option>
-        <ion-select-option value="Siemens Healthcare Diagnostics">Siemens Healthcare Diagnostics</ion-select-option>
-        <ion-select-option value="Vibrant America Clinical Labs">Vibrant America Clinical Labs</ion-select-option>
-        <ion-select-option value="Wadsworth Center, New York State Department of Health">Wadsworth Center, New York State Department of Health</ion-select-option>
-      </ion-select>
-    </ion-item>
-
-     <ion-item>
-       <ion-label position="stacked" color="medium">Result</ion-label>
-       <ion-select value="Result" interface="action-sheet">
-         <ion-select-option value="Positive IgG">Positive IgG</ion-select-option>
-         <ion-select-option value="Positive IgM + IgG">Positive IgM + IgG</ion-select-option>
-         <ion-select-option value="Positive IgM">Positive IgM</ion-select-option>
-         <ion-select-option value="Negative">Negative</ion-select-option>
-         <ion-select-option value="Invalid">Invalid</ion-select-option>
-       </ion-select>
-     </ion-item>
-     <!-- IF selected value of Type="Molecular - Virus" Replace Result item above with Result item below -->
-     <!-- <ion-item>
-       <ion-label position="stacked" color="medium">Result</ion-label>
-       <ion-select value="Result" interface="action-sheet">
-         <ion-select-option value="Positive SARS-CoV-2">Positive SARS-CoV-2</ion-select-option>
-         <ion-select-option value="Negative">Negative</ion-select-option>
-         <ion-select-option value="Invalid">Invalid</ion-select-option>
-       </ion-select>
-     </ion-item> -->
-    <ion-item>
-      <ion-grid>
-        <ion-row>
-          <ion-col size="6" class="ion-align-self-start">
-            <ion-label position="stacked" color="medium">Test Date</ion-label>
-            <ion-input type="date" value=""></ion-input>
-          </ion-col>
-          <ion-col size="6" class="ion-align-self-end">
-            <ion-label position="stacked" color="medium" class="ion-text-end">Result Date</ion-label>
-            <ion-input type="date" value="" class="ion-text-end"></ion-input>
-          </ion-col>
-        </ion-row>
-      </ion-grid>
-    </ion-item>
-    <ion-item>
-      <ion-label position="stacked" color="medium">Specimen ID</ion-label>
-      <ion-input type="text" value=""></ion-input>
-    </ion-item>
-  </ion-list>
-
+<ion-content fullscreen="true">
+  <div class="v-center">
+    <h5 class="ion-text-center">
+      Connect to <span style="color: var(--ion-color-secondary)">1800Flowers Sign-In</span>
+    </h5>
+    <ion-row class="pad15">
+      <ion-card routerLink="/login-auth">
+        <ion-card-content class="ion-text-center">Scan QR code to connect</ion-card-content>
+        <img src="/assets/ap-validate-email-qr.png" />
+      </ion-card>
+    </ion-row>
+    <ion-row class="pad20">
+    <ion-text class="text-smaller">
+      &nbsp;&nbsp;<br/>
+      Not an AERPASS member?
+    </ion-text>
+    </ion-row>
+    <ion-row class="pad15">
+      <ion-item>
+        <ion-label position="stacked" color="primary">
+          Enter your mobile number to join
+        </ion-label>
+        <ion-input type="text" value="000-000-0000" color="medium"></ion-input>
+      </ion-item>
+    </ion-row>
+    <!--<ion-toolbar>
+      <ion-button expand="block" class="pad15" color="primary" fill="outline" routerLink="/login-auth">
+        Get&nbsp;&nbsp;
+        <ion-icon src="/assets/A-symbol.svg" color="primary"></ion-icon>&nbsp;
+        AERPASS
+      </ion-button>
+    </ion-toolbar>-->
+    <ion-row class="pad5">
+      <ion-text class="ion-text-justify text-smallest">
+        &nbsp;&nbsp;<br/>
+        To continue, AERPASS will share your display name, email address, language preference, and profile picture with 1800Flowers Sign-in. Before using this app, you can review 1800Flowers Sign-In's <span style="color: var(--ion-color-secondary)">privacy policy</span> and <span style="color: var(--ion-color-secondary)">terms of service</span>.<br/>&nbsp;
+      </ion-text>
+    </ion-row>
+  </div>
 </ion-content>
-<ion-footer class="ion-no-border">
-  <ion-toolbar>
-    <ion-button expand="block" class="pad15 ion-margin-bottom" routerLink="/scan-test">
-      Scan Report / Submit
-    </ion-button>
-  </ion-toolbar>
-</ion-footer>
