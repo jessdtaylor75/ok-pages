@@ -7,7 +7,7 @@ ion-title {
 }
 
 ion-avatar {
-  border: .25vw solid var(--ion-color-white);
+  border: 1pt solid var(--ion-color-white);
 }
 
 .text-large {
@@ -195,7 +195,7 @@ ion-avatar {
   width: 9vw;
   height: 9vw;
   border-radius: 50%;
-  border: .25vw solid var(--ion-color-primary);
+  border: 1pt solid var(--ion-color-primary);
   text-align: center;
   display: inline-block;
 }
