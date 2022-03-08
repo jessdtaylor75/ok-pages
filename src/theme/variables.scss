@@ -530,24 +530,6 @@
 }
 
 :root {
-  --ion-color-hulu-pop: #43e576;
-  --ion-color-hulu-pop-rgb: 67,229,118;
-  --ion-color-hulu-pop-contrast: #000000;
-  --ion-color-hulu-pop-contrast-rgb: 0,0,0;
-  --ion-color-hulu-pop-shade: #3bca68;
-  --ion-color-hulu-pop-tint: #56e884;
-}
-
-.ion-color-hulu-pop {
-  --ion-color-base: var(--ion-color-hulu-pop);
-  --ion-color-base-rgb: var(--ion-color-hulu-pop-rgb);
-  --ion-color-contrast: var(--ion-color-hulu-pop-contrast);
-  --ion-color-contrast-rgb: var(--ion-color-hulu-pop-contrast-rgb);
-  --ion-color-shade: var(--ion-color-hulu-pop-shade);
-  --ion-color-tint: var(--ion-color-hulu-pop-tint);
-}
-
-:root {
   --ion-color-spot-green: #1db954;
   --ion-color-spot-green-rgb: 29,185,84;
   --ion-color-spot-green-contrast: #ffffff;

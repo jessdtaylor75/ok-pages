@@ -18,22 +18,6 @@ $card-height: 55vw;
   height: $card-height - 12vw;
 }
 
-.profile-pic-auth {
-  width: 34vw;
-  height: 34vw;
-  border-radius: 50%;
-  border: .5vw solid var(--ion-color-light);
-  text-align: center;
-  display: inline-block;
-}
-
-.profile-frame-auth {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 3vw;
-  width: 36vw;
-  height: 36vw;
-  border-radius: 50%;
-  border: .5vw solid var(--ion-color-light);
+.profile-spacer-top {
+  padding-top: .5rem;
 }
