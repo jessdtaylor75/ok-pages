@@ -27,7 +27,7 @@
               <img src="/assets/jess-taylor-profile.jpg" class="profile-pic-pid" alt="Profile Pic" routerLink="/profile-home" routerDirection="root">
             </ion-avatar>
             <div class="btn">
-              <ion-fab-button color="coastguard-red" translucent="true" routerLink="/view-idcard-list">
+              <ion-fab-button color="coastguard-red" translucent="true" routerLink="/home">
                 <ion-icon src="/assets/links-mark.svg" color="coastguard-blue" class="icon-fab"></ion-icon>
               </ion-fab-button>
             </div>
@@ -50,10 +50,10 @@
         <ion-toolbar color="transparent">
           <ion-segment value="military" color="light">
             <ion-segment-button value="military">
-              <ion-label color="coastguard-blue">Military ID</ion-label>
+              <ion-label color="coastguard-blue">Pass Code</ion-label>
             </ion-segment-button>
             <ion-segment-button value="altpass">
-              <ion-label color="coastguard-blue">SafetyPASS</ion-label>
+              <ion-label color="coastguard-blue">Details</ion-label>
             </ion-segment-button>
           </ion-segment>
         </ion-toolbar>
@@ -65,7 +65,7 @@
 
 <ion-tab-bar slot="bottom" color="raven">
   <ion-tab-button routerLink="/home" routerDirection="back">
-    <ion-label color="coastguard-blue">Display ID</ion-label>
+    <ion-label color="coastguard-blue">ID Badge</ion-label>
     <ion-icon name="qr-code-outline" color="coastguard-blue"></ion-icon>
   </ion-tab-button>
   <ion-tab-button routerLink="/home-scanner" routerDirection="root">
