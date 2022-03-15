@@ -1,0 +1,127 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button routerLink="/address">
+        <ion-label color="medium">Cancel</ion-label>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Edit Address</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-row class="ion-justify-content-center">
+    <ion-avatar class="profile-frame">
+      <img src="/assets/jess-taylor-profile.jpg" class="profile-pic">
+    </ion-avatar>
+  </ion-row>
+  <ion-text class="section-header" color="primary">
+    Address 1<br/><br/>
+  </ion-text>
+  <ion-list>
+    <ion-item>
+      <ion-label position="stacked" color="medium">Address line 1</ion-label>
+      <ion-input type="text" value="">123 4th Ave Apt 5</ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked" color="medium">Address line 2</ion-label>
+      <ion-input type="text" value=""></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-row>
+        <ion-col size="8" class="ion-align-self-start">
+          <div>
+            <ion-label position="stacked" color="medium">City</ion-label>
+            <ion-input type="text" value="">New York</ion-input>
+          </div>
+        </ion-col>
+        <ion-col  size="4" class="ion-align-self-end">
+          <ion-label position="stacked" color="medium" class="ion-text-end">State</ion-label>
+          <ion-select value="New York" multiple="true" cancelText="Cancel" okText="Select" class="ion-text-end">
+            <ion-select-option value="Alabama">AL</ion-select-option>
+            <ion-select-option value="Alaska">AK</ion-select-option>
+            <ion-select-option value="American Samoa">AS</ion-select-option>
+            <ion-select-option value="Arizona">AZ</ion-select-option>
+            <ion-select-option value="Arkansas">AR</ion-select-option>
+            <ion-select-option value="California">CA</ion-select-option>
+            <ion-select-option value="Colorado">CO</ion-select-option>
+            <ion-select-option value="Connecticut">CT</ion-select-option>
+            <ion-select-option value="Delaware">DE</ion-select-option>
+            <ion-select-option value="Florida">FL</ion-select-option>
+            <ion-select-option value="Georgia">GA</ion-select-option>
+            <ion-select-option value="Guam">GU</ion-select-option>
+            <ion-select-option value="Hawaii">HI</ion-select-option>
+            <ion-select-option value="Idaho">ID</ion-select-option>
+            <ion-select-option value="Illinois">IL</ion-select-option>
+            <ion-select-option value="Indiana">IN</ion-select-option>
+            <ion-select-option value="Iowa">IA</ion-select-option>
+            <ion-select-option value="Kansas">KS</ion-select-option>
+            <ion-select-option value="Kentucky">KY</ion-select-option>
+            <ion-select-option value="Louisiana">LA</ion-select-option>
+            <ion-select-option value="Maine">ME</ion-select-option>
+            <ion-select-option value="Maryland">MD</ion-select-option>
+            <ion-select-option value="Marshall Islands">MH</ion-select-option>
+            <ion-select-option value="Massachusetts">MA</ion-select-option>
+            <ion-select-option value="Michigan">MI</ion-select-option>
+            <ion-select-option value="Micronesia">FM</ion-select-option>
+            <ion-select-option value="Minnesota">MN</ion-select-option>
+            <ion-select-option value="Mississippi">MS</ion-select-option>
+            <ion-select-option value="Missouri">MO</ion-select-option>
+            <ion-select-option value="Montana">MT</ion-select-option>
+            <ion-select-option value="Nebraska">NE</ion-select-option>
+            <ion-select-option value="Nevada">NV</ion-select-option>
+            <ion-select-option value="New Hampshire">NH</ion-select-option>
+            <ion-select-option value="New Jersey">NJ</ion-select-option>
+            <ion-select-option value="New Mexico">NM</ion-select-option>
+            <ion-select-option value="New York">NY</ion-select-option>
+            <ion-select-option value="North Carolina">NC</ion-select-option>
+            <ion-select-option value="North Dakota">ND</ion-select-option>
+            <ion-select-option value="Northern Marianas">MP</ion-select-option>
+            <ion-select-option value="Ohio">OH</ion-select-option>
+            <ion-select-option value="Oklahoma">OK</ion-select-option>
+            <ion-select-option value="Oregon">OR</ion-select-option>
+            <ion-select-option value="Palau">PW</ion-select-option>
+            <ion-select-option value="Pennsylvania">PA</ion-select-option>
+            <ion-select-option value="Puerto Rico">PR</ion-select-option>
+            <ion-select-option value="Rhode Island">RI</ion-select-option>
+            <ion-select-option value="South Carolina">SC</ion-select-option>
+            <ion-select-option value="South Dakota">SD</ion-select-option>
+            <ion-select-option value="Tennessee">TN</ion-select-option>
+            <ion-select-option value="Texas">TX</ion-select-option>
+            <ion-select-option value="Utah">UT</ion-select-option>
+            <ion-select-option value="Vermont">VT</ion-select-option>
+            <ion-select-option value="Virginia">VA</ion-select-option>
+            <ion-select-option value="Virgin Islands">VI</ion-select-option>
+            <ion-select-option value="Washington">WA</ion-select-option>
+            <ion-select-option value="West Virginia">WV</ion-select-option>
+            <ion-select-option value="Wisconsin">WI</ion-select-option>
+            <ion-select-option value="Wyoming">WY</ion-select-option>
+          </ion-select>
+        </ion-col>
+      </ion-row>
+    </ion-item>
+    <ion-item>
+      <ion-row>
+        <ion-col size="8" class="ion-align-self-start">
+          <ion-label position="stacked" color="medium">Post code</ion-label>
+          <ion-input type="text" value="">10001</ion-input>
+        </ion-col>
+        <ion-col  size="4" class="ion-align-self-end">
+          <ion-label position="stacked" color="medium" class="ion-text-end">Country</ion-label>
+          <ion-select value="United States" multiple="true" cancelText="Cancel" okText="Select" class="ion-text-end">
+            <ion-select-option value="United States">USA</ion-select-option>
+          </ion-select>
+        </ion-col>
+      </ion-row>
+    </ion-item>
+  </ion-list>
+
+
+</ion-content>
+<ion-footer class="ion-no-border">
+  <ion-toolbar>
+    <ion-button expand="block" class="pad15 ion-margin-bottom" routerLink="/address">
+      Save Changes
+    </ion-button>
+  </ion-toolbar>
+</ion-footer>

@@ -1,0 +1,89 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/browser-eas"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Add Profile Info</ion-title>
+    <ion-buttons slot="end">
+      <ion-button routerLink="/personal-info" routerDirection="back">
+        <ion-label>Cancel</ion-label>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="ion-text-center">
+    <ion-row class="ion-justify-content-center">
+      <ion-avatar class="profile-frame">
+        <img src="/assets/person-circle-outline-medium.svg" class="profile-pic">
+      </ion-avatar>
+    </ion-row>
+    <ion-button color="primary" size="small" fill="clear">
+      Change Picture
+    </ion-button>
+  </div>
+  <ion-list>
+    <ion-item>
+      <ion-label position="stacked" color="medium">
+        Display name<ion-text color="danger">*</ion-text>
+      </ion-label>
+      <ion-input type="text" value="FIRST MIDDLE SURNAME"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-row>
+        <ion-col>
+          <ion-label position="stacked" color="medium">
+            First name<ion-text color="danger">*</ion-text>
+          </ion-label>
+          <ion-input type="text" value="FIRST" disabled="true"></ion-input>
+        </ion-col>
+        <ion-col>
+          <ion-label position="stacked" color="medium">Middle name</ion-label>
+          <ion-input type="text" value="MIDDLE" disabled="true"></ion-input>
+        </ion-col>
+      </ion-row>
+    </ion-item>
+    <ion-item>
+      <ion-row>
+        <ion-col>
+          <ion-label position="stacked" color="medium">
+            Last name<ion-text color="danger">*</ion-text>
+          </ion-label>
+          <ion-input type="text" value="SURNAME" disabled="true"></ion-input>
+        </ion-col>
+        <ion-col>
+          <ion-label position="stacked" color="medium">Suffix</ion-label>
+          <ion-input type="text" value=""></ion-input>
+        </ion-col>
+      </ion-row>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked" color="medium">
+        Email address<ion-text color="danger">*</ion-text>
+      </ion-label>
+      <ion-input type="email" value="" email="true"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-icon name="alert-circle-outline" color="danger"></ion-icon>
+      <ion-text class="text-smallest ion-padding-start" color="medium">
+        Email address must be verified in order to use AerPass.
+      </ion-text>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked" color="medium">
+        Mobile number<ion-text color="danger">*</ion-text>
+      </ion-label>
+      <ion-input type="text" value=""></ion-input>
+    </ion-item>
+
+  </ion-list>
+
+</ion-content>
+<ion-footer class="ion-no-border">
+  <ion-toolbar>
+    <ion-button expand="block" class="pad15 ion-margin-bottom" routerLink="/scan-email">
+      Save Changes
+    </ion-button>
+  </ion-toolbar>
+</ion-footer>

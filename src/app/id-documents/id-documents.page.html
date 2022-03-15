@@ -1,0 +1,83 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/profile-home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>
+      ID Documents
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-row class="ion-justify-content-center">
+    <div class="profile">
+      <ion-avatar class="profile-frame">
+        <img src="/assets/jess-taylor-profile.jpg" class="profile-pic" alt="Profile Pic">
+      </ion-avatar>
+      <div class="btn">
+        <ion-fab-button size="small" color="light" translucent="true" routerLink="/profile-code">
+          <ion-icon name="qr-code-outline" color="primary"></ion-icon>
+        </ion-fab-button>
+      </div>
+    </div>
+  </ion-row>
+  <ion-text class="section-header" color="primary">&nbsp;&nbsp;<br/>Display Name<br/><br/></ion-text>
+  <ion-list>
+    <ion-item detail>
+      <ion-avatar>
+        <img src="/assets/jess-taylor-profile.jpg">
+      </ion-avatar>
+      <ion-label class="ion-padding-start">
+        Driver License
+        <div class="field-label">New York, USA</div>
+      </ion-label>
+      <ion-note slot="end" class="ion-text-end">
+        <ion-icon name="checkmark-circle-outline" color="primary"></ion-icon>
+      </ion-note>
+    </ion-item>
+    <ion-item detail>
+      <ion-avatar>
+        <img src="/assets/blank-user-avatar.png">
+      </ion-avatar>
+      <ion-label class="ion-padding-start">
+        MilitaryConnect
+        <div class="field-label">United States Army</div>
+      </ion-label>
+      <ion-note slot="end" class="ion-text-end">
+        <ion-icon name="checkmark-circle-outline" color="primary"></ion-icon>
+      </ion-note>
+    </ion-item>
+    <ion-item detail>
+      <ion-avatar>
+        <img src="/assets/aerpass-merchant-logo.png">
+      </ion-avatar>
+      <ion-label class="ion-padding-start">
+        SafetyPASS
+        <div class="field-label">SafetyPASS Network</div>
+      </ion-label>
+      <ion-note slot="end" class="ion-text-end">
+        <ion-icon name="checkmark-circle-outline" color="primary"></ion-icon>
+      </ion-note>
+    </ion-item>
+    <ion-item detail>
+      <ion-avatar>
+        <img src="/assets/blank-user-avatar.png">
+      </ion-avatar>
+      <ion-label class="ion-padding-start">
+        Employee Badge
+        <div class="field-label">Google, NYC</div>
+      </ion-label>
+      <ion-note slot="end" class="ion-text-end">
+        <ion-icon name="checkmark-circle-outline" color="primary"></ion-icon>
+      </ion-note>
+    </ion-item>
+  </ion-list>
+
+  <ion-fab vertical="bottom" horizontal="center" slot="fixed">
+    <ion-fab-button>
+      <ion-icon name="add-outline" size="large"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
+</ion-content>

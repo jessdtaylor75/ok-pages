@@ -1,0 +1,65 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/address-list"></ion-back-button>
+    </ion-buttons>
+    <ion-title>
+      Address 1
+    </ion-title>
+    <ion-buttons slot="end">
+      <ion-button routerLink="/address-edit">
+        <ion-icon name="pencil-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-row class="ion-justify-content-center">
+    <ion-avatar class="profile-frame">
+      <img src="/assets/jess-taylor-profile.jpg" class="profile-pic">
+    </ion-avatar>
+  </ion-row>
+  <ion-text class="section-header" color="primary">Display Name<br/><br/></ion-text>
+  <ion-list>
+    <ion-item>
+      <ion-label>
+        <div class="field-label">Address line 1</div>
+        123 4th Ave Apt 5
+      </ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>
+        <div class="field-label">Address line 2</div>
+        &nbsp;&nbsp;
+      </ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>
+        <div class="field-label">City</div>
+        New York
+      </ion-label>
+      <ion-label slot="end" class="ion-text-end">
+        <div class="field-label">State</div>
+        NY
+      </ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>
+        <div class="field-label">Post Code</div>
+        10001
+      </ion-label>
+      <ion-label slot="end" class="ion-text-end">
+        <div class="field-label">Country</div>
+        USA
+      </ion-label>
+    </ion-item>
+    <ion-item lines="none">
+      <ion-label color="dark">Delete Address </ion-label>
+      <ion-label slot="end" class="ion-text-end">
+        <ion-icon name="trash-outline"></ion-icon>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+
+</ion-content>

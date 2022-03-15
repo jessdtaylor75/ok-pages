@@ -36,10 +36,6 @@ const routes: Routes = [
     loadChildren: () => import('./edit-address/edit-address.module').then( m => m.EditAddressPageModule)
   },
   {
-    path: 'add-address',
-    loadChildren: () => import('./add-address/add-address.module').then( m => m.AddAddressPageModule)
-  },
-  {
     path: 'view-id-list',
     loadChildren: () => import('./view-id-list/view-id-list.module').then( m => m.ViewIdListPageModule)
   },
@@ -280,10 +276,6 @@ const routes: Routes = [
     loadChildren: () => import('./profile-code/profile-code.module').then( m => m.ProfileCodePageModule)
   },
   {
-    path: 'add-card',
-    loadChildren: () => import('./add-card/add-card.module').then( m => m.AddCardPageModule)
-  },
-  {
     path: 'success',
     loadChildren: () => import('./success/success.module').then( m => m.SuccessPageModule)
   },
@@ -326,6 +318,202 @@ const routes: Routes = [
   {
     path: 'home-scanner-milconnect',
     loadChildren: () => import('./home-scanner-milconnect/home-scanner-milconnect.module').then( m => m.HomeScannerMilconnectPageModule)
+  },
+  {
+    path: 'address-add',
+    loadChildren: () => import('./address-add/address-add.module').then( m => m.AddressAddPageModule)
+  },
+  {
+    path: 'card-add',
+    loadChildren: () => import('./card-add/card-add.module').then( m => m.CardAddPageModule)
+  },
+  {
+    path: 'persona-add',
+    loadChildren: () => import('./persona-add/persona-add.module').then( m => m.PersonaAddPageModule)
+  },
+  {
+    path: 'personal-info-add',
+    loadChildren: () => import('./personal-info-add/personal-info-add.module').then( m => m.PersonalInfoAddPageModule)
+  },
+  {
+    path: 'browser-mildeals',
+    loadChildren: () => import('./browser-mildeals/browser-mildeals.module').then( m => m.BrowserMildealsPageModule)
+  },
+  {
+    path: 'browser-mc-login',
+    loadChildren: () => import('./browser-mc-login/browser-mc-login.module').then( m => m.BrowserMcLoginPageModule)
+  },
+  {
+    path: 'browser-ap-login',
+    loadChildren: () => import('./browser-ap-login/browser-ap-login.module').then( m => m.BrowserApLoginPageModule)
+  },
+  {
+    path: 'browser-p-example',
+    loadChildren: () => import('./browser-p-example/browser-p-example.module').then( m => m.BrowserPExamplePageModule)
+  },
+  {
+    path: 'browser-ap-members',
+    loadChildren: () => import('./browser-ap-members/browser-ap-members.module').then( m => m.BrowserApMembersPageModule)
+  },
+  {
+    path: 'user-email-inbox',
+    loadChildren: () => import('./user-email-inbox/user-email-inbox.module').then( m => m.UserEmailInboxPageModule)
+  },
+  {
+    path: 'user-email-get-app',
+    loadChildren: () => import('./user-email-get-app/user-email-get-app.module').then( m => m.UserEmailGetAppPageModule)
+  },
+  {
+    path: 'user-email-verify',
+    loadChildren: () => import('./user-email-verify/user-email-verify.module').then( m => m.UserEmailVerifyPageModule)
+  },
+  {
+    path: 'user-app-store',
+    loadChildren: () => import('./user-app-store/user-app-store.module').then( m => m.UserAppStorePageModule)
+  },
+  {
+    path: 'settings-security',
+    loadChildren: () => import('./settings-security/settings-security.module').then( m => m.SettingsSecurityPageModule)
+  },
+  {
+    path: 'address-select',
+    loadChildren: () => import('./address-select/address-select.module').then( m => m.AddressSelectPageModule)
+  },
+  {
+    path: 'address-edit',
+    loadChildren: () => import('./address-edit/address-edit.module').then( m => m.AddressEditPageModule)
+  },
+  {
+    path: 'persona-edit',
+    loadChildren: () => import('./persona-edit/persona-edit.module').then( m => m.PersonaEditPageModule)
+  },
+  {
+    path: 'personal-info-edit',
+    loadChildren: () => import('./personal-info-edit/personal-info-edit.module').then( m => m.PersonalInfoEditPageModule)
+  },
+  {
+    path: 'browser-eas',
+    loadChildren: () => import('./browser-eas/browser-eas.module').then( m => m.BrowserEasPageModule)
+  },
+  {
+    path: 'error-email-in-use',
+    loadChildren: () => import('./error-email-in-use/error-email-in-use.module').then( m => m.ErrorEmailInUsePageModule)
+  },
+  {
+    path: 'badge-mc-navy',
+    loadChildren: () => import('./badge-mc-navy/badge-mc-navy.module').then( m => m.BadgeMcNavyPageModule)
+  },
+  {
+    path: 'badge-mc-usaf',
+    loadChildren: () => import('./badge-mc-usaf/badge-mc-usaf.module').then( m => m.BadgeMcUsafPageModule)
+  },
+  {
+    path: 'badge-mc-usmc',
+    loadChildren: () => import('./badge-mc-usmc/badge-mc-usmc.module').then( m => m.BadgeMcUsmcPageModule)
+  },
+  {
+    path: 'badge-mc-uscg',
+    loadChildren: () => import('./badge-mc-uscg/badge-mc-uscg.module').then( m => m.BadgeMcUscgPageModule)
+  },
+  {
+    path: 'badge-mc-default',
+    loadChildren: () => import('./badge-mc-default/badge-mc-default.module').then( m => m.BadgeMcDefaultPageModule)
+  },
+  {
+    path: 'badge-mc-army',
+    loadChildren: () => import('./badge-mc-army/badge-mc-army.module').then( m => m.BadgeMcArmyPageModule)
+  },
+  {
+    path: 'badge-app-default',
+    loadChildren: () => import('./badge-app-default/badge-app-default.module').then( m => m.BadgeAppDefaultPageModule)
+  },
+  {
+    path: 'legal',
+    loadChildren: () => import('./legal/legal.module').then( m => m.LegalPageModule)
+  },
+  {
+    path: 'auth-login',
+    loadChildren: () => import('./auth-login/auth-login.module').then( m => m.AuthLoginPageModule)
+  },
+  {
+    path: 'success-login',
+    loadChildren: () => import('./success-login/success-login.module').then( m => m.SuccessLoginPageModule)
+  },
+  {
+    path: 'auth-payment',
+    loadChildren: () => import('./auth-payment/auth-payment.module').then( m => m.AuthPaymentPageModule)
+  },
+  {
+    path: 'success-verify-email',
+    loadChildren: () => import('./success-verify-email/success-verify-email.module').then( m => m.SuccessVerifyEmailPageModule)
+  },
+  {
+    path: 'badge-profile-share',
+    loadChildren: () => import('./badge-profile-share/badge-profile-share.module').then( m => m.BadgeProfileSharePageModule)
+  },
+  {
+    path: 'success-verify-mobile',
+    loadChildren: () => import('./success-verify-mobile/success-verify-mobile.module').then( m => m.SuccessVerifyMobilePageModule)
+  },
+  {
+    path: 'address',
+    loadChildren: () => import('./address/address.module').then( m => m.AddressPageModule)
+  },
+  {
+    path: 'address-list',
+    loadChildren: () => import('./address-list/address-list.module').then( m => m.AddressListPageModule)
+  },
+  {
+    path: 'bank',
+    loadChildren: () => import('./bank/bank.module').then( m => m.BankPageModule)
+  },
+  {
+    path: 'bank-list',
+    loadChildren: () => import('./bank-list/bank-list.module').then( m => m.BankListPageModule)
+  },
+  {
+    path: 'wallet',
+    loadChildren: () => import('./wallet/wallet.module').then( m => m.WalletPageModule)
+  },
+  {
+    path: 'card-x1',
+    loadChildren: () => import('./card-x1/card-x1.module').then( m => m.CardX1PageModule)
+  },
+  {
+    path: 'card-x2',
+    loadChildren: () => import('./card-x2/card-x2.module').then( m => m.CardX2PageModule)
+  },
+  {
+    path: 'card-x3',
+    loadChildren: () => import('./card-x3/card-x3.module').then( m => m.CardX3PageModule)
+  },
+  {
+    path: 'personas',
+    loadChildren: () => import('./personas/personas.module').then( m => m.PersonasPageModule)
+  },
+  {
+    path: 'persona-x1',
+    loadChildren: () => import('./persona-x1/persona-x1.module').then( m => m.PersonaX1PageModule)
+  },
+  {
+    path: 'persona-x2',
+    loadChildren: () => import('./persona-x2/persona-x2.module').then( m => m.PersonaX2PageModule)
+  },
+  {
+    path: 'persona',
+    loadChildren: () => import('./persona/persona.module').then( m => m.PersonaPageModule)
+  },
+  {
+    path: 'id-documents',
+    loadChildren: () => import('./id-documents/id-documents.module').then( m => m.IdDocumentsPageModule)
+  },
+  {
+    path: 'personal-info',
+    loadChildren: () => import('./personal-info/personal-info.module').then( m => m.PersonalInfoPageModule)
+  },
+  {
+    path: 'persona-x3',
+    loadChildren: () => import('./persona-x3/persona-x3.module').then( m => m.PersonaX3PageModule)
   },
 ];
 

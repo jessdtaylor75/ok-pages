@@ -1,0 +1,95 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/profile-home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Edit Info</ion-title>
+    <ion-buttons slot="end">
+      <ion-button routerLink="/personal-info" routerDirection="back">
+        <ion-label>Cancel</ion-label>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="ion-text-center">
+    <ion-row class="ion-justify-content-center">
+      <ion-avatar class="profile-frame">
+        <img src="/assets/jess-taylor-profile.jpg" class="profile-pic">
+      </ion-avatar>
+    </ion-row>
+    <ion-button color="primary" size="small" fill="clear">
+      Change Picture
+    </ion-button>
+  </div>
+  <ion-list>
+    <ion-item>
+      <ion-label position="stacked" color="medium">
+        Display name
+      </ion-label>
+      <ion-input type="text" value="Display Name"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked" color="medium">
+        Full name
+      </ion-label>
+      <ion-grid>
+        <ion-row>
+          <ion-col size="4">
+            <ion-input type="text" placeholder="First"></ion-input>
+          </ion-col>
+          <ion-col size="4">
+            <ion-input type="text" placeholder="Middle"></ion-input>
+          </ion-col>
+          <ion-col size="4">
+            <ion-input type="text" placeholder="Last"></ion-input>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked" color="medium">
+        DOB
+      </ion-label>
+      <ion-input type="text" placeholder="09/17/1972"></ion-input>
+    </ion-item>
+    <!--<ion-item>
+      <ion-icon name="alert-circle-outline" color="danger"></ion-icon>
+      <ion-text class="text-smallest ion-padding-start" color="medium">
+        Your identity must be verified for account recovery.
+      </ion-text>
+      <ion-button slot="end" size="small" fill="clear" routerLink="/verify-identity">
+        Verify ID&nbsp;
+        <ion-icon name="person-circle-outline" color="primary"></ion-icon>
+      </ion-button>
+    </ion-item>-->
+    <ion-item>
+      <ion-label position="stacked" color="medium">
+        Email address
+      </ion-label>
+      <ion-input type="email" value="username@aerpass.com" email="true"></ion-input>
+    </ion-item>
+    <!--<ion-item>
+      <ion-icon name="alert-circle-outline" color="danger"></ion-icon>
+      <ion-text class="text-smallest ion-padding-start" color="medium">
+        Email address must be verified in order to use AerPass.
+      </ion-text>
+    </ion-item>-->
+    <ion-item>
+      <ion-label position="stacked" color="medium">
+        Mobile number
+      </ion-label>
+      <ion-input type="text" value="+1 (321) 456-7890"></ion-input>
+    </ion-item>
+
+  </ion-list>
+
+</ion-content>
+<ion-footer class="ion-no-border">
+  <ion-toolbar>
+    <ion-button expand="block" class="pad15 ion-margin-bottom" routerLink="/profile-home">
+      Save Changes
+    </ion-button>
+  </ion-toolbar>
+</ion-footer>

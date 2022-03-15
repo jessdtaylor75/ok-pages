@@ -1,0 +1,55 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/profile-home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>
+      ID Badge
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div id="container-top">
+    <ion-row class="ion-justify-content-center">
+      <div class="ion-text-center">
+        <ion-row class="ion-justify-content-center">
+          <div class="profile-home">
+            <ion-avatar class="profile-frame-home">
+              <img src="/assets/jess-taylor-profile.jpg" class="profile-pic-home" alt="Profile Pic" routerLink="/profile-home" routerDirection="root">
+            </ion-avatar>
+          </div>
+        </ion-row>
+        <ion-text class="section-header" color="primary">
+          Jane Fentum
+        </ion-text>
+      </div>
+    </ion-row>
+  </div>
+  <div id="container-bottom">
+    <ion-row class="ion-justify-content-center">
+      <div class="ion-text-center">
+        <ion-row class="ion-justify-content-center">
+          <div class="display-qr">
+            <img src="/assets/ap-safety-pass-result-qr.svg" />
+          </div>
+        </ion-row>
+        <ion-row class="ion-justify-content-center">
+          <ion-icon src="/assets/A-symbol.svg" color="primary" class="icon-larger"></ion-icon>
+        </ion-row>
+      </div>
+    </ion-row>
+  </div>
+
+</ion-content>
+
+<ion-footer class="ion-no-border ion-margin-bottom">
+  <ion-row class="ion-justify-content-evenly">
+    <ion-button shape="circle" fill="clear">
+      <ion-icon name="caret-up-circle-outline"></ion-icon>
+    </ion-button>
+    <ion-button shape="circle" fill="clear">
+      <ion-icon name="share-outline"></ion-icon>
+    </ion-button>
+  </ion-row>
+</ion-footer>

@@ -1,0 +1,26 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar color="light"></ion-toolbar>
+</ion-header>
+<ion-content color="light">
+
+  <ion-row>
+    <div class="v-center pad10">
+      <ion-icon name="alert-circle-outline" class="icon-huge" color="danger"></ion-icon><br/>
+      <ion-text class="ion-justify-content-center"><h1>ERROR!</h1></ion-text>
+      <ion-text class="text-small ion-text-center">
+        <br/>Email address currently in use.
+      </ion-text>
+    </div>
+  </ion-row>
+
+</ion-content>
+<ion-footer class="ion-no-border">
+  <ion-toolbar color="light">
+    <ion-button expand="block" class="pad15 ion-margin-bottom" color="medium" routerLink="/browser-eas" routerDirection="back">
+      Try again
+    </ion-button>
+    <ion-button expand="block" class="pad15 ion-margin-bottom" color="primary" routerLink="/verify-id-recovery">
+      Reconnect Account
+    </ion-button>
+  </ion-toolbar>
+</ion-footer>

@@ -1,0 +1,59 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button color="medium" defaultHref="/user-email-inbox"></ion-back-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-button color="medium"><ion-icon name="archive-outline"></ion-icon></ion-button>
+      <ion-button color="medium"><ion-icon name="trash-outline"></ion-icon></ion-button>
+      <ion-button color="medium"><ion-icon name="mail-outline"></ion-icon></ion-button>
+      <ion-button color="medium"><ion-icon name="ellipsis-horizontal"></ion-icon></ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen="true">
+  <h4 class="ion-padding">Get the AerPass app</h4>
+  <ion-item lines="none">
+    <ion-avatar slot="start">
+      <img src="/assets/star-us-army.png">
+    </ion-avatar>
+    <ion-label>
+      <div class="field-label">no-reply&nbsp;&nbsp;7:30 PM </div>
+      <div class="field-label">to username@aerpass.com</div>
+    </ion-label>
+    <ion-icon slot="end" name="ellipsis-horizontal"></ion-icon>
+  </ion-item>
+  <ion-row class="ion-padding">
+    <ion-text class="ion-text-center text-smallest">
+      To install the app please tap or click the link below.
+    </ion-text>
+  </ion-row>
+  <ion-row class="pad20">
+    <ion-card routerLink="/user-app-store">
+      <img src="/assets/mc-appstore-tile.png" />
+    </ion-card>
+  </ion-row>
+  <ion-row class="ion-justify-content-center">
+    <ion-icon class="icon-larger" src="/assets/links-mark.svg" color="milconnect"></ion-icon>
+  </ion-row>
+
+</ion-content>
+
+<ion-footer class="ion-no-border ion-margin-bottom">
+  <ion-toolbar>
+    <ion-grid>
+      <ion-row>
+        <ion-col size="4">
+          <ion-button size="small" color="medium" fill="outline" expand="block"><ion-icon name="return-up-back-outline"></ion-icon>&nbsp;&nbsp;Reply</ion-button>
+        </ion-col>
+        <ion-col size="4">
+          <ion-button size="small" color="medium" fill="outline" expand="block"><ion-icon name="return-up-back-outline"></ion-icon>&nbsp;&nbsp;Reply all</ion-button>
+        </ion-col>
+        <ion-col size="4">
+          <ion-button size="small" color="medium" fill="outline" expand="block"><ion-icon name="return-up-forward-outline"></ion-icon>&nbsp;&nbsp;Forward</ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
+</ion-footer>

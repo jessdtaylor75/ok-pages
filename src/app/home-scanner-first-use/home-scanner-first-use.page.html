@@ -12,11 +12,11 @@
         </ion-button>
       </ion-title>
     </ion-text>
-    <!--<ion-buttons slot="end">
-      <ion-button color="primary" routerLink="/view-notifications" routerDirection="root" fill="clear">
-        <ion-icon name="notifications-outline" color="primary"></ion-icon>
+    <ion-buttons slot="end">
+      <ion-button color="primary" routerLink="/settings" routerDirection="root" fill="clear">
+        <ion-icon name="settings-outline"></ion-icon>
       </ion-button>
-    </ion-buttons>-->
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
@@ -56,7 +56,7 @@
         <div class="ion-text-center">
           <ion-row class="ion-justify-content-center">
             <div class="display-qr">
-              <img src="/assets/ap-login-auth-qr.svg" routerLink="/login-auth" />
+              <img src="/assets/ap-login-auth-qr.svg" routerLink="/auth-login" />
             </div>
           </ion-row>
         </div>
@@ -66,7 +66,7 @@
         <div class="ion-text-center">
           <ion-row class="ion-justify-content-center">
             <div class="display-qr">
-              <img src="/assets/ap-payment-auth-qr.svg" routerLink="/payment-auth" />
+              <img src="/assets/ap-payment-auth-qr.svg" routerLink="/auth-payment" />
             </div>
           </ion-row>
         </div>
@@ -82,7 +82,7 @@
 </ion-content>
 
 <ion-tab-bar slot="bottom" class="tab-blur">
-  <ion-tab-button routerLink="/home" routerDirection="back">
+  <ion-tab-button routerLink="/badge-app-default" routerDirection="back">
     <ion-label color="white">ID Badge</ion-label>
     <ion-icon name="qr-code-outline" color="white"></ion-icon>
   </ion-tab-button>

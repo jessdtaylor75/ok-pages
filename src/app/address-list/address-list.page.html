@@ -1,0 +1,46 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/profile-home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>
+      Addresses
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-row class="ion-justify-content-center">
+    <ion-avatar class="profile-frame">
+      <img src="/assets/jess-taylor-profile.jpg" class="profile-pic">
+    </ion-avatar>
+  </ion-row>
+  <ion-text class="section-header" color="primary">Display Name<br/><br/></ion-text>
+  <ion-list>
+    <ion-item detail routerLink="/address">
+      <ion-label>
+        <div class="field-label">Address 1</div>
+        123 4th Ave Apt 5<br>New York, NY 10001 &nbsp;&nbsp;&nbsp;USA
+      </ion-label>
+    </ion-item>
+    <ion-item detail routerLink="/address">
+      <ion-label>
+        <div class="field-label">Address 2</div>
+        1001 Marshall Rd<br>Cape May, NJ 08250 &nbsp;&nbsp;&nbsp;USA
+      </ion-label>
+    </ion-item>
+    <ion-item detail routerLink="/address">
+      <ion-label>
+        <div class="field-label">Address 3</div>
+        55 Madison Ave<br>Miami, FL 23002 &nbsp;&nbsp;&nbsp;USA
+      </ion-label>
+    </ion-item>
+  </ion-list>
+
+  <ion-fab vertical="bottom" horizontal="center" slot="fixed">
+    <ion-fab-button routerLink="/address-add">
+      <ion-icon name="add-outline" size="large"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
+</ion-content>

@@ -1,0 +1,83 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar color="raven">
+    <ion-buttons slot="start">
+      <ion-menu-button color="army-gold"></ion-menu-button>
+    </ion-buttons>
+    <ion-text class="ion-text-center">
+      <ion-title class="ion-justify-content-center">
+        <img class="brand" src="/assets/mconnect-logo-white.svg">
+      </ion-title>
+    </ion-text>
+    <ion-buttons slot="end">
+      <ion-button color="army-gold" routerLink="/settings" routerDirection="root" fill="clear">
+        <ion-icon name="settings-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" color="raven">
+
+  <div id="container-top">
+    <ion-row class="ion-justify-content-center">
+      <div class="ion-text-center">
+        <ion-row class="ion-justify-content-center">
+          <div class="profile-home">
+            <ion-avatar class="profile-frame-pid">
+              <img src="/assets/jess-taylor-profile.jpg" class="profile-pic-pid" alt="Profile Pic" routerLink="/profile-home" routerDirection="root">
+            </ion-avatar>
+            <div class="btn">
+              <ion-fab-button color="milconnect" translucent="true" routerLink="/badge-mc-army">
+                <ion-icon src="/assets/links-mark.svg" color="white" class="icon-fab"></ion-icon>
+              </ion-fab-button>
+            </div>
+          </div>
+        </ion-row>
+        <ion-text class="section-header" color="white">
+          Jane Fentum
+        </ion-text>
+      </div>
+    </ion-row>
+  </div>
+  <div id="container-bottom">
+    <ion-row class="ion-justify-content-center">
+      <div class="ion-text-center">
+        <ion-row class="ion-justify-content-center">
+          <div class="display-qr">
+            <img src="/assets/ap-safety-pass-result-qr.svg" />
+          </div>
+        </ion-row>
+        <ion-toolbar color="transparent">
+          <ion-segment value="military" color="mc-alt">
+            <ion-segment-button value="military">
+              <ion-label color="army-gold">Pass Code</ion-label>
+            </ion-segment-button>
+            <ion-segment-button value="altpass">
+              <ion-label color="army-gold">Details</ion-label>
+            </ion-segment-button>
+          </ion-segment>
+        </ion-toolbar>
+      </div>
+    </ion-row>
+  </div>
+
+</ion-content>
+
+<ion-tab-bar slot="bottom" color="raven">
+  <ion-tab-button routerLink="/badge-app-default" routerDirection="back">
+    <ion-label color="army-gold">ID Badge</ion-label>
+    <ion-icon name="qr-code-outline" color="army-gold"></ion-icon>
+  </ion-tab-button>
+  <ion-tab-button routerLink="/home-scanner" routerDirection="root">
+    <ion-label color="white">Scanner</ion-label>
+    <ion-icon name="scan-outline" color="white"></ion-icon>
+  </ion-tab-button>
+  <!--<ion-tab-button routerLink="/passes-modal" routerDirection="forward">
+    <ion-label color="primary">Wallet</ion-label>
+    <ion-icon name="wallet-outline" color="primary"></ion-icon>
+  </ion-tab-button>-->
+  <ion-tab-button routerLink="/profile-home" routerDirection="forward">
+    <ion-label color="white">Profile</ion-label>
+    <ion-icon name="person-outline" color="white"></ion-icon>
+  </ion-tab-button>
+</ion-tab-bar>
