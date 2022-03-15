@@ -312,10 +312,6 @@ const routes: Routes = [
     loadChildren: () => import('./persona-x2/persona-x2.module').then( m => m.PersonaX2PageModule)
   },
   {
-    path: 'persona',
-    loadChildren: () => import('./persona/persona.module').then( m => m.PersonaPageModule)
-  },
-  {
     path: 'id-documents',
     loadChildren: () => import('./id-documents/id-documents.module').then( m => m.IdDocumentsPageModule)
   },
