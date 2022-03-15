@@ -23,7 +23,7 @@ export class AppComponent {
     },
     {
       title: 'Personal Info',
-      url: '/view-personal-info',
+      url: '/personal-info',
       icon: 'person-circle-outline'
     },
     {
@@ -33,12 +33,12 @@ export class AppComponent {
     },
     {
       title: 'MilitaryDeals',
-      url: '/app-browser',
+      url: '/browser-mildeals',
       src: '/assets/links-mark.svg'
     },
     {
       title: 'Legal Agreements',
-      url: '/legal-agreements',
+      url: '/legal',
       icon: 'document-text-outline'
     },
     {
@@ -48,12 +48,12 @@ export class AppComponent {
     },
     {
       title: 'MC Sign-in demo',
-      url: '/app-browser-first-checkin',
+      url: '/browser-mc-login',
       icon: 'log-in-outline'
     },
     {
       title: 'AP Sign-in demo',
-      url: '/app-browser-map',
+      url: '/browser-ap-login',
       icon: 'log-in-outline'
     },
   ];
