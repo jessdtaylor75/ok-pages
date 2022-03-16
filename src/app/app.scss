@@ -116,7 +116,7 @@ ion-button {
   width: -moz-available; /* WebKit-based browsers will ignore this. */
 }
 
-.p {
+p {
   font-size: 1rem;
   color: var(--ion-color-medium);
 }
@@ -258,7 +258,7 @@ ion-button {
 
 .bg-light-blur {
   --background: rgba(255, 255, 255, 0.7);
-  backdrop-filter: blur(2px);
+  backdrop-filter: blur(6px);
 }
 
 .transaction-hero {
@@ -376,7 +376,7 @@ ion-button {
 }
 
 .brand {
-  width: 26vw;
+  height: 1.2rem;
 }
 
 .flip-horizontally {
@@ -385,24 +385,4 @@ ion-button {
 
 .rotate-90 {
   transform: rotate(90deg);
-}
-
-//MilitaryConnect branding
-.profile-pic-pid {
-  width: 54vw;
-  height: 54vw;
-  border-radius: 50%;
-  border: 2pt solid var(--ion-color-army-star);
-  text-align: center;
-  display: inline-block;
-}
-
-.profile-frame-pid {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 56.5vw;
-  height: 56.5vw;
-  border-radius: 50%;
-  border: 2pt solid var(--ion-color-army-star);
 }
