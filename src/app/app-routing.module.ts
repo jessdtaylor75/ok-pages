@@ -323,6 +323,10 @@ const routes: Routes = [
     path: 'persona-x3',
     loadChildren: () => import('./persona-x3/persona-x3.module').then( m => m.PersonaX3PageModule)
   },
+  {
+    path: 'about-mc',
+    loadChildren: () => import('./about-mc/about-mc.module').then( m => m.AboutMcPageModule)
+  },
 ];
 
 @NgModule({
