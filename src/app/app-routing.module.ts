@@ -327,6 +327,14 @@ const routes: Routes = [
     path: 'about-mc',
     loadChildren: () => import('./about-mc/about-mc.module').then( m => m.AboutMcPageModule)
   },
+  {
+    path: 'browser-ap-desktop-login',
+    loadChildren: () => import('./browser-ap-desktop-login/browser-ap-desktop-login.module').then( m => m.BrowserApDesktopLoginPageModule)
+  },
+  {
+    path: 'browser-mc-desktop-login',
+    loadChildren: () => import('./browser-mc-desktop-login/browser-mc-desktop-login.module').then( m => m.BrowserMcDesktopLoginPageModule)
+  },
 ];
 
 @NgModule({

@@ -10,43 +10,38 @@
 <ion-content fullscreen="true">
   <div class="v-center">
     <h5 class="ion-text-center">
-      Connect to <span style="color: var(--ion-color-secondary)">1800Flowers Sign-In</span>
+      Scan QR code to connect to<br/>
+      <span style="color: var(--ion-color-secondary)">1800Flowers Sign-In</span>
     </h5>
+    <ion-row class="pad15">
+      <img src="/assets/ap-validate-email-qr.png" routerLink="/auth-login" />
+    </ion-row>
     <ion-row class="ion-justify-content-center">
-      <ion-text class="ion-text-center">
-        &nbsp;&nbsp;<br/>&nbsp;&nbsp;
+      <ion-text class="ion-text-center text-smaller">
+        &nbsp;&nbsp;<br/>
+        Don't have AerPass?<br/>&nbsp;&nbsp;
       </ion-text>
     </ion-row>
-    <!--<ion-row class="pad10">
-      <ion-card routerLink="/verify-email-success">
-        <ion-card-content class="ion-text-center">Scan QR code to sign-in</ion-card-content>
-        <img src="/assets/ap-validate-email-qr.png" />
-      </ion-card>
-    </ion-row>-->
-    <ion-toolbar>
+    <ion-row class="pad15">
+      <ion-item>
+        <ion-label position="stacked" color="medium">
+          Enter mobile number
+        </ion-label>
+        <ion-input type="text" value="+1 (321) 456-7890"></ion-input>
+      </ion-item>
+    </ion-row>
+    <!--<ion-toolbar>
       <ion-button expand="block" class="pad15" color="primary" routerLink="/auth-login">
         <ion-icon src="/assets/A-symbol.svg" color="white"></ion-icon>
         &nbsp; AerPass Connect
       </ion-button>
-    </ion-toolbar>
+    </ion-toolbar>-->
     <ion-row class="ion-justify-content-center">
       <ion-text class="ion-text-center">
         &nbsp;&nbsp;<br/>&nbsp;&nbsp;
       </ion-text>
     </ion-row>
-    <!--<ion-row class="ion-justify-content-center">
-    <ion-text class="ion-text-center text-smaller">
-      &nbsp;&nbsp;<br/>
-      Not a member?<br/>&nbsp;&nbsp;
-    </ion-text>
-    </ion-row>
-    <ion-toolbar>
-      <ion-button expand="block" class="pad15" color="primary" fill="outline" routerLink="/login-auth">
-        Get&nbsp;&nbsp;
-        <ion-icon src="/assets/A-symbol.svg" color="primary"></ion-icon>&nbsp;
-        AERPASS
-      </ion-button>
-    </ion-toolbar>-->
+
     <ion-row class="pad5">
       <ion-text class="ion-text-justify text-smallest">
         &nbsp;&nbsp;<br/>

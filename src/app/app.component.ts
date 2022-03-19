@@ -52,8 +52,18 @@ export class AppComponent {
       icon: 'log-in-outline'
     },
     {
+      title: 'MC Sign-in desktop',
+      url: '/browser-mc-desktop-login',
+      icon: 'log-in-outline'
+    },
+    {
       title: 'AP Sign-in demo',
       url: '/browser-ap-login',
+      icon: 'log-in-outline'
+    },
+    {
+      title: 'AP Sign-in desktop',
+      url: '/browser-ap-desktop-login',
       icon: 'log-in-outline'
     },
   ];
