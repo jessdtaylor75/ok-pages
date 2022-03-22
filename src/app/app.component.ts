@@ -17,9 +17,19 @@ export class AppComponent {
       icon: 'play-outline'
     },
     {
+      title: 'Get Started MC',
+      url: '/get-started-mc',
+      icon: 'play-outline'
+    },
+    {
       title: 'Profile',
       url: '/profile-home',
       src: '/assets/A-symbol.svg'
+    },
+    {
+      title: 'Profile MC',
+      url: '/profile-home-mc',
+      src: '/assets/links-mark.svg'
     },
     {
       title: 'Personal Info',
@@ -29,6 +39,11 @@ export class AppComponent {
     {
       title: 'Scanner',
       url: '/home-scanner',
+      icon: 'scan-outline'
+    },
+    {
+      title: 'Scanner MC',
+      url: '/home-scanner-milconnect',
       icon: 'scan-outline'
     },
     {

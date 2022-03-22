@@ -10,10 +10,6 @@ ion-avatar {
   border: 2pt solid var(--ion-color-primary);
 }
 
-ion-button {
-  border-radius: 50%;
-}
-
 .text-large {
   font-size: 2.4rem;
 }
@@ -116,7 +112,7 @@ ion-button {
   width: -moz-available; /* WebKit-based browsers will ignore this. */
 }
 
-p {
+.p {
   font-size: 1rem;
   color: var(--ion-color-medium);
 }

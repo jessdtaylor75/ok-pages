@@ -1,0 +1,27 @@
+ion-menu-button {
+  color: var(--ion-color-milconnect);
+}
+
+ion-title {
+  color: var(--ion-color-milconnect);
+}
+
+.profile-pic {
+  width: 34vw;
+  height: 34vw;
+  border-radius: 50%;
+  border: .5vw solid var(--ion-color-milconnect);
+  text-align: center;
+  display: inline-block;
+}
+
+.profile-frame {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3vw;
+  width: 36vw;
+  height: 36vw;
+  border-radius: 50%;
+  border: .5vw solid var(--ion-color-milconnect);
+}
