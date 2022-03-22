@@ -1,8 +1,36 @@
+ion-title {
+  color: var(--ion-color-white);
+}
+
+.auth-page {
+  --background: url(/assets/milconnect-merchant-ultra.png) no-repeat center/cover fixed;
+}
+
+.profile-pic {
+  width: 34vw;
+  height: 34vw;
+  border-radius: 50%;
+  border: .5vw solid var(--ion-color-milconnect);
+  text-align: center;
+  display: inline-block;
+}
+
+.profile-frame {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3vw;
+  width: 36vw;
+  height: 36vw;
+  border-radius: 50%;
+  border: .5vw solid var(--ion-color-milconnect);
+}
+
 $card-width: 85vw;
 $card-height: 55vw;
 
 .method {
-  background: url(/assets/aerpass-card.png) no-repeat center;
+  background: url(/assets/milconnect-card.png) no-repeat center;
   background-size: contain;
   width: $card-width;
   height: $card-height;
