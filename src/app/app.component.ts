@@ -17,39 +17,24 @@ export class AppComponent {
       icon: 'play-outline'
     },
     {
-      title: 'Get Started MC',
-      url: '/get-started-mc',
-      icon: 'play-outline'
-    },
-    {
-      title: 'Profile',
-      url: '/profile-home',
-      src: '/assets/A-symbol.svg'
-    },
-    {
-      title: 'Profile MC',
-      url: '/profile-home-mc',
-      src: '/assets/links-mark.svg'
-    },
-    {
-      title: 'Personal Info',
-      url: '/personal-info',
-      icon: 'person-circle-outline'
-    },
-    {
       title: 'Scanner',
       url: '/home-scanner',
       icon: 'scan-outline'
     },
     {
-      title: 'Scanner MC',
-      url: '/home-scanner-milconnect',
-      icon: 'scan-outline'
+      title: 'Profile',
+      url: '/profile-home',
+      icon: 'person-circle-outline'
     },
     {
-      title: 'MilitaryDeals',
+      title: 'Military Deals',
       url: '/browser-mildeals',
       src: '/assets/links-mark.svg'
+    },
+    {
+      title: 'Member Services',
+      url: '/browser-ap-members',
+      src: '/assets/A-symbol.svg'
     },
     {
       title: 'Legal Agreements',
@@ -60,6 +45,21 @@ export class AppComponent {
       title: 'About',
       url: '/about',
       icon: 'information-circle-outline'
+    },
+    {
+      title: 'Get Started MC',
+      url: '/get-started-mc',
+      icon: 'play-outline'
+    },
+    {
+      title: 'Scanner MC',
+      url: '/home-scanner-milconnect',
+      icon: 'scan-outline'
+    },
+    {
+      title: 'Profile MC',
+      url: '/profile-home-mc',
+      src: '/assets/links-mark.svg'
     },
     {
       title: 'MC Sign-in demo',
