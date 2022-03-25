@@ -340,8 +340,12 @@ ion-avatar {
   white-space: nowrap;
 }
 
+.white {
+  color: var(--ion-color-white);
+}
+
 .auth-page {
-  --background: url(/assets/aerpass-merchant-ultra.png) no-repeat center/cover fixed;
+  --background: linear-gradient(135deg, rgba(5,16,51,1) 5%, rgba(0,102,204,1) 95%);
 }
 
 .glass-blur {

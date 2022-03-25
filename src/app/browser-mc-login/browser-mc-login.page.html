@@ -1,5 +1,5 @@
 <ion-header class="ion-no-border">
-  <ion-toolbar>
+  <ion-toolbar color="transparent">
     <ion-buttons slot="start">
       <ion-back-button color="medium" defaultHref="/home-scanner"></ion-back-button>
     </ion-buttons>
@@ -7,46 +7,48 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content fullscreen="true">
+<ion-content class="auth-page" fullscreen="true">
   <div class="v-center">
-    <h5 class="ion-text-center">
-      Connect to <span style="color: var(--ion-color-secondary)">1800Flowers Sign-In</span>
-    </h5>
-    <ion-row class="ion-justify-content-center">
-      <ion-text class="ion-text-center">
-        &nbsp;&nbsp;<br/>&nbsp;&nbsp;
-      </ion-text>
-    </ion-row>
-    <ion-toolbar>
-      <ion-button expand="block" class="pad15" color="milconnect" routerLink="/auth-login">
-        Use&nbsp;&nbsp;
-        <ion-icon src="/assets/links-mark.svg" color="white"></ion-icon>&nbsp;
-        Military Connect
-      </ion-button>
-    </ion-toolbar>
-    <ion-row class="ion-justify-content-center">
-      <ion-text class="ion-text-center text-smaller">
-        &nbsp;&nbsp;<br/>
-        Not a member?<br/>&nbsp;&nbsp;
-      </ion-text>
-    </ion-row>
-    <ion-toolbar>
-      <ion-button expand="block" class="pad15" color="milconnect" fill="outline" routerLink="/browser-eas">
-        Join&nbsp;&nbsp;
-        <ion-icon src="/assets/links-mark.svg" color="milconnect"></ion-icon>&nbsp;
-        Military Connect
-      </ion-button>
-    </ion-toolbar>
-    <ion-row class="ion-justify-content-center">
-      <ion-text class="ion-text-center">
-        &nbsp;&nbsp;<br/>&nbsp;&nbsp;
-      </ion-text>
-    </ion-row>
-    <ion-row class="pad5">
-      <ion-text class="ion-text-justify text-smallest">
-        &nbsp;&nbsp;<br/>
-        To continue, Military Connect will share your display name, email address, language preference, and profile picture with 1800Flowers Sign-in. Before using this app, you can review 1800Flowers Sign-In's <span style="color: var(--ion-color-secondary)">privacy policy</span> and <span style="color: var(--ion-color-secondary)">terms of service</span>.<br/>&nbsp;
-      </ion-text>
-    </ion-row>
+    <ion-card>
+      <h4 class="ion-text-center">
+        Connect to <span style="color: var(--ion-color-secondary)">1800Flowers Sign-In</span>
+      </h4>
+      <ion-row class="ion-justify-content-center">
+        <ion-text class="ion-text-center">
+          &nbsp;&nbsp;<br/>&nbsp;&nbsp;
+        </ion-text>
+      </ion-row>
+      <ion-toolbar>
+        <ion-button expand="block" class="pad15" color="milconnect" routerLink="/auth-login">
+          Use&nbsp;&nbsp;
+          <ion-icon src="/assets/links-mark.svg" color="white"></ion-icon>&nbsp;
+          Military Connect
+        </ion-button>
+      </ion-toolbar>
+      <ion-row class="ion-justify-content-center">
+        <ion-text class="ion-text-center text-smaller">
+          &nbsp;&nbsp;<br/>
+          Not a member?<br/>&nbsp;&nbsp;
+        </ion-text>
+      </ion-row>
+      <ion-toolbar>
+        <ion-button expand="block" class="pad15" color="milconnect" fill="outline" routerLink="/browser-eas">
+          Join&nbsp;&nbsp;
+          <ion-icon src="/assets/links-mark.svg" color="milconnect"></ion-icon>&nbsp;
+          Military Connect
+        </ion-button>
+      </ion-toolbar>
+      <ion-row class="ion-justify-content-center">
+        <ion-text class="ion-text-center">
+          &nbsp;&nbsp;<br/>&nbsp;&nbsp;
+        </ion-text>
+      </ion-row>
+      <ion-row class="pad5">
+        <ion-text class="ion-text-justify text-smallest">
+          &nbsp;&nbsp;<br/>
+          To continue, Military Connect will share your display name, email address, language preference, and profile picture with 1800Flowers Sign-in. Before using this app, you can review 1800Flowers Sign-In's <span style="color: var(--ion-color-secondary)">privacy policy</span> and <span style="color: var(--ion-color-secondary)">terms of service</span>.<br/>&nbsp;
+        </ion-text>
+      </ion-row>
+    </ion-card>
   </div>
 </ion-content>
