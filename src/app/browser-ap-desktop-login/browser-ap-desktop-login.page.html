@@ -3,7 +3,11 @@
     <ion-buttons slot="start">
       <ion-back-button color="medium" defaultHref="/home-scanner"></ion-back-button>
     </ion-buttons>
-    <ion-title color="medium">AerPass Connect</ion-title>
+    <ion-text class="ion-text-center">
+      <ion-title class="ion-justify-content-center">
+        <img class="brand" src="/assets/aerpass-blue.svg">
+      </ion-title>
+    </ion-text>
   </ion-toolbar>
 </ion-header>
 
@@ -20,7 +24,7 @@
       <ion-row class="ion-justify-content-center">
         <ion-text class="ion-text-center text-smaller">
           &nbsp;&nbsp;<br/>
-          Don't have AerPass?<br/>&nbsp;&nbsp;
+          – OR –<br/>&nbsp;&nbsp;
         </ion-text>
       </ion-row>
       <ion-row class="pad15">
@@ -28,15 +32,9 @@
           <ion-label position="stacked" color="medium">
             Enter mobile number
           </ion-label>
-          <ion-input type="text" value="+1 (321) 456-7890"></ion-input>
+          <ion-input type="text"></ion-input>
         </ion-item>
       </ion-row>
-      <!--<ion-toolbar>
-        <ion-button expand="block" class="pad15" color="primary" routerLink="/auth-login">
-          <ion-icon src="/assets/A-symbol.svg" color="white"></ion-icon>
-          &nbsp; AerPass Connect
-        </ion-button>
-      </ion-toolbar>-->
       <ion-row class="ion-justify-content-center">
         <ion-text class="ion-text-center">
           &nbsp;&nbsp;<br/>&nbsp;&nbsp;
