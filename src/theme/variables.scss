@@ -330,6 +330,24 @@
 }
 
 :root {
+  --ion-color-milconnect2: #7615c6;
+  --ion-color-milconnect2-rgb: 118,21,198;
+  --ion-color-milconnect2-contrast: #ffffff;
+  --ion-color-milconnect2-contrast-rgb: 255,255,255;
+  --ion-color-milconnect2-shade: #6812ae;
+  --ion-color-milconnect2-tint: #842ccc;
+}
+
+.ion-color-milconnect2 {
+  --ion-color-base: var(--ion-color-milconnect2);
+  --ion-color-base-rgb: var(--ion-color-milconnect2-rgb);
+  --ion-color-contrast: var(--ion-color-milconnect2-contrast);
+  --ion-color-contrast-rgb: var(--ion-color-milconnect2-contrast-rgb);
+  --ion-color-shade: var(--ion-color-milconnect2-shade);
+  --ion-color-tint: var(--ion-color-milconnect2-tint);
+}
+
+:root {
   --ion-color-army-star: #FFCB05;
   --ion-color-army-star-rgb: 255,203,5;
   --ion-color-army-star-contrast: #000000;
