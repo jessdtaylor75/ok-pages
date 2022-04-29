@@ -359,6 +359,10 @@ const routes: Routes = [
     path: 'delete-device',
     loadChildren: () => import('./delete-device/delete-device.module').then( m => m.DeleteDevicePageModule)
   },
+  {
+    path: 'verify-service-mc',
+    loadChildren: () => import('./verify-service-mc/verify-service-mc.module').then( m => m.VerifyServiceMcPageModule)
+  },
 ];
 
 @NgModule({

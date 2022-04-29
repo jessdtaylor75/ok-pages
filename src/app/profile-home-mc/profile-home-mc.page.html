@@ -34,6 +34,7 @@
     <ion-item detail routerLink="/personal-info">
       <ion-icon name="person-circle-outline"></ion-icon>
       <ion-label class="ion-padding-start">Personal Info</ion-label>
+      <ion-icon name="alert-circle-outline" color="danger" slot="end" class="icon-small"></ion-icon>
     </ion-item>
     <ion-item detail routerLink="/personas">
       <ion-icon name="people-circle-outline"></ion-icon>
@@ -74,6 +75,13 @@
     <ion-item detail routerLink="/legal">
       <ion-icon name="documents-outline"></ion-icon>
       <ion-label class="ion-padding-start">Legal Agreements</ion-label>
+    </ion-item>
+    <ion-item lines="none">
+      <ion-icon name="alert-circle-outline" color="danger" slot="start"></ion-icon>
+      <ion-text class="text-smallest" color="medium">
+        Your military service must be verified to access benefits.
+        <a class="link-text" routerLink="/verify-service-mc">Complete Verification</a>.
+      </ion-text>
     </ion-item>
     <ion-item lines="none">
     </ion-item>
