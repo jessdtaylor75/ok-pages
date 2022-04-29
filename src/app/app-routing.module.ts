@@ -355,6 +355,10 @@ const routes: Routes = [
     path: 'badge-device-add',
     loadChildren: () => import('./badge-device-add/badge-device-add.module').then( m => m.BadgeDeviceAddPageModule)
   },
+  {
+    path: 'delete-device',
+    loadChildren: () => import('./delete-device/delete-device.module').then( m => m.DeleteDevicePageModule)
+  },
 ];
 
 @NgModule({
