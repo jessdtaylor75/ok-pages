@@ -1,7 +1,11 @@
 <ion-content color="raven">
   <div class="v-center">
     <ion-row class="ion-justify-content-center">
-      <ion-icon class="icon-huge" src="/assets/aerpass-white.svg" color="light"></ion-icon>
+      <ion-img src="/assets/aerpass-blue.svg" class="pad15"></ion-img>
+      <!--<ion-icon class="icon-huge" src="/assets/aerpass-white.svg" color="light"></ion-icon>-->
+    </ion-row>
+    <ion-row class="text-smaller ion-justify-content-center ion-padding-top">
+      &nbsp;&nbsp;
     </ion-row>
     <ion-row>
       <ion-slides pager="true" style='height: 100%;'>
@@ -20,8 +24,11 @@
         </ion-slide>
         <ion-slide>
           <ion-grid>
+            <ion-row class="pad20">
+              <ion-text class="text">&nbsp;&nbsp;</ion-text>
+            </ion-row>
             <ion-row class="text-small ion-text-justify pad15">
-              The secure Smart ID that
+              The Secure Smart ID that
               eliminates usernames and
               passwords, making it easy
               to login safely, everywhere
@@ -54,12 +61,12 @@
         </ion-slide>-->
         <ion-slide class="text-small">
           <ion-grid>
-            <!--<ion-row class="ion-justify-content-center">
+            <ion-row class="ion-justify-content-center">
               <ion-text class="text-smaller"><h3>User-Controlled Identity</h3></ion-text>
-            </ion-row>-->
+            </ion-row>
             <ion-row class="ion-text-left pad10">
               <ul class="text-smaller">
-                <li>No usernames or passwords.</li>
+                <li>No passwords – ever.</li>
                 <li>You control what you share.</li>
                 <li>No sensitive information is ever stored on your device.</li>
                 <li>Access to AerPass is linked to your device biometrics so only you can use it.</li>
@@ -75,7 +82,10 @@
 <ion-footer class="ion-no-border">
   <ion-toolbar color="raven">
     <ion-button expand="block" color="primary" class="pad15 ion-margin-bottom" routerLink="/biometrics">
-      Activate AerPass
+      Create Account
+    </ion-button>
+    <ion-button expand="block" color="primary" class="pad15 ion-margin-bottom" fill="outline" routerLink="/biometrics">
+      Connect Device
     </ion-button>
   </ion-toolbar>
 </ion-footer>

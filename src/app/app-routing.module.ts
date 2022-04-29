@@ -347,6 +347,10 @@ const routes: Routes = [
     path: 'profile-home-mc',
     loadChildren: () => import('./profile-home-mc/profile-home-mc.module').then( m => m.ProfileHomeMcPageModule)
   },
+  {
+    path: 'scan-device-add',
+    loadChildren: () => import('./scan-device-add/scan-device-add.module').then( m => m.ScanDeviceAddPageModule)
+  },
 ];
 
 @NgModule({

@@ -1,18 +1,14 @@
 <ion-header class="ion-no-border">
   <ion-toolbar>
     <ion-buttons slot="start">
-      <ion-menu-button></ion-menu-button>
+      <ion-back-button color="medium" defaultHref="/get-started"></ion-back-button>
     </ion-buttons>
     <ion-text class="ion-text-center">
       <ion-title class="ion-justify-content-center">
-        Verify Email
+        Connect Device
       </ion-title>
     </ion-text>
-    <!--<ion-buttons slot="end">
-      <ion-button color="primary" routerLink="/view-notifications" routerDirection="root" fill="clear">
-        <ion-icon name="notifications-outline" color="primary"></ion-icon>
-      </ion-button>
-    </ion-buttons>-->
+
   </ion-toolbar>
 </ion-header>
 
@@ -39,8 +35,7 @@
     </div>
   </div>
   <ion-text color="light" class="upper-third ion-text-center text-smaller">
-    Check your email for the QR code we sent to
-    <ion-text color="primary">user@domain.com</ion-text>
+    Scan the Connect Device QR code on another of your AerPass-enabled devices to add this device to your AerPass account.
   </ion-text>
 
   <div class="v-center">
@@ -54,20 +49,3 @@
   </div>
 
 </ion-content>
-
-<ion-tab-bar slot="bottom" class="tab-blur">
-  <ion-tab-button routerLink="/badge-app-default" routerDirection="back">
-    <ion-label color="white">ID Badge</ion-label>
-    <ion-icon name="qr-code-outline" color="white"></ion-icon>
-  </ion-tab-button>
-  <ion-tab-button routerLink="/home-scanner" routerDirection="root">
-    <ion-label color="primary">Scanner</ion-label>
-    <ion-icon name="scan-outline" color="primary"></ion-icon>
-  </ion-tab-button>
-  <ion-tab-button routerLink="/profile-home" routerDirection="forward">
-    <ion-label color="white">Profile</ion-label>
-    <ion-icon name="person-outline" color="white"></ion-icon>
-  </ion-tab-button>
-</ion-tab-bar>
-
-
