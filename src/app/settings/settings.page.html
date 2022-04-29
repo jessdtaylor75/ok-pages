@@ -11,7 +11,7 @@
 
 <ion-content>
   <ion-row class="ion-justify-content-center">
-    <ion-icon src="/assets/A-symbol.svg" class="icon-big" color="primary"></ion-icon>
+    <ion-icon src="/assets/A-symbol.svg" class="icon-larger" color="primary"></ion-icon>
   </ion-row>
   <ion-row class="ion-justify-content-center">
     <ion-icon name="ellipsis-horizontal"></ion-icon>
@@ -19,7 +19,7 @@
   <ion-row class="ion-justify-content-center"><ion-text>&nbsp;</ion-text></ion-row>
 
   <!--// Radio group Only appears if user has one or more group flags in their profile //-->
-  <ion-radio-group value="default">
+  <!-- <ion-radio-group value="default">
     <ion-list-header>
       <ion-label>App Icon & Theme</ion-label>
     </ion-list-header>
@@ -60,7 +60,7 @@
         <ion-radio slot="end" value="us-coastguard" color="coastguard-blue"></ion-radio>
       </ion-item>
     </ion-list>
-  </ion-radio-group>
+  </ion-radio-group> -->
   <!--//  //-->
   <ion-radio-group value="auto">
     <ion-list-header>
@@ -85,11 +85,41 @@
     </ion-list>
   </ion-radio-group>
 
+  <ion-list-header>
+    <ion-label>Devices</ion-label>
+  </ion-list-header>
+  <ion-list>
+    <ion-item-sliding>
+      <ion-item detail>
+        <ion-icon name="phone-portrait-outline"></ion-icon>
+        <ion-label class="ion-padding-start">Jane's iPhone</ion-label>
+      </ion-item>
+      <ion-item-options side="start">
+        <ion-item-option color="danger" expandable routerLink="/delete-account">
+          <ion-icon name="trash-outline" slot="start"></ion-icon>
+          Delete Device
+        </ion-item-option>
+      </ion-item-options>
+    </ion-item-sliding>
+    <ion-item-sliding>
+      <ion-item detail>
+        <ion-icon name="phone-portrait-outline"></ion-icon>
+        <ion-label class="ion-padding-start">Jane's Pixel 5</ion-label>
+      </ion-item>
+      <ion-item-options side="start">
+        <ion-item-option color="danger" expandable routerLink="/delete-account">
+          <ion-icon name="trash-outline" slot="start"></ion-icon>
+          Delete Device
+        </ion-item-option>
+      </ion-item-options>
+    </ion-item-sliding>
+  </ion-list>
+
+  <ion-fab vertical="bottom" horizontal="center" slot="fixed">
+    <ion-fab-button routerLink="/badge-device-add">
+      <ion-icon name="add-outline" size="large"></ion-icon>
+    </ion-fab-button>
+    <ion-label class="ion-margin-top aer-label" color="primary">Add Device</ion-label>
+  </ion-fab>
+
 </ion-content>
-<ion-footer class="ion-no-border">
-  <ion-toolbar>
-    <ion-button expand="block" class="pad15 ion-margin-bottom" fill="outline" routerLink="/home-scanner">
-      Apply
-    </ion-button>
-  </ion-toolbar>
-</ion-footer>

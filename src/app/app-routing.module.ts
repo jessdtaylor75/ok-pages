@@ -351,6 +351,10 @@ const routes: Routes = [
     path: 'scan-device-add',
     loadChildren: () => import('./scan-device-add/scan-device-add.module').then( m => m.ScanDeviceAddPageModule)
   },
+  {
+    path: 'badge-device-add',
+    loadChildren: () => import('./badge-device-add/badge-device-add.module').then( m => m.BadgeDeviceAddPageModule)
+  },
 ];
 
 @NgModule({
