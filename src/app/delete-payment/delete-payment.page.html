@@ -4,22 +4,22 @@
     <div class="v-center pad10">
       <ion-icon name="alert-circle-outline" class="icon-huge" color="danger"></ion-icon><br/>
       <ion-text class="ion-justify-content-center" color="white"><h1>PLEASE CONFIRM</h1></ion-text>
-      <ion-text class="text-small" color="white">
-        <br/>This action will permanently<br/>delete your Account and<br/>cannot be undone.<br/>&nbsp;&nbsp;
+      <ion-text class="text-smaller" color="white">
+        <br/>This action will delete payment method:<br/><span style="color: var(--ion-color-danger)">Visa •••• 4242</span><br/><br/>You can reconnect your payment method at any time.<br/><br/>
       </ion-text>
       <ion-grid>
         <ion-row>
           <ion-col size="6">
             <ion-fab horizontal="center">
-              <ion-fab-button color="danger" routerLink="/get-started">
+              <ion-fab-button color="danger" routerLink="/bank-list">
                 <ion-icon name="checkmark-sharp" class="icon-fab"></ion-icon>
               </ion-fab-button>
-              <ion-label class="aer-label" color="white">Delete<br/>Account</ion-label>
+              <ion-label class="aer-label" color="white">Delete<br/>Method</ion-label>
             </ion-fab>
           </ion-col>
           <ion-col size="6">
             <ion-fab horizontal="center">
-              <ion-fab-button color="white" routerLink="/personal-info" routerDirection="back">
+              <ion-fab-button color="white" routerLink="/bank-list" routerDirection="back">
                 <ion-icon name="close" class="icon-fab"></ion-icon>
               </ion-fab-button>
               <ion-label class="aer-label" color="white">Cancel</ion-label>

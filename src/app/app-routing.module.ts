@@ -363,6 +363,14 @@ const routes: Routes = [
     path: 'verify-service-mc',
     loadChildren: () => import('./verify-service-mc/verify-service-mc.module').then( m => m.VerifyServiceMcPageModule)
   },
+  {
+    path: 'delete-persona',
+    loadChildren: () => import('./delete-persona/delete-persona.module').then( m => m.DeletePersonaPageModule)
+  },
+  {
+    path: 'delete-payment',
+    loadChildren: () => import('./delete-payment/delete-payment.module').then( m => m.DeletePaymentPageModule)
+  },
 ];
 
 @NgModule({
