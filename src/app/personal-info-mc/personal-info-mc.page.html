@@ -22,7 +22,7 @@
       </ion-avatar>
       <div class="btn">
         <ion-fab-button size="small" color="light" translucent="true" routerLink="/badge-app-default">
-          <ion-icon name="qr-code-outline" color="primary"></ion-icon>
+          <ion-icon name="qr-code-outline" color="milconnect2"></ion-icon>
         </ion-fab-button>
       </div>
     </div>
@@ -37,43 +37,43 @@
         Display Name
       </ion-label>
       <!--// only appears IF user is enrolled in MilitaryConnect // -->
-      <ion-icon src="/assets/links-mark.svg" color="medium" slot="end"></ion-icon>
+      <ion-icon src="/assets/links-mark.svg" color="milconnect2" slot="end"></ion-icon>
     </ion-item>
     <ion-item>
       <ion-label>
         <div class="field-label">Full name</div>
         First Middle Surname
       </ion-label>
-      <ion-icon name="checkmark-circle-outline" color="primary" slot="end" class="icon-small"></ion-icon>
+      <ion-icon name="checkmark-circle-outline" color="milconnect2" slot="end" class="icon-small"></ion-icon>
     </ion-item>
     <ion-item>
       <ion-label>
         <div class="field-label">Primary email address</div>
         username@aerpass.com
       </ion-label>
-      <ion-icon name="checkmark-circle-outline" color="primary" slot="end" class="icon-small"></ion-icon>
+      <ion-icon name="checkmark-circle-outline" color="milconnect2" slot="end" class="icon-small"></ion-icon>
     </ion-item>
     <ion-item>
       <ion-label>
         <div class="field-label">Mobile number</div>
         +1 (321) 456-7890
       </ion-label>
-      <ion-icon name="checkmark-circle-outline" color="primary" slot="end" class="icon-small"></ion-icon>
+      <ion-icon name="checkmark-circle-outline" color="milconnect2" slot="end" class="icon-small"></ion-icon>
     </ion-item>
     <ion-item>
       <ion-label>
         <div class="field-label">DOB</div>
         09/17/1972
       </ion-label>
-      <ion-icon name="checkmark-circle-outline" color="primary" slot="end" class="icon-small"></ion-icon>
+      <ion-icon name="checkmark-circle-outline" color="milconnect2" slot="end" class="icon-small"></ion-icon>
     </ion-item>
     <!--// only appears IF user is enrolled in MilitaryConnect // -->
     <ion-item>
-      <ion-label color="medium">
+      <ion-label>
         <div class="field-label">Military Service</div>
         Air Force
       </ion-label>
-      <ion-icon name="checkmark-circle-outline" color="medium" slot="end" class="icon-small"></ion-icon>
+      <ion-icon name="checkmark-circle-outline" color="milconnect2" slot="end" class="icon-small"></ion-icon>
     </ion-item>
     <ion-item-sliding>
       <ion-item>
@@ -101,3 +101,22 @@
   </ion-list>
 
 </ion-content>
+
+<ion-tab-bar slot="bottom" class="tab-blur">
+  <ion-tab-button routerLink="/badge-mc-default" routerDirection="back">
+    <ion-label>ID Badge</ion-label>
+    <ion-icon name="qr-code-outline"></ion-icon>
+  </ion-tab-button>
+  <ion-tab-button routerLink="/home-scanner-milconnect" routerDirection="root">
+    <ion-label>Scanner</ion-label>
+    <ion-icon name="scan-outline"></ion-icon>
+  </ion-tab-button>
+  <!--<ion-tab-button routerLink="/wallet" routerDirection="forward">
+    <ion-label color="dark">Wallet</ion-label>
+    <ion-icon name="wallet-outline" color="dark"></ion-icon>
+  </ion-tab-button>-->
+  <ion-tab-button routerLink="/profile-home-mc" routerDirection="forward">
+    <ion-label color="milconnect2">Profile</ion-label>
+    <ion-icon name="person-outline" color="milconnect2"></ion-icon>
+  </ion-tab-button>
+</ion-tab-bar>

@@ -371,6 +371,18 @@ const routes: Routes = [
     path: 'delete-payment',
     loadChildren: () => import('./delete-payment/delete-payment.module').then( m => m.DeletePaymentPageModule)
   },
+  {
+    path: 'success-verify-service-mc',
+    loadChildren: () => import('./success-verify-service-mc/success-verify-service-mc.module').then( m => m.SuccessVerifyServiceMcPageModule)
+  },
+  {
+    path: 'personal-info-mc',
+    loadChildren: () => import('./personal-info-mc/personal-info-mc.module').then( m => m.PersonalInfoMcPageModule)
+  },
+  {
+    path: 'personal-info-mc-unverified',
+    loadChildren: () => import('./personal-info-mc-unverified/personal-info-mc-unverified.module').then( m => m.PersonalInfoMcUnverifiedPageModule)
+  },
 ];
 
 @NgModule({
