@@ -387,6 +387,18 @@ const routes: Routes = [
     path: 'success-account-created',
     loadChildren: () => import('./success-account-created/success-account-created.module').then( m => m.SuccessAccountCreatedPageModule)
   },
+  {
+    path: 'scan-device-add-mc',
+    loadChildren: () => import('./scan-device-add-mc/scan-device-add-mc.module').then( m => m.ScanDeviceAddMcPageModule)
+  },
+  {
+    path: 'biometrics-mc',
+    loadChildren: () => import('./biometrics-mc/biometrics-mc.module').then( m => m.BiometricsMcPageModule)
+  },
+  {
+    path: 'success-device-connected',
+    loadChildren: () => import('./success-device-connected/success-device-connected.module').then( m => m.SuccessDeviceConnectedPageModule)
+  },
 ];
 
 @NgModule({
