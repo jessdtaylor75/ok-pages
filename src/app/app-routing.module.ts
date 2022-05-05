@@ -383,6 +383,10 @@ const routes: Routes = [
     path: 'personal-info-mc-unverified',
     loadChildren: () => import('./personal-info-mc-unverified/personal-info-mc-unverified.module').then( m => m.PersonalInfoMcUnverifiedPageModule)
   },
+  {
+    path: 'success-account-created',
+    loadChildren: () => import('./success-account-created/success-account-created.module').then( m => m.SuccessAccountCreatedPageModule)
+  },
 ];
 
 @NgModule({

@@ -1,26 +1,33 @@
-<ion-header class="ion-no-border">
-  <ion-toolbar color="light"></ion-toolbar>
-</ion-header>
-<ion-content color="light">
+<ion-content color="army-black">
 
   <ion-row>
     <div class="v-center pad10">
-      <ion-icon name="alert-circle-outline" class="icon-huge" color="danger"></ion-icon><br/>
-      <ion-text class="ion-justify-content-center"><h1>ERROR!</h1></ion-text>
-      <ion-text class="text-small ion-text-center">
-        <br/>Email address currently in use.
+      <ion-icon name="alert-circle-outline" class="icon-huge" color="warning"></ion-icon><br/>
+      <ion-text class="ion-justify-content-center" color="white"><h1>WARNING</h1></ion-text>
+      <ion-text class="text-smaller" color="white">
+        <br/>Existing account for email address:<br/><span style="color: var(--ion-color-warning)">username@emailaddy.com</span><br/><br/>Continue to delete your existing account and replace it with a new account.<br/><br/>
       </ion-text>
+      <ion-grid>
+        <ion-row>
+          <ion-col size="6">
+            <ion-fab horizontal="center">
+              <ion-fab-button color="warning" routerLink="/success-account-created">
+                <ion-icon name="checkmark-sharp" class="icon-fab"></ion-icon>
+              </ion-fab-button>
+              <ion-label class="aer-label" color="white">Replace<br/>Account</ion-label>
+            </ion-fab>
+          </ion-col>
+          <ion-col size="6">
+            <ion-fab horizontal="center">
+              <ion-fab-button color="white" routerLink="/browser-eas" routerDirection="back">
+                <ion-icon name="close" class="icon-fab"></ion-icon>
+              </ion-fab-button>
+              <ion-label class="aer-label" color="white">Cancel</ion-label>
+            </ion-fab>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
     </div>
   </ion-row>
 
 </ion-content>
-<ion-footer class="ion-no-border">
-  <ion-toolbar color="light">
-    <ion-button expand="block" class="pad15 ion-margin-bottom" color="medium" routerLink="/browser-eas" routerDirection="back">
-      Try again
-    </ion-button>
-    <ion-button expand="block" class="pad15 ion-margin-bottom" color="primary" routerLink="/verify-id-recovery">
-      Reconnect Account
-    </ion-button>
-  </ion-toolbar>
-</ion-footer>
