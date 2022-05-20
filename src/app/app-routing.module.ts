@@ -399,6 +399,14 @@ const routes: Routes = [
     path: 'success-device-connected',
     loadChildren: () => import('./success-device-connected/success-device-connected.module').then( m => m.SuccessDeviceConnectedPageModule)
   },
+  {
+    path: 'browser-branded-login',
+    loadChildren: () => import('./browser-branded-login/browser-branded-login.module').then( m => m.BrowserBrandedLoginPageModule)
+  },
+  {
+    path: 'browser-branded-desktop-login',
+    loadChildren: () => import('./browser-branded-desktop-login/browser-branded-desktop-login.module').then( m => m.BrowserBrandedDesktopLoginPageModule)
+  },
 ];
 
 @NgModule({

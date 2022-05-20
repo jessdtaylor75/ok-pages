@@ -81,6 +81,16 @@ export class AppComponent {
       url: '/browser-ap-desktop-login',
       icon: 'log-in-outline'
     },
+    {
+      title: 'Branded Sign-in demo',
+      url: '/browser-branded-login',
+      icon: 'log-in-outline'
+    },
+    {
+      title: 'Branded Sign-in desktop',
+      url: '/browser-branded-desktop-login',
+      icon: 'log-in-outline'
+    },
   ];
 
   constructor(
