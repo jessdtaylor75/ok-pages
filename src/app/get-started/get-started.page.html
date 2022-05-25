@@ -64,9 +64,30 @@
         </ion-slide>
       </ion-slides>
     </ion-row>
+    <ion-row class="ion-justify-content-center">&nbsp;&nbsp;</ion-row>
+    <ion-grid>
+      <ion-row>
+        <ion-col size="6">
+          <ion-fab horizontal="center">
+            <ion-fab-button color="primary" routerLink="/biometrics">
+              <ion-icon name="person-outline" class="icon-fab"></ion-icon>
+            </ion-fab-button>
+            <ion-label class="aer-label" color="white">Create<br/>Account</ion-label>
+          </ion-fab>
+        </ion-col>
+        <ion-col size="6">
+          <ion-fab horizontal="center">
+            <ion-fab-button color="white" routerLink="/biometrics" routerDirection="back">
+              <ion-icon name="phone-portrait-outline" class="icon-fab" color="primary"></ion-icon>
+            </ion-fab-button>
+            <ion-label class="aer-label" color="white">Connect<br/>Device</ion-label>
+          </ion-fab>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
   </div>
 </ion-content>
-<ion-footer class="ion-no-border">
+<!--<ion-footer class="ion-no-border">
   <ion-toolbar color="raven">
     <ion-button expand="block" color="primary" class="pad15 ion-margin-bottom" routerLink="/biometrics">
       Create Account
@@ -75,4 +96,4 @@
       Connect Device
     </ion-button>
   </ion-toolbar>
-</ion-footer>
+</ion-footer>-->

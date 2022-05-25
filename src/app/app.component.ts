@@ -22,7 +22,7 @@ export class AppComponent {
       icon: 'scan-outline'
     },
     {
-      title: 'Profile',
+      title: 'Account',
       url: '/profile-home',
       icon: 'person-circle-outline'
     },
@@ -57,7 +57,7 @@ export class AppComponent {
       icon: 'scan-outline'
     },
     {
-      title: 'Profile MC',
+      title: 'Account MC',
       url: '/profile-home-mc',
       src: '/assets/links-mark.svg'
     },
