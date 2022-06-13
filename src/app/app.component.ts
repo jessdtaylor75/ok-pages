@@ -24,7 +24,7 @@ export class AppComponent {
     {
       title: 'Account',
       url: '/profile-home',
-      icon: 'person-circle-outline'
+      icon: 'person-outline'
     },
     {
       title: 'Military Deals',
