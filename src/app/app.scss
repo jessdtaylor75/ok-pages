@@ -317,9 +317,12 @@ ion-avatar {
 }
 
 .pay-account-info {
-  background: url(/assets/aerpass-card.png) no-repeat center;
-  background-size: contain;
+  background: linear-gradient(120deg, var(--ion-color-brand-grad-start) 5%, var(--ion-color-brand-grad-end) 95%);
+  //background: url(/assets/aerpass-card.png) no-repeat center;
+  //background-size: contain;
   width: 80vw;
+  height: 52vw;
+  border-radius: 3vw;
 }
 
 .pay-account-header {
@@ -345,7 +348,7 @@ ion-avatar {
 }
 
 .auth-page {
-  --background: linear-gradient(120deg, rgba(5,16,51,1) 5%, rgba(0,102,204,1) 95%);
+  --background: linear-gradient(120deg, var(--ion-color-brand-grad-start) 5%, var(--ion-color-brand-grad-end) 95%);
 }
 
 .auth-page-branded {
