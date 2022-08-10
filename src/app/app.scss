@@ -207,22 +207,22 @@ ion-avatar {
   z-index: 9;
 }
 
-.venue-pic {
-  width: 28.5vw;
-  height: 28.5vw;
+.profile-pic-smaller {
+  width: 22.5vw;
+  height: 22.5vw;
   border-radius: 50%;
   border: .5vw solid var(--ion-color-primary);
   text-align: center;
   display: inline-block;
 }
 
-.venue-frame {
+.profile-frame-smaller {
   display: flex;
   align-items: center;
   justify-content: center;
   //margin-top: 3vw;
-  width: 30vw;
-  height: 30vw;
+  width: 24vw;
+  height: 24vw;
   border-radius: 50%;
   border: .5vw solid var(--ion-color-primary);
 }
@@ -396,4 +396,12 @@ ion-avatar {
 
 .link-text {
   text-decoration: none;
+}
+
+.partner-app-icon {
+  width: 1.8rem;
+  height: 1.8rem;
+  border: 1px;
+  border-color: var(--ion-color-medium);
+  border-radius: 25%;
 }

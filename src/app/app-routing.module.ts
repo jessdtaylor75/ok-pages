@@ -407,6 +407,10 @@ const routes: Routes = [
     path: 'browser-branded-desktop-login',
     loadChildren: () => import('./browser-branded-desktop-login/browser-branded-desktop-login.module').then( m => m.BrowserBrandedDesktopLoginPageModule)
   },
+  {
+    path: 'connected-accounts',
+    loadChildren: () => import('./connected-accounts/connected-accounts.module').then( m => m.ConnectedAccountsPageModule)
+  },
 ];
 
 @NgModule({
