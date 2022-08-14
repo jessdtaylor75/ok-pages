@@ -7,6 +7,10 @@ ion-content {
   --overflow: hidden;
 }
 
+ion-title {
+  color: var(--ion-color-milconnect2);
+}
+
 .upper-third {
   @extend .stretch!optional;
   padding: 0 15vw 0 15vw;
