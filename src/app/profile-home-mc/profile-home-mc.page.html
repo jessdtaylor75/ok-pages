@@ -28,7 +28,7 @@
     </div>
   </ion-row>
   <ion-text class="section-header" color="milconnect2">
-    <br/>Jane Fentum<br/><br/>
+    <br/>Military Connect User<br/><br/>
   </ion-text>
   <ion-list>
     <ion-item detail routerLink="/personal-info-mc-unverified">
@@ -40,25 +40,29 @@
       <ion-icon name="people-circle-outline"></ion-icon>
       <ion-label class="ion-padding-start">Personas</ion-label>
     </ion-item>
-    <!--<ion-item detail routerLink="/id-documents">
-      <ion-icon src="/assets/id-card-outline.svg" color="medium"></ion-icon>
-      <ion-label class="ion-padding-start" color="medium">ID Documents</ion-label>
-    </ion-item>-->
     <ion-item detail routerLink="/bank-list">
       <ion-icon name="card-outline"></ion-icon>
       <ion-label class="ion-padding-start">Payment Methods</ion-label>
     </ion-item>
-    <!--<ion-item detail routerLink="/address-list">
+    <ion-item detail routerLink="/id-documents">
+      <ion-icon src="/assets/id-card-outline.svg" color="medium"></ion-icon>
+      <ion-label class="ion-padding-start" color="medium">ID Documents</ion-label>
+    </ion-item>
+    <ion-item detail routerLink="/address-list">
       <ion-icon name="home-outline" color="medium"></ion-icon>
       <ion-label class="ion-padding-start" color="medium">
         Shipping Addresses
       </ion-label>
-    </ion-item>-->
-    <!--<ion-item detail routerLink="/wallet">
+    </ion-item>
+    <ion-item detail routerLink="/wallet">
       <ion-icon name="wallet-outline" color="medium"></ion-icon>
       <ion-label class="ion-padding-start" color="medium">Tickets & Passes</ion-label>
-    </ion-item>-->
+    </ion-item>
     <ion-item-divider color="light"></ion-item-divider>
+    <ion-item detail routerLink="/connected-accounts">
+      <ion-icon name="logo-electron"></ion-icon>
+      <ion-label class="ion-padding-start">Connections</ion-label>
+    </ion-item>
     <ion-item detail routerLink="/military-connect">
       <ion-icon src="/assets/links-mark.svg" color="milconnect2"></ion-icon>
       <ion-label class="ion-padding-start" color="milconnect2">Military Connect</ion-label>
@@ -68,13 +72,13 @@
       <ion-label class="ion-padding-start" color="primary">Member Services</ion-label>
     </ion-item>
     <ion-item-divider color="light"></ion-item-divider>
-    <!--<ion-item detail routerLink="/settings-security">
-      <ion-icon name="finger-print-outline"></ion-icon>
-      <ion-label class="ion-padding-start">Biometrics & Security</ion-label>
-    </ion-item>-->
     <ion-item detail routerLink="/settings">
       <ion-icon name="phone-portrait-outline"></ion-icon>
       <ion-label class="ion-padding-start">Devices</ion-label>
+    </ion-item>
+    <ion-item detail routerLink="/settings-security">
+      <ion-icon name="finger-print-outline"></ion-icon>
+      <ion-label class="ion-padding-start">Biometrics & Security</ion-label>
     </ion-item>
     <ion-item detail routerLink="/legal">
       <ion-icon name="documents-outline"></ion-icon>
@@ -102,10 +106,6 @@
     <ion-label>Scanner</ion-label>
     <ion-icon name="scan-outline"></ion-icon>
   </ion-tab-button>
-  <!--<ion-tab-button routerLink="/wallet" routerDirection="forward">
-    <ion-label color="dark">Wallet</ion-label>
-    <ion-icon name="wallet-outline" color="dark"></ion-icon>
-  </ion-tab-button>-->
   <ion-tab-button routerLink="/profile-home" routerDirection="forward">
     <ion-label color="milconnect2">Account</ion-label>
     <ion-icon name="person-outline" color="milconnect2"></ion-icon>
