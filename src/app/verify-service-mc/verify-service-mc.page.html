@@ -1,25 +1,26 @@
 <ion-header class="ion-no-border">
   <ion-toolbar>
-    <ion-buttons slot="start">
-      <ion-back-button defaultHref="/personal-info-mc-unverified"></ion-back-button>
-    </ion-buttons>
     <ion-title>
       Verify Service
     </ion-title>
+    <ion-buttons slot="end">
+      <ion-button defaultHref="/personal-info-mc-unverified">
+        <ion-icon name="close-outline" color="milconnect2"></ion-icon>
+      </ion-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <ion-row class="ion-justify-content-center">
-    <div class="profile">
-      <ion-avatar class="profile-frame">
-        <img src="/assets/jess-taylor-profile.jpg" class="profile-pic" alt="Profile Pic">
-      </ion-avatar>
-    </div>
-  </ion-row>
-  <ion-text class="section-header" color="primary">
-    &nbsp;&nbsp;<br/>
-  </ion-text>
+  <ion-list>
+    <ion-item lines="none">
+      <ion-text>
+        &nbsp;&nbsp;<br/>
+        Your military service must be verified to access your benefits.<br/>
+        &nbsp;&nbsp;<br/>
+      </ion-text>
+    </ion-item>
+  </ion-list>
   <ion-list>
     <ion-item>
       <ion-label>
@@ -80,7 +81,7 @@
 <ion-footer class="ion-no-border">
   <ion-toolbar>
     <ion-button expand="block" color="milconnect2" class="pad15 ion-margin-bottom" routerLink="/success-verify-service-mc">
-      Submit
+      Submit Verification
     </ion-button>
   </ion-toolbar>
 </ion-footer>
