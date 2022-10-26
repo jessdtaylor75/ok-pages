@@ -10,18 +10,20 @@
 
 <ion-content class="auth-page" fullscreen="true">
   <div class="v-center">
-    <div class="pad10 ion-margin-bottom">
-      <h1 class="white">Verify Your Identity</h1>
-    </div>
     <ion-card>
       <ion-grid>
+        <ion-row class="ion-justify-content-center">
+          <h4>Continue with Easy Access</h4>
+        </ion-row>
         <ion-row>
-          <ion-col size="6">
-            <ion-button size="medium" color="secondary" expand="block" routerLink="/personal-info-edit"><ion-icon name="logo-facebook"></ion-icon>&nbsp;&nbsp;Facebook</ion-button>
-          </ion-col>
-          <ion-col size="6">
-            <ion-button size="medium" color="cancel" expand="block" routerLink="/personal-info-edit"><ion-icon name="logo-google"></ion-icon>&nbsp;&nbsp;Google</ion-button>
-          </ion-col>
+          <ion-toolbar class="pad10 ion-margin-bottom">
+            <ion-button expand="block" color="secondary" routerLink="/personal-info-edit"><ion-icon name="logo-facebook"></ion-icon>&nbsp;&nbsp;Facebook</ion-button>
+          </ion-toolbar>
+        </ion-row>
+        <ion-row>
+          <ion-toolbar class="pad10 ion-margin-bottom">
+          <ion-button expand="block" color="cancel" routerLink="/personal-info-edit"><ion-icon name="logo-google"></ion-icon>&nbsp;&nbsp;Google</ion-button>
+          </ion-toolbar>
         </ion-row>
         <ion-row class="ion-justify-content-center">
           <div class="ion-text-center">
@@ -33,8 +35,8 @@
           </div>
         </ion-row>
         <ion-row>
-          <div class="ion-padding ion-text-center">
-            <h4>Send identity verification code</h4>
+          <div class="pad10 ion-text-center">
+            <h5>Send identity verification code</h5>
             <ion-text class="text-smallest">
               An identity verification code will be sent to the email address you provide. Your mobile carrier's data rates may apply.
             </ion-text>
@@ -42,13 +44,13 @@
         </ion-row>
         <ion-row><ion-text>&nbsp;&nbsp;</ion-text></ion-row>
       </ion-grid>
-      <ion-item>
+      <ion-item class="margin5-start">
         <ion-icon name="mail" class="icon-small"></ion-icon>
         <ion-input class="ion-margin-start" type="text" placeholder="Email"></ion-input>
       </ion-item>
       <ion-row><ion-text>&nbsp;&nbsp;</ion-text></ion-row>
-      <ion-toolbar class="pad20 ion-margin-bottom">
-        <ion-button color="milconnect" expand="block" routerLink="/personal-info-add">Get Code</ion-button>
+      <ion-toolbar class="pad10 ion-margin-bottom">
+        <ion-button color="primary" expand="block" routerLink="/personal-info-add">Get Code</ion-button>
       </ion-toolbar>
     </ion-card>
 
