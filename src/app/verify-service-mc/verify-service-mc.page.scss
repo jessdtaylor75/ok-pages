@@ -6,22 +6,6 @@ ion-title {
   color: var(--ion-color-milconnect2);
 }
 
-.profile-pic {
-  width: 34vw;
-  height: 34vw;
-  border-radius: 50%;
-  border: .5vw solid var(--ion-color-milconnect2);
-  text-align: center;
-  display: inline-block;
-}
-
-.profile-frame {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 3vw;
-  width: 36vw;
-  height: 36vw;
-  border-radius: 50%;
-  border: .5vw solid var(--ion-color-milconnect2);
+ion-list-header {
+  font-size: 1.2rem;
 }
