@@ -21,27 +21,9 @@
 </ion-header>
 
 <ion-content fullscreen="true">
-  <div class="v-center">
-    <div class="ion-text-center">
-      <ion-row class="scan-top"></ion-row>
-      <ion-row class="ion-justify-content-center">
-        <div class="scan-bezel">
-          <div class="scan-lr"></div>
-          <div class="scan-frame"></div>
-          <div class="scan-lr"></div>
-        </div>
-      </ion-row>
-      <ion-row class="scan-bottom">
-        <ion-grid>
-          <ion-row class="ion-justify-content-center">
-            <ion-text class="text-smaller ion-text-center" color="white">
-              Scan&nbsp;&nbsp;<ion-icon src="/assets/links-mark.svg" class="icon-small nudge-down" color="white"></ion-icon>&nbsp;&nbsp;Code
-            </ion-text>
-          </ion-row>
-        </ion-grid>
-      </ion-row>
-    </div>
-  </div>
+  <ion-row class="v-center">
+    <img src="/assets/scanner-circle-mc.svg" alt="scanner">
+  </ion-row>
 
   <ion-text color="white" class="upper-third ion-text-center text-smaller">
     Scan Military Connect QR codes for password-free logins, to safely pay at verified merchants, and more...
@@ -53,7 +35,7 @@
         <div class="ion-text-center">
           <ion-row class="ion-justify-content-center">
             <div class="display-qr">
-              <img src="/assets/ap-login-auth-qr.svg" routerLink="/auth-login-mc" alt="" />
+              <img src="/assets/qr-get-mc-circle-sq.png" routerLink="/auth-login-mc" alt="" />
             </div>
           </ion-row>
         </div>
@@ -63,7 +45,7 @@
         <div class="ion-text-center">
           <ion-row class="ion-justify-content-center">
             <div class="display-qr">
-              <img src="/assets/ap-payment-auth-qr.svg" routerLink="/auth-payment" alt="" />
+              <img src="/assets/qr-get-mc-circle-sq.png" routerLink="/auth-payment" alt="" />
             </div>
           </ion-row>
         </div>
@@ -72,11 +54,18 @@
     </ion-slides>
   </div>
 
-  <ion-row class="lower-third ion-justify-content-center">
-    <ion-fab-button color="milconnect2" routerLink="/browser-mildeals">
-      <ion-icon src="/assets/links-mark.svg" color="white" class="icon-fab"></ion-icon>
-    </ion-fab-button>
-  </ion-row>
+  <div class="lower-third ion-justify-content-center">
+    <!-- <ion-row class="ion-justify-content-center">
+      <ion-text class="text-smaller ion-text-center" color="white">
+        Scan&nbsp;&nbsp;<ion-icon src="/assets/links-mark.svg" class="icon-small nudge-down" color="white"></ion-icon>&nbsp;&nbsp;Code
+      </ion-text>
+    </ion-row> -->
+    <ion-row class="ion-margin-vertical ion-justify-content-center">
+      <ion-fab-button color="milconnect2" routerLink="/browser-mildeals">
+        <ion-icon src="/assets/links-mark.svg" color="white" class="icon-fab"></ion-icon>
+      </ion-fab-button>
+    </ion-row>
+  </div>
 
 </ion-content>
 

@@ -26,45 +26,14 @@ ion-content {
   z-index: 9;
 }
 
-.scan-top {
-  height: 50vh;
-  width: 100vw;
-  background: rgba(5,16,51,0.75);
-}
-
-.scan-bezel {
-  height: 68vw;
-  width: 100vw;
-  display: flex;
-}
-
-.scan-lr {
-  height: 68vw;
-  width: 16vw;
-  padding: 0;
-  background-color: rgba(5,16,51,0.75);
-}
-
-.scan-frame {
-  height: 68vw;
-  width: 68vw;
-  text-align: center;
-  background-color: var(--ion-color-milconnect2);
-  -webkit-mask-size: contain;
-  mask-size: contain;
-  -webkit-mask-position: center;
-  mask-position: center;
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
-  mask-image: url("/assets/scan-frame.svg");
-}
-
-.scan-bottom {
-  height: 50vh;
-  width: 100vw;
-  background: rgba(5,16,51,0.75);
-}
-
 ion-tab-bar {
-  background: rgba(5,16,51,0.75);
+  background: rgba(32,36,45,0.75);
+}
+
+.display-qr {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60vw;
+  height: 60vw;
 }
