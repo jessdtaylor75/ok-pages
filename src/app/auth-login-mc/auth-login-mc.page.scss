@@ -1,8 +1,16 @@
+ion-title {
+  color: var(--ion-color-white);
+}
+
 $card-width: 85vw;
 $card-height: 55vw;
 
+.auth-page {
+  --background: linear-gradient(120deg, var(--ion-color-milconnect) 5%, var(--ion-color-milconnect2) 95%);
+}
+
 .method {
-  background: linear-gradient(120deg, var(--ion-color-brand-grad-start) 5%, var(--ion-color-brand-grad-end) 95%);
+  background: linear-gradient(120deg, var(--ion-color-milconnect) 5%, var(--ion-color-milconnect2) 95%);
   width: $card-width;
   height: $card-height;
   border-radius: 4vw;
@@ -21,4 +29,26 @@ $card-height: 55vw;
 
 .profile-spacer-top {
   padding-top: .5rem;
+}
+
+.profile-pic {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 2pt solid var(--ion-color-medium);
+  text-align: center;
+  display: inline-block;
+}
+
+.profile-frame {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3vw;
+  padding: 2pt;
+  width: 36vw;
+  height: 36vw;
+  background: var(--ion-color-light);
+  border-radius: 50%;
+  border: 2pt solid var(--ion-color-medium);
 }
