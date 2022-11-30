@@ -5,23 +5,16 @@
 </ion-header>
 
 <ion-content fullscreen="true" class="auth-page">
-  <div class="upper-third ion-text-center">
-    <ion-icon src="/assets/A-symbol-blue.svg" class="icon-bigger"></ion-icon>
+  <div class="upper-third ion-justify-content-center">
+    <ion-img class="partner-logo" src="/assets/Costco-Logo.wine.svg" alt="Costco"></ion-img>
   </div>
   <div class="v-center">
-    <ion-item lines="none" color="transparent" class="ion-align-items-baseline glass-blur">
-      <ion-avatar class="merchant-logo">
-        <img src="/assets/aerpass-merchant-logo.png" alt="Merchant Logo">
-      </ion-avatar>
-      <ion-label class="ion-padding-start" color="white">
-        www.aerpass.com
-        <div class="address-label">
-          Sign in request
-        </div>
-      </ion-label>
-    </ion-item>
-    <ion-item lines="none" color="transparent" class="glass-blur">
-      <ion-label position="stacked" style="margin-bottom: 1vw" color="white">Connect as:</ion-label>
+    <ion-row class="glass-blur ion-justify-content-center">
+      <ion-text class="ion-margin ion-text-center" color="white">
+        Connect as:
+      </ion-text>
+    </ion-row>
+    <ion-row class="glass-blur">
 
       <ion-slides style="width: 100%">
 
@@ -75,13 +68,13 @@
 
       </ion-slides>
 
-    </ion-item>
+    </ion-row>
     <!--<ion-item lines="none" color="transparent" class="glass-blur">
       <ion-toggle slot="start" name="default-id" color="primary"></ion-toggle>
       <ion-label color="white">Default identity for this service</ion-label>
     </ion-item>-->
     <ion-item lines="none" color="transparent" class="glass-blur">
-      <ion-icon name="checkmark-sharp" color="primary"></ion-icon>
+      <ion-icon name="checkmark-sharp" color="white"></ion-icon>
       <ion-text class="ion-padding-start text-smallest" color="white">
         Share my display name, email address, language preference, and picture with MerchantName.
       </ion-text>
