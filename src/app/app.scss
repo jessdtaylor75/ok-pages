@@ -274,7 +274,11 @@ ion-avatar {
 .partner-logo {
   margin-top: 10vw;
   margin-bottom: 10vw;
-  height: 4rem;
+  padding: 0 5vw 0 5vw;
+}
+
+.auth-spacer {
+  height: 5vw;
 }
 
 .merchant-logo {
