@@ -50,7 +50,7 @@
       <ion-label position="stacked">Verify service for</ion-label>
       <ion-segment value="myself">
         <ion-segment-button value="myself">
-          Myself
+          Self
         </ion-segment-button>
         <ion-segment-button value="military_family">
           Family member
@@ -90,13 +90,33 @@
       <ion-label position="stacked">
         Date of Birth
       </ion-label>
-      <ion-input type="text" placeholder="09/17/1972"></ion-input>
+      <ion-row>
+        <ion-col size="4">
+          <ion-input type="number" placeholder="MM"></ion-input>
+        </ion-col>
+        <ion-col size="4">
+          <ion-input type="number" placeholder="DD"></ion-input>
+        </ion-col>
+        <ion-col size="4">
+          <ion-input type="number" placeholder="YYYY"></ion-input>
+        </ion-col>
+      </ion-row>
     </ion-item>
     <ion-item>
       <ion-label position="stacked">
         Any date on active duty
       </ion-label>
-      <ion-input type="text" placeholder="06/06/2005"></ion-input>
+      <ion-row>
+        <ion-col size="4">
+          <ion-input type="number" placeholder="MM"></ion-input>
+        </ion-col>
+        <ion-col size="4">
+          <ion-input type="number" placeholder="DD"></ion-input>
+        </ion-col>
+        <ion-col size="4">
+          <ion-input type="number" placeholder="YYYY"></ion-input>
+        </ion-col>
+      </ion-row>
     </ion-item>
     <ion-item lines="none">
       <ion-label class="ion-padding-start">
