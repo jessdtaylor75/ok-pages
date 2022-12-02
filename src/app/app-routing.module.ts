@@ -411,6 +411,10 @@ const routes: Routes = [
     path: 'connected-accounts',
     loadChildren: () => import('./connected-accounts/connected-accounts.module').then( m => m.ConnectedAccountsPageModule)
   },
+  {
+    path: 'badge-app-default-code',
+    loadChildren: () => import('./badge-app-default-code/badge-app-default-code.module').then( m => m.BadgeAppDefaultCodePageModule)
+  },
 ];
 
 @NgModule({
