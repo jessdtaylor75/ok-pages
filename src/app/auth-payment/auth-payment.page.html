@@ -5,108 +5,108 @@
 </ion-header>
 
 <ion-content fullscreen="true" class="auth-page">
-  <div class="upper-third ion-justify-content-center">
+  <ion-row class="ion-justify-content-center">
     <img src="/assets/Costco-Logo.wine.svg" class="partner-logo" alt="Costco" />
-  </div>
-  <div class="v-center">
-    <ion-item lines="none" color="transparent" class="ion-align-items-baseline glass-blur" routerLink="/address-select" detail>
-      <ion-avatar class="merchant-logo">
-        <img src="/assets/jess-taylor-profile.jpg" alt="PersonaName">
-      </ion-avatar>
-      <ion-label class="ion-padding-start">
-        Ship to AerPass Member
-        <div class="address-label">
-          123 Avenue B #1F<br/>
-          New York, NY 10009&nbsp;&nbsp;&nbsp;&nbsp;USA
+  </ion-row>
+
+  <ion-item lines="none" color="transparent" class="ion-align-items-baseline glass-blur" routerLink="/address-select" detail>
+    <ion-avatar class="merchant-logo">
+      <img src="/assets/jess-taylor-profile.jpg" alt="PersonaName">
+    </ion-avatar>
+    <ion-label class="ion-padding-start">
+      Ship to AerPass Member
+      <div class="address-label">
+        123 Avenue B #1F<br/>
+        New York, NY 10009&nbsp;&nbsp;&nbsp;&nbsp;USA
+      </div>
+    </ion-label>
+  </ion-item>
+  <ion-item lines="none" color="transparent" class="glass-blur">
+    <ion-label position="stacked" style="margin-bottom: 1vw" color="white">Method</ion-label>
+
+    <ion-slides style="width: 100%">
+
+      <ion-slide>
+        <div class="method">
+          <div class="card-top ion-padding-top ion-justify-content-center">
+            <ion-icon src="/assets/A-symbol-blue.svg" class="icon-big"></ion-icon>
+          </div>
+          <ion-item lines="none" color="transparent" class="card-size">
+            <ion-icon src="/assets/savings.svg" color="white"></ion-icon>
+            <ion-label class="ion-padding-start" color="white">Wells Fargo &bull;&bull;&bull;&bull; 1111</ion-label>
+          </ion-item>
         </div>
-      </ion-label>
-    </ion-item>
-    <ion-item lines="none" color="transparent" class="glass-blur">
-      <ion-label position="stacked" style="margin-bottom: 1vw" color="white">Method</ion-label>
+      </ion-slide>
 
-      <ion-slides style="width: 100%">
-
-        <ion-slide>
-          <div class="method">
-            <div class="card-top ion-padding-top ion-justify-content-center">
-              <ion-icon src="/assets/A-symbol-blue.svg" class="icon-big"></ion-icon>
-            </div>
-            <ion-item lines="none" color="transparent" class="card-size">
-              <ion-icon src="/assets/savings.svg" color="white"></ion-icon>
-              <ion-label class="ion-padding-start" color="white">Wells Fargo &bull;&bull;&bull;&bull; 1111</ion-label>
-            </ion-item>
+      <ion-slide>
+        <div class="method">
+          <div class="card-top ion-padding-top ion-justify-content-center">
+            <ion-icon src="/assets/A-symbol-blue.svg" class="icon-big"></ion-icon>
           </div>
-        </ion-slide>
+          <ion-item lines="none" color="transparent" class="card-size">
+            <ion-label color="white">&bull;&bull;&bull;&bull; 4242 &nbsp;&nbsp; Exp 08/22</ion-label>
+            <ion-icon src="/assets/visa.svg" class="ion-padding-end icon-larger" slot="end"></ion-icon>
+          </ion-item>
+        </div>
+      </ion-slide>
 
-        <ion-slide>
-          <div class="method">
-            <div class="card-top ion-padding-top ion-justify-content-center">
-              <ion-icon src="/assets/A-symbol-blue.svg" class="icon-big"></ion-icon>
-            </div>
-            <ion-item lines="none" color="transparent" class="card-size">
-              <ion-label color="white">&bull;&bull;&bull;&bull; 4242 &nbsp;&nbsp; Exp 08/22</ion-label>
-              <ion-icon src="/assets/visa.svg" class="ion-padding-end icon-larger" slot="end"></ion-icon>
-            </ion-item>
+      <ion-slide>
+        <div class="method">
+          <div class="card-top ion-padding-top ion-justify-content-center">
+            <ion-icon src="/assets/A-symbol-blue.svg" class="icon-big"></ion-icon>
           </div>
-        </ion-slide>
+          <ion-item lines="none" color="transparent" class="card-size">
+            <ion-label color="white">&bull;&bull;&bull;&bull; 0331 &nbsp;&nbsp; Exp 08/22</ion-label>
+            <ion-icon src="/assets/mastercard.svg" class="ion-padding-end icon-larger" slot="end"></ion-icon>
+          </ion-item>
+        </div>
+      </ion-slide>
 
-        <ion-slide>
-          <div class="method">
-            <div class="card-top ion-padding-top ion-justify-content-center">
-              <ion-icon src="/assets/A-symbol-blue.svg" class="icon-big"></ion-icon>
-            </div>
-            <ion-item lines="none" color="transparent" class="card-size">
-              <ion-label color="white">&bull;&bull;&bull;&bull; 0331 &nbsp;&nbsp; Exp 08/22</ion-label>
-              <ion-icon src="/assets/mastercard.svg" class="ion-padding-end icon-larger" slot="end"></ion-icon>
-            </ion-item>
+      <ion-slide>
+        <div class="method">
+          <div class="card-top ion-padding-top ion-justify-content-center">
+            <ion-icon src="/assets/A-symbol-blue.svg" class="icon-big"></ion-icon>
           </div>
-        </ion-slide>
+          <ion-item lines="none" color="transparent" class="card-size">
+            <ion-label color="white">&bull;&bull;&bull;&bull; 6789 &nbsp;&nbsp; Exp 08/22</ion-label>
+            <ion-icon src="/assets/amex.svg" class="ion-padding-end icon-larger" slot="end"></ion-icon>
+          </ion-item>
+        </div>
+      </ion-slide>
 
-        <ion-slide>
-          <div class="method">
-            <div class="card-top ion-padding-top ion-justify-content-center">
-              <ion-icon src="/assets/A-symbol-blue.svg" class="icon-big"></ion-icon>
-            </div>
-            <ion-item lines="none" color="transparent" class="card-size">
-              <ion-label color="white">&bull;&bull;&bull;&bull; 6789 &nbsp;&nbsp; Exp 08/22</ion-label>
-              <ion-icon src="/assets/amex.svg" class="ion-padding-end icon-larger" slot="end"></ion-icon>
-            </ion-item>
-          </div>
-        </ion-slide>
+    </ion-slides>
 
-      </ion-slides>
+  </ion-item>
+  <!-- Set pay-account-auth img url var in app.scss to "aerpass-card.png" for bank payment type, and "cardbrand.svg" for card payment type -->
+  <!-- Avatar Options: "/aerpass-merchant-logo.png" or "bank-logo.png" or "null"-->
+  <!-- Label Options: "AerPass Direct" or "BankName &bull;&bull;&bull;&bull; 0331" -->
+  <!-- <ion-img src="/assets/card-trans.png" alt="default" class="pad10 pay-account-auth"></ion-img> -->
+  <ion-item lines="none" color="transparent" class="glass-blur">
+    <ion-label color="white">Pay MerchantName</ion-label>
+    <ion-label slot="end" class="ion-text-end" color="white">$25.00</ion-label>
+  </ion-item>
+  <ion-row class="auth-spacer"></ion-row>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="6">
+        <ion-fab horizontal="center">
+          <ion-fab-button color="spot-green" routerLink="/success">
+            <ion-icon name="checkmark-sharp" class="icon-fab"></ion-icon>
+          </ion-fab-button>
+          <ion-label class="aer-label nudge-down-label" color="white">Authorize</ion-label>
+        </ion-fab>
+      </ion-col>
+      <ion-col size="6">
+        <ion-fab horizontal="center">
+          <ion-fab-button color="cancel" routerLink="/home-scanner" routerDirection="back">
+            <ion-icon name="close" class="icon-fab"></ion-icon>
+          </ion-fab-button>
+          <ion-label class="aer-label nudge-down-label" color="white">Cancel</ion-label>
+        </ion-fab>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 
-    </ion-item>
-    <!-- Set pay-account-auth img url var in app.scss to "aerpass-card.png" for bank payment type, and "cardbrand.svg" for card payment type -->
-    <!-- Avatar Options: "/aerpass-merchant-logo.png" or "bank-logo.png" or "null"-->
-    <!-- Label Options: "AerPass Direct" or "BankName &bull;&bull;&bull;&bull; 0331" -->
-    <!-- <ion-img src="/assets/card-trans.png" alt="default" class="pad10 pay-account-auth"></ion-img> -->
-    <ion-item lines="none" color="transparent" class="glass-blur">
-      <ion-label color="white">Pay MerchantName</ion-label>
-      <ion-label slot="end" class="ion-text-end" color="white">$25.00</ion-label>
-    </ion-item>
-    <ion-row class="auth-spacer"></ion-row>
-    <ion-grid>
-      <ion-row>
-        <ion-col size="6">
-          <ion-fab horizontal="center">
-            <ion-fab-button color="spot-green" routerLink="/success">
-              <ion-icon name="checkmark-sharp" class="icon-fab"></ion-icon>
-            </ion-fab-button>
-            <ion-label class="aer-label nudge-down-label" color="white">Authorize</ion-label>
-          </ion-fab>
-        </ion-col>
-        <ion-col size="6">
-          <ion-fab horizontal="center">
-            <ion-fab-button color="cancel" routerLink="/home-scanner" routerDirection="back">
-              <ion-icon name="close" class="icon-fab"></ion-icon>
-            </ion-fab-button>
-            <ion-label class="aer-label nudge-down-label" color="white">Cancel</ion-label>
-          </ion-fab>
-        </ion-col>
-      </ion-row>
-    </ion-grid>
-  </div>
 </ion-content>
 
 <ion-footer class="ion-no-border">

@@ -57,6 +57,7 @@ ion-avatar {
 
 .nudge-down-label {
   margin-top: .25rem;
+  text-align: center;
 }
 
 .section-header {
@@ -272,9 +273,9 @@ ion-avatar {
 }
 
 .partner-logo {
-  margin-top: 10vw;
-  margin-bottom: 10vw;
-  padding: 0 5vw 0 5vw;
+  margin: 20px 20vw 30px 20vw;
+  max-height: 4rem;
+
 }
 
 .auth-spacer {
