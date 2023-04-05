@@ -415,6 +415,10 @@ const routes: Routes = [
     path: 'badge-app-default-code',
     loadChildren: () => import('./badge-app-default-code/badge-app-default-code.module').then( m => m.BadgeAppDefaultCodePageModule)
   },
+  {
+    path: 'auth-login-ref',
+    loadChildren: () => import('./auth-login-ref/auth-login-ref.module').then( m => m.AuthLoginRefPageModule)
+  },
 ];
 
 @NgModule({
