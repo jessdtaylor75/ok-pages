@@ -459,6 +459,18 @@ const routes: Routes = [
     path: 'tm-success',
     loadChildren: () => import('./tm-success/tm-success.module').then( m => m.TmSuccessPageModule)
   },
+  {
+    path: 'tm-spotify-offer',
+    loadChildren: () => import('./tm-spotify-offer/tm-spotify-offer.module').then( m => m.TmSpotifyOfferPageModule)
+  },
+  {
+    path: 'tm-spotify-auth-tm',
+    loadChildren: () => import('./tm-spotify-auth-tm/tm-spotify-auth-tm.module').then( m => m.TmSpotifyAuthTmPageModule)
+  },
+  {
+    path: 'tm-spotify-tickets',
+    loadChildren: () => import('./tm-spotify-tickets/tm-spotify-tickets.module').then( m => m.TmSpotifyTicketsPageModule)
+  },
 ];
 
 @NgModule({
