@@ -423,6 +423,42 @@ const routes: Routes = [
     path: 'browser-branded-offer',
     loadChildren: () => import('./browser-branded-offer/browser-branded-offer.module').then( m => m.BrowserBrandedOfferPageModule)
   },
+  {
+    path: 'tm-media-app-artist',
+    loadChildren: () => import('./tm-media-app-artist/tm-media-app-artist.module').then( m => m.TmMediaAppArtistPageModule)
+  },
+  {
+    path: 'tm-destination-artist',
+    loadChildren: () => import('./tm-destination-artist/tm-destination-artist.module').then( m => m.TmDestinationArtistPageModule)
+  },
+  {
+    path: 'tm-browser-eas',
+    loadChildren: () => import('./tm-browser-eas/tm-browser-eas.module').then( m => m.TmBrowserEasPageModule)
+  },
+  {
+    path: 'tm-destination-artist-select',
+    loadChildren: () => import('./tm-destination-artist-select/tm-destination-artist-select.module').then( m => m.TmDestinationArtistSelectPageModule)
+  },
+  {
+    path: 'tm-destination-ticket-select',
+    loadChildren: () => import('./tm-destination-ticket-select/tm-destination-ticket-select.module').then( m => m.TmDestinationTicketSelectPageModule)
+  },
+  {
+    path: 'tm-auth-purchase',
+    loadChildren: () => import('./tm-auth-purchase/tm-auth-purchase.module').then( m => m.TmAuthPurchasePageModule)
+  },
+  {
+    path: 'tm-badge-ticket',
+    loadChildren: () => import('./tm-badge-ticket/tm-badge-ticket.module').then( m => m.TmBadgeTicketPageModule)
+  },
+  {
+    path: 'tm-badge-ticket-code',
+    loadChildren: () => import('./tm-badge-ticket-code/tm-badge-ticket-code.module').then( m => m.TmBadgeTicketCodePageModule)
+  },
+  {
+    path: 'tm-success',
+    loadChildren: () => import('./tm-success/tm-success.module').then( m => m.TmSuccessPageModule)
+  },
 ];
 
 @NgModule({

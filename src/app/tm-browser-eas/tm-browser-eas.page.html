@@ -1,0 +1,67 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar color="transparent">
+    <ion-text class="ion-text-center">
+      <ion-title class="ion-justify-content-center">
+        Beyonc&eacute;
+      </ion-title>
+    </ion-text>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="black" fullscreen="true">
+  <div class="v-center">
+    <ion-card>
+      <ion-grid>
+        <ion-row class="ion-justify-content-center">
+          <h4>Continue with Easy Access</h4>
+        </ion-row>
+        <ion-row>
+          <ion-toolbar class="pad10 ion-margin-bottom">
+            <ion-button expand="block" color="secondary" routerLink="/tm-destination-artist-select"><ion-icon name="logo-facebook"></ion-icon>&nbsp;&nbsp;Facebook</ion-button>
+          </ion-toolbar>
+        </ion-row>
+        <ion-row>
+          <ion-toolbar class="pad10 ion-margin-bottom">
+            <ion-button expand="block" color="cancel" routerLink="/tm-destination-artist-select"><ion-icon name="logo-google"></ion-icon>&nbsp;&nbsp;Google</ion-button>
+          </ion-toolbar>
+        </ion-row>
+        <ion-row class="ion-justify-content-center">
+          <div class="ion-text-center">
+            <ion-text>
+              &nbsp;&nbsp;<br/>
+              – OR –
+              &nbsp;&nbsp;
+            </ion-text>
+          </div>
+        </ion-row>
+        <ion-row>
+          <div class="pad10 ion-text-center">
+            <h5>Send identity verification code</h5>
+            <ion-text class="text-smallest">
+              An identity verification code will be sent to the email address you provide. Your mobile carrier's data rates may apply.
+            </ion-text>
+          </div>
+        </ion-row>
+        <ion-row><ion-text>&nbsp;&nbsp;</ion-text></ion-row>
+      </ion-grid>
+      <ion-item class="margin5-start">
+        <ion-icon name="mail" class="icon-small"></ion-icon>
+        <ion-input class="ion-margin-start" type="text" placeholder="Email"></ion-input>
+      </ion-item>
+      <ion-row><ion-text>&nbsp;&nbsp;</ion-text></ion-row>
+      <ion-toolbar class="pad10 ion-margin-bottom">
+        <ion-button color="primary" expand="block" routerLink="/tm-destination-artist-select">Get Code</ion-button>
+      </ion-toolbar>
+    </ion-card>
+
+  </div>
+</ion-content>
+
+<ion-footer class="ion-no-border">
+  <ion-row class="ion-justify-content-center">
+    <ion-icon name="shield-checkmark-outline" class="icon-small" color="white"></ion-icon>
+    <ion-text class="text-smallest" color="white">
+      &nbsp;&nbsp;Verified Service
+    </ion-text>
+  </ion-row>
+</ion-footer>

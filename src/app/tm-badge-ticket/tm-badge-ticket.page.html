@@ -1,22 +1,19 @@
 <ion-header class="ion-no-border">
-  <ion-toolbar color="raven">
+  <ion-toolbar color="black">
     <ion-buttons slot="start">
-      <ion-menu-button color="primary"></ion-menu-button>
+      <ion-button color="white" routerLink="/tm-media-app-artist" routerDirection="root" fill="clear">
+        <ion-icon name="sync-outline" color="white"></ion-icon>
+      </ion-button>
     </ion-buttons>
     <ion-text class="ion-text-center">
       <ion-title class="ion-justify-content-center">
-        <img class="brand" src="/assets/aerpass-blue.svg" alt="" />
+        RENAISSANCE TOUR
       </ion-title>
     </ion-text>
-    <ion-buttons slot="end">
-      <ion-button color="primary" routerLink="/settings" routerDirection="root" fill="clear">
-        <ion-icon name="settings-outline"></ion-icon>
-      </ion-button>
-    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true" color="raven">
+<ion-content [fullscreen]="true" color="black">
 
   <div id="container-top">
     <ion-row class="ion-justify-content-center">
@@ -24,17 +21,17 @@
         <ion-row class="ion-justify-content-center">
           <div class="profile-home">
             <ion-avatar class="profile-frame-home">
-              <img src="/assets/jess-taylor-profile.jpg" class="profile-pic-home" alt="Profile Pic" routerLink="/badge-app-default-code" routerDirection="root" />
+              <img src="/assets/jess-taylor-profile.jpg" class="profile-pic-home" alt="Profile Pic" routerLink="/tm-badge-ticket-code" routerDirection="root" />
             </ion-avatar>
             <div class="btn">
-              <ion-fab-button color="light" translucent="true" routerLink="/badge-app-default-code" routerDirection="root">
-                <ion-icon name="qr-code-outline" color="primary" class="icon-fab"></ion-icon>
+              <ion-fab-button color="light" translucent="true" routerLink="/tm-badge-ticket-code" routerDirection="root">
+                <ion-icon name="qr-code-outline" color="dark" class="icon-fab"></ion-icon>
               </ion-fab-button>
             </div>
           </div>
         </ion-row>
         <ion-text class="section-header" color="white">
-          AerPass Member
+          Beyonce Fan
         </ion-text>
       </div>
     </ion-row>
@@ -47,7 +44,7 @@
             <ion-grid>
               <ion-row class="ion-padding-top ion-justify-content-center">
                 <ion-card-subtitle>
-                  The SSE ARENA
+                  Lincoln Financial Field
                 </ion-card-subtitle>
               </ion-row>
               <ion-row class="ion-justify-content-center">
@@ -76,17 +73,17 @@
             <ion-row>
               <ion-col>
                 <ion-text class="text-smaller" color="dark">
-                  <b>S10</b>
+                  <b>218</b>
                 </ion-text>
               </ion-col>
               <ion-col>
                 <ion-text class="text-smaller" color="dark">
-                  <b>G</b>
+                  <b>14</b>
                 </ion-text>
               </ion-col>
               <ion-col>
                 <ion-text class="text-smaller" color="dark">
-                  <b>95</b>
+                  <b>10</b>
                 </ion-text>
               </ion-col>
             </ion-row>
@@ -107,18 +104,3 @@
   </div>
 
 </ion-content>
-
-<ion-tab-bar slot="bottom" class="tab-blur" color="raven">
-  <ion-tab-button routerLink="/badge-app-default" routerDirection="back">
-    <ion-label color="primary">Badge</ion-label>
-    <ion-icon name="qr-code-outline" color="primary"></ion-icon>
-  </ion-tab-button>
-  <ion-tab-button routerLink="/home-scanner" routerDirection="root">
-    <ion-label color="white">Scanner</ion-label>
-    <ion-icon name="scan-outline" color="white"></ion-icon>
-  </ion-tab-button>
-  <ion-tab-button routerLink="/profile-home" routerDirection="forward">
-    <ion-label color="white">Account</ion-label>
-    <ion-icon name="person-outline" color="white"></ion-icon>
-  </ion-tab-button>
-</ion-tab-bar>
