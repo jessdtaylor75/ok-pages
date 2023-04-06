@@ -1,67 +1,10 @@
-<ion-header class="ion-no-border">
-  <ion-toolbar color="transparent">
-    <ion-buttons slot="start">
-      <ion-back-button color="medium" defaultHref="/home-scanner"></ion-back-button>
-    </ion-buttons>
-    <ion-text class="ion-text-center">
-      <ion-title class="ion-justify-content-center">
-        <img class="brand" src="/assets/aerpass-white.svg">
-      </ion-title>
-    </ion-text>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content class="auth-page-branded" fullscreen="true">
-  <div class="v-center">
-    <ion-card class="ion-margin">
-      <h4 class="ion-text-center">
-        Scan QR code to connect to<br/>
-        <!--<span style="color: var(--ion-color-brand)">Target</span>-->
-        <!--<span style="color: var(--ion-color-secondary)">{{client.domainName}}</span>-->
-      </h4>
-      <ion-row class="ion-justify-content-center">
-        <img class="pad20" src="/assets/PocketGeekAssurant-blue-dark.png" alt="client-logo"/>
-        <!-- <img class="pad20" src="{{client.domainLogo}}" alt="client-logo"/> -->
-      </ion-row>
-      <ion-row class="ion-margin-top pad15 ion-justify-content-center">
-        <div class="display-qr">
-          <img src="/assets/qr-code-moderna-vac2.svg" alt="qr-data" />
-          <!-- {QR code includes Deep Link & QR data} -->
-        </div>
-      </ion-row>
-      <ion-row class="ion-justify-content-center">
-        <ion-text class="ion-text-center text-smaller">
-          &nbsp;&nbsp;<br/>
-          – OR –
-        </ion-text>
-      </ion-row>
-      <ion-row class="pad15 ion-justify-content-center">
-        <ion-item>
-          <ion-label position="floating" color="medium">
-            Enter mobile number
-          </ion-label>
-          <ion-input inputmode="tel" type="tel"></ion-input>
-          <!-- include input validation -->
-        </ion-item>
-      </ion-row>
-      <ion-toolbar>
-        <ion-button class="pad15" expand="block" color="brand" href="/auth-login">Connect</ion-button>
-        <!-- Insert code as per comment -->
-        <!-- {onSubmit: POST "tel" to Twilio API} // include form validation -->
-      </ion-toolbar>
-      <ion-row class="ion-justify-content-center">
-        <ion-text class="ion-text-center">
-          &nbsp;&nbsp;
-        </ion-text>
-      </ion-row>
-
-      <ion-row class="pad5">
-        <ion-text class="ion-text-justify text-smallest">
-          &nbsp;&nbsp;<br/>
-          To continue, AerPass will share your display name, email address, language preference, and profile picture with DomainName. Before using this app, you can review DomainName's <a href="https://www.aerpass.com/privacy">privacy policy</a> and <a href="https://www.aerpass.com/terms-and-conditions">terms of service</a>.<br/>&nbsp;
-          <!-- To continue, AerPass will share your display name, email address, language preference, and profile picture with {{client.domainName}}. Before using this app, you can review {{client.domainName}}'s <a [href]="client.privacyURL">privacy policy</a> and <a [href]="client.termsURL">terms of service</a>.<br/>&nbsp; -->
-        </ion-text>
-      </ion-row>
-    </ion-card>
+<ion-content fullscreen="true">
+  <img src="/assets/squarespace-web2.png" alt="squarespace"/>
+  <div class="lower-third">
+    <ion-toolbar>
+      <ion-button expand="block" color="white" routerLink="/browser-branded-offer">
+        LET'S GO
+      </ion-button>
+    </ion-toolbar>
   </div>
 </ion-content>

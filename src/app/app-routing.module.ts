@@ -419,6 +419,10 @@ const routes: Routes = [
     path: 'auth-login-ref',
     loadChildren: () => import('./auth-login-ref/auth-login-ref.module').then( m => m.AuthLoginRefPageModule)
   },
+  {
+    path: 'browser-branded-offer',
+    loadChildren: () => import('./browser-branded-offer/browser-branded-offer.module').then( m => m.BrowserBrandedOfferPageModule)
+  },
 ];
 
 @NgModule({
