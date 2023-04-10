@@ -483,6 +483,14 @@ const routes: Routes = [
     path: 'web-partner1-destination',
     loadChildren: () => import('./web-partner1-destination/web-partner1-destination.module').then( m => m.WebPartner1DestinationPageModule)
   },
+  {
+    path: 'web-partner1-login',
+    loadChildren: () => import('./web-partner1-login/web-partner1-login.module').then( m => m.WebPartner1LoginPageModule)
+  },
+  {
+    path: 'auth-login-brand',
+    loadChildren: () => import('./auth-login-brand/auth-login-brand.module').then( m => m.AuthLoginBrandPageModule)
+  },
 ];
 
 @NgModule({
