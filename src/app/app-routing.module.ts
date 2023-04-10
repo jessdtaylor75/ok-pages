@@ -471,6 +471,18 @@ const routes: Routes = [
     path: 'tm-spotify-tickets',
     loadChildren: () => import('./tm-spotify-tickets/tm-spotify-tickets.module').then( m => m.TmSpotifyTicketsPageModule)
   },
+  {
+    path: 'web-partner1',
+    loadChildren: () => import('./web-partner1/web-partner1.module').then( m => m.WebPartner1PageModule)
+  },
+  {
+    path: 'web-partner1-join',
+    loadChildren: () => import('./web-partner1-join/web-partner1-join.module').then( m => m.WebPartner1JoinPageModule)
+  },
+  {
+    path: 'web-partner1-destination',
+    loadChildren: () => import('./web-partner1-destination/web-partner1-destination.module').then( m => m.WebPartner1DestinationPageModule)
+  },
 ];
 
 @NgModule({
