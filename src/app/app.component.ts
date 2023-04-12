@@ -93,36 +93,6 @@ export class AppComponent {
       url: '/profile-home-mc',
       src: '/assets/links-mark.svg'
     },
-    {
-      title: 'MC Sign-in demo',
-      url: '/browser-mc-login',
-      icon: 'log-in-outline'
-    },
-    {
-      title: 'MC Sign-in desktop',
-      url: '/browser-mc-desktop-login',
-      icon: 'log-in-outline'
-    },
-    {
-      title: 'AP Sign-in demo',
-      url: '/browser-ap-login',
-      icon: 'log-in-outline'
-    },
-    {
-      title: 'AP Sign-in desktop',
-      url: '/browser-ap-desktop-login',
-      icon: 'log-in-outline'
-    },
-    {
-      title: 'Branded Sign-in demo',
-      url: '/browser-branded-login',
-      icon: 'log-in-outline'
-    },
-    {
-      title: 'Branded Sign-in desktop',
-      url: '/browser-branded-desktop-login',
-      icon: 'log-in-outline'
-    },
   ];
 
   constructor(

@@ -491,6 +491,42 @@ const routes: Routes = [
     path: 'auth-login-brand',
     loadChildren: () => import('./auth-login-brand/auth-login-brand.module').then( m => m.AuthLoginBrandPageModule)
   },
+  {
+    path: 'web-partner2',
+    loadChildren: () => import('./web-partner2/web-partner2.module').then( m => m.WebPartner2PageModule)
+  },
+  {
+    path: 'web-partner2-login',
+    loadChildren: () => import('./web-partner2-login/web-partner2-login.module').then( m => m.WebPartner2LoginPageModule)
+  },
+  {
+    path: 'web-partner2-login-text',
+    loadChildren: () => import('./web-partner2-login-text/web-partner2-login-text.module').then( m => m.WebPartner2LoginTextPageModule)
+  },
+  {
+    path: 'web-partner2-login-mc',
+    loadChildren: () => import('./web-partner2-login-mc/web-partner2-login-mc.module').then( m => m.WebPartner2LoginMcPageModule)
+  },
+  {
+    path: 'web-partner2-menu',
+    loadChildren: () => import('./web-partner2-menu/web-partner2-menu.module').then( m => m.WebPartner2MenuPageModule)
+  },
+  {
+    path: 'web-partner2-destination',
+    loadChildren: () => import('./web-partner2-destination/web-partner2-destination.module').then( m => m.WebPartner2DestinationPageModule)
+  },
+  {
+    path: 'auth-login-partner2-ap',
+    loadChildren: () => import('./auth-login-partner2-ap/auth-login-partner2-ap.module').then( m => m.AuthLoginPartner2ApPageModule)
+  },
+  {
+    path: 'auth-login-partner2-mc',
+    loadChildren: () => import('./auth-login-partner2-mc/auth-login-partner2-mc.module').then( m => m.AuthLoginPartner2McPageModule)
+  },
+  {
+    path: 'web-partner2-mcprogram',
+    loadChildren: () => import('./web-partner2-mcprogram/web-partner2-mcprogram.module').then( m => m.WebPartner2McprogramPageModule)
+  },
 ];
 
 @NgModule({

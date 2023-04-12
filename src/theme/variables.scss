@@ -724,3 +724,21 @@
   --ion-color-shade: var(--ion-color-brand2-spotify-shade);
   --ion-color-tint: var(--ion-color-brand2-spotify-tint);
 }
+
+:root {
+  --ion-color-ual1: #091e3c;
+  --ion-color-ual1-rgb: 9,30,60;
+  --ion-color-ual1-contrast: #ffffff;
+  --ion-color-ual1-contrast-rgb: 255,255,255;
+  --ion-color-ual1-shade: #081a35;
+  --ion-color-ual1-tint: #223550;
+}
+
+.ion-color-ual1 {
+  --ion-color-base: var(--ion-color-ual1);
+  --ion-color-base-rgb: var(--ion-color-ual1-rgb);
+  --ion-color-contrast: var(--ion-color-ual1-contrast);
+  --ion-color-contrast-rgb: var(--ion-color-ual1-contrast-rgb);
+  --ion-color-shade: var(--ion-color-ual1-shade);
+  --ion-color-tint: var(--ion-color-ual1-tint);
+}
