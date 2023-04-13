@@ -551,6 +551,34 @@ const routes: Routes = [
     path: 'web-partner3-eas',
     loadChildren: () => import('./web-partner3-eas/web-partner3-eas.module').then( m => m.WebPartner3EasPageModule)
   },
+  {
+    path: 'web-partner2-login-app',
+    loadChildren: () => import('./web-partner2-login-app/web-partner2-login-app.module').then( m => m.WebPartner2LoginAppPageModule)
+  },
+  {
+    path: 'web-partner4',
+    loadChildren: () => import('./web-partner4/web-partner4.module').then( m => m.WebPartner4PageModule)
+  },
+  {
+    path: 'web-partner4-login-app',
+    loadChildren: () => import('./web-partner4-login-app/web-partner4-login-app.module').then( m => m.WebPartner4LoginAppPageModule)
+  },
+  {
+    path: 'web-partner4-destination',
+    loadChildren: () => import('./web-partner4-destination/web-partner4-destination.module').then( m => m.WebPartner4DestinationPageModule)
+  },
+  {
+    path: 'auth-login-partner4',
+    loadChildren: () => import('./auth-login-partner4/auth-login-partner4.module').then( m => m.AuthLoginPartner4PageModule)
+  },
+  {
+    path: 'web-partner4-login-mc',
+    loadChildren: () => import('./web-partner4-login-mc/web-partner4-login-mc.module').then( m => m.WebPartner4LoginMcPageModule)
+  },
+  {
+    path: 'auth-login-partner4-mc',
+    loadChildren: () => import('./auth-login-partner4-mc/auth-login-partner4-mc.module').then( m => m.AuthLoginPartner4McPageModule)
+  },
 ];
 
 @NgModule({

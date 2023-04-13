@@ -1,0 +1,70 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar color="transparent">
+    <ion-title>Sign In / Register</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen="true" class="auth-page">
+  <ion-row class="ion-justify-content-center">
+    <img src="/assets/logo-moviepass.png" class="partner-logo" alt="moviepass" />
+  </ion-row>
+  <ion-row class="ion-justify-content-center">
+    <ion-text class="ion-margin-bottom ion-text-center" color="white">
+      <b>&nbsp;&nbsp;</b>
+    </ion-text>
+  </ion-row>
+  <ion-row>
+
+    <ion-slides pager="false" style="width: 100%">
+
+      <ion-slide>
+        <div class="method">
+          <ion-row class="ion-justify-content-center">
+            <ion-avatar class="profile-frame-home" routerLink="/auth-login-partner4">
+              <img src="/assets/wallet-aerpass.png" class="profile-pic-home" alt="Profile Pic">
+            </ion-avatar>
+          </ion-row>
+          <ion-row class="profile-spacer-top ion-justify-content-center">
+            <ion-text color="white">&nbsp;&nbsp;</ion-text>
+          </ion-row>
+          <ion-row class="ion-justify-content-center">
+            <ion-text class="text-smaller" color="white">&mdash; OR &mdash;</ion-text>
+          </ion-row>
+        </div>
+      </ion-slide>
+
+    </ion-slides>
+
+  </ion-row>
+  <ion-grid>
+    <ion-row>
+      <ion-toolbar class="pad15 ion-margin-bottom" color="black">
+        <ion-button color="white" expand="block" fill="outline" routerLink="">
+          Register for Easy Access
+        </ion-button>
+      </ion-toolbar>
+    </ion-row>
+  </ion-grid>
+
+  <ion-row class="ion-margin-bottom ion-justify-content-center">
+    <ion-item lines="none" color="transparent">
+      <ion-text class="pad10 text-smallest" color="white">
+        AerPass will share your display name, email address,
+        language preference, and profile picture with moviepass.
+        Before using this app, you can review moviepass's
+        privacy policy and terms of service.
+      </ion-text>
+    </ion-item>
+  </ion-row>
+
+</ion-content>
+
+<ion-footer class="ion-no-border">
+
+  <!--
+    <ion-icon name="shield-checkmark-outline" class="icon-small" color="white"></ion-icon>
+    <ion-text class="text-smallest" color="white">
+      &nbsp;&nbsp;Verified Service
+    </ion-text>
+  </ion-row>-->
+</ion-footer>

@@ -1,0 +1,76 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar color="transparent">
+    <ion-title>Connect to</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen="true" class="auth-page">
+  <ion-row class="ion-justify-content-center">
+    <img src="/assets/logo-moviepass.png" class="partner-logo" alt="moviepass" />
+  </ion-row>
+  <ion-row class="ion-justify-content-center">
+    <ion-text class="ion-margin-bottom ion-text-center" color="white">
+      <b>Connect as</b>
+    </ion-text>
+  </ion-row>
+  <ion-row>
+
+    <ion-slides pager="false" style="width: 100%">
+
+      <ion-slide>
+        <div class="method">
+          <ion-row class="ion-justify-content-center">
+            <ion-avatar class="profile-frame-home">
+              <img src="/assets/jess-taylor-profile.jpg" class="profile-pic-home" alt="Profile Pic">
+            </ion-avatar>
+          </ion-row>
+          <ion-row class="profile-spacer-top ion-justify-content-center">
+            <ion-text color="white">Hannah Taylor</ion-text>
+          </ion-row>
+          <ion-row class="ion-justify-content-center">
+            <ion-text class="text-smaller" color="white">hannah@aerpass.com</ion-text>
+          </ion-row>
+        </div>
+      </ion-slide>
+
+    </ion-slides>
+
+  </ion-row>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="6">
+        <ion-fab horizontal="center">
+          <ion-fab-button color="spot-green" routerLink="/web-partner4-destination">
+            <ion-icon name="checkmark-sharp" class="icon-fab"></ion-icon>
+          </ion-fab-button>
+          <ion-label class="aer-label nudge-down-label" color="white">Connect</ion-label>
+        </ion-fab>
+      </ion-col>
+      <ion-col size="6">
+        <ion-fab horizontal="center">
+          <ion-fab-button color="cancel" routerLink="/web-partner4-login-app" routerDirection="back">
+            <ion-icon name="close" class="icon-fab"></ion-icon>
+          </ion-fab-button>
+          <ion-label class="aer-label nudge-down-label" color="white">Cancel</ion-label>
+        </ion-fab>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>
+
+<ion-footer class="ion-no-border">
+  <ion-row class="ion-margin-bottom ion-justify-content-center">
+    <ion-item lines="none" color="transparent">
+      <ion-text class="pad5 text-smallest" color="white">
+        Share my display name, email address, language preference, and picture with moviepass.
+      </ion-text>
+    </ion-item>
+  </ion-row>
+  <!--
+    <ion-icon name="shield-checkmark-outline" class="icon-small" color="white"></ion-icon>
+    <ion-text class="text-smallest" color="white">
+      &nbsp;&nbsp;Verified Service
+    </ion-text>
+  </ion-row>-->
+</ion-footer>
