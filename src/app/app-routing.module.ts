@@ -527,6 +527,30 @@ const routes: Routes = [
     path: 'web-partner2-mcprogram',
     loadChildren: () => import('./web-partner2-mcprogram/web-partner2-mcprogram.module').then( m => m.WebPartner2McprogramPageModule)
   },
+  {
+    path: 'badge-mc-default-code',
+    loadChildren: () => import('./badge-mc-default-code/badge-mc-default-code.module').then( m => m.BadgeMcDefaultCodePageModule)
+  },
+  {
+    path: 'web-partner3',
+    loadChildren: () => import('./web-partner3/web-partner3.module').then( m => m.WebPartner3PageModule)
+  },
+  {
+    path: 'web-partner3-destination',
+    loadChildren: () => import('./web-partner3-destination/web-partner3-destination.module').then( m => m.WebPartner3DestinationPageModule)
+  },
+  {
+    path: 'web-partner3-login',
+    loadChildren: () => import('./web-partner3-login/web-partner3-login.module').then( m => m.WebPartner3LoginPageModule)
+  },
+  {
+    path: 'auth-login-partner3',
+    loadChildren: () => import('./auth-login-partner3/auth-login-partner3.module').then( m => m.AuthLoginPartner3PageModule)
+  },
+  {
+    path: 'web-partner3-eas',
+    loadChildren: () => import('./web-partner3-eas/web-partner3-eas.module').then( m => m.WebPartner3EasPageModule)
+  },
 ];
 
 @NgModule({

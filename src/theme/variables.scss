@@ -742,3 +742,39 @@
   --ion-color-shade: var(--ion-color-ual1-shade);
   --ion-color-tint: var(--ion-color-ual1-tint);
 }
+
+:root {
+  --ion-color-kultra-midnight: #112a49;
+  --ion-color-kultra-midnight-rgb: 17,42,73;
+  --ion-color-kultra-midnight-contrast: #ffffff;
+  --ion-color-kultra-midnight-contrast-rgb: 255,255,255;
+  --ion-color-kultra-midnight-shade: #0f2540;
+  --ion-color-kultra-midnight-tint: #293f5b;
+}
+
+.ion-color-kultra-midnight {
+  --ion-color-base: var(--ion-color-kultra-midnight);
+  --ion-color-base-rgb: var(--ion-color-kultra-midnight-rgb);
+  --ion-color-contrast: var(--ion-color-kultra-midnight-contrast);
+  --ion-color-contrast-rgb: var(--ion-color-kultra-midnight-contrast-rgb);
+  --ion-color-shade: var(--ion-color-kultra-midnight-shade);
+  --ion-color-tint: var(--ion-color-kultra-midnight-tint);
+}
+
+:root {
+  --ion-color-kultra-leaf: #489f8b;
+  --ion-color-kultra-leaf-rgb: 72,159,139;
+  --ion-color-kultra-leaf-contrast: #000000;
+  --ion-color-kultra-leaf-contrast-rgb: 0,0,0;
+  --ion-color-kultra-leaf-shade: #3f8c7a;
+  --ion-color-kultra-leaf-tint: #5aa997;
+}
+
+.ion-color-kultra-leaf {
+  --ion-color-base: var(--ion-color-kultra-leaf);
+  --ion-color-base-rgb: var(--ion-color-kultra-leaf-rgb);
+  --ion-color-contrast: var(--ion-color-kultra-leaf-contrast);
+  --ion-color-contrast-rgb: var(--ion-color-kultra-leaf-contrast-rgb);
+  --ion-color-shade: var(--ion-color-kultra-leaf-shade);
+  --ion-color-tint: var(--ion-color-kultra-leaf-tint);
+}

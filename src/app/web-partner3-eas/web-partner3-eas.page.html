@@ -1,0 +1,62 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar color="transparent">
+    <ion-text class="ion-text-center">
+      <ion-title class="ion-justify-content-center">
+        <img class="brand" src="/assets/aerpass-blue.svg">
+      </ion-title>
+    </ion-text>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="auth-page" fullscreen="true">
+  <div class="v-center">
+    <ion-card>
+      <ion-grid>
+        <ion-row class="ion-justify-content-center">
+          <h4>Activate your account</h4>
+        </ion-row>
+        <ion-row>
+          <ion-toolbar class="pad5 ion-margin-bottom">
+            <ion-button expand="block" color="kultra-leaf" routerLink="/web-partner3-login">Continue with Employee ID</ion-button>
+          </ion-toolbar>
+        </ion-row>
+        <ion-row class="ion-justify-content-center">
+          <div class="ion-text-center">
+            <ion-text>
+              &nbsp;&nbsp;<br/>
+              – OR –
+              &nbsp;&nbsp;
+            </ion-text>
+          </div>
+        </ion-row>
+        <ion-row>
+          <div class="pad10">
+            <h5 class="ion-text-center">Send identity verification code</h5>
+            <ion-text class="text-smallest ion-text-justify">
+              An identity verification code will be sent to the email address you provide. Your mobile carrier's data rates may apply.
+            </ion-text>
+          </div>
+        </ion-row>
+        <ion-row><ion-text>&nbsp;&nbsp;</ion-text></ion-row>
+      </ion-grid>
+      <ion-item class="margin5-start">
+        <ion-icon name="mail" class="icon-small"></ion-icon>
+        <ion-input class="ion-margin-start" type="text" placeholder="Email"></ion-input>
+      </ion-item>
+      <ion-row><ion-text>&nbsp;&nbsp;</ion-text></ion-row>
+      <ion-toolbar class="pad5 ion-margin-bottom">
+        <ion-button color="kultra-leaf" expand="block" fill="outline" routerLink="/user-email-verify">Get Code</ion-button>
+      </ion-toolbar>
+    </ion-card>
+
+  </div>
+</ion-content>
+
+<ion-footer class="ion-no-border">
+  <ion-row class="ion-justify-content-center">
+    <ion-icon name="shield-checkmark-outline" class="icon-small" color="white"></ion-icon>
+    <ion-text class="text-smallest" color="white">
+      &nbsp;&nbsp;Secure Service
+    </ion-text>
+  </ion-row>
+</ion-footer>

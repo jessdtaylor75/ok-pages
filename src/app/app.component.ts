@@ -89,9 +89,14 @@ export class AppComponent {
       icon: 'scan-outline'
     },
     {
-      title: 'Account MC',
-      url: '/profile-home-mc',
-      src: '/assets/links-mark.svg'
+      title: 'United Airlines',
+      url: '/web-partner2',
+      icon: 'airplane-outline'
+    },
+    {
+      title: 'KultraLab',
+      url: '/web-partner3',
+      icon: 'compass-outline'
     },
   ];
 
