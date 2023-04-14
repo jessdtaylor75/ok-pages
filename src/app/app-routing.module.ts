@@ -579,6 +579,34 @@ const routes: Routes = [
     path: 'auth-login-partner4-mc',
     loadChildren: () => import('./auth-login-partner4-mc/auth-login-partner4-mc.module').then( m => m.AuthLoginPartner4McPageModule)
   },
+  {
+    path: 'web-partner3-group',
+    loadChildren: () => import('./web-partner3-group/web-partner3-group.module').then( m => m.WebPartner3GroupPageModule)
+  },
+  {
+    path: 'web-partner5',
+    loadChildren: () => import('./web-partner5/web-partner5.module').then( m => m.WebPartner5PageModule)
+  },
+  {
+    path: 'web-partner5-eas',
+    loadChildren: () => import('./web-partner5-eas/web-partner5-eas.module').then( m => m.WebPartner5EasPageModule)
+  },
+  {
+    path: 'auth-login-partner5',
+    loadChildren: () => import('./auth-login-partner5/auth-login-partner5.module').then( m => m.AuthLoginPartner5PageModule)
+  },
+  {
+    path: 'auth-login-partner5-mc',
+    loadChildren: () => import('./auth-login-partner5-mc/auth-login-partner5-mc.module').then( m => m.AuthLoginPartner5McPageModule)
+  },
+  {
+    path: 'web-partner5-destination',
+    loadChildren: () => import('./web-partner5-destination/web-partner5-destination.module').then( m => m.WebPartner5DestinationPageModule)
+  },
+  {
+    path: 'ocr-verify-mc',
+    loadChildren: () => import('./ocr-verify-mc/ocr-verify-mc.module').then( m => m.OcrVerifyMcPageModule)
+  },
 ];
 
 @NgModule({
