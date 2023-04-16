@@ -607,6 +607,10 @@ const routes: Routes = [
     path: 'ocr-verify-mc',
     loadChildren: () => import('./ocr-verify-mc/ocr-verify-mc.module').then( m => m.OcrVerifyMcPageModule)
   },
+  {
+    path: 'verify-service-mc-form',
+    loadChildren: () => import('./verify-service-mc-form/verify-service-mc-form.module').then( m => m.VerifyServiceMcFormPageModule)
+  },
 ];
 
 @NgModule({
