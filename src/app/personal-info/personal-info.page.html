@@ -36,8 +36,7 @@
         <div class="field-label">Display name</div>
         Display Name
       </ion-label>
-      <!--// only appears IF user is enrolled in MilitaryConnect // -->
-      <ion-icon src="/assets/links-mark.svg" color="medium" slot="end"></ion-icon>
+      <ion-icon src="/assets/A-symbol.svg" color="primary" slot="end" class="icon-small"></ion-icon>
     </ion-item>
     <ion-item>
       <ion-label>
@@ -68,12 +67,12 @@
       <ion-icon name="checkmark-circle-outline" color="primary" slot="end" class="icon-small"></ion-icon>
     </ion-item>
     <!--// only appears IF user is enrolled in MilitaryConnect // -->
-    <ion-item>
-      <ion-label color="medium">
-        <div class="field-label">Military Service</div>
-        Air Force
+    <ion-item routerLink="/verify-identity" detail="false">
+      <ion-label>
+        <div class="field-label">IDV Source</div>
+        Passport
       </ion-label>
-      <ion-icon name="checkmark-circle-outline" color="medium" slot="end" class="icon-small"></ion-icon>
+      <ion-icon name="checkmark-circle-outline" color="primary" slot="end" class="icon-small"></ion-icon>
     </ion-item>
     <ion-item-sliding>
       <ion-item>
@@ -112,11 +111,11 @@
     <ion-icon name="scan-outline"></ion-icon>
   </ion-tab-button>
   <!--<ion-tab-button routerLink="/wallet" routerDirection="forward">
-    <ion-label color="dark">Wallet</ion-label>
-    <ion-icon name="wallet-outline" color="dark"></ion-icon>
+    <ion-label>Wallet</ion-label>
+    <ion-icon name="wallet-outline"></ion-icon>
   </ion-tab-button>-->
   <ion-tab-button routerLink="/profile-home" routerDirection="forward">
-    <ion-label>Account</ion-label>
-    <ion-icon name="person-outline"></ion-icon>
+    <ion-label color="primary">Account</ion-label>
+    <ion-icon name="person-outline" color="primary"></ion-icon>
   </ion-tab-button>
 </ion-tab-bar>

@@ -1,31 +1,3 @@
-<ion-header class="ion-no-border">
-  <ion-toolbar color="primary">
-    <ion-buttons slot="start">
-      <ion-back-button defaultHref="/enter-email"></ion-back-button>
-    </ion-buttons>
-  </ion-toolbar>
-</ion-header>
-<ion-content color="primary">
-  <div class="v-center">
-    <ion-row class="text ion-text-left pad15">
-      <ion-text class="text">AerPass</ion-text>
-    </ion-row>
-    <ion-row class="text-small ion-text-left pad15">
-      requires identity verification to reconnect to your Account.
-    </ion-row>
-    <ion-row class="ion-text-left pad15 text-small">
-      <ul>
-        <li>Verification is based on a scan of your driver license or state ID card.</li>
-        <li>AerPass wall also perform a facial scan to verify that it's really you and no pne else.</li>
-        <li>Once you've been verified, your AerPass Account will be connected to this device.</li>
-      </ul>
-    </ion-row>
-  </div>
+<ion-content fullscreen="true">
+  <img src="/assets/ocrverify.png" alt="OCR" routerLink="/personal-info"/>
 </ion-content>
-<ion-footer class="ion-no-border">
-  <ion-toolbar color="primary">
-    <ion-button expand="block" class="pad15 ion-margin-bottom" color="light" routerLink="/jumio-recovery">
-      Verify Identity
-    </ion-button>
-  </ion-toolbar>
-</ion-footer>

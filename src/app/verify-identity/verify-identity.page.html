@@ -1,31 +1,77 @@
 <ion-header class="ion-no-border">
-  <ion-toolbar color="primary">
-    <ion-buttons slot="start">
-      <ion-back-button defaultHref="/profile-home"></ion-back-button>
+  <ion-toolbar>
+    <ion-title>
+      Verify Identity
+    </ion-title>
+    <ion-buttons slot="end">
+      <ion-button routerLink="/personal-info" routerDirection="back">
+        <ion-icon name="close-outline"></ion-icon>
+      </ion-button>
     </ion-buttons>
   </ion-toolbar>
 </ion-header>
-<ion-content color="primary">
-  <div class="v-center">
-    <ion-row class="text ion-text-left pad15">
-      <ion-text class="text">AERPASS</ion-text>
-    </ion-row>
-    <ion-row class="text-small ion-text-justify pad15">
-      Stores your most sensitive information in a Vault that can never be accessed without identity verification.
-    </ion-row>
-    <ion-row class="ion-text-justify pad15 text-smaller">
-      <ul>
-        <li>Verification is based on a scan of a government issued ID card, driver's license, or passport.</li>
-        <li>AerPass wall also perform a facial scan to verify that it's really you and no one else.</li>
-        <li>Once you've been verified, you will be able to send and receive money, and access all services which require your true identity.</li>
-      </ul>
-    </ion-row>
-  </div>
+
+<ion-content>
+  <ion-row class="ion-justify-content-center">
+    <div class="profile">
+      <ion-avatar class="profile-frame">
+        <img src="/assets/jess-taylor-profile.jpg" class="profile-pic" alt="Profile Pic">
+      </ion-avatar>
+    </div>
+  </ion-row>
+  <ion-text class="section-header" color="primary">
+    &nbsp;&nbsp;<br/>
+  </ion-text>
+  <ion-list>
+    <ion-item>
+      <ion-text class="text-smaller">
+        Your identity must be verified to use payment and/or age-qualified services.<br/>&nbsp;&nbsp;
+      </ion-text>
+    </ion-item>
+    <ion-item>
+      <ion-label>
+        <div class="field-label">Full name</div>
+        First Middle Surname
+      </ion-label>
+      <ion-icon name="checkmark-circle-outline" color="primary" slot="end" class="icon-small"></ion-icon>
+    </ion-item>
+    <ion-item>
+      <ion-label>
+        <div class="field-label">Primary email address</div>
+        username@aerpass.com
+      </ion-label>
+      <ion-icon name="checkmark-circle-outline" color="primary" slot="end" class="icon-small"></ion-icon>
+    </ion-item>
+    <ion-item lines="none">
+      <ion-text class="text-smallest">
+        &nbsp;&nbsp;<br/>
+        To verify your identity AerPass will capture your personal identity data from your identity documents and selfie.<br/>
+        &nbsp;&nbsp;<br/>
+        Our partner OCR Labs will use this data to verify your identity and to prevent fraud. The process verifies your identity document and matches your document to your selfie using your facial biometrics.<br/>
+        &nbsp;&nbsp;<br/>
+      </ion-text>
+    </ion-item>
+  </ion-list>
 </ion-content>
+
 <ion-footer class="ion-no-border">
-  <ion-toolbar color="primary">
-    <ion-button expand="block" class="pad15 ion-margin-bottom" color="light" routerLink="/jumio1">
-      Verify Identity
-    </ion-button>
-  </ion-toolbar>
+  <ion-row>
+    <ion-toolbar>
+      <ion-button expand="block" color="primary" class="pad15 ion-margin-vertical" routerLink="/verify-id-recovery">
+        Continue
+      </ion-button>
+    </ion-toolbar>
+  </ion-row>
+  <ion-row class="ion-justify-content-center">
+    <ion-text class="ion-text-center text-smaller">
+      &nbsp;&nbsp;
+    </ion-text>
+  </ion-row>
+  <ion-row class="ion-margin-bottom ion-justify-content-center">
+    <ion-item lines="none">
+      <ion-text class="pad5 text-smallest">
+        AerPass will never share any of your personal identity data without your direct consent.
+      </ion-text>
+    </ion-item>
+  </ion-row>
 </ion-footer>
