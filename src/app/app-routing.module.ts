@@ -611,6 +611,18 @@ const routes: Routes = [
     path: 'verify-service-mc-form',
     loadChildren: () => import('./verify-service-mc-form/verify-service-mc-form.module').then( m => m.VerifyServiceMcFormPageModule)
   },
+  {
+    path: 'success-ocrverify-mc',
+    loadChildren: () => import('./success-ocrverify-mc/success-ocrverify-mc.module').then( m => m.SuccessOcrverifyMcPageModule)
+  },
+  {
+    path: 'success-ocrverify',
+    loadChildren: () => import('./success-ocrverify/success-ocrverify.module').then( m => m.SuccessOcrverifyPageModule)
+  },
+  {
+    path: 'personal-info-unverified',
+    loadChildren: () => import('./personal-info-unverified/personal-info-unverified.module').then( m => m.PersonalInfoUnverifiedPageModule)
+  },
 ];
 
 @NgModule({

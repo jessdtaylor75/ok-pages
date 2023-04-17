@@ -62,17 +62,16 @@
     <ion-item>
       <ion-label>
         <div class="field-label">DOB</div>
-        09/17/1972
+        &nbsp;&nbsp;
       </ion-label>
-      <ion-icon name="checkmark-circle-outline" color="primary" slot="end" class="icon-small"></ion-icon>
+      <ion-icon name="alert-circle-outline" color="danger" slot="end" class="icon-small"></ion-icon>
     </ion-item>
-    <!--// only appears IF user is enrolled in MilitaryConnect // -->
-    <ion-item routerLink="/personal-info-unverified" detail="false">
-      <ion-label>
+    <ion-item routerLink="/verify-identity" detail="false">
+      <ion-label color="primary">
         <div class="field-label">IDV Source</div>
-        Passport
+        Verify your identity
       </ion-label>
-      <ion-icon name="checkmark-circle-outline" color="primary" slot="end" class="icon-small"></ion-icon>
+      <ion-icon name="alert-circle-outline" color="danger" slot="end" class="icon-small"></ion-icon>
     </ion-item>
     <ion-item-sliding>
       <ion-item>
@@ -102,19 +101,19 @@
 </ion-content>
 
 <ion-tab-bar slot="bottom" class="tab-blur">
-  <ion-tab-button routerLink="/badge-app-default" routerDirection="back">
+  <ion-tab-button routerLink="/badge-mc-default" routerDirection="back">
     <ion-label>Badge</ion-label>
     <ion-icon name="qr-code-outline"></ion-icon>
   </ion-tab-button>
-  <ion-tab-button routerLink="/home-scanner" routerDirection="root">
+  <ion-tab-button routerLink="/home-scanner-milconnect" routerDirection="root">
     <ion-label>Scanner</ion-label>
     <ion-icon name="scan-outline"></ion-icon>
   </ion-tab-button>
   <!--<ion-tab-button routerLink="/wallet" routerDirection="forward">
-    <ion-label>Wallet</ion-label>
-    <ion-icon name="wallet-outline"></ion-icon>
+    <ion-label color="dark">Wallet</ion-label>
+    <ion-icon name="wallet-outline" color="dark"></ion-icon>
   </ion-tab-button>-->
-  <ion-tab-button routerLink="/profile-home" routerDirection="forward">
+  <ion-tab-button routerLink="/profile-home-mc" routerDirection="forward">
     <ion-label color="primary">Account</ion-label>
     <ion-icon name="person-outline" color="primary"></ion-icon>
   </ion-tab-button>

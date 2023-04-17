@@ -7,8 +7,8 @@ ion-icon {
 }
 
 ion-slides {
-  --bullet-background: white;
-  --bullet-background-active: white;
+  --bullet-background: var(--ion-color-primary);
+  --bullet-background-active: var(--ion-color-primary);
 }
 
 li:not(:last-child) {
