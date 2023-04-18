@@ -98,6 +98,11 @@ export class AppComponent {
       url: '/web-partner3',
       icon: 'compass-outline'
     },
+    {
+      title: 'Lotto.com',
+      url: '/web-partner5',
+      src: '/assets/icon-lottocom.svg'
+    },
   ];
 
   constructor(

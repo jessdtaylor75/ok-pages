@@ -1,8 +1,21 @@
 <ion-content color="white">
+  <ion-fab vertical="top" horizontal="end" slot="fixed">
+    <ion-fab-button color="light">
+      <ion-icon name="caret-forward-outline" size="large"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-list side="bottom">
+      <ion-fab-button color="light" routerLink="/ocr-verify-mc">
+        <ion-icon src="/assets/icon-lottocom.svg" class="icon-fab"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button color="spot-green" routerLink="/web-partner1-destination">
+        <ion-icon src="/assets/Spotify_icon-inner-black.svg" class="icon-fab"></ion-icon>
+      </ion-fab-button>
+    </ion-fab-list>
+  </ion-fab>
 
   <ion-row>
     <div class="v-center">
-      <ion-icon name="checkmark-circle-outline" class="icon-huge" color="primary" routerLink="/web-partner1-destination"></ion-icon><br/>
+      <ion-icon name="checkmark-circle-outline" class="icon-huge" color="primary"></ion-icon><br/>
       <ion-text class="ion-justify-content-center" color="primary"><h1>SUCCESS!</h1></ion-text>
       <ion-text class="text-small ion-text-center">
         <br/>Your account has been created!

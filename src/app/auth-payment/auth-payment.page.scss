@@ -1,5 +1,14 @@
+ion-title {
+  color: var(--ion-color-white);
+}
+
 ion-item {
   --ion-text-color: white;
+}
+
+.container {
+  width: 85vw;
+  height: 65vw;
 }
 
 $card-width: 85vw;

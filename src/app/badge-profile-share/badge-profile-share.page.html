@@ -1,15 +1,22 @@
 <ion-header class="ion-no-border">
   <ion-toolbar>
     <ion-buttons slot="start">
-      <ion-back-button defaultHref="/profile-home"></ion-back-button>
+      <ion-menu-button color="primary"></ion-menu-button>
     </ion-buttons>
-    <ion-title>
-      Badge
-    </ion-title>
+    <ion-text class="ion-text-center">
+      <ion-title class="ion-justify-content-center">
+        <img class="brand" src="/assets/aerpass-blue.svg" alt="" />
+      </ion-title>
+    </ion-text>
+    <!--<ion-buttons slot="end">
+      <ion-button color="primary" routerLink="/settings" routerDirection="root" fill="clear">
+        <ion-icon name="settings-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>-->
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content [fullscreen]="true">
   <div id="container-top">
     <ion-row class="ion-justify-content-center">
       <div class="ion-text-center">
@@ -43,13 +50,17 @@
 
 </ion-content>
 
-<ion-footer class="ion-no-border ion-margin-bottom">
-  <ion-row class="ion-justify-content-evenly">
-    <ion-button shape="circle" fill="clear">
-      <ion-icon name="caret-up-circle-outline"></ion-icon>
-    </ion-button>
-    <ion-button shape="circle" fill="clear">
-      <ion-icon name="share-outline"></ion-icon>
-    </ion-button>
-  </ion-row>
-</ion-footer>
+<ion-tab-bar slot="bottom" class="tab-blur">
+  <ion-tab-button routerLink="/badge-app-default" routerDirection="back">
+    <ion-label color="primary">Badge</ion-label>
+    <ion-icon name="qr-code-outline" color="primary"></ion-icon>
+  </ion-tab-button>
+  <ion-tab-button routerLink="/home-scanner" routerDirection="root">
+    <ion-label>Scanner</ion-label>
+    <ion-icon name="scan-outline"></ion-icon>
+  </ion-tab-button>
+  <ion-tab-button routerLink="/profile-home" routerDirection="forward">
+    <ion-label>Account</ion-label>
+    <ion-icon name="person-outline"></ion-icon>
+  </ion-tab-button>
+</ion-tab-bar>
