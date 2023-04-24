@@ -1,0 +1,120 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar color="transparent">
+    <ion-title>
+      Verify Service
+    </ion-title>
+    <ion-buttons slot="end">
+      <ion-button routerLink="/verify-service-mc" routerDirection="back">
+        <ion-icon name="close-outline" color="milconnect2"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item lines="none">
+      <ion-text>
+        &nbsp;&nbsp;<br/>
+        Your military service must be verified to access your benefits.<br/>
+        &nbsp;&nbsp;<br/>
+      </ion-text>
+    </ion-item>
+  </ion-list>
+  <ion-list>
+    <ion-item>
+      <ion-label>
+        <div class="field-label">Full name</div>
+        First Middle Surname
+      </ion-label>
+      <ion-icon name="checkmark-circle-outline" color="milconnect2" slot="end" class="icon-small"></ion-icon>
+    </ion-item>
+    <ion-item>
+      <ion-label>
+        <div class="field-label">Primary email address</div>
+        username@aerpass.com
+      </ion-label>
+      <ion-icon name="checkmark-circle-outline" color="milconnect2" slot="end" class="icon-small"></ion-icon>
+    </ion-item>
+    <ion-item lines="none">
+      <ion-label position="stacked">Verify service for</ion-label>
+      <ion-segment value="myself">
+        <ion-segment-button value="myself">
+          Self
+        </ion-segment-button>
+        <ion-segment-button value="military_family">
+          Family member
+        </ion-segment-button>
+      </ion-segment>
+    </ion-item>
+    <ion-item class="ion-margin-top">
+      <ion-row>
+        <ion-col size="6">
+          <ion-label position="stacked">First name</ion-label>
+          <ion-input placeholder="First"></ion-input>
+        </ion-col>
+        <ion-col size="6">
+          <ion-label position="stacked">Last name</ion-label>
+          <ion-input placeholder="Last"></ion-input>
+        </ion-col>
+      </ion-row>
+    </ion-item>
+    <ion-item>
+      <ion-label>Branch</ion-label>
+      <ion-select value="branch" interface="action-sheet">
+        <ion-select-option value="air_force">Air Force</ion-select-option>
+        <ion-select-option value="army">Army</ion-select-option>
+        <ion-select-option value="coast_guard">Coast Guard</ion-select-option>
+        <ion-select-option value="marine_corps">Marine Corps</ion-select-option>
+        <ion-select-option value="navy">Navy</ion-select-option>
+      </ion-select>
+    </ion-item>
+    <ion-item>
+      <ion-label>Status</ion-label>
+      <ion-select value="status" interface="action-sheet">
+        <ion-select-option value="active_duty_veteran_retired">Active Duty / Veteran / Retired</ion-select-option>
+        <ion-select-option value="reservist">Reservist</ion-select-option>
+      </ion-select>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked">
+        Date of Birth
+      </ion-label>
+      <ion-row>
+        <ion-col size="4">
+          <ion-input type="number" placeholder="MM"></ion-input>
+        </ion-col>
+        <ion-col size="4">
+          <ion-input type="number" placeholder="DD"></ion-input>
+        </ion-col>
+        <ion-col size="4">
+          <ion-input type="number" placeholder="YYYY"></ion-input>
+        </ion-col>
+      </ion-row>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked">
+        Any date on active duty
+      </ion-label>
+      <ion-row>
+        <ion-col size="4">
+          <ion-input type="number" placeholder="MM"></ion-input>
+        </ion-col>
+        <ion-col size="4">
+          <ion-input type="number" placeholder="DD"></ion-input>
+        </ion-col>
+        <ion-col size="4">
+          <ion-input type="number" placeholder="YYYY"></ion-input>
+        </ion-col>
+      </ion-row>
+    </ion-item>
+  </ion-list>
+  <ion-row class="ion-margin-top">
+    <ion-toolbar color="transparent">
+      <ion-button expand="block" color="milconnect2" class="pad15 ion-margin-vertical" routerLink="/mc-preboard-get-app">
+        Submit Verification
+      </ion-button>
+    </ion-toolbar>
+  </ion-row>
+
+</ion-content>

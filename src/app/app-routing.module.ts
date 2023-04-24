@@ -623,6 +623,30 @@ const routes: Routes = [
     path: 'personal-info-unverified',
     loadChildren: () => import('./personal-info-unverified/personal-info-unverified.module').then( m => m.PersonalInfoUnverifiedPageModule)
   },
+  {
+    path: 'mc-join',
+    loadChildren: () => import('./mc-join/mc-join.module').then( m => m.McJoinPageModule)
+  },
+  {
+    path: 'mc-preboard-eas',
+    loadChildren: () => import('./mc-preboard-eas/mc-preboard-eas.module').then( m => m.McPreboardEasPageModule)
+  },
+  {
+    path: 'mc-preboard-verify1',
+    loadChildren: () => import('./mc-preboard-verify1/mc-preboard-verify1.module').then( m => m.McPreboardVerify1PageModule)
+  },
+  {
+    path: 'mc-preboard-verify2',
+    loadChildren: () => import('./mc-preboard-verify2/mc-preboard-verify2.module').then( m => m.McPreboardVerify2PageModule)
+  },
+  {
+    path: 'mc-preboard-get-app',
+    loadChildren: () => import('./mc-preboard-get-app/mc-preboard-get-app.module').then( m => m.McPreboardGetAppPageModule)
+  },
+  {
+    path: 'mc-preboard-ocr',
+    loadChildren: () => import('./mc-preboard-ocr/mc-preboard-ocr.module').then( m => m.McPreboardOcrPageModule)
+  },
 ];
 
 @NgModule({

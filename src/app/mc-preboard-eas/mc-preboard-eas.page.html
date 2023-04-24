@@ -1,0 +1,67 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar color="transparent">
+    <ion-text class="ion-text-center">
+      <ion-title class="ion-justify-content-center">
+        <img class="brand" src="/assets/logo-mc-white.svg">
+      </ion-title>
+    </ion-text>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="auth-page" fullscreen="true">
+  <div class="v-center">
+    <ion-card>
+      <ion-grid>
+        <ion-row class="ion-justify-content-center">
+          <h4>Continue with Easy Access</h4>
+        </ion-row>
+        <ion-row>
+          <ion-toolbar class="pad10 ion-margin-bottom" color="transparent">
+            <ion-button expand="block" color="secondary" routerLink="/mc-preboard-verify1"><ion-icon src="/assets/logo-facebook-white.svg"></ion-icon>&nbsp;&nbsp;Continue with Facebook</ion-button>
+          </ion-toolbar>
+        </ion-row>
+        <ion-row>
+          <ion-toolbar class="pad10 ion-margin-bottom" color="transparent">
+            <ion-button expand="block" color="dark" fill="outline" routerLink="/mc-preboard-verify1"><ion-icon src="/assets/logo-google-color.svg"></ion-icon>&nbsp;&nbsp;Continue with Google</ion-button>
+          </ion-toolbar>
+        </ion-row>
+        <ion-row class="ion-justify-content-center">
+          <div class="ion-text-center">
+            <ion-text>
+              &nbsp;&nbsp;<br/>
+              – OR –
+              &nbsp;&nbsp;
+            </ion-text>
+          </div>
+        </ion-row>
+        <ion-row>
+          <div class="pad10 ion-text-center">
+            <h5>Send identity verification code</h5>
+            <ion-text class="text-smallest">
+              An identity verification code will be sent to the email address you provide. Your mobile carrier's data rates may apply.
+            </ion-text>
+          </div>
+        </ion-row>
+        <ion-row><ion-text>&nbsp;&nbsp;</ion-text></ion-row>
+      </ion-grid>
+      <ion-item class="margin5-start">
+        <ion-icon name="mail" class="icon-small"></ion-icon>
+        <ion-input class="ion-margin-start" type="text" placeholder="Email"></ion-input>
+      </ion-item>
+      <ion-row><ion-text>&nbsp;&nbsp;</ion-text></ion-row>
+      <ion-toolbar class="pad10 ion-margin-bottom" color="transparent">
+        <ion-button color="milconnect" expand="block" routerLink="/mc-preboard-verify1">Get Code</ion-button>
+      </ion-toolbar>
+    </ion-card>
+
+  </div>
+</ion-content>
+
+<ion-footer class="ion-no-border">
+  <ion-row class="ion-justify-content-center">
+    <ion-icon name="shield-checkmark-outline" class="icon-small" color="white"></ion-icon>
+    <ion-text class="text-smallest" color="white">
+      &nbsp;&nbsp;Verified Service
+    </ion-text>
+  </ion-row>
+</ion-footer>
