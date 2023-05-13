@@ -647,6 +647,10 @@ const routes: Routes = [
     path: 'mc-preboard-ocr',
     loadChildren: () => import('./mc-preboard-ocr/mc-preboard-ocr.module').then( m => m.McPreboardOcrPageModule)
   },
+  {
+    path: 'user-email-verify-partner1',
+    loadChildren: () => import('./user-email-verify-partner1/user-email-verify-partner1.module').then( m => m.UserEmailVerifyPartner1PageModule)
+  },
 ];
 
 @NgModule({

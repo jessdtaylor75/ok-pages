@@ -1,0 +1,36 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button color="medium" defaultHref="/user-email-inbox"></ion-back-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-button color="medium"><ion-icon name="archive-outline"></ion-icon></ion-button>
+      <ion-button color="medium"><ion-icon name="trash-outline"></ion-icon></ion-button>
+      <ion-button color="medium"><ion-icon name="mail-outline"></ion-icon></ion-button>
+      <ion-button color="medium"><ion-icon name="ellipsis-horizontal"></ion-icon></ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen="true">
+  <h4 class="ion-padding">Please verify your email address</h4>
+  <ion-item lines="none">
+    <ion-avatar slot="start">
+      <img src="/assets/Spotify_icon.svg">
+    </ion-avatar>
+    <ion-label>
+      <div class="field-label">Spotify&nbsp;&nbsp;7:30 PM </div>
+      <div class="field-label">to hannah@aerpass.com</div>
+    </ion-label>
+    <ion-icon slot="end" name="ellipsis-horizontal"></ion-icon>
+  </ion-item>
+  <ion-row>
+    <img src="/assets/email-headline-spotify.png" alt="spotify">
+  </ion-row>
+  <ion-row>
+    <img src="/assets/email-cta-spotify.png" alt="open app" routerLink="/auth-login-brand">
+  </ion-row>
+  <ion-row>
+    <img src="/assets/email-lower-spotify.png" alt="scan code">
+  </ion-row>
+
