@@ -6,14 +6,13 @@
 	.st0{display:none;}
 	.st1{display:inline;}
 	.st2{fill:none;}
-	.st3{fill:#2C99E8;}
 	.st4{fill:#FFFFFF;}
 </style>
 <g id="vector_shape" class="st0">
 	<g class="st1">
 		<polygon class="st2" points="1660.1,1197.7 1200,400.8 739.9,1197.7 		"/>
 		<polygon class="st2" points="1775.6,1397.7 624.4,1397.7 346.4,1879.2 2053.6,1879.2 		"/>
-		<path class="st3" d="M1200,0.8L0,2079.2h2400L1200,0.8z M1660.1,1197.7H739.9L1200,400.8L1660.1,1197.7z M624.4,1397.7h1151.1
+		<path class="st4" d="M1200,0.8L0,2079.2h2400L1200,0.8z M1660.1,1197.7H739.9L1200,400.8L1660.1,1197.7z M624.4,1397.7h1151.1
 			l278,481.6H346.4L624.4,1397.7z"/>
 	</g>
 </g>

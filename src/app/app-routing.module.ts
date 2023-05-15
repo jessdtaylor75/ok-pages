@@ -651,6 +651,18 @@ const routes: Routes = [
     path: 'user-email-verify-partner1',
     loadChildren: () => import('./user-email-verify-partner1/user-email-verify-partner1.module').then( m => m.UserEmailVerifyPartner1PageModule)
   },
+  {
+    path: 'buy-now-iap',
+    loadChildren: () => import('./buy-now-iap/buy-now-iap.module').then( m => m.BuyNowIapPageModule)
+  },
+  {
+    path: 'buy-now-auth-payment',
+    loadChildren: () => import('./buy-now-auth-payment/buy-now-auth-payment.module').then( m => m.BuyNowAuthPaymentPageModule)
+  },
+  {
+    path: 'buy-now-success',
+    loadChildren: () => import('./buy-now-success/buy-now-success.module').then( m => m.BuyNowSuccessPageModule)
+  },
 ];
 
 @NgModule({
