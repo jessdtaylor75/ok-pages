@@ -1,5 +1,5 @@
 <ion-header class="ion-no-border">
-  <ion-toolbar>
+  <ion-toolbar color="dark">
     <ion-buttons slot="start">
       <ion-button>
         <ion-menu-button></ion-menu-button>
@@ -14,14 +14,14 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content class="auth-page">
   <ion-row class="ion-justify-content-center">
     <ion-avatar class="profile-frame-smaller">
       <img src="/assets/jess-taylor-profile.jpg" class="profile-pic-smaller" alt="Profile Pic">
     </ion-avatar>
   </ion-row>
-  <ion-text class="section-header" color="primary">
-    AerPass User<br/>&nbsp;&nbsp;
+  <ion-text class="section-header" color="white">
+    Display Name<br/>&nbsp;&nbsp;
   </ion-text>
 
   <ion-card>
@@ -99,8 +99,8 @@
         <ion-icon name="logo-electron"></ion-icon>
         <ion-label class="ion-padding-start">Connected Accounts</ion-label>
       </ion-item>
-      <ion-item detail routerLink="/browser-ap-members">
-        <ion-icon src="/assets/A-symbol.svg" color="primary"></ion-icon>
+      <ion-item detail routerLink="/browser-ap-members" color="medium">
+        <ion-icon src="/assets/centered-circle-check-oc-green.svg" color="primary"></ion-icon>
         <ion-label class="ion-padding-start" color="primary">Member Services</ion-label>
       </ion-item>
       <ion-item-divider color="light"></ion-item-divider>
@@ -123,7 +123,7 @@
 
 </ion-content>
 
-<ion-tab-bar slot="bottom" class="tab-blur">
+<ion-tab-bar slot="bottom" class="tab-blur" color="brand-grad-end">
   <ion-tab-button routerLink="/badge-app-default" routerDirection="back">
     <ion-label>Badge</ion-label>
     <ion-icon name="qr-code-outline"></ion-icon>

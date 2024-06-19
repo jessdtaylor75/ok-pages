@@ -663,6 +663,10 @@ const routes: Routes = [
     path: 'buy-now-success',
     loadChildren: () => import('./buy-now-success/buy-now-success.module').then( m => m.BuyNowSuccessPageModule)
   },
+  {
+    path: 'error-ocr-validation-fail',
+    loadChildren: () => import('./error-ocr-validation-fail/error-ocr-validation-fail.module').then( m => m.ErrorOcrValidationFailPageModule)
+  },
 ];
 
 @NgModule({

@@ -1,5 +1,5 @@
 <ion-header class="ion-no-border">
-  <ion-toolbar>
+  <ion-toolbar color="dark">
     <ion-buttons slot="start">
       <ion-back-button defaultHref="/profile-home"></ion-back-button>
     </ion-buttons>
@@ -14,7 +14,7 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content class="auth-page">
   <ion-row class="ion-justify-content-center">
     <div class="profile">
       <ion-avatar class="profile-frame">
@@ -22,85 +22,79 @@
       </ion-avatar>
       <div class="btn">
         <ion-fab-button size="small" color="light" translucent="true" routerLink="/badge-app-default">
-          <ion-icon name="qr-code-outline" color="primary"></ion-icon>
+          <ion-icon name="qr-code-outline" color="black"></ion-icon>
         </ion-fab-button>
       </div>
     </div>
   </ion-row>
-  <ion-text class="section-header" color="primary">
+  <ion-text class="section-header" color="white">
     &nbsp;&nbsp;<br/>
   </ion-text>
-  <ion-list>
-    <ion-item>
-      <ion-label>
-        <div class="field-label">Display name</div>
-        Display Name
-      </ion-label>
-      <ion-icon src="/assets/A-symbol.svg" color="primary" slot="end" class="icon-small"></ion-icon>
-    </ion-item>
-    <ion-item>
-      <ion-label>
-        <div class="field-label">Full name</div>
-        First Middle Surname
-      </ion-label>
-      <ion-icon name="checkmark-circle-outline" color="primary" slot="end" class="icon-small"></ion-icon>
-    </ion-item>
-    <ion-item>
-      <ion-label>
-        <div class="field-label">Primary email address</div>
-        username@aerpass.com
-      </ion-label>
-      <ion-icon name="checkmark-circle-outline" color="primary" slot="end" class="icon-small"></ion-icon>
-    </ion-item>
-    <ion-item>
-      <ion-label>
-        <div class="field-label">Mobile number</div>
-        +1 (321) 456-7890
-      </ion-label>
-      <ion-icon name="checkmark-circle-outline" color="primary" slot="end" class="icon-small"></ion-icon>
-    </ion-item>
-    <ion-item>
-      <ion-label>
-        <div class="field-label">DOB</div>
-        &nbsp;&nbsp;
-      </ion-label>
-      <ion-icon name="alert-circle-outline" color="danger" slot="end" class="icon-small"></ion-icon>
-    </ion-item>
-    <ion-item routerLink="/verify-identity" detail="false">
-      <ion-label color="primary">
-        <div class="field-label">IDV Source</div>
-        Verify your identity
-      </ion-label>
-      <ion-icon name="alert-circle-outline" color="danger" slot="end" class="icon-small"></ion-icon>
-    </ion-item>
-    <ion-item-sliding>
-      <ion-item>
-        <ion-icon name="trash-outline"></ion-icon>
-        <ion-label class="ion-padding-start" color="dark">
-          <div class="field-label">Swipe Left to</div>
-          Delete Account
+  <ion-card>
+    <ion-list>
+      <ion-item color="light">
+        <ion-label>
+          <div class="field-label">Display name</div>
+          Display Name
         </ion-label>
-        <ion-icon name="chevron-back-outline" color="medium" slot="end" class="icon-small"></ion-icon>
+        <ion-icon src="/assets/centered-circle-check-oc-green.svg" slot="end" class="icon-small"></ion-icon>
       </ion-item>
-      <ion-item-options side="end">
-        <ion-item-option color="danger" expandable routerLink="/delete-account">
-          <ion-icon name="trash-outline" slot="start"></ion-icon>
-          Delete Account
-        </ion-item-option>
-      </ion-item-options>
-    </ion-item-sliding>
-    <ion-item lines="none">
-      <ion-label class="ion-padding-start">
-        <div class="field-label">&nbsp;&nbsp;</div>
-        &nbsp;&nbsp;<br/>
-        &nbsp;&nbsp;
-      </ion-label>
-    </ion-item>
-  </ion-list>
-
+      <ion-item color="light">
+        <ion-label>
+          <div class="field-label">Full name</div>
+          First Middle Surname
+        </ion-label>
+        <ion-icon src="/assets/centered-circle-check-oc-green.svg" slot="end" class="icon-small"></ion-icon>
+      </ion-item>
+      <ion-item color="light">
+        <ion-label>
+          <div class="field-label">Primary email address</div>
+          username@domain.com
+        </ion-label>
+        <ion-icon src="/assets/centered-circle-check-oc-green.svg" slot="end" class="icon-small"></ion-icon>
+      </ion-item>
+      <ion-item color="light">
+        <ion-label>
+          <div class="field-label">Mobile number</div>
+          +1 (321) 456-7890
+        </ion-label>
+        <ion-icon src="/assets/centered-circle-check-oc-green.svg" slot="end" class="icon-small"></ion-icon>
+      </ion-item>
+      <ion-item>
+        <ion-label>
+          <div class="field-label">DOB</div>
+          &nbsp;&nbsp;
+        </ion-label>
+        <ion-icon name="alert-circle-outline" color="danger" slot="end" class="icon-small"></ion-icon>
+      </ion-item>
+      <ion-item routerLink="/verify-identity" detail="false">
+        <ion-label color="secondary">
+          <div class="field-label">IDV Source</div>
+          Verify your identity
+        </ion-label>
+        <ion-icon name="alert-circle-outline" color="danger" slot="end" class="icon-small"></ion-icon>
+      </ion-item>
+      <ion-item-sliding>
+        <ion-item lines="none" color="light">
+          <ion-icon name="trash-outline"></ion-icon>
+          <ion-label class="ion-padding-start" color="dark">
+            <div class="field-label">Swipe Left to</div>
+            Delete Account
+          </ion-label>
+          <ion-icon name="chevron-back-outline" color="medium" slot="end" class="icon-small"></ion-icon>
+        </ion-item>
+        <ion-item-options side="end">
+          <ion-item-option color="danger" expandable routerLink="/delete-account">
+            <ion-icon name="trash-outline" slot="start"></ion-icon>
+            Delete Account
+          </ion-item-option>
+        </ion-item-options>
+      </ion-item-sliding>
+    </ion-list>
+  </ion-card>
 </ion-content>
 
-<ion-tab-bar slot="bottom" class="tab-blur">
+<ion-tab-bar slot="bottom" class="tab-blur" color="brand-grad-end">
   <ion-tab-button routerLink="/badge-mc-default" routerDirection="back">
     <ion-label>Badge</ion-label>
     <ion-icon name="qr-code-outline"></ion-icon>

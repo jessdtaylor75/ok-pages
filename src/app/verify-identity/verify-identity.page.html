@@ -1,5 +1,5 @@
 <ion-header class="ion-no-border">
-  <ion-toolbar>
+  <ion-toolbar color="dark">
     <ion-title>
       Verify Identity
     </ion-title>
@@ -11,7 +11,7 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content class="auth-page">
   <ion-row class="ion-justify-content-center">
     <div class="profile">
       <ion-avatar class="profile-frame">
@@ -19,50 +19,49 @@
       </ion-avatar>
     </div>
   </ion-row>
-  <ion-text class="section-header" color="primary">
+  <ion-text class="section-header" color="white">
     &nbsp;&nbsp;<br/>
   </ion-text>
-  <ion-list>
-    <ion-item>
-      <ion-text class="text-smaller">
-        Your identity must be verified to use payment and/or age-qualified services.<br/>&nbsp;&nbsp;
-      </ion-text>
-    </ion-item>
-    <ion-item>
-      <ion-label>
-        <div class="field-label">Full name</div>
-        First Middle Surname
-      </ion-label>
-      <ion-icon name="checkmark-circle-outline" color="primary" slot="end" class="icon-small"></ion-icon>
-    </ion-item>
-    <ion-item>
-      <ion-label>
-        <div class="field-label">Primary email address</div>
-        username@aerpass.com
-      </ion-label>
-      <ion-icon name="checkmark-circle-outline" color="primary" slot="end" class="icon-small"></ion-icon>
-    </ion-item>
-    <ion-item lines="none">
-      <ion-text class="text-smallest">
-        &nbsp;&nbsp;<br/>
-        To verify your identity AerPass will capture your personal identity data from your identity documents and selfie.<br/>
-        &nbsp;&nbsp;<br/>
-        Our partner OCR Labs will use this data to verify your identity and to prevent fraud. The process verifies your identity document and matches your document to your selfie using your facial biometrics.<br/>
-        &nbsp;&nbsp;<br/>
-      </ion-text>
-    </ion-item>
-  </ion-list>
-  <ion-row class="ion-margin-top">
-    <ion-toolbar>
-      <ion-button expand="block" color="primary" class="pad15 ion-margin-vertical" routerLink="/verify-id-recovery">
-        Continue
-      </ion-button>
-    </ion-toolbar>
-  </ion-row>
-  <ion-row class="ion-justify-content-center">
-    <ion-text class="ion-text-center text-smaller">
-      &nbsp;&nbsp;
-    </ion-text>
-  </ion-row>
+  <ion-card>
+    <ion-list>
+      <ion-item>
+        <ion-text class="text-smaller">
+          &nbsp;&nbsp;<br/>
+          Your identity must be verified to use payment and/or age-qualified services.<br/>&nbsp;&nbsp;
+        </ion-text>
+      </ion-item>
+      <ion-item>
+        <ion-label>
+          <div class="field-label">Full name</div>
+          First Middle Surname
+        </ion-label>
+        <ion-icon src="/assets/centered-circle-check-oc-green.svg" slot="end" class="icon-small"></ion-icon>
+      </ion-item>
+      <ion-item>
+        <ion-label>
+          <div class="field-label">Primary email address</div>
+          username@aerpass.com
+        </ion-label>
+        <ion-icon src="/assets/centered-circle-check-oc-green.svg" slot="end" class="icon-small"></ion-icon>
+      </ion-item>
+      <ion-item lines="none">
+        <ion-text class="text-smallest">
+          &nbsp;&nbsp;<br/>
+          To verify your identity OneCheck will capture your personal identity data from your identity documents and selfie.<br/>
+          &nbsp;&nbsp;<br/>
+          Our partner OCR Labs will use this data to verify your identity and to prevent fraud. The process verifies your identity document and matches your document to your selfie using your facial biometrics.<br/>
+          &nbsp;&nbsp;<br/>
+        </ion-text>
+      </ion-item>
+    </ion-list>
+  </ion-card>
 
 </ion-content>
+
+<ion-footer class="ion-no-border">
+  <ion-toolbar color="brand-grad-end">
+    <ion-button expand="block" class="pad15 ion-margin-bottom" routerLink="/verify-id-recovery">
+      Continue
+    </ion-button>
+  </ion-toolbar>
+</ion-footer>

@@ -1,5 +1,5 @@
 <ion-header class="ion-no-border">
-  <ion-toolbar>
+  <ion-toolbar color="dark">
     <ion-buttons slot="start">
       <ion-back-button defaultHref="/personas"></ion-back-button>
     </ion-buttons>
@@ -14,46 +14,46 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content class="auth-page">
   <ion-row class="ion-justify-content-center">
     <ion-avatar class="profile-frame">
       <img src="/assets/person-circle-outline-medium.svg" class="profile-pic">
     </ion-avatar>
   </ion-row>
-  <ion-text class="section-header" color="primary">Display Name<br/><br/></ion-text>
-
-  <ion-list>
-    <ion-item>
-      <ion-label>
-        <div class="field-label">Display name</div>
-        Display Name
-      </ion-label>
-    </ion-item>
-    <ion-item>
-      <ion-label>
-        <div class="field-label">Email address</div>
-        username@gmail.com
-      </ion-label>
-      <ion-note slot="end" class="ion-text-end">
-        <ion-icon name="checkmark-circle-outline" color="primary"></ion-icon>
-      </ion-note>
-    </ion-item>
-    <ion-item-sliding>
+  <ion-text class="section-header" color="white">Display Name<br/><br/></ion-text>
+  <ion-card>
+    <ion-list>
       <ion-item>
-        <ion-icon name="trash-outline"></ion-icon>
-        <ion-label class="ion-padding-start" color="dark">
-          <div class="field-label">Swipe Left to</div>
-          Delete Persona
+        <ion-label>
+          <div class="field-label">Display name</div>
+          Display Name
         </ion-label>
-        <ion-icon name="chevron-back-outline" color="medium" slot="end" class="icon-small"></ion-icon>
       </ion-item>
-      <ion-item-options side="end">
-        <ion-item-option color="danger" expandable routerLink="/delete-persona">
-          <ion-icon name="trash-outline" slot="start"></ion-icon>
-          Delete
-        </ion-item-option>
-      </ion-item-options>
-    </ion-item-sliding>
-  </ion-list>
-
+      <ion-item>
+        <ion-label>
+          <div class="field-label">Email address</div>
+          username@gmail.com
+        </ion-label>
+        <ion-note slot="end" class="ion-text-end">
+          <ion-icon name="checkmark-circle-outline" color="primary"></ion-icon>
+        </ion-note>
+      </ion-item>
+      <ion-item-sliding>
+        <ion-item>
+          <ion-icon name="trash-outline"></ion-icon>
+          <ion-label class="ion-padding-start" color="dark">
+            <div class="field-label">Swipe Left to</div>
+            Delete Persona
+          </ion-label>
+          <ion-icon name="chevron-back-outline" color="medium" slot="end" class="icon-small"></ion-icon>
+        </ion-item>
+        <ion-item-options side="end">
+          <ion-item-option color="danger" expandable routerLink="/delete-persona">
+            <ion-icon name="trash-outline" slot="start"></ion-icon>
+            Delete
+          </ion-item-option>
+        </ion-item-options>
+      </ion-item-sliding>
+    </ion-list>
+  </ion-card>
 </ion-content>

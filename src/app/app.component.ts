@@ -59,16 +59,6 @@ export class AppComponent {
       icon: 'person-outline'
     },
     {
-      title: 'Military Deals',
-      url: '/browser-mildeals',
-      src: '/assets/links-mark.svg'
-    },
-    {
-      title: 'Member Services',
-      url: '/browser-ap-members',
-      src: '/assets/A-symbol.svg'
-    },
-    {
       title: 'Legal Agreements',
       url: '/legal',
       icon: 'document-text-outline'
@@ -77,31 +67,6 @@ export class AppComponent {
       title: 'About',
       url: '/about',
       icon: 'information-circle-outline'
-    },
-    {
-      title: 'Get Started MC',
-      url: '/get-started-mc',
-      icon: 'play-outline'
-    },
-    {
-      title: 'Scanner MC',
-      url: '/home-scanner-milconnect',
-      icon: 'scan-outline'
-    },
-    {
-      title: 'United Airlines',
-      url: '/web-partner2',
-      icon: 'airplane-outline'
-    },
-    {
-      title: 'KultraLab',
-      url: '/web-partner3',
-      icon: 'compass-outline'
-    },
-    {
-      title: 'Lotto.com',
-      url: '/web-partner5',
-      src: '/assets/icon-lottocom.svg'
     },
   ];
 

@@ -166,7 +166,7 @@ ion-avatar {
   padding: 3pt;
   width: 60vw;
   height: 60vw;
-  background: var(--ion-color-light);
+  background: var(--ion-color-dark);
   border-radius: 50%;
   border: 3pt solid var(--ion-color-primary);
 }
@@ -195,7 +195,7 @@ ion-avatar {
   padding: 2pt;
   width: 36vw;
   height: 36vw;
-  background: var(--ion-color-light);
+  background: var(--ion-color-dark);
   border-radius: 50%;
   border: 2pt solid var(--ion-color-primary);
 }
@@ -233,7 +233,7 @@ ion-avatar {
   padding: 1pt;
   width: 24vw;
   height: 24vw;
-  background: var(--ion-color-light);
+  background: var(--ion-color-dark);
   border-radius: 50%;
   border: 1pt solid var(--ion-color-primary);
 }
@@ -338,7 +338,7 @@ ion-avatar {
 }
 
 .pay-account-info {
-  background: linear-gradient(120deg, var(--ion-color-brand-grad-start) 5%, var(--ion-color-brand-grad-end) 95%);
+  background: linear-gradient(120deg, var(--ion-color-brand-bg) 5%, var(--ion-color-brand) 95%);
   //background-size: contain;
   width: 80vw;
   height: 52vw;
@@ -368,7 +368,7 @@ ion-avatar {
 }
 
 .auth-page {
-  --background: linear-gradient(120deg, var(--ion-color-brand-grad-start) 5%, var(--ion-color-brand-grad-end) 95%);
+  --background: linear-gradient(180deg, var(--ion-color-brand-grad-start) 5%, var(--ion-color-brand-grad-end) 95%);
 }
 
 .auth-page-branded {

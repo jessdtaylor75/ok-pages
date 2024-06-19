@@ -1,5 +1,5 @@
 <ion-header class="ion-no-border">
-  <ion-toolbar>
+  <ion-toolbar color="dark">
     <ion-buttons slot="start">
       <ion-button>
         <ion-menu-button></ion-menu-button>
@@ -14,7 +14,7 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content class="auth-page">
   <ion-row class="ion-justify-content-center">
     <div class="profile">
       <ion-avatar class="profile-frame">
@@ -22,70 +22,71 @@
       </ion-avatar>
       <div class="btn">
         <ion-fab-button size="small" color="light" translucent="true" routerLink="/badge-app-default">
-          <ion-icon name="qr-code-outline" color="primary"></ion-icon>
+          <ion-icon name="qr-code-outline" color="black"></ion-icon>
         </ion-fab-button>
       </div>
     </div>
   </ion-row>
   <ion-text class="section-header" color="primary">
-    <br/>AerPass User<br/><br/>
+    <br/>Display Name<br/><br/>
   </ion-text>
-  <ion-list>
-    <ion-item detail routerLink="/personal-info">
-      <ion-icon name="person-circle-outline"></ion-icon>
-      <ion-label class="ion-padding-start">Personal Info</ion-label>
-    </ion-item>
-    <ion-item detail routerLink="/personas">
-      <ion-icon name="people-circle-outline"></ion-icon>
-      <ion-label class="ion-padding-start">Personas</ion-label>
-    </ion-item>
-    <ion-item detail routerLink="/bank-list">
-      <ion-icon name="card-outline"></ion-icon>
-      <ion-label class="ion-padding-start">Payment Methods</ion-label>
-    </ion-item>
-    <ion-item detail routerLink="/id-documents">
-      <ion-icon src="/assets/id-card-outline.svg" color="medium"></ion-icon>
-      <ion-label class="ion-padding-start" color="medium">Identity Documents</ion-label>
-    </ion-item>
-    <ion-item detail routerLink="/address-list">
-      <ion-icon name="home-outline" color="medium"></ion-icon>
-      <ion-label class="ion-padding-start" color="medium">
-        Shipping Addresses
-      </ion-label>
-    </ion-item>
-    <ion-item detail routerLink="/wallet">
-      <ion-icon name="wallet-outline" color="medium"></ion-icon>
-      <ion-label class="ion-padding-start" color="medium">Tickets & Passes</ion-label>
-    </ion-item>
-    <ion-item-divider color="light"></ion-item-divider>
-    <ion-item detail routerLink="/connected-accounts">
-      <ion-icon name="logo-electron"></ion-icon>
-      <ion-label class="ion-padding-start">Connections</ion-label>
-    </ion-item>
-    <ion-item detail routerLink="/browser-ap-members">
-      <ion-icon src="/assets/A-symbol.svg" color="primary"></ion-icon>
-      <ion-label class="ion-padding-start" color="primary">Member Services</ion-label>
-    </ion-item>
-    <ion-item-divider color="light"></ion-item-divider>
-    <ion-item detail routerLink="/settings">
-      <ion-icon name="phone-portrait-outline"></ion-icon>
-      <ion-label class="ion-padding-start">Devices</ion-label>
-    </ion-item>
-    <ion-item detail routerLink="/settings-security">
-      <ion-icon name="finger-print-outline"></ion-icon>
-      <ion-label class="ion-padding-start">Biometrics & Security</ion-label>
-    </ion-item>
-    <ion-item detail routerLink="/legal">
-      <ion-icon name="documents-outline"></ion-icon>
-      <ion-label class="ion-padding-start">Legal Agreements</ion-label>
-    </ion-item>
-    <ion-item lines="none">
-    </ion-item>
-  </ion-list>
-
+  <ion-card>
+    <ion-list>
+      <ion-item detail routerLink="/personal-info">
+        <ion-icon name="person-circle-outline"></ion-icon>
+        <ion-label class="ion-padding-start">Personal Info</ion-label>
+      </ion-item>
+      <ion-item detail routerLink="/personas">
+        <ion-icon name="people-circle-outline"></ion-icon>
+        <ion-label class="ion-padding-start">Personas</ion-label>
+      </ion-item>
+      <ion-item detail routerLink="/bank-list">
+        <ion-icon name="card-outline"></ion-icon>
+        <ion-label class="ion-padding-start">Payment Methods</ion-label>
+      </ion-item>
+      <ion-item detail routerLink="/id-documents">
+        <ion-icon src="/assets/id-card-outline.svg" color="medium"></ion-icon>
+        <ion-label class="ion-padding-start" color="medium">Identity Documents</ion-label>
+      </ion-item>
+      <ion-item detail routerLink="/address-list">
+        <ion-icon name="home-outline" color="medium"></ion-icon>
+        <ion-label class="ion-padding-start" color="medium">
+          Shipping Addresses
+        </ion-label>
+      </ion-item>
+      <ion-item detail routerLink="/wallet">
+        <ion-icon name="wallet-outline" color="medium"></ion-icon>
+        <ion-label class="ion-padding-start" color="medium">Tickets & Passes</ion-label>
+      </ion-item>
+      <ion-item-divider color="light"></ion-item-divider>
+      <ion-item detail routerLink="/connected-accounts">
+        <ion-icon name="logo-electron"></ion-icon>
+        <ion-label class="ion-padding-start">Connections</ion-label>
+      </ion-item>
+      <ion-item detail routerLink="/browser-ap-members" color="medium">
+        <ion-icon src="/assets/centered-circle-check-oc-green.svg" color="primary"></ion-icon>
+        <ion-label class="ion-padding-start" color="primary">Member Services</ion-label>
+      </ion-item>
+      <ion-item-divider color="light"></ion-item-divider>
+      <ion-item detail routerLink="/settings">
+        <ion-icon name="phone-portrait-outline"></ion-icon>
+        <ion-label class="ion-padding-start">Devices</ion-label>
+      </ion-item>
+      <ion-item detail routerLink="/settings-security">
+        <ion-icon name="finger-print-outline"></ion-icon>
+        <ion-label class="ion-padding-start">Biometrics & Security</ion-label>
+      </ion-item>
+      <ion-item detail routerLink="/legal">
+        <ion-icon name="documents-outline"></ion-icon>
+        <ion-label class="ion-padding-start">Legal Agreements</ion-label>
+      </ion-item>
+      <ion-item lines="none">
+      </ion-item>
+    </ion-list>
+  </ion-card>
 </ion-content>
 
-<ion-tab-bar slot="bottom" class="tab-blur">
+<ion-tab-bar slot="bottom" class="tab-blur" color="brand-grad-end">
   <ion-tab-button routerLink="/badge-app-default" routerDirection="back">
     <ion-label>Badge</ion-label>
     <ion-icon name="qr-code-outline"></ion-icon>

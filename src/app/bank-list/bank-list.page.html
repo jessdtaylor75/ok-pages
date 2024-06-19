@@ -1,5 +1,5 @@
 <ion-header class="ion-no-border">
-  <ion-toolbar>
+  <ion-toolbar color="dark">
     <ion-buttons slot="start">
       <ion-back-button defaultHref="/profile-home"></ion-back-button>
     </ion-buttons>
@@ -9,49 +9,51 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content class="auth-page">
   <ion-row class="ion-justify-content-center">
     <ion-avatar class="profile-frame">
       <img src="/assets/jess-taylor-profile.jpg" class="profile-pic">
     </ion-avatar>
   </ion-row>
-  <ion-text class="section-header" color="primary">Display Name<br/><br/></ion-text>
-  <ion-list>
-    <ion-item detail routerLink="/bank">
-      <ion-icon src="/assets/savings.svg" class="icon-larger" color="tertiary"></ion-icon>
-      <ion-label class="ion-padding-start">
-        Wells Fargo
-        <div class="aer-label">Checking &bull;&bull;&bull;&bull; 1111</div>
-      </ion-label>
-    </ion-item>
-    <ion-item detail routerLink="/card-x1">
-      <ion-icon src="/assets/visa.svg" class="icon-larger"></ion-icon>
-      <ion-label class="ion-padding-start">
-        JPMorgan Chase
-        <div class="aer-label">Visa &bull;&bull;&bull;&bull; 4242</div>
-      </ion-label>
-    </ion-item>
-    <ion-item detail routerLink="/card-x2">
-      <ion-icon src="/assets/mastercard.svg" class="icon-larger"></ion-icon>
-      <ion-label class="ion-padding-start">
-        Citibank
-        <div class="aer-label">MasterCard &bull;&bull;&bull;&bull; 0331</div>
-      </ion-label>
-    </ion-item>
-    <ion-item detail routerLink="/card-x3">
-      <ion-icon src="/assets/amex.svg" class="icon-larger"></ion-icon>
-      <ion-label class="ion-padding-start">
-        American Express
-        <div class="aer-label">American Express &bull;&bull;&bull;&bull; 6789</div>
-      </ion-label>
-    </ion-item>
-    <ion-item lines="none">
-      <ion-icon name="shield-checkmark-outline" color="primary"></ion-icon>
-      <ion-text class="ion-padding-start text-smallest" color="medium">
-        Account info is never stored on your device.
-      </ion-text>
-    </ion-item>
-  </ion-list>
+  <ion-text class="section-header" color="white">Display Name<br/><br/></ion-text>
+  <ion-card>
+    <ion-list>
+      <ion-item detail routerLink="/bank">
+        <ion-icon src="/assets/savings.svg" class="icon-larger" color="tertiary"></ion-icon>
+        <ion-label class="ion-padding-start">
+          Wells Fargo
+          <div class="aer-label">Checking &bull;&bull;&bull;&bull; 1111</div>
+        </ion-label>
+      </ion-item>
+      <ion-item detail routerLink="/card-x1">
+        <ion-icon src="/assets/visa.svg" class="icon-larger"></ion-icon>
+        <ion-label class="ion-padding-start">
+          JPMorgan Chase
+          <div class="aer-label">Visa &bull;&bull;&bull;&bull; 4242</div>
+        </ion-label>
+      </ion-item>
+      <ion-item detail routerLink="/card-x2">
+        <ion-icon src="/assets/mastercard.svg" class="icon-larger"></ion-icon>
+        <ion-label class="ion-padding-start">
+          Citibank
+          <div class="aer-label">MasterCard &bull;&bull;&bull;&bull; 0331</div>
+        </ion-label>
+      </ion-item>
+      <ion-item detail routerLink="/card-x3">
+        <ion-icon src="/assets/amex.svg" class="icon-larger"></ion-icon>
+        <ion-label class="ion-padding-start">
+          American Express
+          <div class="aer-label">American Express &bull;&bull;&bull;&bull; 6789</div>
+        </ion-label>
+      </ion-item>
+      <ion-item lines="none">
+        <ion-icon name="shield-checkmark-outline" color="primary"></ion-icon>
+        <ion-text class="ion-padding-start text-smallest" color="medium">
+          Account info is never stored on your device.
+        </ion-text>
+      </ion-item>
+    </ion-list>
+  </ion-card>
 
   <ion-fab vertical="bottom" horizontal="center" slot="fixed">
     <ion-fab-button>
@@ -59,11 +61,11 @@
     </ion-fab-button>
     <ion-fab-list side="top">
       <ion-fab-button color="light">
-        <ion-icon src="/assets/savings.svg" color="primary"></ion-icon>
+        <ion-icon src="/assets/savings.svg" color="black"></ion-icon>
       </ion-fab-button>
       <ion-label class="aer-label" color="primary">Add Bank</ion-label>
       <ion-fab-button color="light" routerLink="/card-add">
-        <ion-icon name="card-outline" color="primary"></ion-icon>
+        <ion-icon name="card-outline" color="black"></ion-icon>
       </ion-fab-button>
       <ion-label class="aer-label" color="primary">Add Card</ion-label>
     </ion-fab-list>

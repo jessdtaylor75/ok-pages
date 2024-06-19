@@ -1,11 +1,11 @@
 <ion-header class="ion-no-border">
-  <ion-toolbar color="raven">
+  <ion-toolbar color="dark">
     <ion-buttons slot="start">
       <ion-menu-button color="primary"></ion-menu-button>
     </ion-buttons>
     <ion-text class="ion-text-center">
       <ion-title class="ion-justify-content-center">
-        <img class="brand" src="/assets/aerpass-blue.svg" alt="" />
+        <img class="brand" src="/assets/OneCheck-Text-Logo-grn-fff.svg" alt="" />
       </ion-title>
     </ion-text>
     <ion-buttons slot="end">
@@ -16,7 +16,7 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true" color="raven">
+<ion-content [fullscreen]="true" class="auth-page">
 
   <div id="container-top">
     <ion-row class="ion-justify-content-center">
@@ -28,7 +28,7 @@
             </ion-avatar>
             <div class="btn">
               <ion-fab-button color="light" translucent="true" routerLink="/badge-app-default-code" routerDirection="root">
-                <ion-icon name="qr-code-outline" color="primary" class="icon-fab"></ion-icon>
+                <ion-icon name="qr-code-outline" color="black" class="icon-fab"></ion-icon>
               </ion-fab-button>
             </div>
           </div>
@@ -90,7 +90,7 @@
                 </ion-text>
               </ion-col>
             </ion-row>
-            <ion-toolbar class="base">
+            <ion-toolbar class="base" color="transparent">
               <ion-row>
                 <ion-col size="6">
                   <ion-button size="small" color="primary" fill="outline" expand="block"><ion-icon name="return-up-forward-outline"></ion-icon>&nbsp;&nbsp;Send</ion-button>
@@ -108,7 +108,7 @@
 
 </ion-content>
 
-<ion-tab-bar slot="bottom" class="tab-blur" color="raven">
+<ion-tab-bar slot="bottom" class="tab-blur" color="brand-grad-end">
   <ion-tab-button routerLink="/badge-app-default" routerDirection="back">
     <ion-label color="primary">Badge</ion-label>
     <ion-icon name="qr-code-outline" color="primary"></ion-icon>

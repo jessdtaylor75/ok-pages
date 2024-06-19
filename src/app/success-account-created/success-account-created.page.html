@@ -1,22 +1,9 @@
-<ion-content color="white">
-  <ion-fab vertical="top" horizontal="end" slot="fixed">
-    <ion-fab-button color="light">
-      <ion-icon name="caret-forward-outline" size="large"></ion-icon>
-    </ion-fab-button>
-    <ion-fab-list side="bottom">
-      <ion-fab-button color="light" routerLink="/ocr-verify-mc">
-        <ion-icon src="/assets/icon-lottocom.svg" class="icon-fab"></ion-icon>
-      </ion-fab-button>
-      <ion-fab-button color="spot-green" routerLink="/web-partner1-destination">
-        <ion-icon src="/assets/Spotify_icon-inner-black.svg" class="icon-fab"></ion-icon>
-      </ion-fab-button>
-    </ion-fab-list>
-  </ion-fab>
+<ion-content color="dark">
 
   <ion-row>
     <div class="v-center">
-      <ion-icon name="checkmark-circle-outline" class="icon-huge" color="primary"></ion-icon><br/>
-      <ion-text class="ion-justify-content-center" color="primary"><h1>SUCCESS!</h1></ion-text>
+      <ion-icon src="/assets/centered-circle-check-oc-green.svg/" class="icon-huge"></ion-icon><br/>
+      <ion-text class="ion-justify-content-center" color="success"><h1>SUCCESS!</h1></ion-text>
       <ion-text class="text-small ion-text-center">
         <br/>Your account has been created!
       </ion-text>
@@ -25,8 +12,8 @@
 
 </ion-content>
 <ion-footer class="ion-no-border">
-  <ion-toolbar>
-    <ion-button expand="block" class="pad15 ion-margin-bottom" color="primary" routerLink="/profile-home">
+  <ion-toolbar color="dark">
+    <ion-button expand="block" class="pad15 ion-margin-bottom" color="success" routerLink="/profile-home">
       Continue
     </ion-button>
   </ion-toolbar>
