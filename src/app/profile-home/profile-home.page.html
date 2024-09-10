@@ -1,11 +1,11 @@
 <ion-header class="ion-no-border">
-  <ion-toolbar color="dark">
+  <ion-toolbar>
     <ion-buttons slot="start">
       <ion-button>
         <ion-menu-button></ion-menu-button>
       </ion-button>
     </ion-buttons>
-    <ion-title>Account</ion-title>
+    <ion-title>Profile</ion-title>
     <ion-buttons slot="end">
       <ion-button color="primary" routerLink="/settings" routerDirection="root" fill="clear">
         <ion-icon name="settings-outline"></ion-icon>
@@ -14,22 +14,14 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content class="auth-page">
-  <ion-row class="ion-justify-content-center">
-    <div class="profile">
-      <ion-avatar class="profile-frame">
-        <img src="/assets/jess-taylor-profile.jpg" class="profile-pic" alt="Profile Pic">
-      </ion-avatar>
-      <div class="btn">
-        <ion-fab-button size="small" color="light" translucent="true" routerLink="/badge-app-default">
-          <ion-icon name="qr-code-outline" color="black"></ion-icon>
-        </ion-fab-button>
-      </div>
-    </div>
-  </ion-row>
-  <ion-text class="section-header" color="primary">
-    <br/>Display Name<br/><br/>
-  </ion-text>
+<ion-content>
+  <ion-card>
+    <img src="/assets/cherrys-confections-ogi.png" alt="Cherry's Confections">
+    <ion-card-content>
+      <ion-text color="dark"><b>Cherry's Confections</b></ion-text><br/>
+      <ion-text class="text-smaller">a-ok.me</ion-text>
+    </ion-card-content>
+  </ion-card>
   <ion-card>
     <ion-list>
       <ion-item detail routerLink="/personal-info">
@@ -63,9 +55,9 @@
         <ion-icon name="logo-electron"></ion-icon>
         <ion-label class="ion-padding-start">Connections</ion-label>
       </ion-item>
-      <ion-item detail routerLink="/browser-ap-members" color="medium">
-        <ion-icon src="/assets/centered-circle-check-oc-green.svg" color="primary"></ion-icon>
-        <ion-label class="ion-padding-start" color="primary">Verified Posts</ion-label>
+      <ion-item detail routerLink="/browser-ap-members">
+        <ion-icon src="/assets/centered-circle-check-oc-green.svg" color="primary" class="sv-shadow"></ion-icon>
+        <ion-label class="ion-padding-start">Verified Posts</ion-label>
       </ion-item>
       <ion-item-divider color="light"></ion-item-divider>
       <ion-item detail routerLink="/settings">
@@ -86,17 +78,31 @@
   </ion-card>
 </ion-content>
 
-<ion-tab-bar slot="bottom" class="tab-blur" color="brand-grad-end">
-  <ion-tab-button routerLink="/badge-app-default" routerDirection="back">
-    <ion-label>Badge</ion-label>
-    <ion-icon name="qr-code-outline"></ion-icon>
+<ion-fab vertical="bottom" horizontal="center" slot="fixed">
+  <ion-fab-button size="small">
+    <ion-icon name="add-outline" size="large"></ion-icon>
+  </ion-fab-button>
+</ion-fab>
+
+<ion-tab-bar slot="bottom" class="tab-blur">
+  <ion-tab-button routerLink="/channel-list" routerDirection="back">
+    <ion-label color="medium">Channels</ion-label>
+    <ion-icon name="at-circle-outline" color="medium"></ion-icon>
   </ion-tab-button>
-  <ion-tab-button routerLink="/home-scanner" routerDirection="root">
-    <ion-label>Scanner</ion-label>
-    <ion-icon name="scan-outline"></ion-icon>
+  <ion-tab-button routerLink="/chat-list-group" routerDirection="back">
+    <ion-label color="medium">Group Chats</ion-label>
+    <ion-icon name="hardware-chip-outline" color="medium"></ion-icon>
+  </ion-tab-button>
+  <ion-tab-button>
+    <ion-icon name="add-circle-outline"></ion-icon>
+    <ion-label color="medium">New</ion-label>
+  </ion-tab-button>
+  <ion-tab-button routerLink="/chat-list" routerDirection="forward">
+    <ion-label color="medium">1:1 Chats</ion-label>
+    <ion-icon name="chatbubble-outline" color="medium"></ion-icon>
   </ion-tab-button>
   <ion-tab-button routerLink="/profile-home" routerDirection="forward">
-    <ion-label color="primary">Account</ion-label>
-    <ion-icon name="person-outline" color="primary"></ion-icon>
+    <ion-label color="primary">Profile</ion-label>
+    <ion-icon src="/assets/person-circle-outline-okg.svg" color="primary"></ion-icon>
   </ion-tab-button>
 </ion-tab-bar>

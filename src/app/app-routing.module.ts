@@ -667,6 +667,18 @@ const routes: Routes = [
     path: 'error-ocr-validation-fail',
     loadChildren: () => import('./error-ocr-validation-fail/error-ocr-validation-fail.module').then( m => m.ErrorOcrValidationFailPageModule)
   },
+  {
+    path: 'chat-list',
+    loadChildren: () => import('./chat-list/chat-list.module').then( m => m.ChatListPageModule)
+  },
+  {
+    path: 'chat-list-group',
+    loadChildren: () => import('./chat-list-group/chat-list-group.module').then( m => m.ChatListGroupPageModule)
+  },
+  {
+    path: 'channel-list',
+    loadChildren: () => import('./channel-list/channel-list.module').then( m => m.ChannelListPageModule)
+  },
 ];
 
 @NgModule({
