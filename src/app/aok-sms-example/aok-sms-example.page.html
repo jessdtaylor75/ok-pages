@@ -1,9 +1,91 @@
-<ion-header>
+<ion-header translucent="true" class="ion-no-border">
   <ion-toolbar>
-    <ion-title>aok-sms-example</ion-title>
+    <ion-buttons slot="start">
+      <ion-button routerLink="/chat-list" routerDirection="back">
+        <ion-icon name="chevron-back"></ion-icon>
+      </ion-button>
+      <ion-avatar class="profile-pic-toolbar" routerLink="/chat-list" routerDirection="back">
+        <img src="/assets/profile-morgan.png" alt="" />
+      </ion-avatar>
+    </ion-buttons>
+    <ion-text color="primary" class="ion-padding-top ion-padding-start">
+      <strong>David Morgan</strong>
+    </ion-text>
+    <ion-buttons slot="end">
+      <ion-button routerLink="" routerDirection="root" fill="clear">
+        <ion-icon name="videocam-outline" color="primary"></ion-icon>
+      </ion-button>
+      <ion-button routerLink="" routerDirection="root" fill="clear">
+        <ion-icon name="call-outline" color="primary"></ion-icon>
+      </ion-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-
+<ion-content fullscreen="true">
+  <ion-row class="ion-padding-horizontal ion-padding-top">
+    <div class="chat-partner">
+      <ion-text class="text-smaller">
+        The Rapide values sank without trace, but that noise!
+      </ion-text>
+    </div>
+  </ion-row>
+  <ion-row class="ion-padding-horizontal ion-padding-top">
+    <div class="chat-user">
+      <ion-text class="text-smaller">
+        I sent the video to Nancy... She's onboard, haha!
+      </ion-text>
+    </div>
+  </ion-row>
+  <ion-row class="ion-padding-horizontal ion-padding-top">
+    <div class="chat-partner">
+      <ion-text class="text-smaller">
+        The Rapide values sank without trace, but that noise!
+      </ion-text>
+    </div>
+  </ion-row>
+  <ion-row class="ion-padding-horizontal ion-padding-top">
+    <div class="chat-user">
+      <ion-text class="text-smaller">
+        I sent the video to Nancy... She's onboard, haha!
+      </ion-text>
+    </div>
+  </ion-row>
+  <ion-row class="ion-padding-horizontal ion-padding-top">
+    <div class="chat-partner">
+      <ion-text class="text-smaller">
+        The Rapide values sank without trace, but that noise!
+      </ion-text>
+    </div>
+  </ion-row>
+  <ion-row class="ion-padding-horizontal ion-padding-top">
+    <div class="chat-user">
+      <ion-text class="text-smaller">
+        I sent the video to Nancy... She's onboard, haha!
+      </ion-text>
+    </div>
+  </ion-row>
 </ion-content>
+
+<ion-footer translucent="true" class="ion-padding-bottom">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button>
+        <ion-icon name="add" class="icon-fab"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-input class="outline">
+      <!--<ion-button slot="end" fill="clear">
+        <ion-icon src="/assets/sticker-outline.svg"></ion-icon>
+      </ion-button>-->
+    </ion-input>
+    <ion-buttons slot="end" class="ion-margin-start">
+      <ion-button>
+        <ion-icon name="camera-outline"></ion-icon>
+      </ion-button>
+      <ion-button>
+        <ion-icon name="mic-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-footer>

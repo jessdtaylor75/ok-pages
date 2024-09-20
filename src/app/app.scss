@@ -13,12 +13,42 @@ ion-avatar {
 }
 
 ion-card {
-  border-radius: 18pt;
+  border-radius: 12pt;
 }
 
 ion-fab-button.outline {
   border: 2pt solid var(--ion-color-success);
   border-radius: 50%;
+}
+
+.chat-partner {
+  width: 72vw;
+  background: var(--ion-color-tertiary);
+  border-radius: 12pt;
+  padding: 9pt;
+}
+
+.chat-user {
+  width: 72vw;
+  background: var(--ion-color-secondary);
+  border-radius: 12pt;
+  padding: 9pt;
+  margin-left: 20vw;
+}
+
+ion-input.outline {
+  height: 24pt;
+  border: 1pt solid var(--ion-color-medium);
+  border-radius: 12pt;
+}
+
+.bottom-sheet {
+  width: 100vw;
+  border-radius: 12pt;
+}
+
+.title-logo {
+  height: 20pt;
 }
 
 .text-large {
@@ -212,8 +242,8 @@ ion-fab-button.outline {
 }
 
 .profile-pic-toolbar {
-  width: 25pt;
-  height: 25pt;
+  width: 24pt;
+  height: 24pt;
   border-radius: 50%;
   border: 1pt solid var(--ion-color-utility);
   text-align: center;

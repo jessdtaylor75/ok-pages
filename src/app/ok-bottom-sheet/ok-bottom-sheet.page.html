@@ -1,9 +1,37 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>ok-bottom-sheet</ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content>
+<ion-content fullscreen="true" color="brand-grad-end">
 
 </ion-content>
+<ion-fab vertical="bottom" horizontal="center" slot="fixed">
+    <ion-fab-button color="medium" size="small" routerLink="/ok-bottom-sheet" routerDirection="root">
+        <ion-icon name="close" color="light"></ion-icon>
+    </ion-fab-button>
+</ion-fab>
+<ion-footer translucent="true">
+    <ion-list class="bottom-sheet">
+        <ion-item>
+            <ion-text class="ion-text-center"><strong>Create</strong></ion-text>
+        </ion-item>
+        <ion-item routerLink="/connected-accounts" detail="none">
+            <ion-icon src="/assets/add-circle-grn.svg" color="primary"></ion-icon>
+            <ion-label class="ion-padding-start">Message</ion-label>
+        </ion-item>
+        <ion-item routerLink="/channel-list" detail="none">
+            <ion-icon src="/assets/circle-check-ok-grn-mid.svg"></ion-icon>
+            <ion-label class="ion-padding-start">Post to Channel</ion-label>
+        </ion-item>
+        <ion-item routerLink="/aok-options" detail="none">
+            <ion-icon src="/assets/at-sign-grn-111.svg"></ion-icon>
+            <ion-label class="ion-padding-start">Connection Request</ion-label>
+        </ion-item>
+        <ion-item routerLink="/hii5-options" detail="none">
+            <ion-icon src="/assets/hii5-111-grn.svg"></ion-icon>
+            <ion-label class="ion-padding-start">Video Verification Request</ion-label>
+        </ion-item>
+        <ion-item lines="none">
+            <ion-label>&nbsp;&nbsp;</ion-label>
+        </ion-item>
+        <ion-item lines="none">
+            <ion-label>&nbsp;&nbsp;</ion-label>
+        </ion-item>
+    </ion-list>
+</ion-footer>

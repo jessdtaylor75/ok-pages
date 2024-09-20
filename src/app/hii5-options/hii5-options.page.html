@@ -1,9 +1,49 @@
-<ion-header>
+<ion-header translucent="true" class="ion-no-border">
   <ion-toolbar>
-    <ion-title>hii5-options</ion-title>
+    <ion-buttons slot="start">
+      <ion-button routerLink="/ok-bottom-sheet" routerDirection="back">
+        <ion-icon name="chevron-back"></ion-icon>
+      </ion-button>
+      <ion-avatar class="profile-pic-toolbar" routerLink="/chat-list" routerDirection="back">
+        <img src="/assets/jess-taylor-profile.jpg" alt="" />
+      </ion-avatar>
+    </ion-buttons>
+    <ion-title><ion-img src="/assets/hii5-111-grn.svg" class="title-logo" alt="hii5"></ion-img></ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content color="utility">
+  <div class="v-center">
+    <ion-card>
+      <img src="/assets/profile-cherry.png" alt="Cherry's Confections">
+      <ion-item lines="none">
+        <ion-label color="primary">
+          <b>hii5</b><br/>
+          <ion-text class="text-smaller" color="medium">Video Verification Request</ion-text>
+        </ion-label>
+      </ion-item>
+    </ion-card>
+
+    <ion-grid>
+      <ion-row>
+        <ion-col size="6">
+          <ion-fab horizontal="center">
+            <ion-fab-button color="success" routerLink="/hii5-record-video">
+              <ion-icon src="/assets/hii5-111-grn.svg" class="icon-fab"></ion-icon>
+            </ion-fab-button>
+            <ion-label class="aer-label nudge-down-label" color="primary">Record</ion-label>
+          </ion-fab>
+        </ion-col>
+        <ion-col size="6">
+          <ion-fab horizontal="center">
+            <ion-fab-button color="dark" routerLink="/hii5-review-video">
+              <ion-icon src="/assets/hii5-fff-111-grn.svg" class="icon-fab"></ion-icon>
+            </ion-fab-button>
+            <ion-label class="aer-label nudge-down-label" color="primary">Review</ion-label>
+          </ion-fab>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
 
 </ion-content>
