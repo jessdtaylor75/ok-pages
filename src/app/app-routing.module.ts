@@ -324,10 +324,6 @@ const routes: Routes = [
     loadChildren: () => import('./persona-x3/persona-x3.module').then( m => m.PersonaX3PageModule)
   },
   {
-    path: 'about-mc',
-    loadChildren: () => import('./about-mc/about-mc.module').then( m => m.AboutMcPageModule)
-  },
-  {
     path: 'browser-ap-desktop-login',
     loadChildren: () => import('./browser-ap-desktop-login/browser-ap-desktop-login.module').then( m => m.BrowserApDesktopLoginPageModule)
   },
@@ -678,6 +674,46 @@ const routes: Routes = [
   {
     path: 'channel-list',
     loadChildren: () => import('./channel-list/channel-list.module').then( m => m.ChannelListPageModule)
+  },
+  {
+    path: 'chat-detail',
+    loadChildren: () => import('./chat-detail/chat-detail.module').then( m => m.ChatDetailPageModule)
+  },
+  {
+    path: 'aok-sms-example',
+    loadChildren: () => import('./aok-sms-example/aok-sms-example.module').then( m => m.AokSmsExamplePageModule)
+  },
+  {
+    path: 'aok-lander',
+    loadChildren: () => import('./aok-lander/aok-lander.module').then( m => m.AokLanderPageModule)
+  },
+  {
+    path: 'hii5-sms-example',
+    loadChildren: () => import('./hii5-sms-example/hii5-sms-example.module').then( m => m.Hii5SmsExamplePageModule)
+  },
+  {
+    path: 'hii5-lander',
+    loadChildren: () => import('./hii5-lander/hii5-lander.module').then( m => m.Hii5LanderPageModule)
+  },
+  {
+    path: 'hii5-record-video',
+    loadChildren: () => import('./hii5-record-video/hii5-record-video.module').then( m => m.Hii5RecordVideoPageModule)
+  },
+  {
+    path: 'hii5-review-video',
+    loadChildren: () => import('./hii5-review-video/hii5-review-video.module').then( m => m.Hii5ReviewVideoPageModule)
+  },
+  {
+    path: 'ok-bottom-sheet',
+    loadChildren: () => import('./ok-bottom-sheet/ok-bottom-sheet.module').then( m => m.OkBottomSheetPageModule)
+  },
+  {
+    path: 'aok-options',
+    loadChildren: () => import('./aok-options/aok-options.module').then( m => m.AokOptionsPageModule)
+  },
+  {
+    path: 'hii5-options',
+    loadChildren: () => import('./hii5-options/hii5-options.module').then( m => m.Hii5OptionsPageModule)
   },
 ];
 

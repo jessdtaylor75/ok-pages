@@ -15,18 +15,6 @@
 </ion-header>
 
 <ion-content color="utility">
-  <!--<ion-row class="ion-justify-content-center">
-    <div class="profile">
-      <ion-avatar class="profile-frame">
-        <img src="/assets/jess-taylor-profile.jpg" class="profile-pic" alt="Profile Pic">
-      </ion-avatar>
-      <div class="btn">
-        <ion-fab-button size="small" color="light" translucent="true" routerLink="/badge-app-default">
-          <ion-icon name="qr-code-outline" color="black"></ion-icon>
-        </ion-fab-button>
-      </div>
-    </div>
-  </ion-row>-->
   <ion-card>
     <ion-img src="/assets/profile-cherry.png" alt="profile pic"></ion-img>
     <ion-list>
@@ -92,33 +80,54 @@
     </ion-list>
   </ion-card>
 
+  <ion-grid>
+    <ion-row>
+      <ion-col size="6">
+        <ion-fab horizontal="center">
+          <ion-fab-button color="dark" routerLink="/aok-options">
+            <ion-icon src="/assets/aok-grn-fff.svg" class="icon-fab"></ion-icon>
+          </ion-fab-button>
+          <ion-label class="aer-label nudge-down-label" color="primary">Connect</ion-label>
+        </ion-fab>
+      </ion-col>
+      <ion-col size="6">
+        <ion-fab horizontal="center">
+          <ion-fab-button color="dark" routerLink="/hii5-options">
+            <ion-icon src="/assets/hii5-fff-111-grn.svg" class="icon-fab"></ion-icon>
+          </ion-fab-button>
+          <ion-label class="aer-label nudge-down-label" color="primary">Video</ion-label>
+        </ion-fab>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
 </ion-content>
 
 <ion-fab vertical="bottom" horizontal="center" slot="fixed">
-  <ion-fab-button size="small">
+  <ion-fab-button color="dark" class="outline" size="small" routerLink="/ok-bottom-sheet" routerDirection="root">
     <ion-icon src="/assets/OK-grn-fff.svg"></ion-icon>
   </ion-fab-button>
 </ion-fab>
 
-<ion-tab-bar slot="bottom" translucent="true">
+<ion-tab-bar slot="bottom" class="tab-blur">
   <ion-tab-button routerLink="/channel-list" routerDirection="back">
     <ion-label color="medium">Channels</ion-label>
-    <ion-icon name="at-circle-outline" color="medium"></ion-icon>
+    <ion-icon src="/assets/at-sign-gray.svg"></ion-icon>
   </ion-tab-button>
   <ion-tab-button routerLink="/chat-list-group" routerDirection="back">
-    <ion-label color="medium">Group Chats</ion-label>
+    <ion-label color="medium">Circles</ion-label>
     <ion-icon name="hardware-chip-outline" color="medium"></ion-icon>
   </ion-tab-button>
   <ion-tab-button>
     <ion-icon name="add-circle-outline"></ion-icon>
-    <ion-label color="medium">New</ion-label>
+    <ion-label color="medium">Create</ion-label>
   </ion-tab-button>
   <ion-tab-button routerLink="/chat-list" routerDirection="forward">
-    <ion-label color="medium">1:1 Chats</ion-label>
+    <ion-label color="medium">Chats</ion-label>
     <ion-icon name="chatbubble-outline" color="medium"></ion-icon>
   </ion-tab-button>
-  <ion-tab-button routerLink="/profile-home" routerDirection="forward">
-    <ion-label color="primary">Profile</ion-label>
-    <ion-icon src="/assets/person-circle-outline-okg.svg" color="black"></ion-icon>
+  <ion-tab-button routerLink="/connected-accounts" routerDirection="forward">
+    <ion-label color="medium">Contacts</ion-label>
+    <ion-icon name="people-circle-outline" color="medium"></ion-icon>
   </ion-tab-button>
 </ion-tab-bar>

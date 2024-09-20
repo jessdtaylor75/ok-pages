@@ -4,17 +4,17 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { AboutMcPageRoutingModule } from './about-mc-routing.module';
+import { Hii5SmsExamplePageRoutingModule } from './hii5-sms-example-routing.module';
 
-import { AboutMcPage } from './about-mc.page';
+import { Hii5SmsExamplePage } from './hii5-sms-example.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    AboutMcPageRoutingModule
+    Hii5SmsExamplePageRoutingModule
   ],
-  declarations: [AboutMcPage]
+  declarations: [Hii5SmsExamplePage]
 })
-export class AboutMcPageModule {}
+export class Hii5SmsExamplePageModule {}

@@ -1,200 +1,128 @@
 <ion-header translucent="true" class="ion-no-border">
-  <ion-toolbar class="tab-blur">
-    <ion-buttons slot="start">
-      <ion-button>
-        <ion-menu-button></ion-menu-button>
-      </ion-button>
-    </ion-buttons>
+  <ion-toolbar>
+    <ion-avatar slot="start" class="profile-pic-toolbar ion-margin-start" routerLink="/profile-home">
+      <img src="/assets/jess-taylor-profile.jpg" alt="" />
+    </ion-avatar>
     <ion-title>Channels</ion-title>
     <ion-buttons slot="end">
-      <ion-button color="primary" routerLink="/settings" routerDirection="root" fill="clear">
-        <ion-icon name="camera-outline" class="nudge-down"></ion-icon>
+      <ion-button routerLink="" routerDirection="root" fill="clear">
+        <ion-icon name="camera" color="primary"></ion-icon>
       </ion-button>
-      <ion-button color="primary" routerLink="/settings" routerDirection="root" fill="clear">
-        <ion-icon name="create-outline"></ion-icon>
+      <ion-button color="primary" routerLink="/connected-accounts" routerDirection="root" fill="clear">
+        <ion-icon name="add-circle" class="icon-fab" color="true"></ion-icon>
       </ion-button>
     </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
-<ion-content fullscreen="true">
-  <ion-toolbar class="ion-margin-top">
-    <ion-searchbar value="Search"></ion-searchbar>
-  </ion-toolbar>
-  <ion-list>
-    <ion-item>
-      <ion-avatar slot="start">
-        <img src="/assets/profile-morgan.png">
-      </ion-avatar>
-      <ion-label>
-        <ion-text><b>David Morgan</b></ion-text>
-        <div class="field-label important">The Rapide values sank without trace, but that noise!</div>
-        <div class="field-label">You reacted ;) to "The Rapide values sank without trace, but that noise!"</div>
+<ion-content fullscreen="true" color="utility">
+  <ion-card>
+    <img src="/assets/profile-cherry.png" alt="Cherry's Confections">
+    <ion-item lines="none">
+      <ion-label color="primary">
+        <b>My Channel</b><br/>
+        <ion-text class="text-smaller" color="medium">Create new post</ion-text>
       </ion-label>
-      <ion-note slot="end" class="ion-text-end">
-        <div class="field-label">8:30 PM</div>
-        <ion-icon class="icon-small" name="star" color="medium"></ion-icon>
-      </ion-note>
     </ion-item>
-    <ion-item>
-      <ion-avatar slot="start">
-        <img src="/assets/profile-zen.png">
-      </ion-avatar>
-      <ion-label>
-        <ion-text><b>Daniel Zen</b></ion-text>
-        <div class="field-label important">Ok, I sent them the examples & my feedback...</div>
-        <div class="field-label">You reacted :) to "Ok, I sent them the examples & my feedback"</div>
-      </ion-label>
-      <ion-note slot="end" class="ion-text-end">
-        <div class="field-label">7:45 PM</div>
-        <ion-icon class="icon-small" name="star" color="medium"></ion-icon>
-      </ion-note>
-    </ion-item>
-    <ion-item>
-      <ion-avatar slot="start">
-        <img src="/assets/profile-donnell.jpg">
-      </ion-avatar>
-      <ion-label>
-        <ion-text><b>Mike Donnell</b></ion-text>
-        <div class="field-label important">Fremen, half addicted to the spice!</div>
-        <div class="field-label">You loved "Fremen, half addicted to the spice!"</div>
-      </ion-label>
-      <ion-note slot="end" class="ion-text-end">
-        <div class="field-label">7:30 PM</div>
-        <ion-icon class="icon-small" name="star" color="medium"></ion-icon>
-      </ion-note>
-    </ion-item>
-    <ion-item>
-      <ion-avatar slot="start">
-        <img src="/assets/jess-taylor-profile.jpg">
-      </ion-avatar>
-      <ion-label>
-        <ion-text><b>Fiona Connor</b></ion-text>
-        <div class="field-label important">How do we feel about sharing vids with new people?</div>
-        <div class="field-label">Asking for a friend who is over all the catfish.</div>
-      </ion-label>
-      <ion-note slot="end" class="ion-text-end">
-        <div class="field-label">7:29 PM</div>
-        <ion-icon class="icon-small" name="star-outline" color="light"></ion-icon>
-      </ion-note>
-    </ion-item>
-    <ion-item>
-      <ion-avatar slot="start">
-        <img src="/assets/blank-user-avatar.png">
-      </ion-avatar>
-      <ion-label>
-        AERPASS Network
-        <div class="field-label">AERPASS Invitation</div>
-        <div class="field-label">To accept the invitation please tap or click the link below:</div>
-      </ion-label>
-      <ion-note slot="end" class="ion-text-end">
-        <div class="field-label">7:29 PM</div>
-        <ion-icon class="icon-small" name="star-outline" color="medium"></ion-icon>
-      </ion-note>
-    </ion-item>
-    <ion-item>
-      <ion-avatar slot="start">
-        <img src="/assets/blank-user-avatar.png">
-      </ion-avatar>
-      <ion-label>
-        Jet Blue
-        <div class="field-label">Now arriving: even more safety innovations.</div>
-        <div class="field-label">The latest tech for your trek.</div>
-      </ion-label>
-      <ion-note slot="end" class="ion-text-end">
-        <div class="field-label">7:20 PM</div>
-        <ion-icon class="icon-small" name="star-outline" color="medium"></ion-icon>
-      </ion-note>
-    </ion-item>
-    <ion-item>
-      <ion-avatar slot="start">
-        <img src="/assets/blank-user-avatar.png">
-      </ion-avatar>
-      <ion-label>
-        Amazon.com
-        <div class="field-label">Download 2 free audiobooks today.</div>
-        <div class="field-label">Fit more reading into your life. Start listening today.</div>
-      </ion-label>
-      <ion-note slot="end" class="ion-text-end">
-        <div class="field-label">7:15 PM</div>
-        <ion-icon class="icon-small" name="star-outline" color="medium"></ion-icon>
-      </ion-note>
-    </ion-item>
-    <ion-item>
-      <ion-avatar slot="start">
-        <img src="/assets/blank-user-avatar.png">
-      </ion-avatar>
-      <ion-label>
-        Crate and Barrel
-        <div class="field-label">Up to 60% off clearance is making a splash.</div>
-        <div class="field-label">Explore new markdowns just added. Hurry - favorites go fast.</div>
-      </ion-label>
-      <ion-note slot="end" class="ion-text-end">
-        <div class="field-label">7:00 PM</div>
-        <ion-icon class="icon-small" name="star-outline" color="medium"></ion-icon>
-      </ion-note>
-    </ion-item>
-    <ion-item>
-      <ion-avatar slot="start">
-        <img src="/assets/blank-user-avatar.png">
-      </ion-avatar>
-      <ion-label>
-        Adobe Creative Cloud
-        <div class="field-label">Try a 1-min. Photoshop tutorial and hybrid drawing.</div>
-        <div class="field-label">Insights and inspiration to spark your creativity.</div>
-      </ion-label>
-      <ion-note slot="end" class="ion-text-end">
-        <div class="field-label">6:55 PM</div>
-        <ion-icon class="icon-small" name="star-outline" color="medium"></ion-icon>
-      </ion-note>
-    </ion-item>
-    <ion-item>
-      <ion-avatar slot="start">
-        <img src="/assets/blank-user-avatar.png">
-      </ion-avatar>
-      <ion-label>
-        Ira Klein
-        <div class="field-label">RE: Video of Safety PASS demo for Vaccination Program.</div>
-        <div class="field-label">Hi Jonathan and Rich, I just viewed the video; it's awesome!</div>
-      </ion-label>
-      <ion-note slot="end" class="ion-text-end">
-        <div class="field-label">6:45 PM</div>
-        <ion-icon class="icon-small" name="star-outline" color="medium"></ion-icon>
-      </ion-note>
-    </ion-item>
-    <ion-item>
-      <ion-avatar slot="start">
-        <img src="/assets/blank-user-avatar.png">
-      </ion-avatar>
-      <ion-label>
-        Rich Muth
-        <div class="field-label">Introduction to a new contact at Compliance Partner.</div>
-        <div class="field-label">Heya, I hope you are well. I would like to introduce you.</div>
-      </ion-label>
-      <ion-note slot="end" class="ion-text-end">
-        <div class="field-label">6:40 PM</div>
-        <ion-icon class="icon-small" name="star-outline" color="medium"></ion-icon>
-      </ion-note>
-    </ion-item>
-    <ion-item>
-      <ion-avatar slot="start">
-        <img src="/assets/blank-user-avatar.png">
-      </ion-avatar>
-      <ion-label>
-        Rich Muth
-        <div class="field-label">Introduction to a new contact at Compliance Partner.</div>
-        <div class="field-label">Heya, I hope you are well. I would like to introduce you.</div>
-      </ion-label>
-      <ion-note slot="end" class="ion-text-end">
-        <div class="field-label">6:35 PM</div>
-        <ion-icon class="icon-small" name="star-outline" color="medium"></ion-icon>
-      </ion-note>
-    </ion-item>
-  </ion-list>
+  </ion-card>
+  <ion-card>
+    <ion-list>
+      <ion-list-header>Pinned</ion-list-header>
+      <ion-item routerLink="/web-partner1-destination">
+        <ion-img class="partner-app-icon" src="/assets/ca-spotify.png" alt=""></ion-img>
+        <ion-label class="ion-padding-start">Spotify</ion-label>
+      </ion-item>
+      <ion-item routerLink="/personal-info">
+        <ion-img class="partner-app-icon" src="/assets/ca-facebook.png" alt=""></ion-img>
+        <ion-label class="ion-padding-start">Facebook</ion-label>
+      </ion-item>
+      <ion-item routerLink="/personal-info">
+        <ion-img class="partner-app-icon" src="/assets/ca-instagram.png" alt=""></ion-img>
+        <ion-label class="ion-padding-start">Instagram</ion-label>
+      </ion-item>
+      <ion-item routerLink="/personal-info">
+        <ion-img class="partner-app-icon" src="/assets/ca-signal.png" alt=""></ion-img>
+        <ion-label class="ion-padding-start">Signal</ion-label>
+      </ion-item>
+      <ion-item routerLink="/personal-info">
+        <ion-img class="partner-app-icon" src="/assets/ca-slack.png" alt=""></ion-img>
+        <ion-label class="ion-padding-start">Slack</ion-label>
+      </ion-item>
+      <ion-item routerLink="/personal-info">
+        <ion-img class="partner-app-icon" src="/assets/ca-twitter.png" alt=""></ion-img>
+        <ion-label class="ion-padding-start">Twitter</ion-label>
+      </ion-item>
+      <ion-item routerLink="/personal-info" lines="none">
+        <ion-img class="partner-app-icon" src="/assets/ca-whatsapp.png" alt=""></ion-img>
+        <ion-label class="ion-padding-start">WhatsApp</ion-label>
+      </ion-item>
+    </ion-list>
+  </ion-card>
+  <ion-card>
+    <ion-list>
+      <ion-list-header>Active Channels</ion-list-header>
+      <ion-item detail routerLink="/personal-info">
+        <ion-img class="partner-app-icon" src="/assets/ca-1800flowers.png" alt=""></ion-img>
+        <ion-label class="ion-padding-start">1800 Flowers</ion-label>
+      </ion-item>
+      <ion-item detail routerLink="/personal-info">
+        <ion-img class="partner-app-icon" src="/assets/ca-amazon.png" alt=""></ion-img>
+        <ion-label class="ion-padding-start">Amazon</ion-label>
+      </ion-item>
+      <ion-item detail routerLink="/personal-info">
+        <ion-img class="partner-app-icon" src="/assets/ca-bestbuy.png" alt=""></ion-img>
+        <ion-label class="ion-padding-start">Best Buy</ion-label>
+      </ion-item>
+      <ion-item detail routerLink="/personal-info">
+        <ion-img class="partner-app-icon" src="/assets/ca-costco.png" alt=""></ion-img>
+        <ion-label class="ion-padding-start">Costco</ion-label>
+      </ion-item>
+      <ion-item detail routerLink="/personal-info">
+        <ion-img class="partner-app-icon" src="/assets/ca-rakuten.png" alt=""></ion-img>
+        <ion-label class="ion-padding-start">Rakuten</ion-label>
+      </ion-item>
+      <ion-item detail routerLink="/personal-info">
+        <ion-img class="partner-app-icon" src="/assets/ca-target.png" alt=""></ion-img>
+        <ion-label class="ion-padding-start">Target</ion-label>
+      </ion-item>
+      <ion-item detail routerLink="/personal-info" lines="none">
+        <ion-img class="partner-app-icon" src="/assets/ca-walmart.png" alt=""></ion-img>
+        <ion-label class="ion-padding-start">Walmart</ion-label>
+      </ion-item>
+    </ion-list>
+  </ion-card>
+  <ion-card>
+    <ion-list>
+      <ion-item detail routerLink="/browser-ap-members">
+        <ion-icon name="logo-electron"></ion-icon>
+        <ion-label class="ion-padding-start">Connected Accounts</ion-label>
+      </ion-item>
+      <ion-item detail routerLink="/browser-ap-members" color="medium">
+        <ion-icon src="/assets/centered-circle-check-oc-green.svg" color="primary"></ion-icon>
+        <ion-label class="ion-padding-start" color="primary">Member Services</ion-label>
+      </ion-item>
+      <ion-item-divider color="light"></ion-item-divider>
+      <ion-item detail routerLink="/settings">
+        <ion-icon name="phone-portrait-outline"></ion-icon>
+        <ion-label class="ion-padding-start">Devices</ion-label>
+      </ion-item>
+      <ion-item detail routerLink="/settings-security">
+        <ion-icon name="finger-print-outline"></ion-icon>
+        <ion-label class="ion-padding-start">Biometrics & Security</ion-label>
+      </ion-item>
+      <ion-item detail routerLink="/legal">
+        <ion-icon name="documents-outline"></ion-icon>
+        <ion-label class="ion-padding-start">Legal Agreements</ion-label>
+      </ion-item>
+      <ion-item lines="none">
+      </ion-item>
+    </ion-list>
+  </ion-card>
+
 </ion-content>
 
 <ion-fab vertical="bottom" horizontal="center" slot="fixed">
-  <ion-fab-button size="small">
+  <ion-fab-button color="dark" class="outline" size="small" routerLink="/ok-bottom-sheet" routerDirection="root">
     <ion-icon src="/assets/OK-grn-fff.svg"></ion-icon>
   </ion-fab-button>
 </ion-fab>
@@ -202,22 +130,22 @@
 <ion-tab-bar translucent="true" slot="bottom">
   <ion-tab-button routerLink="/channel-list" routerDirection="back">
     <ion-label color="primary">Channels</ion-label>
-    <ion-icon src="/assets/at-circle-outline-okg.svg" color="primary"></ion-icon>
+    <ion-icon src="/assets/at-sign-grn-111.svg"></ion-icon>
   </ion-tab-button>
   <ion-tab-button routerLink="/chat-list-group" routerDirection="back">
-    <ion-label color="medium">Group Chats</ion-label>
+    <ion-label color="medium">Circles</ion-label>
     <ion-icon name="hardware-chip-outline" color="medium"></ion-icon>
   </ion-tab-button>
   <ion-tab-button>
     <ion-icon name="add-circle-outline"></ion-icon>
-    <ion-label color="medium">New</ion-label>
+    <ion-label color="medium">Create</ion-label>
   </ion-tab-button>
   <ion-tab-button routerLink="/chat-list" routerDirection="forward">
-    <ion-label color="medium">1:1 Chats</ion-label>
+    <ion-label color="medium">Chats</ion-label>
     <ion-icon name="chatbubble-outline" color="medium"></ion-icon>
   </ion-tab-button>
-  <ion-tab-button routerLink="/profile-home" routerDirection="forward">
-    <ion-label color="medium">Profile</ion-label>
-    <ion-icon name="person-circle-outline" color="medium"></ion-icon>
+  <ion-tab-button routerLink="/connected-accounts" routerDirection="forward">
+    <ion-label color="medium">Contacts</ion-label>
+    <ion-icon name="people-circle-outline" color="medium"></ion-icon>
   </ion-tab-button>
 </ion-tab-bar>

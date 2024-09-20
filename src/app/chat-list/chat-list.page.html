@@ -1,17 +1,15 @@
-<ion-header class="ion-no-border">
+<ion-header translucent="true" class="ion-no-border">
   <ion-toolbar>
-    <ion-buttons slot="start">
-      <ion-button>
-        <ion-menu-button></ion-menu-button>
-      </ion-button>
-    </ion-buttons>
-    <ion-title>1:1 Chats</ion-title>
+    <ion-avatar slot="start" class="profile-pic-toolbar ion-margin-start" routerLink="/profile-home">
+      <img src="/assets/jess-taylor-profile.jpg" alt="" />
+    </ion-avatar>
+    <ion-title>Chats</ion-title>
     <ion-buttons slot="end">
-      <ion-button color="primary" routerLink="/settings" routerDirection="root" fill="clear">
-        <ion-icon name="camera-outline" class="nudge-down"></ion-icon>
+      <ion-button routerLink="" routerDirection="root" fill="clear">
+        <ion-icon name="camera" color="primary"></ion-icon>
       </ion-button>
-      <ion-button color="primary" routerLink="/settings" routerDirection="root" fill="clear">
-        <ion-icon name="create-outline"></ion-icon>
+      <ion-button color="primary" routerLink="/connected-accounts" routerDirection="root" fill="clear">
+        <ion-icon name="add-circle" class="icon-fab" color="true"></ion-icon>
       </ion-button>
     </ion-buttons>
   </ion-toolbar>
@@ -22,12 +20,12 @@
     <ion-searchbar value="Search"></ion-searchbar>
   </ion-toolbar>
   <ion-list>
-    <ion-item>
+    <ion-item routerLink="/chat-detail" detail="false">
       <ion-avatar slot="start">
         <img src="/assets/profile-morgan.png">
       </ion-avatar>
       <ion-label>
-        <ion-text><b>David Morgan</b></ion-text>
+        <strong>David Morgan</strong>
         <div class="field-label important">The Rapide values sank without trace, but that noise!</div>
         <div class="field-label">You reacted ;) to "The Rapide values sank without trace, but that noise!"</div>
       </ion-label>
@@ -194,7 +192,7 @@
 </ion-content>
 
 <ion-fab vertical="bottom" horizontal="center" slot="fixed">
-  <ion-fab-button size="small">
+  <ion-fab-button color="dark" class="outline" size="small" routerLink="/ok-bottom-sheet" routerDirection="root">
     <ion-icon src="/assets/OK-grn-fff.svg"></ion-icon>
   </ion-fab-button>
 </ion-fab>
@@ -202,22 +200,22 @@
 <ion-tab-bar slot="bottom" class="tab-blur">
   <ion-tab-button routerLink="/channel-list" routerDirection="back">
     <ion-label color="medium">Channels</ion-label>
-    <ion-icon name="at-circle-outline" color="medium"></ion-icon>
+    <ion-icon src="/assets/at-sign-gray.svg"></ion-icon>
   </ion-tab-button>
   <ion-tab-button routerLink="/chat-list-group" routerDirection="back">
-    <ion-label color="medium">Group Chats</ion-label>
+    <ion-label color="medium">Circles</ion-label>
     <ion-icon name="hardware-chip-outline" color="medium"></ion-icon>
   </ion-tab-button>
   <ion-tab-button>
     <ion-icon name="add-circle-outline"></ion-icon>
-    <ion-label color="medium">New</ion-label>
+    <ion-label color="medium">Create</ion-label>
   </ion-tab-button>
   <ion-tab-button routerLink="/chat-list" routerDirection="forward">
-    <ion-label color="primary">1:1 Chats</ion-label>
+    <ion-label color="primary">Chats</ion-label>
     <ion-icon src="/assets/chatbubble-outline-okg.svg"></ion-icon>
   </ion-tab-button>
-  <ion-tab-button routerLink="/profile-home" routerDirection="forward">
-    <ion-label color="medium">Profile</ion-label>
-    <ion-icon name="person-circle-outline" color="medium"></ion-icon>
+  <ion-tab-button routerLink="/connected-accounts" routerDirection="forward">
+    <ion-label color="medium">Contacts</ion-label>
+    <ion-icon name="people-circle-outline" color="medium"></ion-icon>
   </ion-tab-button>
 </ion-tab-bar>

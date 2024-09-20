@@ -7,6 +7,8 @@ ion-title {
 }
 
 ion-avatar {
+  width: 40pt;
+  height: 40pt;
   border: 1pt solid var(--ion-color-medium);
 }
 
@@ -210,10 +212,10 @@ ion-fab-button.outline {
 }
 
 .profile-pic-toolbar {
-  width: 9vw;
-  height: 9vw;
+  width: 25pt;
+  height: 25pt;
   border-radius: 50%;
-  border: 2pt solid var(--ion-color-primary);
+  border: 1pt solid var(--ion-color-utility);
   text-align: center;
   display: inline-block;
 }
