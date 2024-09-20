@@ -1,57 +1,132 @@
-<ion-header class="ion-no-border">
+<ion-header translucent="true" class="ion-no-border">
   <ion-toolbar>
     <ion-buttons slot="start">
       <ion-back-button defaultHref="/profile-home"></ion-back-button>
     </ion-buttons>
     <ion-title>
-      Biometrics & Security
+      Privacy & Security
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content color="utility">
   <ion-row class="ion-justify-content-center">
-    <ion-avatar class="profile-frame">
-      <img src="/assets/jess-taylor-profile.jpg" class="profile-pic">
-    </ion-avatar>
+    <ion-slides pager="true" style="width: 100%">
+      <ion-slide>
+        <ion-grid>
+          <ion-row class="ion-justify-content-center">
+            <ion-card>
+              <img src="/assets/profile-cherry-ok-plus.png" alt="Cherry's Confections">
+              <ion-item lines="none">
+                <ion-label color="primary">
+                  <b>Cherry Taylor – OK</b><br/>
+                  <ion-text class="text-smaller" color="medium">a-ok.me</ion-text>
+                </ion-label>
+              </ion-item>
+            </ion-card>
+          </ion-row>
+          <ion-row class="ion-justify-content-center">
+            <ion-text class="section-header" color="primary">Global Persona</ion-text>
+          </ion-row>
+        </ion-grid>
+      </ion-slide>
+      <ion-slide>
+        <ion-grid>
+          <ion-row class="ion-justify-content-center">
+            <ion-card>
+              <img src="/assets/profile-cherry-ok-plus.png" alt="Cherry's Confections">
+              <ion-item lines="none">
+                <ion-label color="primary">
+                  <b>Cherry Taylor – OK</b><br/>
+                  <ion-text class="text-smaller" color="medium">a-ok.me</ion-text>
+                </ion-label>
+              </ion-item>
+            </ion-card>
+          </ion-row>
+          <ion-row class="ion-justify-content-center">
+            <ion-text class="section-header" color="primary">OK Persona</ion-text>
+          </ion-row>
+        </ion-grid>
+      </ion-slide>
+      <ion-slide>
+        <ion-grid>
+          <ion-row class="ion-justify-content-center">
+            <ion-card>
+              <img src="/assets/profile-cherry-ok-plus.png" alt="Cherry's Confections">
+              <ion-item lines="none">
+                <ion-label color="primary">
+                  <b>Cherry Taylor – OK</b><br/>
+                  <ion-text class="text-smaller" color="medium">a-ok.me</ion-text>
+                </ion-label>
+              </ion-item>
+            </ion-card>
+          </ion-row>
+          <ion-row class="ion-justify-content-center">
+            <ion-text class="section-header" color="primary">Private Persona</ion-text>
+          </ion-row>
+        </ion-grid>
+      </ion-slide>
+      <ion-slide>
+        <ion-grid>
+          <ion-row class="ion-justify-content-center">
+            <ion-card>
+              <img src="/assets/profile-cherry-ok-plus.png" alt="Cherry's Confections">
+              <ion-item lines="none">
+                <ion-label color="primary">
+                  <b>Cherry Taylor – OK</b><br/>
+                  <ion-text class="text-smaller" color="medium">a-ok.me</ion-text>
+                </ion-label>
+              </ion-item>
+            </ion-card>
+          </ion-row>
+          <ion-row class="ion-justify-content-center">
+            <ion-text class="section-header" color="primary">Exclusive Persona</ion-text>
+          </ion-row>
+        </ion-grid>
+      </ion-slide>
+    </ion-slides>
   </ion-row>
-  <ion-text class="section-header" color="primary">Display Name<br/><br/></ion-text>
-  <ion-list>
-    <ion-item>
-      <ion-icon name="finger-print-outline"></ion-icon>
-      <ion-label class="ion-padding-start">
-        Device biometrics
-        <div class="field-label">Enable for enhanced security</div>
-      </ion-label>
-      <ion-toggle slot="end" name="biometrics" color="primary" checked></ion-toggle>
-    </ion-item>
-    <ion-item>
-      <ion-icon name="scan-outline"></ion-icon>
-      <ion-label class="ion-padding-start">
-        Facial verification
-        <div class="field-label">Enable for high-value transactions</div>
-      </ion-label>
-      <ion-toggle slot="end" name="face-scan" color="primary" checked></ion-toggle>
-    </ion-item>
-    <ion-item>
-      <ion-icon name="shield-checkmark-outline" color="primary"></ion-icon>
-      <ion-label class="ion-padding-start">
-        Verification setting
-        <div class="field-label">Verify me for transactions over:</div>
-      </ion-label>
-      <ion-select value="10">
-        <ion-select-option value="01">$1,000</ion-select-option>
-        <ion-select-option value="02">$2,000</ion-select-option>
-        <ion-select-option value="03">$3,000</ion-select-option>
-        <ion-select-option value="04">$4,000</ion-select-option>
-        <ion-select-option value="05">$5,000</ion-select-option>
-        <ion-select-option value="06">$6,000</ion-select-option>
-        <ion-select-option value="07">$7,000</ion-select-option>
-        <ion-select-option value="08">$8,000</ion-select-option>
-        <ion-select-option value="09">$9,000</ion-select-option>
-        <ion-select-option value="10">$10,000</ion-select-option>
-      </ion-select>
-    </ion-item>
-  </ion-list>
+
+  <ion-row>
+    <ion-card>
+      <ion-list>
+        <ion-item>
+          <ion-icon name="finger-print-outline"></ion-icon>
+          <ion-label class="ion-padding-start">
+            Device biometrics
+            <div class="field-label">Enable for enhanced security</div>
+          </ion-label>
+          <ion-toggle slot="end" name="biometrics" color="primary" checked></ion-toggle>
+        </ion-item>
+        <ion-item>
+          <ion-icon name="scan-outline"></ion-icon>
+          <ion-label class="ion-padding-start">
+            Facial verification
+            <div class="field-label">Enable for high-value transactions</div>
+          </ion-label>
+          <ion-toggle slot="end" name="face-scan" color="primary" checked></ion-toggle>
+        </ion-item>
+        <ion-item>
+          <ion-icon name="shield-checkmark-outline" color="primary"></ion-icon>
+          <ion-label class="ion-padding-start">
+            Verification setting
+            <div class="field-label">Verify me for transactions over:</div>
+          </ion-label>
+          <ion-select value="10">
+            <ion-select-option value="01">$1,000</ion-select-option>
+            <ion-select-option value="02">$2,000</ion-select-option>
+            <ion-select-option value="03">$3,000</ion-select-option>
+            <ion-select-option value="04">$4,000</ion-select-option>
+            <ion-select-option value="05">$5,000</ion-select-option>
+            <ion-select-option value="06">$6,000</ion-select-option>
+            <ion-select-option value="07">$7,000</ion-select-option>
+            <ion-select-option value="08">$8,000</ion-select-option>
+            <ion-select-option value="09">$9,000</ion-select-option>
+            <ion-select-option value="10">$10,000</ion-select-option>
+          </ion-select>
+        </ion-item>
+      </ion-list>
+    </ion-card>
+  </ion-row>
 
 </ion-content>
