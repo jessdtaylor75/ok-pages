@@ -1,0 +1,12 @@
+ion-header, ion-toolbar, ion-avatar, ion-row {
+  --background: transparent;
+  //  --background:rgba(5,16,51,0.75);
+}
+
+ion-content {
+  --overflow: hidden;
+}
+
+ion-title {
+  color: var(--ion-color-white);
+}

@@ -13,6 +13,11 @@
 </ion-header>
 
 <ion-content color="utility">
+  <ion-fab vertical="bottom" horizontal="center" slot="fixed">
+    <ion-fab-button color="dark" class="outline" routerLink="/ok-bottom-sheet" routerDirection="root">
+      <ion-icon src="/assets/OK-grn-fff.svg" class="icon-fab"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
   <ion-card>
     <img src="/assets/profile-cherry-ok-plus.png" alt="Cherry's Confections">
     <ion-item lines="none">
@@ -76,15 +81,14 @@
       </ion-item>
     </ion-list>
   </ion-card>
+
 </ion-content>
 
-<ion-fab vertical="bottom" horizontal="center" slot="fixed">
-  <ion-fab-button color="dark" class="outline" size="small" routerLink="/ok-bottom-sheet" routerDirection="root">
-    <ion-icon src="/assets/OK-grn-fff.svg"></ion-icon>
-  </ion-fab-button>
-</ion-fab>
-
 <ion-tab-bar slot="bottom" class="tab-blur">
+  <ion-tab-button routerLink="/checklist">
+    <ion-icon src="/assets/centered-circle-check-ok.svg"></ion-icon>
+    <ion-label color="medium">Calendar</ion-label>
+  </ion-tab-button>
   <ion-tab-button routerLink="/channel-list" routerDirection="back">
     <ion-label color="medium">Channels</ion-label>
     <ion-icon src="/assets/at-sign-gray.svg"></ion-icon>
@@ -92,10 +96,6 @@
   <ion-tab-button routerLink="/chat-list-group" routerDirection="back">
     <ion-label color="medium">Circles</ion-label>
     <ion-icon name="hardware-chip-outline" color="medium"></ion-icon>
-  </ion-tab-button>
-  <ion-tab-button>
-    <ion-icon name="add-circle-outline"></ion-icon>
-    <ion-label color="medium">Create</ion-label>
   </ion-tab-button>
   <ion-tab-button routerLink="/chat-list" routerDirection="forward">
     <ion-label color="medium">Chats</ion-label>

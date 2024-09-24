@@ -1,0 +1,52 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-avatar slot="start" class="profile-pic-toolbar ion-margin-start" routerLink="/profile-home">
+      <img src="/assets/jess-taylor-profile.jpg" alt="" />
+    </ion-avatar>
+    <ion-title>Checklist</ion-title>
+    <ion-buttons slot="end">
+      <ion-button routerLink="" routerDirection="root" fill="clear">
+        <ion-icon name="camera" color="light"></ion-icon>
+      </ion-button>
+      <ion-button color="primary" routerLink="/connected-accounts" routerDirection="root" fill="clear">
+        <ion-icon name="add-circle" class="icon-fab" color="light"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content fullscreen="true">
+  <ion-fab vertical="bottom" horizontal="center" slot="fixed">
+    <ion-fab-button color="dark" class="outline" routerLink="/ok-bottom-sheet" routerDirection="root">
+      <!--<ion-icon src="/assets/OK-grn-fff.svg" class="icon-fab"></ion-icon>-->
+      <ion-icon name="arrow-up-outline" class="icon-fab"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+  <div class="v-center">
+    <img src="/assets/efe-kurnaz.jpg" alt="scenic">
+  </div>
+</ion-content>
+
+<ion-tab-bar color="dark" slot="bottom" class="ion-no-border">
+  <ion-tab-button>
+    <ion-icon src="/assets/centered-circle-check-ok-green.svg" class="sv-shadow"></ion-icon>
+    <ion-label color="success">Checklist</ion-label>
+  </ion-tab-button>
+  <ion-tab-button routerLink="/channel-list" routerDirection="back">
+    <ion-label color="light">Channels</ion-label>
+    <ion-icon src="/assets/at-sign-fff.svg" color="light"></ion-icon>
+  </ion-tab-button>
+  <ion-tab-button routerLink="/chat-list-group" routerDirection="back">
+    <ion-label color="light">Circles</ion-label>
+    <ion-icon src="/assets/radio-button-wht.svg"></ion-icon>
+  </ion-tab-button>
+  <ion-tab-button routerLink="/chat-list" routerDirection="forward">
+    <ion-label color="light">Chats</ion-label>
+    <ion-icon name="chatbubble-outline" color="light"></ion-icon>
+  </ion-tab-button>
+  <ion-tab-button routerLink="/connected-accounts" routerDirection="forward">
+    <ion-label color="light">Contacts</ion-label>
+    <ion-icon name="people-circle-outline" color="light"></ion-icon>
+  </ion-tab-button>
+</ion-tab-bar>

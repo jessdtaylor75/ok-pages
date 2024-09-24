@@ -715,6 +715,10 @@ const routes: Routes = [
     path: 'hii5-options',
     loadChildren: () => import('./hii5-options/hii5-options.module').then( m => m.Hii5OptionsPageModule)
   },
+  {
+    path: 'checklist',
+    loadChildren: () => import('./checklist/checklist.module').then( m => m.ChecklistPageModule)
+  },
 ];
 
 @NgModule({
