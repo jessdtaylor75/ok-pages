@@ -19,8 +19,8 @@
 <ion-content fullscreen="true">
   <ion-fab vertical="bottom" horizontal="center" slot="fixed">
     <ion-fab-button color="dark" class="outline" routerLink="/ok-bottom-sheet" routerDirection="root">
-      <!--<ion-icon src="/assets/OK-grn-fff.svg" class="icon-fab"></ion-icon>-->
-      <ion-icon name="arrow-up-outline" class="icon-fab"></ion-icon>
+      <ion-icon src="/assets/OK-grn-fff.svg" class="icon-fab"></ion-icon>
+      <!--<ion-icon name="arrow-up-outline" class="icon-fab"></ion-icon>-->
     </ion-fab-button>
   </ion-fab>
   <div class="v-center">
@@ -29,23 +29,23 @@
 </ion-content>
 
 <ion-tab-bar color="dark" slot="bottom" class="ion-no-border">
-  <ion-tab-button>
+  <ion-tab-button routerLink="/calendar" routerDirection="root">
     <ion-icon src="/assets/centered-circle-check-ok-green.svg" class="sv-shadow"></ion-icon>
-    <ion-label color="success">Checklist</ion-label>
+    <ion-label color="success">Calendar</ion-label>
   </ion-tab-button>
-  <ion-tab-button routerLink="/channel-list" routerDirection="back">
+  <ion-tab-button routerLink="/channel-list" routerDirection="root">
     <ion-label color="light">Channels</ion-label>
-    <ion-icon src="/assets/at-sign-fff.svg" color="light"></ion-icon>
+    <ion-icon src="/assets/at-sign-fff.svg"></ion-icon>
   </ion-tab-button>
-  <ion-tab-button routerLink="/chat-list-group" routerDirection="back">
+  <ion-tab-button routerLink="/chat-list-group" routerDirection="root">
     <ion-label color="light">Circles</ion-label>
-    <ion-icon src="/assets/radio-button-wht.svg"></ion-icon>
+    <ion-icon src="/assets/radio-button-fff.svg"></ion-icon>
   </ion-tab-button>
-  <ion-tab-button routerLink="/chat-list" routerDirection="forward">
+  <ion-tab-button routerLink="/chat-list" routerDirection="root">
     <ion-label color="light">Chats</ion-label>
     <ion-icon name="chatbubble-outline" color="light"></ion-icon>
   </ion-tab-button>
-  <ion-tab-button routerLink="/connected-accounts" routerDirection="forward">
+  <ion-tab-button routerLink="/connected-accounts" routerDirection="root">
     <ion-label color="light">Contacts</ion-label>
     <ion-icon name="people-circle-outline" color="light"></ion-icon>
   </ion-tab-button>

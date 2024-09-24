@@ -1,4 +1,4 @@
-<ion-header class="ion-no-border">
+<ion-header translucent="true" class="ion-no-border">
   <ion-toolbar>
     <ion-buttons slot="start">
       <ion-back-button defaultHref="/home-scanner"></ion-back-button>
@@ -9,114 +9,80 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-  <ion-row class="ion-justify-content-center">
-    <ion-icon src="/assets/A-symbol.svg" class="icon-larger" color="primary"></ion-icon>
+<ion-content color="utility">
+  <ion-row class="ion-margin-top ion-justify-content-center">
+    <ion-icon name="settings-outline" class="icon-larger" color="primary"></ion-icon>
   </ion-row>
-  <ion-row class="ion-justify-content-center">
-    <ion-icon name="ellipsis-horizontal"></ion-icon>
-  </ion-row>
-  <ion-row class="ion-justify-content-center"><ion-text>&nbsp;</ion-text></ion-row>
-
-  <!--// Radio group Only appears if user has one or more group flags in their profile //-->
-  <!-- <ion-radio-group value="default">
+  <ion-card>
+    <ion-radio-group value="auto">
+      <ion-list-header>
+        <ion-label>Mode</ion-label>
+      </ion-list-header>
+      <ion-list>
+        <ion-item>
+          <ion-icon src="/assets/invert-mode-outline.svg" class="rotate-90"></ion-icon>
+          <ion-label class="ion-padding-start">Auto</ion-label>
+          <ion-radio slot="end" value="auto"></ion-radio>
+        </ion-item>
+        <ion-item>
+          <ion-icon src="/assets/invert-mode-outline.svg"></ion-icon>
+          <ion-label class="ion-padding-start">Light</ion-label>
+          <ion-radio slot="end" value="light"></ion-radio>
+        </ion-item>
+        <ion-item lines="none">
+          <ion-icon src="/assets/invert-mode-outline.svg" class="flip-horizontally"></ion-icon>
+          <ion-label class="ion-padding-start">Dark</ion-label>
+          <ion-radio slot="end" value="dark"></ion-radio>
+        </ion-item>
+      </ion-list>
+    </ion-radio-group>
+  </ion-card>
+  <ion-card>
     <ion-list-header>
-      <ion-label>App Icon & Theme</ion-label>
+      <ion-label>Devices</ion-label>
     </ion-list-header>
     <ion-list>
-      <ion-item>
-        <ion-icon src="/assets/A-symbol-circle-inset.svg" class="app-icon-grad" color="white"></ion-icon>
-        <ion-label class="ion-padding-start" color="primary">Default</ion-label>
-        <ion-radio slot="end" value="default"></ion-radio>
-      </ion-item>
-      <ion-item>
-        <ion-icon src="/assets/links-mark.svg" class="app-icon-mcbase" color="white"></ion-icon>
-        <ion-label class="ion-padding-start" color="milconnect">Military Connect</ion-label>
-        <ion-radio slot="end" value="milconnect" color="milconnect"></ion-radio>
-      </ion-item>
-      <ion-item>
-        <ion-icon src="/assets/links-mark.svg" class="app-icon-mcarmy" color="army-star"></ion-icon>
-        <ion-label class="ion-padding-start" color="army-black">US Army</ion-label>
-        <ion-radio slot="end" value="us-army" color="army-black"></ion-radio>
-      </ion-item>
-      <ion-item>
-        <ion-icon src="/assets/links-mark.svg" class="app-icon-mcnavy" color="navy-gold"></ion-icon>
-        <ion-label class="ion-padding-start" color="navy-blue">US Navy</ion-label>
-        <ion-radio slot="end" value="us-navy" color="navy-blue"></ion-radio>
-      </ion-item>
-      <ion-item>
-        <ion-icon src="/assets/links-mark.svg" class="app-icon-mcaf" color="airforce-blue"></ion-icon>
-        <ion-label class="ion-padding-start" color="airforce-blue">US Air Force</ion-label>
-        <ion-radio slot="end" value="us-airforce" color="airforce-blue"></ion-radio>
-      </ion-item>
-      <ion-item>
-        <ion-icon src="/assets/links-mark.svg" class="app-icon-mcmarines" color="marine-gold"></ion-icon>
-        <ion-label class="ion-padding-start" color="marine-crimson">US Marines</ion-label>
-        <ion-radio slot="end" value="us-marines" color="marine-crimson"></ion-radio>
-      </ion-item>
-      <ion-item>
-        <ion-icon src="/assets/links-mark.svg" class="app-icon-mccg" color="coastguard-blue"></ion-icon>
-        <ion-label class="ion-padding-start" color="coastguard-blue">US Coast Guard</ion-label>
-        <ion-radio slot="end" value="us-coastguard" color="coastguard-blue"></ion-radio>
-      </ion-item>
+      <ion-item-sliding>
+        <ion-item>
+          <ion-icon name="phone-portrait-outline"></ion-icon>
+          <ion-label class="ion-padding-start">Cherry's iPhone</ion-label>
+          <ion-icon name="chevron-back-outline" color="medium" slot="end" class="icon-small"></ion-icon>
+        </ion-item>
+        <ion-item-options side="end">
+          <ion-item-option color="danger" expandable routerLink="/delete-device">
+            <ion-icon name="trash-outline" slot="start"></ion-icon>
+            Delete Device
+          </ion-item-option>
+        </ion-item-options>
+      </ion-item-sliding>
+      <ion-item-sliding>
+        <ion-item>
+          <ion-icon name="phone-portrait-outline"></ion-icon>
+          <ion-label class="ion-padding-start">Cherry's Pixel 9</ion-label>
+          <ion-icon name="chevron-back-outline" color="medium" slot="end" class="icon-small"></ion-icon>
+        </ion-item>
+        <ion-item-options side="end">
+          <ion-item-option color="danger" expandable routerLink="/delete-device">
+            <ion-icon name="trash-outline" slot="start"></ion-icon>
+            Delete Device
+          </ion-item-option>
+        </ion-item-options>
+      </ion-item-sliding>
+      <ion-item-sliding>
+        <ion-item lines="none">
+          <ion-icon name="phone-portrait-outline"></ion-icon>
+          <ion-label class="ion-padding-start">Cherry's Macbook</ion-label>
+          <ion-icon name="chevron-back-outline" color="medium" slot="end" class="icon-small"></ion-icon>
+        </ion-item>
+        <ion-item-options side="end">
+          <ion-item-option color="danger" expandable routerLink="/delete-device">
+            <ion-icon name="trash-outline" slot="start"></ion-icon>
+            Delete Device
+          </ion-item-option>
+        </ion-item-options>
+      </ion-item-sliding>
     </ion-list>
-  </ion-radio-group> -->
-  <!--//  //-->
-  <ion-radio-group value="auto">
-    <ion-list-header>
-      <ion-label>Mode</ion-label>
-    </ion-list-header>
-    <ion-list>
-      <ion-item>
-        <ion-icon src="/assets/invert-mode-outline.svg" class="rotate-90"></ion-icon>
-        <ion-label class="ion-padding-start">Auto</ion-label>
-        <ion-radio slot="end" value="auto"></ion-radio>
-      </ion-item>
-      <ion-item>
-        <ion-icon src="/assets/invert-mode-outline.svg"></ion-icon>
-        <ion-label class="ion-padding-start">Light</ion-label>
-        <ion-radio slot="end" value="light"></ion-radio>
-      </ion-item>
-      <ion-item>
-        <ion-icon src="/assets/invert-mode-outline.svg" class="flip-horizontally"></ion-icon>
-        <ion-label class="ion-padding-start">Dark</ion-label>
-        <ion-radio slot="end" value="dark"></ion-radio>
-      </ion-item>
-    </ion-list>
-  </ion-radio-group>
-
-  <ion-list-header>
-    <ion-label>Devices</ion-label>
-  </ion-list-header>
-  <ion-list>
-    <ion-item-sliding>
-      <ion-item>
-        <ion-icon name="phone-portrait-outline"></ion-icon>
-        <ion-label class="ion-padding-start">Jane's iPhone</ion-label>
-        <ion-icon name="chevron-back-outline" color="medium" slot="end" class="icon-small"></ion-icon>
-      </ion-item>
-      <ion-item-options side="end">
-        <ion-item-option color="danger" expandable routerLink="/delete-device">
-          <ion-icon name="trash-outline" slot="start"></ion-icon>
-          Delete Device
-        </ion-item-option>
-      </ion-item-options>
-    </ion-item-sliding>
-    <ion-item-sliding>
-      <ion-item>
-        <ion-icon name="phone-portrait-outline"></ion-icon>
-        <ion-label class="ion-padding-start">Jane's Pixel 5</ion-label>
-        <ion-icon name="chevron-back-outline" color="medium" slot="end" class="icon-small"></ion-icon>
-      </ion-item>
-      <ion-item-options side="end">
-        <ion-item-option color="danger" expandable routerLink="/delete-device">
-          <ion-icon name="trash-outline" slot="start"></ion-icon>
-          Delete Device
-        </ion-item-option>
-      </ion-item-options>
-    </ion-item-sliding>
-  </ion-list>
-
+  </ion-card>
   <ion-fab vertical="bottom" horizontal="center" slot="fixed">
     <ion-fab-button routerLink="/badge-device-add">
       <ion-icon name="add-outline" size="large"></ion-icon>

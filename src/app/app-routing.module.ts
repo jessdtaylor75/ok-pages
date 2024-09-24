@@ -332,10 +332,6 @@ const routes: Routes = [
     loadChildren: () => import('./browser-mc-desktop-login/browser-mc-desktop-login.module').then( m => m.BrowserMcDesktopLoginPageModule)
   },
   {
-    path: 'get-started-mc',
-    loadChildren: () => import('./get-started-mc/get-started-mc.module').then( m => m.GetStartedMcPageModule)
-  },
-  {
     path: 'auth-login-mc',
     loadChildren: () => import('./auth-login-mc/auth-login-mc.module').then( m => m.AuthLoginMcPageModule)
   },
@@ -716,8 +712,8 @@ const routes: Routes = [
     loadChildren: () => import('./hii5-options/hii5-options.module').then( m => m.Hii5OptionsPageModule)
   },
   {
-    path: 'checklist',
-    loadChildren: () => import('./checklist/checklist.module').then( m => m.ChecklistPageModule)
+    path: 'calendar',
+    loadChildren: () => import('./calendar/calendar.module').then(m => m.CalendarPageModule)
   },
 ];
 

@@ -1,11 +1,30 @@
+<ion-tab-bar translucent="true" slot="top">
+    <ion-tab-button routerLink="/calendar" routerDirection="root">
+        <ion-icon src="/assets/ok-check-off.svg"></ion-icon>
+        <ion-label color="medium">Calendar</ion-label>
+    </ion-tab-button>
+    <ion-tab-button routerLink="/channel-list" routerDirection="root">
+        <ion-label color="medium">Channels</ion-label>
+        <ion-icon src="/assets/at-sign-off.svg"></ion-icon>
+    </ion-tab-button>
+    <ion-tab-button routerLink="/chat-list-group" routerDirection="root">
+        <ion-label color="medium">Circles</ion-label>
+        <ion-icon src="/assets/radio-button-off.svg" color="medium"></ion-icon>
+    </ion-tab-button>
+    <ion-tab-button routerLink="/chat-list" routerDirection="root">
+        <ion-label color="medium">Chats</ion-label>
+        <ion-icon name="chatbubble-outline" color="medium"></ion-icon>
+    </ion-tab-button>
+    <ion-tab-button routerLink="/connected-accounts" routerDirection="root">
+        <ion-label color="medium">Contacts</ion-label>
+        <ion-icon name="people-circle-outline" color="medium"></ion-icon>
+    </ion-tab-button>
+</ion-tab-bar>
+
 <ion-content fullscreen="true" color="brand-grad-end">
 
 </ion-content>
-<ion-fab vertical="bottom" horizontal="center" slot="fixed">
-    <ion-fab-button color="medium" size="small" routerLink="/chat-list" routerDirection="root">
-        <ion-icon name="close" color="light"></ion-icon>
-    </ion-fab-button>
-</ion-fab>
+
 <ion-footer translucent="true">
     <ion-list class="bottom-sheet">
         <ion-item>
@@ -36,6 +55,10 @@
         </ion-item>
         <ion-item lines="none">
             <ion-label>&nbsp;&nbsp;</ion-label>
+        </ion-item>
+        <ion-item lines="none" routerLink="/get-started">
+            <ion-icon name="power"></ion-icon>
+            <ion-label class="ion-padding-start">Get started</ion-label>
         </ion-item>
     </ion-list>
 </ion-footer>

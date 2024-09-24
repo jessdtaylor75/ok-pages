@@ -1,19 +1,19 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { IonicModule } from '@ionic/angular';
 
-import { GetStartedMcPage } from './get-started-mc.page';
+import { CalendarPage } from './calendar.page';
 
-describe('GetStartedMcPage', () => {
-  let component: GetStartedMcPage;
-  let fixture: ComponentFixture<GetStartedMcPage>;
+describe('CalendarPage', () => {
+  let component: CalendarPage;
+  let fixture: ComponentFixture<CalendarPage>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ GetStartedMcPage ],
+      declarations: [ CalendarPage ],
       imports: [IonicModule.forRoot()]
     }).compileComponents();
 
-    fixture = TestBed.createComponent(GetStartedMcPage);
+    fixture = TestBed.createComponent(CalendarPage);
     component = fixture.componentInstance;
     fixture.detectChanges();
   }));

@@ -4,17 +4,17 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { ChecklistPageRoutingModule } from './checklist-routing.module';
+import { CalendarPageRoutingModule } from './calendar-routing.module';
 
-import { ChecklistPage } from './checklist.page';
+import { CalendarPage } from './calendar.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    ChecklistPageRoutingModule
+    CalendarPageRoutingModule
   ],
-  declarations: [ChecklistPage]
+  declarations: [CalendarPage]
 })
-export class ChecklistPageModule {}
+export class CalendarPageModule {}

@@ -13,53 +13,27 @@
 </ion-header>
 
 <ion-content fullscreen="true">
-  <h4 class="ion-padding">Verify your email address to use it with AerPass</h4>
+  <h4 class="ion-padding">OK sign in link</h4>
   <ion-item lines="none">
     <ion-avatar slot="start">
-      <img src="/assets/aerpass-merchant-logo.png">
+      <img src="/assets/OK-grn-fff-111-circle-sig.png">
     </ion-avatar>
     <ion-label>
       <div class="field-label">no-reply&nbsp;&nbsp;7:30 PM </div>
-      <div class="field-label">to username@aerpass.com</div>
+      <div class="field-label">to username@domain.com</div>
     </ion-label>
     <ion-icon slot="end" name="ellipsis-horizontal"></ion-icon>
   </ion-item>
   <ion-row class="ion-padding">
     <ion-text class="ion-text-justify text-smaller">
-      Verify your email address to use it with AerPass<br/>&nbsp;
-    </ion-text>
-    <ion-text class="ion-text-justify text-smallest">
-      We must verify that you are in control of your email address in order to start using AerPass with this email.<br/>&nbsp;
-    </ion-text>
-    <ion-text class="ion-text-justify text-smallest">
-      If you're viewing this message on your mobile device, please tap the activation link below. If you're viewing this message on a desktop, please scan the QR code below with the AerPass app on your mobile device.<br/>&nbsp;
+      Tap the link below to sign into OK<br/>&nbsp;
     </ion-text>
   </ion-row>
   <ion-toolbar>
-    <ion-button expand="block" class="pad20" routerLink="/success-verify-email">
-      Connect Address
+    <ion-button shape="round" expand="block" color="dark" class="pad20" routerLink="/verify-identity">
+      <ion-icon src="/assets/ok-check-on.svg"></ion-icon>&nbsp;&nbsp;Sign in with Link
     </ion-button>
   </ion-toolbar>
-  <ion-row class="pad15">
-    <ion-card routerLink="/success-verify-email">
-      <img src="/assets/ap-validate-email-qr.png" />
-    </ion-card>
-  </ion-row>
-  <ion-row class="ion-justify-content-center">
-    <ion-icon class="icon-larger" src="/assets/A-symbol.svg" color="primary"></ion-icon>
-  </ion-row>
-  <ion-row class="ion-justify-content-center">
-    <ion-text class="section-header" routerLink="/success-verify-email">EAS Example:</ion-text>
-  </ion-row>
-  <ion-row class="ion-padding">
-    <div style="padding-top: 12px;">
-      <div style="padding-bottom: 24px;">
-        <img src="https://assets-global.website-files.com/5e754f2c34e76c3a59aefb39/5e75558bd0097c0189f13592_AERPASS_LOGO-03_2020-Blue.svg" style="width: 300px;" />
-      </div>
-      <div style="margin-bottom: 18px; font-size: 18px;">AERPASS message: To verify your email please enter the verification code below:</div>
-      <div style="margin-bottom: 18px; font-size: 22px; font-weight: bold;">123456</div>
-    </div>
-  </ion-row>
 </ion-content>
 
 <ion-footer class="ion-no-border ion-margin-bottom">
