@@ -22,104 +22,146 @@
     </ion-fab-button>
   </ion-fab>
   <ion-card>
-    <img src="/assets/og-user-profile-plus.jpg" alt="Cherry Taylor">
-    <ion-item lines="none">
+    <ion-item lines="none" routerLink="/channel-detail">
+      <ion-avatar slot="start">
+        <img src="/assets/jess-taylor-profile.jpg">
+      </ion-avatar>
       <ion-label color="primary">
         <b>My Channel</b><br/>
-        <ion-text class="text-smaller" color="medium">Create new post</ion-text>
+        <ion-text class="text-smaller" color="medium">40K Followers</ion-text>
       </ion-label>
     </ion-item>
   </ion-card>
   <ion-card>
     <ion-list>
-      <ion-list-header>Pinned</ion-list-header>
-      <ion-item routerLink="/web-partner1-destination">
-        <ion-img class="partner-app-icon" src="/assets/ca-spotify.png" alt=""></ion-img>
-        <ion-label class="ion-padding-start">Spotify</ion-label>
+      <ion-list-header>Favorites</ion-list-header>
+      <ion-item routerLink="/channel-detail">
+        <ion-avatar slot="start">
+          <img src="/assets/profile-rose-morgan.jpg">
+        </ion-avatar>
+        <ion-label>
+          <b>Rose Morgan</b><br/>
+          <ion-text class="text-smaller" color="medium">40K Followers</ion-text>
+        </ion-label>
       </ion-item>
-      <ion-item routerLink="/personal-info">
-        <ion-img class="partner-app-icon" src="/assets/ca-facebook.png" alt=""></ion-img>
-        <ion-label class="ion-padding-start">Facebook</ion-label>
+      <ion-item routerLink="/channel-detail">
+        <ion-avatar slot="start">
+          <img src="/assets/profile-morgan.png">
+        </ion-avatar>
+        <ion-label>
+          <b>David Morgan</b><br/>
+          <ion-text class="text-smaller" color="medium">10K Followers</ion-text>
+        </ion-label>
       </ion-item>
-      <ion-item routerLink="/personal-info">
-        <ion-img class="partner-app-icon" src="/assets/ca-instagram.png" alt=""></ion-img>
-        <ion-label class="ion-padding-start">Instagram</ion-label>
+      <ion-item routerLink="/channel-detail">
+        <ion-avatar slot="start">
+          <img src="/assets/profile-zen.png">
+        </ion-avatar>
+        <ion-label>
+          <b>Daniel Zen</b><br/>
+          <ion-text class="text-smaller" color="medium">10K Followers</ion-text>
+        </ion-label>
       </ion-item>
-      <ion-item routerLink="/personal-info">
-        <ion-img class="partner-app-icon" src="/assets/ca-signal.png" alt=""></ion-img>
-        <ion-label class="ion-padding-start">Signal</ion-label>
+      <ion-item routerLink="/channel-detail">
+        <ion-avatar slot="start">
+          <img src="/assets/profile-donnell.jpg">
+        </ion-avatar>
+        <ion-label>
+          <b>Mike Donnell</b><br/>
+          <ion-text class="text-smaller" color="medium">10K Followers</ion-text>
+        </ion-label>
       </ion-item>
-      <ion-item routerLink="/personal-info">
-        <ion-img class="partner-app-icon" src="/assets/ca-slack.png" alt=""></ion-img>
-        <ion-label class="ion-padding-start">Slack</ion-label>
-      </ion-item>
-      <ion-item routerLink="/personal-info">
-        <ion-img class="partner-app-icon" src="/assets/ca-twitter.png" alt=""></ion-img>
-        <ion-label class="ion-padding-start">Twitter</ion-label>
-      </ion-item>
-      <ion-item routerLink="/personal-info" lines="none">
-        <ion-img class="partner-app-icon" src="/assets/ca-whatsapp.png" alt=""></ion-img>
-        <ion-label class="ion-padding-start">WhatsApp</ion-label>
+      <ion-item lines="none" routerLink="/channel-detail">
+        <ion-avatar slot="start">
+          <img src="/assets/profile-taylor.png">
+        </ion-avatar>
+        <ion-label>
+          <b>Jess Taylor</b><br/>
+          <ion-text class="text-smaller" color="medium">10K Followers</ion-text>
+        </ion-label>
       </ion-item>
     </ion-list>
   </ion-card>
   <ion-card>
     <ion-list>
-      <ion-list-header>Active Channels</ion-list-header>
-      <ion-item detail routerLink="/personal-info">
-        <ion-img class="partner-app-icon" src="/assets/ca-1800flowers.png" alt=""></ion-img>
+      <ion-list-header>People</ion-list-header>
+      <ion-item routerLink="/channel-detail">
+        <ion-avatar slot="start">
+          <img src="/assets/person-circle-outline-medium.svg">
+        </ion-avatar>
+        <ion-label>
+          <b>Person A</b><br/>
+          <ion-text class="text-smaller" color="medium">2.4M Followers</ion-text>
+        </ion-label>
+      </ion-item>
+      <ion-item routerLink="/channel-detail">
+        <ion-avatar slot="start">
+          <img src="/assets/person-circle-outline-medium.svg">
+        </ion-avatar>
+        <ion-label>
+          <b>Person B</b><br/>
+          <ion-text class="text-smaller" color="medium">1M Followers</ion-text>
+        </ion-label>
+      </ion-item>
+      <ion-item routerLink="/channel-detail">
+        <ion-avatar slot="start">
+          <img src="/assets/person-circle-outline-medium.svg">
+        </ion-avatar>
+        <ion-label>
+          <b>Person C</b><br/>
+          <ion-text class="text-smaller" color="medium">750K Followers</ion-text>
+        </ion-label>
+      </ion-item>
+      <ion-item routerLink="/channel-detail">
+        <ion-avatar slot="start">
+          <img src="/assets/person-circle-outline-medium.svg">
+        </ion-avatar>
+        <ion-label>
+          <b>Person D</b><br/>
+          <ion-text class="text-smaller" color="medium">500K Followers</ion-text>
+        </ion-label>
+      </ion-item>
+      <ion-item lines="none" routerLink="/channel-detail">
+        <ion-avatar slot="start">
+          <img src="/assets/person-circle-outline-medium.svg">
+        </ion-avatar>
+        <ion-label>
+          <b>Person E</b><br/>
+          <ion-text class="text-smaller" color="medium">250K Followers</ion-text>
+        </ion-label>
+      </ion-item>
+    </ion-list>
+  </ion-card>
+  <ion-card>
+    <ion-list>
+      <ion-list-header>Businesses</ion-list-header>
+      <ion-item routerLink="/channel-detail">
+        <ion-img slot="start" class="partner-app-icon" src="/assets/ca-1800flowers.png" alt=""></ion-img>
         <ion-label class="ion-padding-start">1800 Flowers</ion-label>
       </ion-item>
-      <ion-item detail routerLink="/personal-info">
-        <ion-img class="partner-app-icon" src="/assets/ca-amazon.png" alt=""></ion-img>
+      <ion-item routerLink="/channel-detail">
+        <ion-img slot="start" class="partner-app-icon" src="/assets/ca-amazon.png" alt=""></ion-img>
         <ion-label class="ion-padding-start">Amazon</ion-label>
       </ion-item>
-      <ion-item detail routerLink="/personal-info">
-        <ion-img class="partner-app-icon" src="/assets/ca-bestbuy.png" alt=""></ion-img>
+      <ion-item routerLink="/channel-detail">
+        <ion-img slot="start" class="partner-app-icon" src="/assets/ca-bestbuy.png" alt=""></ion-img>
         <ion-label class="ion-padding-start">Best Buy</ion-label>
       </ion-item>
-      <ion-item detail routerLink="/personal-info">
-        <ion-img class="partner-app-icon" src="/assets/ca-costco.png" alt=""></ion-img>
+      <ion-item routerLink="/channel-detail">
+        <ion-img slot="start" class="partner-app-icon" src="/assets/ca-costco.png" alt=""></ion-img>
         <ion-label class="ion-padding-start">Costco</ion-label>
       </ion-item>
-      <ion-item detail routerLink="/personal-info">
-        <ion-img class="partner-app-icon" src="/assets/ca-rakuten.png" alt=""></ion-img>
+      <ion-item routerLink="/channel-detail">
+        <ion-img slot="start" class="partner-app-icon" src="/assets/ca-rakuten.png" alt=""></ion-img>
         <ion-label class="ion-padding-start">Rakuten</ion-label>
       </ion-item>
-      <ion-item detail routerLink="/personal-info">
-        <ion-img class="partner-app-icon" src="/assets/ca-target.png" alt=""></ion-img>
+      <ion-item routerLink="/channel-detail">
+        <ion-img slot="start" class="partner-app-icon" src="/assets/ca-target.png" alt=""></ion-img>
         <ion-label class="ion-padding-start">Target</ion-label>
       </ion-item>
-      <ion-item detail routerLink="/personal-info" lines="none">
-        <ion-img class="partner-app-icon" src="/assets/ca-walmart.png" alt=""></ion-img>
+      <ion-item routerLink="/channel-detail" lines="none">
+        <ion-img slot="start" class="partner-app-icon" src="/assets/ca-walmart.png" alt=""></ion-img>
         <ion-label class="ion-padding-start">Walmart</ion-label>
-      </ion-item>
-    </ion-list>
-  </ion-card>
-  <ion-card>
-    <ion-list>
-      <ion-item detail routerLink="/browser-ap-members">
-        <ion-icon name="logo-electron"></ion-icon>
-        <ion-label class="ion-padding-start">Connected Accounts</ion-label>
-      </ion-item>
-      <ion-item detail routerLink="/browser-ap-members" color="medium">
-        <ion-icon src="/assets/centered-circle-check-oc-green.svg" color="primary"></ion-icon>
-        <ion-label class="ion-padding-start" color="primary">Member Services</ion-label>
-      </ion-item>
-      <ion-item-divider color="light"></ion-item-divider>
-      <ion-item detail routerLink="/settings">
-        <ion-icon name="phone-portrait-outline"></ion-icon>
-        <ion-label class="ion-padding-start">Devices</ion-label>
-      </ion-item>
-      <ion-item detail routerLink="/settings-security">
-        <ion-icon name="finger-print-outline"></ion-icon>
-        <ion-label class="ion-padding-start">Biometrics & Security</ion-label>
-      </ion-item>
-      <ion-item detail routerLink="/legal">
-        <ion-icon name="documents-outline"></ion-icon>
-        <ion-label class="ion-padding-start">Legal Agreements</ion-label>
-      </ion-item>
-      <ion-item lines="none">
       </ion-item>
     </ion-list>
   </ion-card>

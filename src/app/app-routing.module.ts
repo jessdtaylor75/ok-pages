@@ -719,6 +719,10 @@ const routes: Routes = [
     path: 'profile-select',
     loadChildren: () => import('./profile-select/profile-select.module').then( m => m.ProfileSelectPageModule)
   },
+  {
+    path: 'channel-detail',
+    loadChildren: () => import('./channel-detail/channel-detail.module').then( m => m.ChannelDetailPageModule)
+  },
 ];
 
 @NgModule({
