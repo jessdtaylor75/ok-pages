@@ -715,6 +715,10 @@ const routes: Routes = [
     path: 'calendar',
     loadChildren: () => import('./calendar/calendar.module').then(m => m.CalendarPageModule)
   },
+  {
+    path: 'profile-select',
+    loadChildren: () => import('./profile-select/profile-select.module').then( m => m.ProfileSelectPageModule)
+  },
 ];
 
 @NgModule({

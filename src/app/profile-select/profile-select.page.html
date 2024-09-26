@@ -1,0 +1,112 @@
+<ion-header translucent="true" class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/profile-home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>
+      Select Profile
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="utility">
+  <ion-row class="ion-justify-content-center">
+    <ion-slides pager="true" style="width: 100%">
+      <ion-slide>
+        <ion-grid>
+          <ion-row class="ion-justify-content-center">
+            <ion-card>
+              <img src="/assets/profile-cherry-ok-plus.png" alt="Cherry's Confections">
+              <ion-item lines="none">
+                <ion-label color="primary">
+                  <b>Cherry Taylor – OK</b><br/>
+                  <ion-text class="text-smaller" color="medium">a-ok.me</ion-text>
+                </ion-label>
+              </ion-item>
+            </ion-card>
+          </ion-row>
+          <ion-row class="ion-justify-content-center">
+            <ion-text class="section-header" color="primary">Global Persona</ion-text>
+          </ion-row>
+        </ion-grid>
+      </ion-slide>
+      <ion-slide>
+        <ion-grid>
+          <ion-row class="ion-justify-content-center">
+            <ion-card>
+              <img src="/assets/profile-cherry-ok-plus.png" alt="Cherry's Confections">
+              <ion-item lines="none">
+                <ion-label color="primary">
+                  <b>Cherry Taylor – OK</b><br/>
+                  <ion-text class="text-smaller" color="medium">a-ok.me</ion-text>
+                </ion-label>
+              </ion-item>
+            </ion-card>
+          </ion-row>
+          <ion-row class="ion-justify-content-center">
+            <ion-text class="section-header" color="primary">OK Persona</ion-text>
+          </ion-row>
+        </ion-grid>
+      </ion-slide>
+      <ion-slide>
+        <ion-grid>
+          <ion-row class="ion-justify-content-center">
+            <ion-card>
+              <img src="/assets/profile-cherry-ok-plus.png" alt="Cherry's Confections">
+              <ion-item lines="none">
+                <ion-label color="primary">
+                  <b>Cherry Taylor – OK</b><br/>
+                  <ion-text class="text-smaller" color="medium">a-ok.me</ion-text>
+                </ion-label>
+              </ion-item>
+            </ion-card>
+          </ion-row>
+          <ion-row class="ion-justify-content-center">
+            <ion-text class="section-header" color="primary">Private Persona</ion-text>
+          </ion-row>
+        </ion-grid>
+      </ion-slide>
+      <ion-slide>
+        <ion-grid>
+          <ion-row class="ion-justify-content-center">
+            <ion-card>
+              <img src="/assets/profile-cherry-ok-plus.png" alt="Cherry's Confections">
+              <ion-item lines="none">
+                <ion-label color="primary">
+                  <b>Cherry Taylor – OK</b><br/>
+                  <ion-text class="text-smaller" color="medium">a-ok.me</ion-text>
+                </ion-label>
+              </ion-item>
+            </ion-card>
+          </ion-row>
+          <ion-row class="ion-justify-content-center">
+            <ion-text class="section-header" color="primary">Exclusive Persona</ion-text>
+          </ion-row>
+        </ion-grid>
+      </ion-slide>
+    </ion-slides>
+  </ion-row>
+</ion-content>
+
+<ion-tab-bar translucent="true" slot="bottom">
+  <ion-tab-button routerLink="/calendar" routerDirection="root">
+    <ion-icon src="/assets/home-off.svg"></ion-icon>
+    <ion-label color="medium">Home</ion-label>
+  </ion-tab-button>
+  <ion-tab-button routerLink="/channel-list" routerDirection="root">
+    <ion-label color="medium">Channels</ion-label>
+    <ion-icon src="/assets/at-sign-off.svg"></ion-icon>
+  </ion-tab-button>
+  <ion-tab-button routerLink="/chat-list-group" routerDirection="root">
+    <ion-label color="medium">Communities</ion-label>
+    <ion-icon src="/assets/earth-off.svg"></ion-icon>
+  </ion-tab-button>
+  <ion-tab-button routerLink="/chat-list" routerDirection="root">
+    <ion-label color="medium">Chats</ion-label>
+    <ion-icon src="/assets/chatbubble-off.svg"></ion-icon>
+  </ion-tab-button>
+  <ion-tab-button routerLink="/profile-home" routerDirection="root">
+    <ion-label color="dark">Settings</ion-label>
+    <ion-icon src="/assets/settings-on.svg"></ion-icon>
+  </ion-tab-button>
+</ion-tab-bar>
