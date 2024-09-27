@@ -343,6 +343,17 @@ ion-input.outline {
   z-index: 5;
 }
 
+.v-center.back {
+  text-align: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  display: block;
+  z-index: 0;
+}
+
 .hero-top {
   @extend .stretch;
   padding: 0 15vw 0 15vw;
