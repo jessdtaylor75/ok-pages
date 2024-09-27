@@ -8,27 +8,21 @@
 </ion-header>
 
 <ion-content>
-  <ion-row class="ion-justify-content-center">
-    <ion-icon src="/assets/A-symbol.svg" class="icon-big" color="primary"></ion-icon>
-  </ion-row>
-  <ion-row class="ion-justify-content-center">
-    <ion-icon name="ellipsis-horizontal"></ion-icon>
+  <ion-row><ion-text>&nbsp;</ion-text></ion-row>
+  <ion-row class="ion-padding ion-justify-content-center">
+    <ion-icon src="/assets/ok-check-fff-alpha.svg/" class="icon-big"></ion-icon>
   </ion-row>
   <ion-row class="ion-justify-content-center"><ion-text>&nbsp;</ion-text></ion-row>
 
   <ion-list>
-    <ion-item detail routerLink="/terms-and-conditions">
+    <ion-item routerLink="/terms-and-conditions">
       <ion-icon name="document-text-outline"></ion-icon>
       <ion-label class="ion-padding-start">Terms & Conditions</ion-label>
     </ion-item>
-    <ion-item detail routerLink="/privacy-policy">
+    <ion-item routerLink="/privacy-policy">
       <ion-icon name="lock-closed-outline"></ion-icon>
       <ion-label class="ion-padding-start">Privacy Policy</ion-label>
     </ion-item>
-    <!-- <ion-item detail routerLink="/privacy-policy">
-      <ion-icon name="git-network-outline"></ion-icon>
-      <ion-label class="ion-padding-start">Personal Privacy Network</ion-label>
-    </ion-item> -->
   </ion-list>
 
 </ion-content>

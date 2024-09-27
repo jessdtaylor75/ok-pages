@@ -75,12 +75,12 @@
    */
 
   body {
-    --ion-color-primary: #00ff00;
+    --ion-color-primary: #ffffff;
     --ion-color-primary-rgb: 0,255,0;
-    --ion-color-primary-contrast: #000000;
+    --ion-color-primary-contrast: #00ff00;
     --ion-color-primary-contrast-rgb: 0,0,0;
-    --ion-color-primary-shade: #00e000;
-    --ion-color-primary-tint: #1aff1a;
+    --ion-color-primary-shade: #e0e0e0;
+    --ion-color-primary-tint: #fefefe;
 
     --ion-color-secondary: #2251E7;
     --ion-color-secondary-rgb: 34,81,231;
@@ -454,7 +454,7 @@
   --ion-color-purple1-tint: #842ccc;
 }
 
-.ion-color-milconnect2 {
+.ion-color-purple1 {
   --ion-color-base: var(--ion-color-purple1);
   --ion-color-base-rgb: var(--ion-color-purple1-rgb);
   --ion-color-contrast: var(--ion-color-purple1-contrast);
@@ -518,19 +518,19 @@
 }
 
 :root {
-  --ion-color-brand-facebook: #1877F2;
-  --ion-color-brand-facebook-rgb: 24,119,242;
-  --ion-color-brand-facebook-contrast: #ffffff;
-  --ion-color-brand-facebook-contrast-rgb: 0,0,0;
-  --ion-color-brand-facebook-shade: #1569d5;
-  --ion-color-brand-facebook-tint: #2f85f3;
+  --ion-color-idverify: #fefefe;
+  --ion-color-idverify-rgb: 254,254,254;
+  --ion-color-idverify-contrast: #000000;
+  --ion-color-idverify-contrast-rgb: 0,0,0;
+  --ion-color-idverify-shade: #e0e0e0;
+  --ion-color-idverify-tint: #fefefe;
 }
 
-.ion-color-brand-facebook {
-  --ion-color-base: var(--ion-color-brand-facebook);
-  --ion-color-base-rgb: var(--ion-color-brand-facebook-rgb);
-  --ion-color-contrast: var(--ion-color-brand-facebook-contrast);
-  --ion-color-contrast-rgb: var(--ion-color-brand-facebook-contrast-rgb);
-  --ion-color-shade: var(--ion-color-brand-facebook-shade);
-  --ion-color-tint: var(--ion-color-brand-facebook-tint);
+.ion-color-idverify {
+  --ion-color-base: var(--ion-color-idverify);
+  --ion-color-base-rgb: var(--ion-color-idverify-rgb);
+  --ion-color-contrast: var(--ion-color-idverify-contrast);
+  --ion-color-contrast-rgb: var(--ion-color-idverify-contrast-rgb);
+  --ion-color-shade: var(--ion-color-idverify-shade);
+  --ion-color-tint: var(--ion-color-idverify-tint);
 }

@@ -485,3 +485,8 @@ ion-input.outline {
 .sv-shadow {
   filter: drop-shadow(0pt 0pt 3pt #111111);
 }
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}

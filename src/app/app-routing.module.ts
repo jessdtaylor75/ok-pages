@@ -723,6 +723,14 @@ const routes: Routes = [
     path: 'channel-detail',
     loadChildren: () => import('./channel-detail/channel-detail.module').then( m => m.ChannelDetailPageModule)
   },
+  {
+    path: 'verify-id-doc-scan',
+    loadChildren: () => import('./verify-id-doc-scan/verify-id-doc-scan.module').then( m => m.VerifyIdDocScanPageModule)
+  },
+  {
+    path: 'verify-id-selfie',
+    loadChildren: () => import('./verify-id-selfie/verify-id-selfie.module').then( m => m.VerifyIdSelfiePageModule)
+  },
 ];
 
 @NgModule({

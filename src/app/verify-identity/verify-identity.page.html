@@ -11,7 +11,7 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content color="utility">
+<ion-content fullscreen="true" color="utility">
   <ion-card>
     <ion-img src="/assets/og-user-onboard-pre-idv.jpg" alt="profile pic"></ion-img>
     <ion-list>
@@ -38,11 +38,13 @@
       <ion-item lines="none">
         <ion-text class="text-smallest">
           &nbsp;&nbsp;<br/>
-          OK will capture your personal identity data from your identity documents and selfie.<br/>
+          <b>OK</b> will capture your personal identity data from your identity documents and selfie.<br/>
           &nbsp;&nbsp;<br/>
-          OK will only use this data to verify your identity and to prevent fraud. The process verifies your identity document and matches your document to your selfie using your facial biometrics.<br/>
+          <b>OK</b> will only use this data to verify your identity and to prevent fraud. The process verifies your ID document and matches your document to your selfie using your facial biometrics.<br/>
           &nbsp;&nbsp;<br/>
-          OK will store your data in an encrypted vault that only you can access. OK does not have access to your personal identity data. Only you can access and share your data.
+          <b>OK</b> will store your data in an encrypted vault that <b>only you can access</b>. <b>OK does not have access</b> to your personal identity data.<br/>
+          &nbsp;&nbsp;<br/>
+          <b>Only you can access and share your data</b>.
         </ion-text>
       </ion-item>
       <ion-item lines="none"></ion-item>
@@ -53,7 +55,7 @@
 
 <ion-footer class="ion-no-border">
   <ion-toolbar color="utility">
-    <ion-button expand="block" shape="round" class="pad15 ion-margin-bottom" routerLink="/verify-id-recovery">
+    <ion-button expand="block" shape="round" color="success" class="pad15 ion-margin-bottom" routerLink="/verify-id-recovery">
       Continue
     </ion-button>
   </ion-toolbar>
