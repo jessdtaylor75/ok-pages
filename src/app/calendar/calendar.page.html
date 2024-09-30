@@ -18,7 +18,7 @@
 </ion-header>
 
 <ion-content fullscreen="true">
-  <ion-fab vertical="bottom" horizontal="center" slot="fixed">
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
     <ion-fab-button color="black" class="outline" routerLink="/ok-bottom-sheet" routerDirection="root">
       <ion-icon name="add" class="icon-larger"></ion-icon>
     </ion-fab-button>
@@ -129,7 +129,7 @@
     </ion-list>
   </ion-card>
 
-  <ion-card>
+  <!--<ion-card>
     <ion-list>
       <ion-list-header>From Communities</ion-list-header>
       <ion-item routerLink="/channel-detail">
@@ -178,11 +178,11 @@
         </ion-label>
       </ion-item>
     </ion-list>
-  </ion-card>
+  </ion-card>-->
 
   <ion-card>
     <ion-list>
-      <ion-list-header>From Channels</ion-list-header>
+      <ion-list-header>New Posts</ion-list-header>
       <ion-item routerLink="/channel-detail">
         <ion-avatar slot="start">
           <img src="/assets/profile-rose-morgan.jpg">
@@ -251,18 +251,22 @@
     <ion-icon src="/assets/home-on.svg" class="sv-shadow"></ion-icon>
     <ion-label color="success">Home</ion-label>
   </ion-tab-button>
-  <ion-tab-button routerLink="/channel-list" routerDirection="root">
-    <ion-label color="medium">Channels</ion-label>
-    <ion-icon src="/assets/at-sign-off.svg"></ion-icon>
-  </ion-tab-button>
-  <ion-tab-button routerLink="/chat-list-group" routerDirection="root">
-    <ion-label color="medium">Communities</ion-label>
-    <ion-icon src="/assets/earth-off.svg"></ion-icon>
-  </ion-tab-button>
   <ion-tab-button routerLink="/chat-list" routerDirection="root">
     <ion-label color="medium">Chats</ion-label>
     <ion-icon src="/assets/chatbubble-off.svg"></ion-icon>
   </ion-tab-button>
+    <ion-tab-button routerLink="/connected-accounts" routerDirection="root">
+        <ion-label color="medium">Calls</ion-label>
+        <ion-icon name="call" color="medium"></ion-icon>
+    </ion-tab-button>
+    <!--<ion-tab-button routerLink="/chat-list-group" routerDirection="root">
+        <ion-label color="medium">Communities</ion-label>
+        <ion-icon src="/assets/earth-off.svg"></ion-icon>
+    </ion-tab-button>-->
+    <ion-tab-button routerLink="/channel-list" routerDirection="root">
+        <ion-label color="medium">Channels</ion-label>
+        <ion-icon src="/assets/at-sign-off.svg"></ion-icon>
+    </ion-tab-button>
   <ion-tab-button routerLink="/profile-home" routerDirection="root">
     <ion-label color="medium">Settings</ion-label>
     <ion-icon src="/assets/settings-off.svg"></ion-icon>
