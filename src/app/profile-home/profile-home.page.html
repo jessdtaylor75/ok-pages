@@ -4,11 +4,6 @@
       <img src="/assets/jess-taylor-profile.jpg" alt="" />
     </ion-avatar>
     <ion-title>Settings</ion-title>
-    <ion-buttons slot="end">
-      <ion-button routerLink="/personal-info-edit">
-        Edit
-      </ion-button>
-    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
@@ -20,6 +15,9 @@
         <b>Cherry Taylor – OK</b><br/>
         <ion-text class="text-smaller" color="medium">a-ok.me</ion-text>
       </ion-label>
+        <ion-fab-button slot="end" size="small" color="utility">
+            <ion-icon name="qr-code-outline"></ion-icon>
+        </ion-fab-button>
     </ion-item>
   </ion-card>
   <ion-card>
@@ -28,60 +26,68 @@
         <ion-icon name="person-circle-outline"></ion-icon>
         <ion-label class="ion-padding-start">Personal Info</ion-label>
       </ion-item>
-      <ion-item lines="none" routerLink="/personas">
-        <ion-icon name="people-circle-outline"></ion-icon>
-        <ion-label class="ion-padding-start">Personas</ion-label>
+      <ion-item routerLink="/personal-info">
+        <ion-icon name="key-outline"></ion-icon>
+        <ion-label class="ion-padding-start">Account</ion-label>
       </ion-item>
-      <!--<ion-item routerLink="/bank-list">
-        <ion-icon name="card-outline"></ion-icon>
-        <ion-label class="ion-padding-start">Payment Methods</ion-label>
-      </ion-item>
-      <ion-item routerLink="/id-documents">
-        <ion-icon src="/assets/id-card-outline.svg" color="medium"></ion-icon>
-        <ion-label class="ion-padding-start" color="medium">Identity Documents</ion-label>
-      </ion-item>
-      <ion-item routerLink="/address-list">
-        <ion-icon name="home-outline" color="medium"></ion-icon>
-        <ion-label class="ion-padding-start" color="medium">
-          Addresses
-        </ion-label>
-      </ion-item>
-      <ion-item routerLink="/wallet">
-        <ion-icon name="wallet-outline" color="medium"></ion-icon>
-        <ion-label class="ion-padding-start" color="medium">Tickets & Passes</ion-label>
-      </ion-item>-->
-    </ion-list>
-  </ion-card>
-  <ion-card>
-    <ion-list>
-      <ion-item routerLink="/connected-accounts">
-        <ion-icon name="logo-electron"></ion-icon>
-        <ion-label class="ion-padding-start">Connections</ion-label>
-      </ion-item>
-      <ion-item lines="none" routerLink="/browser-ap-members">
-        <ion-icon src="/assets/circle-check-ok-grn-mid.svg" color="primary"></ion-icon>
-        <ion-label class="ion-padding-start">Verified Posts</ion-label>
-      </ion-item>
+        <ion-item lines="none" routerLink="/settings">
+            <ion-icon name="phone-portrait-outline"></ion-icon>
+            <ion-label class="ion-padding-start">Linked Devices</ion-label>
+        </ion-item>
     </ion-list>
   </ion-card>
   <ion-card>
     <ion-list>
       <ion-item routerLink="/settings">
-        <ion-icon name="phone-portrait-outline"></ion-icon>
-        <ion-label class="ion-padding-start">Devices</ion-label>
+          <ion-icon src="/assets/invert-mode-outline.svg" class="rotate-90"></ion-icon>
+        <ion-label class="ion-padding-start">Appearance</ion-label>
       </ion-item>
-      <ion-item routerLink="/settings-security">
-        <ion-icon name="finger-print-outline"></ion-icon>
-        <ion-label class="ion-padding-start">Biometrics & Security</ion-label>
-      </ion-item>
-      <ion-item routerLink="/legal">
-        <ion-icon name="documents-outline"></ion-icon>
-        <ion-label class="ion-padding-start">Legal Agreements</ion-label>
-      </ion-item>
-      <ion-item lines="none">
+        <ion-item routerLink="/settings-security">
+            <ion-icon name="notifications-outline"></ion-icon>
+            <ion-label class="ion-padding-start">Notifications</ion-label>
+        </ion-item>
+        <ion-item routerLink="/settings">
+            <ion-icon src="/assets/chatbubble-off.svg"></ion-icon>
+            <ion-label class="ion-padding-start">Chats</ion-label>
+        </ion-item>
+        <ion-item routerLink="/settings">
+            <ion-icon src="/assets/at-sign-off.svg"></ion-icon>
+            <ion-label class="ion-padding-start">Channels</ion-label>
+        </ion-item>
+      <ion-item lines="none" routerLink="/settings">
+        <ion-icon src="/assets/circle-check-ok-grn-mid.svg" color="primary"></ion-icon>
+        <ion-label class="ion-padding-start">Signatures</ion-label>
       </ion-item>
     </ion-list>
   </ion-card>
+  <ion-card>
+    <ion-list>
+      <ion-item routerLink="/settings-security">
+          <ion-icon name="lock-closed-outline"></ion-icon>
+        <ion-label class="ion-padding-start">Privacy</ion-label>
+      </ion-item>
+      <ion-item routerLink="/settings-security">
+          <ion-icon name="pie-chart-outline"></ion-icon>
+        <ion-label class="ion-padding-start">Data Usage</ion-label>
+      </ion-item>
+      <ion-item lines="none" routerLink="/legal">
+        <ion-icon name="documents-outline"></ion-icon>
+        <ion-label class="ion-padding-start">Legal Agreements</ion-label>
+      </ion-item>
+    </ion-list>
+  </ion-card>
+    <ion-card>
+        <ion-list>
+            <ion-item routerLink="/settings-security">
+                <ion-icon name="help-circle-outline"></ion-icon>
+                <ion-label class="ion-padding-start">Help</ion-label>
+            </ion-item>
+            <ion-item lines="none" routerLink="/connected-accounts">
+                <ion-icon name="mail-outline"></ion-icon>
+                <ion-label class="ion-padding-start">Invite Your Friends</ion-label>
+            </ion-item>
+        </ion-list>
+    </ion-card>
 
 </ion-content>
 
