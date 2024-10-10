@@ -7,18 +7,18 @@
         <ion-label color="medium">Chats</ion-label>
         <ion-icon src="/assets/chatbubble-off.svg"></ion-icon>
     </ion-tab-button>
-    <ion-tab-button routerLink="/connected-accounts" routerDirection="root">
+    <!--<ion-tab-button routerLink="/connected-accounts" routerDirection="root">
         <ion-label color="medium">Calls</ion-label>
         <ion-icon name="call" color="medium"></ion-icon>
-    </ion-tab-button>
-    <ion-tab-button routerLink="/channel-list" routerDirection="root">
-        <ion-label color="medium">Channels</ion-label>
-        <ion-icon src="/assets/at-sign-off.svg"></ion-icon>
-    </ion-tab-button>
-    <!--<ion-tab-button routerLink="/chat-list-group" routerDirection="root">
+    </ion-tab-button>-->
+    <ion-tab-button routerLink="/chat-list-group" routerDirection="root">
         <ion-label color="medium">Communities</ion-label>
         <ion-icon src="/assets/earth-off.svg"></ion-icon>
-    </ion-tab-button>-->
+    </ion-tab-button>
+    <ion-tab-button routerLink="/channel-list" routerDirection="root">
+        <ion-label color="medium">Feeds</ion-label>
+        <ion-icon src="/assets/radio-off.svg"></ion-icon>
+    </ion-tab-button>
     <ion-tab-button routerLink="/profile-home" routerDirection="root">
         <ion-label color="medium">Settings</ion-label>
         <ion-icon src="/assets/settings-off.svg"></ion-icon>
@@ -40,7 +40,7 @@
         </ion-item>
         <ion-item routerLink="/connected-accounts" detail="none">
             <ion-icon name="paper-plane-outline" color="primary"></ion-icon>
-            <ion-label class="ion-padding-start">Post</ion-label>
+            <ion-label class="ion-padding-start">Post to Feed</ion-label>
         </ion-item>
         <!--<ion-item routerLink="/channel-list" detail="none">
             <ion-icon src="/assets/at-sign-000.svg"></ion-icon>

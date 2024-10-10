@@ -1,113 +1,114 @@
-<ion-header class="ion-no-border">
+<ion-header translucent="true" class="ion-no-border">
   <ion-toolbar>
     <ion-buttons slot="start">
-      <ion-button>
-        <ion-menu-button></ion-menu-button>
-      </ion-button>
+        <ion-button routerLink="/chat-list" routerDirection="back">
+            <ion-icon name="chevron-back"></ion-icon>
+        </ion-button>
     </ion-buttons>
-    <ion-title>Account</ion-title>
-    <ion-buttons slot="end">
-      <ion-button color="milconnect2" routerLink="/settings" routerDirection="root" fill="clear">
-        <ion-icon name="settings-outline"></ion-icon>
-      </ion-button>
-    </ion-buttons>
+    <ion-title>Contact info</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-  <ion-row class="ion-justify-content-center">
-    <div class="profile">
-      <ion-avatar class="profile-frame">
-        <img src="/assets/jess-taylor-profile.jpg" class="profile-pic" alt="Profile Pic">
-      </ion-avatar>
-      <div class="btn">
-        <ion-fab-button size="small" color="light" translucent="true" routerLink="/badge-mc-default">
-          <ion-icon name="qr-code-outline" color="milconnect2"></ion-icon>
-        </ion-fab-button>
-      </div>
-    </div>
-  </ion-row>
-  <ion-text class="section-header" color="milconnect2">
-    <br/>Military Connect User<br/><br/>
-  </ion-text>
-  <ion-list>
-    <ion-item detail routerLink="/personal-info-mc-unverified">
-      <ion-icon name="person-circle-outline"></ion-icon>
-      <ion-label class="ion-padding-start">Personal Info</ion-label>
-      <ion-icon name="alert-circle-outline" color="danger" slot="end" class="icon-small"></ion-icon>
-    </ion-item>
-    <ion-item detail routerLink="/personas">
-      <ion-icon name="people-circle-outline"></ion-icon>
-      <ion-label class="ion-padding-start">Personas</ion-label>
-    </ion-item>
-    <ion-item detail routerLink="/bank-list">
-      <ion-icon name="card-outline"></ion-icon>
-      <ion-label class="ion-padding-start">Payment Methods</ion-label>
-    </ion-item>
-    <!-- <ion-item detail routerLink="/id-documents">
-      <ion-icon src="/assets/id-card-outline.svg" color="medium"></ion-icon>
-      <ion-label class="ion-padding-start" color="medium">ID Documents</ion-label>
-    </ion-item>
-    <ion-item detail routerLink="/address-list">
-      <ion-icon name="home-outline" color="medium"></ion-icon>
-      <ion-label class="ion-padding-start" color="medium">
-        Shipping Addresses
-      </ion-label>
-    </ion-item>
-    <ion-item detail routerLink="/wallet">
-      <ion-icon name="wallet-outline" color="medium"></ion-icon>
-      <ion-label class="ion-padding-start" color="medium">Tickets & Passes</ion-label>
-    </ion-item>-->
-    <ion-item-divider color="light"></ion-item-divider>
-    <!--<ion-item detail routerLink="/connected-accounts">
-      <ion-icon name="logo-electron"></ion-icon>
-      <ion-label class="ion-padding-start">Connections</ion-label>
-    </ion-item>-->
-    <ion-item detail routerLink="/military-connect">
-      <ion-icon src="/assets/links-mark.svg" color="milconnect2"></ion-icon>
-      <ion-label class="ion-padding-start" color="milconnect2">Military Connect</ion-label>
-    </ion-item>
-    <!--<ion-item detail routerLink="/browser-ap-members">
-      <ion-icon src="/assets/A-symbol.svg" color="primary"></ion-icon>
-      <ion-label class="ion-padding-start" color="primary">Member Services</ion-label>
-    </ion-item>-->
-    <ion-item-divider color="light"></ion-item-divider>
-    <!--<ion-item detail routerLink="/settings">
-      <ion-icon name="phone-portrait-outline"></ion-icon>
-      <ion-label class="ion-padding-start">Devices</ion-label>
-    </ion-item>
-    <ion-item detail routerLink="/settings-security">
-      <ion-icon name="finger-print-outline"></ion-icon>
-      <ion-label class="ion-padding-start">Biometrics & Security</ion-label>
-    </ion-item>-->
-    <ion-item detail routerLink="/legal">
-      <ion-icon name="documents-outline"></ion-icon>
-      <ion-label class="ion-padding-start">Legal Agreements</ion-label>
-    </ion-item>
-    <!--<ion-item lines="none">
-      <ion-icon name="alert-circle-outline" color="danger" slot="start"></ion-icon>
-      <ion-text class="text-smallest" color="medium">
-        Your military service must be verified to access benefits.
-        <a class="link-text" routerLink="/verify-service-mc">Complete Verification</a>.
-      </ion-text>
-    </ion-item>
-    <ion-item lines="none">
-    </ion-item>-->
-  </ion-list>
+<ion-content color="utility">
+    <ion-card>
+        <img src="/assets/og-morgan-profile-pro.jpg" alt="Cherry Taylor">
+        <ion-item lines="none">
+            <ion-label color="primary">
+                <b>David Morgan</b><br/>
+                <ion-text class="text-smaller" color="medium">OK'd:&nbsp;&nbsp;&nbsp;&nbsp;21 OCT 2024</ion-text>
+            </ion-label>
+            <ion-fab-button slot="end" size="small" color="black">
+                <ion-icon src="/assets/ok-check-on.svg"></ion-icon>
+            </ion-fab-button>
+        </ion-item>
+    </ion-card>
+    <ion-card>
+        <ion-list>
+            <ion-item routerLink="/personal-info">
+                <ion-icon name="timer-outline"></ion-icon>
+                <ion-label class="ion-padding-start">Disappearing Messages</ion-label>
+            </ion-item>
+            <ion-item routerLink="/personal-info">
+                <ion-icon name="pencil"></ion-icon>
+                <ion-label class="ion-padding-start">Nickname</ion-label>
+            </ion-item>
+            <ion-item lines="none" routerLink="/personal-info">
+                <ion-icon name="person-circle-outline"></ion-icon>
+                <ion-label class="ion-padding-start">Contact Details</ion-label>
+            </ion-item>
+        </ion-list>
+    </ion-card>
+    <ion-card>
+        <ion-list>
+            <ion-item routerLink="/personal-info">
+                <ion-icon name="image-outline"></ion-icon>
+                <ion-label class="ion-padding-start">Media, Links & Docs</ion-label>
+            </ion-item>
+            <ion-item routerLink="/personal-info">
+                <ion-icon name="bookmark-outline"></ion-icon>
+                <ion-label class="ion-padding-start">Bookmarked Messages</ion-label>
+            </ion-item>
+            <ion-item lines="none" routerLink="/settings">
+                <ion-icon name="download-outline"></ion-icon>
+                <ion-label class="ion-padding-start">Save to Photos</ion-label>
+            </ion-item>
+        </ion-list>
+    </ion-card>
+    <ion-card>
+        <ion-list>
+            <ion-item routerLink="/settings-security">
+                <ion-icon name="notifications-outline"></ion-icon>
+                <ion-label class="ion-padding-start">Notifications</ion-label>
+            </ion-item>
+            <ion-item lines="none" routerLink="/settings">
+                <ion-icon name="color-palette-outline"></ion-icon>
+                <ion-label class="ion-padding-start">Chat Color & Wallpaper</ion-label>
+            </ion-item>
+        </ion-list>
+    </ion-card>
+    <ion-text class="ion-padding-horizontal">3 Groups in Common</ion-text>
+    <ion-card>
+        <ion-list>
+            <ion-item routerLink="/settings-security">
+                <ion-avatar class="profile-pic-toolbar"><img src="/assets/profile-arsenal.jpg" alt="" /></ion-avatar>
+                <ion-label class="ion-padding-start">Arsenal Fans</ion-label>
+            </ion-item>
+            <ion-item routerLink="/settings-security">
+                <ion-avatar class="profile-pic-toolbar"><img src="/assets/profile-bookclub.jpg" alt="" /></ion-avatar>
+                <ion-label class="ion-padding-start">Book Club</ion-label>
+            </ion-item>
+            <ion-item lines="none" routerLink="/legal">
+                <ion-avatar class="profile-pic-toolbar"><img src="/assets/profile-gumball.jpg" alt="" /></ion-avatar>
+                <ion-label class="ion-padding-start">Gumball Team51</ion-label>
+            </ion-item>
+        </ion-list>
+    </ion-card>
+    <ion-card>
+        <ion-list>
+            <ion-item routerLink="/settings-security">
+                <ion-icon name="trash-outline" color="danger"></ion-icon>
+                <ion-label class="ion-padding-start">Delete Chat</ion-label>
+            </ion-item>
+            <ion-item lines="none" routerLink="/connected-accounts">
+                <ion-icon name="close-circle-outline" color="danger"></ion-icon>
+                <ion-label class="ion-padding-start">Disconnect</ion-label>
+            </ion-item>
+        </ion-list>
+    </ion-card>
 
 </ion-content>
 
-<ion-tab-bar slot="bottom" class="tab-blur">
-  <ion-tab-button routerLink="/badge-mc-default" routerDirection="back">
-    <ion-label>Badge</ion-label>
-    <ion-icon name="qr-code-outline"></ion-icon>
-  </ion-tab-button>
-  <ion-tab-button routerLink="/home-scanner-milconnect" routerDirection="root">
-    <ion-label>Scanner</ion-label>
-    <ion-icon name="scan-outline"></ion-icon>
-  </ion-tab-button>
-  <ion-tab-button routerLink="/profile-home" routerDirection="forward">
-    <ion-label color="milconnect2">Account</ion-label>
-    <ion-icon name="person-outline" color="milconnect2"></ion-icon>
-  </ion-tab-button>
+<ion-tab-bar translucent="true" slot="bottom">
+    <ion-tab-button>
+        <ion-icon name="videocam-outline" color="primary"></ion-icon>
+        <ion-label color="primary">Video</ion-label>
+    </ion-tab-button>
+    <ion-tab-button>
+        <ion-icon name="call-outline" color="primary"></ion-icon>
+        <ion-label color="primary">Voice</ion-label>
+    </ion-tab-button>
+    <ion-tab-button>
+        <ion-icon name="search-outline" color="primary"></ion-icon>
+        <ion-label color="primary">Search</ion-label>
+    </ion-tab-button>
 </ion-tab-bar>
