@@ -1,34 +1,31 @@
+
 <ion-header class="ion-no-border">
-  <ion-toolbar color="utility">
-    <ion-title>
-      Verify Identity
-    </ion-title>
-    <ion-buttons slot="end">
-      <ion-button routerLink="/personal-info" routerDirection="back">
-        <ion-icon name="close-outline"></ion-icon>
-      </ion-button>
-    </ion-buttons>
-  </ion-toolbar>
+    <ion-toolbar color="transparent">
+        <ion-text class="ion-text-center">
+            <ion-title class="ion-justify-content-center">
+                <img class="brand" src="/assets/AOK-Logo-lt.svg">
+            </ion-title>
+        </ion-text>
+    </ion-toolbar>
 </ion-header>
 
-<ion-content fullscreen="true" color="utility">
+<ion-content fullscreen="true" color="black">
+    <ion-row class="pad10 ion-margin-vertical ion-justify-content-center">
+        <ion-text class="text">
+            Step 3: Identification
+        </ion-text>
+    </ion-row>
   <ion-card>
     <ion-img src="/assets/og-user-onboard-pre-idv.jpg" alt="profile pic"></ion-img>
     <ion-list>
       <ion-item>
-        <ion-text class="text-smaller">
-          &nbsp;&nbsp;<br/>
-          Your identity must be verified to continue.<br/>&nbsp;&nbsp;
-        </ion-text>
-      </ion-item>
-      <ion-item>
         <ion-label>
-          <div class="field-label">Name</div>
-          Cherry Amanda Taylor
+          <div class="field-label">Display Name</div>
+          Cherry Taylor
         </ion-label>
-        <ion-icon name="alert-circle-outline" color="danger" slot="end" class="icon-small"></ion-icon>
+          <ion-icon name="checkmark-circle" color="true" slot="end" class="icon-small"></ion-icon>
       </ion-item>
-      <ion-item>
+      <ion-item lines="none">
         <ion-label>
           <div class="field-label">Email address</div>
           cherrytaylor@a-ok.me
@@ -50,11 +47,15 @@
       <ion-item lines="none"></ion-item>
     </ion-list>
   </ion-card>
-
+    <ion-row class="pad10 ion-margin-top ion-justify-content-center">
+        <ion-text class="text">
+            Prove your real identity
+        </ion-text>
+    </ion-row>
 </ion-content>
 
 <ion-footer class="ion-no-border">
-  <ion-toolbar color="utility">
+  <ion-toolbar color="black">
     <ion-button expand="block" shape="round" color="success" class="pad15 ion-margin-bottom" routerLink="/verify-id-recovery">
       Continue
     </ion-button>
