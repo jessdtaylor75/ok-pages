@@ -14,7 +14,7 @@
 
 <ion-content fullscreen="true">
   <ion-fab vertical="bottom" horizontal="end" slot="fixed">
-    <ion-fab-button color="brand" class="outline" routerLink="/connected-accounts" routerDirection="root">
+    <ion-fab-button class="outline" routerLink="/connected-accounts" routerDirection="root">
       <ion-icon name="add" color="black" class="icon-larger"></ion-icon>
     </ion-fab-button>
   </ion-fab>
@@ -199,18 +199,17 @@
     <ion-label color="medium">Home</ion-label>
   </ion-tab-button>
   <ion-tab-button routerLink="/chat-list" routerDirection="root">
-    <ion-label color="dark">Chats</ion-label>
-    <ion-icon src="/assets/chatbubble-on.svg"></ion-icon>
+    <ion-label color="primary">Chats</ion-label>
+    <ion-icon src="/assets/chatbubble-on.svg" color="primary"></ion-icon>
   </ion-tab-button>
     <!--<ion-tab-button routerLink="/connected-accounts" routerDirection="root">
         <ion-label color="medium">Calls</ion-label>
         <ion-icon name="call" color="medium"></ion-icon>
     </ion-tab-button>-->
-
-   <!--<ion-tab-button routerLink="/chat-list-group" routerDirection="root">
+   <ion-tab-button routerLink="/chat-list-group" routerDirection="root">
         <ion-label color="medium">Communities</ion-label>
         <ion-icon src="/assets/earth-off.svg"></ion-icon>
-    </ion-tab-button>-->
+    </ion-tab-button>
     <ion-tab-button routerLink="/channel-list" routerDirection="root">
         <ion-label color="medium">Feeds</ion-label>
         <ion-icon src="/assets/radio-off.svg"></ion-icon>

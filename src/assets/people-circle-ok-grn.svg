@@ -3,8 +3,8 @@
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:#00FF00;}
-	.st1{fill:#111111;}
+	.st0{fill:#80ffff;}
+	.st1{fill:#000000;}
 </style>
 <circle class="st0" cx="256" cy="256" r="200"/>
 <path class="st1" d="M256,464c-114.7,0-208-93.3-208-208S141.3,48,256,48s208,93.3,208,208S370.7,464,256,464z M256,80

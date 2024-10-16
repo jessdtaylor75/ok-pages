@@ -19,6 +19,7 @@ ion-card {
 ion-fab-button.outline {
   border: 2pt solid var(--ion-color-primary);
   border-radius: 50%;
+  --background: radial-gradient(rgba(191,255,255,1) 0%, rgba(0,128,128,1) 100%);
 }
 
 .chat-partner {

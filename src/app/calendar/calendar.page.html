@@ -4,7 +4,7 @@
       <img src="/assets/jess-taylor-profile.jpg" alt="" />
     </ion-avatar>
     <ion-title class="ion-justify-content-center">
-      <ion-icon src="/assets/AOK-Logo-lt.svg" class="icon-larger sv-shadow"></ion-icon>
+      <ion-icon src="/assets/AOK-Logo-grad-lt.svg" class="icon-larger sv-shadow"></ion-icon>
     </ion-title>
     <ion-buttons slot="end">
       <ion-button fill="clear">
@@ -19,13 +19,13 @@
 
 <ion-content fullscreen="true">
   <ion-fab vertical="bottom" horizontal="end" slot="fixed">
-    <ion-fab-button color="brand" class="outline" routerLink="/ok-bottom-sheet" routerDirection="root">
+    <ion-fab-button class="outline" routerLink="/ok-bottom-sheet" routerDirection="root">
       <ion-icon name="add" color="black" class="icon-larger"></ion-icon>
     </ion-fab-button>
   </ion-fab>
   <ion-row><ion-text>&nbsp;</ion-text></ion-row>
   <ion-row class="ion-padding ion-justify-content-center">
-    <ion-icon src="/assets/At-Icon-alpha.svg" class="icon-big"></ion-icon>
+    <ion-icon src="/assets/AOK-Icon-alpha-dk.svg" class="icon-big"></ion-icon>
   </ion-row>
   <ion-row class="ion-justify-content-center">
     <ion-text color="white" class="sv-shadow"><h1><strong>Updates</strong></h1></ion-text>
@@ -78,39 +78,6 @@
     </ion-list>
   </ion-card>
 
-  <!--<ion-card>
-    <ion-list>
-      <ion-list-header>Communities</ion-list-header>
-      <ion-item routerLink="/channel-detail">
-        <ion-avatar slot="start">
-            <img src="/assets/profile-bookclub.jpg">
-        </ion-avatar>
-        <ion-label>
-          <b>Book Club</b><br/>
-          <ion-text class="text-smaller" color="medium">The Great Gatsby</ion-text>
-        </ion-label>
-      </ion-item>
-      <ion-item routerLink="/channel-detail">
-        <ion-avatar slot="start">
-            <img src="/assets/profile-locals.jpg">
-        </ion-avatar>
-        <ion-label>
-          <b>Local Chat</b><br/>
-          <ion-text class="text-smaller" color="medium">Town meeting agenda</ion-text>
-        </ion-label>
-      </ion-item>
-      <ion-item lines="none" routerLink="/channel-detail">
-        <ion-avatar slot="start">
-            <img src="/assets/profile-arsenal.jpg">
-        </ion-avatar>
-        <ion-label>
-          <b>Arsenal Fans</b><br/>
-          <ion-text class="text-smaller" color="medium">Man of the Match</ion-text>
-        </ion-label>
-      </ion-item>
-    </ion-list>
-  </ion-card>-->
-
   <ion-card>
     <ion-list>
       <ion-list-header>Feeds</ion-list-header>
@@ -144,12 +111,45 @@
     </ion-list>
   </ion-card>
 
+    <ion-card>
+    <ion-list>
+      <ion-list-header>Communities</ion-list-header>
+      <ion-item routerLink="/channel-detail">
+        <ion-avatar slot="start">
+            <img src="/assets/profile-bookclub.jpg">
+        </ion-avatar>
+        <ion-label>
+          <b>Book Club</b><br/>
+          <ion-text class="text-smaller" color="medium">The Great Gatsby</ion-text>
+        </ion-label>
+      </ion-item>
+      <ion-item routerLink="/channel-detail">
+        <ion-avatar slot="start">
+            <img src="/assets/profile-locals.jpg">
+        </ion-avatar>
+        <ion-label>
+          <b>Local Chat</b><br/>
+          <ion-text class="text-smaller" color="medium">Town meeting agenda</ion-text>
+        </ion-label>
+      </ion-item>
+      <ion-item lines="none" routerLink="/channel-detail">
+        <ion-avatar slot="start">
+            <img src="/assets/profile-arsenal.jpg">
+        </ion-avatar>
+        <ion-label>
+          <b>Arsenal Fans</b><br/>
+          <ion-text class="text-smaller" color="medium">Man of the Match</ion-text>
+        </ion-label>
+      </ion-item>
+    </ion-list>
+  </ion-card>
+
 </ion-content>
 
 <ion-tab-bar color="black" slot="bottom" class="ion-no-border">
   <ion-tab-button routerLink="/calendar" routerDirection="root">
     <ion-icon src="/assets/home-on.svg" class="sv-shadow"></ion-icon>
-    <ion-label color="success">Home</ion-label>
+    <ion-label color="brand2">Home</ion-label>
   </ion-tab-button>
   <ion-tab-button routerLink="/chat-list" routerDirection="root">
     <ion-label color="medium">Chats</ion-label>
@@ -160,10 +160,10 @@
         <ion-icon name="call" color="medium"></ion-icon>
     </ion-tab-button>-->
 
-    <!--<ion-tab-button routerLink="/chat-list-group" routerDirection="root">
+    <ion-tab-button routerLink="/chat-list-group" routerDirection="root">
         <ion-label color="medium">Communities</ion-label>
         <ion-icon src="/assets/earth-off.svg"></ion-icon>
-    </ion-tab-button>-->
+    </ion-tab-button>
     <ion-tab-button routerLink="/channel-list" routerDirection="root">
         <ion-label color="medium">Feeds</ion-label>
         <ion-icon src="/assets/radio-off.svg"></ion-icon>
