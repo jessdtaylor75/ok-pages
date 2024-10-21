@@ -1,89 +1,33 @@
-<ion-header class="ion-no-border">
-  <ion-toolbar>
-    <ion-buttons slot="start">
-      <ion-menu-button></ion-menu-button>
-    </ion-buttons>
-    <ion-text class="ion-text-center">
-      <ion-title class="ion-justify-content-center">
-        <ion-button routerLink="/profile-home" routerDirection="root" fill="clear">
-          <ion-avatar class="profile-pic-toolbar">
-            <img src="/assets/jess-taylor-profile.jpg" alt="" />
-          </ion-avatar>
-        </ion-button>
-      </ion-title>
-    </ion-text>
-    <ion-buttons slot="end">
-      <ion-button color="primary" routerLink="/settings" routerDirection="root" fill="clear">
-        <ion-icon name="settings-outline"></ion-icon>
-      </ion-button>
-    </ion-buttons>
-  </ion-toolbar>
+<ion-header translucent="true" class="ion-no-border">
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-button routerLink="/calendar" routerDirection="back">Done</ion-button>
+        </ion-buttons>
+        <ion-title>
+            <ion-segment value="scan">
+                <ion-segment-button value="code" routerLink="/badge-profile-share" routerDirection="back">
+                    <ion-label>Code</ion-label>
+                </ion-segment-button>
+                <ion-segment-button value="scan" routerLink="/home-scanner">
+                    <ion-label>Scan</ion-label>
+                </ion-segment-button>
+            </ion-segment>
+        </ion-title>
+    </ion-toolbar>
 </ion-header>
 
 <ion-content fullscreen="true">
-  <ion-row class="v-center">
-    <img src="/assets/scanner-circle.svg" alt="scanner">
-  </ion-row>
-
-  <ion-text color="white" class="upper-third ion-text-center text-smaller">
-    Scan AerPass QR codes for password-free logins, to safely pay at verified merchants, and more...
-  </ion-text>
-
-  <div class="v-center">
-    <ion-slides style="width: 100%">
-      <ion-slide>
-        <div class="ion-text-center">
-          <ion-row class="ion-justify-content-center">
-            <div class="display-qr">
-              <img src="/assets/qr-get-app-circle-sq.png" routerLink="/auth-login" alt="" />
-            </div>
-          </ion-row>
-        </div>
-      </ion-slide>
-
-      <ion-slide>
-        <div class="ion-text-center">
-          <ion-row class="ion-justify-content-center">
-            <div class="display-qr">
-              <img src="/assets/qr-get-app-circle-sq.png" routerLink="/auth-payment" alt="" />
-            </div>
-          </ion-row>
-        </div>
-      </ion-slide>
-
-    </ion-slides>
-  </div>
-
-  <div class="lower-third ion-justify-content-center">
-    <!-- <ion-row>
-      <ion-grid>
-        <ion-row class="ion-justify-content-center">
-          <ion-text class="text-smaller ion-text-center" color="white">
-            Scan&nbsp;&nbsp;<ion-icon src="/assets/A-symbol.svg" class="icon-small nudge-down" color="white"></ion-icon>&nbsp;&nbsp;Code
-          </ion-text>
-        </ion-row>
-      </ion-grid>
-    </ion-row> -->
-    <ion-row class="ion-margin-vertical ion-justify-content-center">
-      <ion-fab-button color="primary" routerLink="/browser-ap-members">
-        <ion-icon src="/assets/A-symbol-circle-inset.svg" color="white" class="icon-fab"></ion-icon>
-      </ion-fab-button>
+    <ion-text color="white" class="upper-third ion-text-center text-smaller">
+        Scan the QR code on your contact's device
+    </ion-text>
+    <ion-row class="v-center">
+        <img src="/assets/scan-qr-device.jpg" alt="Scan QR Code" routerLink="/auth-login-ref">
     </ion-row>
-  </div>
-
+    <div class="lower-third ion-justify-content-center">
+        <ion-row class="ion-margin-vertical ion-justify-content-center">
+            <ion-fab-button translucent="true" color="primary">
+                <ion-icon name="images-outline"></ion-icon>
+            </ion-fab-button>
+        </ion-row>
+    </div>
 </ion-content>
-
-<ion-tab-bar slot="bottom" class="tab-blur">
-  <ion-tab-button routerLink="/badge-app-default" routerDirection="back">
-    <ion-label color="white">Badge</ion-label>
-    <ion-icon name="qr-code-outline" color="white"></ion-icon>
-  </ion-tab-button>
-  <ion-tab-button routerLink="/home-scanner" routerDirection="root">
-    <ion-label color="primary">Scanner</ion-label>
-    <ion-icon name="scan-outline" color="primary"></ion-icon>
-  </ion-tab-button>
-  <ion-tab-button routerLink="/profile-home" routerDirection="forward">
-    <ion-label color="white">Account</ion-label>
-    <ion-icon name="person-outline" color="white"></ion-icon>
-  </ion-tab-button>
-</ion-tab-bar>

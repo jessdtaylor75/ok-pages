@@ -5,3 +5,7 @@ ion-content, ion-header, ion-toolbar, ion-avatar, ion-row, ion-tab-bar {
 ion-content {
   --overflow: hidden;
 }
+
+ion-title {
+  color: var(--ion-color-white);
+}

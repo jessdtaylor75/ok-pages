@@ -1,29 +1,28 @@
-<ion-header>
+<ion-header class="ion-no-border">
   <ion-toolbar>
-    <ion-title>aok-options</ion-title>
+    <ion-title>Add Contact</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <ion-grid>
     <ion-row>
-      <ion-col size="6">
-        <ion-fab horizontal="center">
-          <ion-fab-button color="dark" routerLink="/aok-options">
-            <ion-icon src="/assets/aok-grn-fff.svg" class="icon-fab"></ion-icon>
-          </ion-fab-button>
-          <ion-label class="aer-label nudge-down-label" color="primary">Connect</ion-label>
-        </ion-fab>
-      </ion-col>
-      <ion-col size="6">
-        <ion-fab horizontal="center">
-          <ion-fab-button color="dark" routerLink="/hii5-options">
-            <ion-icon src="/assets/hii5-fff-111-grn.svg" class="icon-fab"></ion-icon>
-          </ion-fab-button>
-          <ion-label class="aer-label nudge-down-label" color="primary">Video</ion-label>
-        </ion-fab>
-      </ion-col>
+        <ion-text>&nbsp;</ion-text>
     </ion-row>
-  </ion-grid>
+    <ion-row class="ion-padding ion-justify-content-center">
+        <ion-icon src="/assets/person-add-outline-off.svg" class="icon-big"></ion-icon>
+    </ion-row>
+    <ion-card>
+        <ion-searchbar placeholder="Find by Email"></ion-searchbar>
+    </ion-card>
+    <ion-toolbar>
+        <ion-button expand="block" shape="round" class="pad15 ion-margin-vertical" color="brand2" routerLink="/home-scanner">
+            <ion-icon name="qr-code-outline"></ion-icon>&nbsp;&nbsp;Scan QR Code
+        </ion-button>
+    </ion-toolbar>
+    <ion-toolbar>
+        <ion-button expand="block" shape="round" class="pad15 ion-margin-vertical" color="primary" routerLink="/aok-sms-example">
+            <ion-icon name="paper-plane-outline"></ion-icon>&nbsp;&nbsp;Send Invitation
+        </ion-button>
+    </ion-toolbar>
 
 </ion-content>

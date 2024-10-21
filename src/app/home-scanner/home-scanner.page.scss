@@ -1,6 +1,5 @@
-ion-content, ion-header, ion-toolbar, ion-avatar, ion-row, ion-tab-bar {
+ion-content, ion-avatar, ion-row, ion-tab-bar {
   --background: transparent;
-  //  --background:rgba(5,16,51,0.75);
 }
 
 ion-content {
@@ -9,22 +8,10 @@ ion-content {
 
 .upper-third {
   @extend .stretch!optional;
-  padding: 0 15vw 0 15vw;
+  padding: 0 5vw 0 5vw;
   background-color: transparent;
   position: absolute;
-  top: 13%;
+  top: 15%;
   margin-top: env(safe-area-inset-top);
   z-index: 9;
-}
-
-ion-tab-bar {
-  background: rgba(5,16,51,0.75);
-}
-
-.display-qr {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 60vw;
-  height: 60vw;
 }
