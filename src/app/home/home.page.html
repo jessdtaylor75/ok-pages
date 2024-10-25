@@ -1,0 +1,107 @@
+<ion-header class="ion-no-border">
+    <ion-toolbar>
+        <ion-avatar slot="start" class="profile-pic-toolbar ion-margin-start sv-shadow" routerLink="/profile-select">
+            <img src="/assets/jess-taylor-profile.jpg" alt="" />
+        </ion-avatar>
+        <ion-title class="ion-justify-content-center">
+            <ion-icon src="/assets/AOK-Logo-grad-lt.svg" class="icon-larger sv-shadow"></ion-icon>
+        </ion-title>
+        <ion-buttons slot="end">
+            <ion-button fill="clear" routerLink="/calendar" routerDirection="root">
+                <ion-icon name="search" color="white" class="sv-shadow"></ion-icon>
+            </ion-button>
+            <ion-button routerDirection="root" fill="clear">
+                <ion-icon name="camera" color="white" class="sv-shadow"></ion-icon>
+            </ion-button>
+        </ion-buttons>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen="true">
+    <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+        <ion-fab-button class="outline" routerLink="/ok-bottom-sheet" routerDirection="root">
+            <ion-icon name="add" color="black" class="icon-larger"></ion-icon>
+        </ion-fab-button>
+    </ion-fab>
+    <ion-row><ion-text>&nbsp;</ion-text></ion-row>
+    <ion-row class="ion-padding ion-justify-content-center">
+        <ion-icon src="/assets/AOK-Icon-alpha-dk.svg" class="icon-big"></ion-icon>
+    </ion-row>
+    <ion-row class="ion-justify-content-center">
+        <ion-text color="white" class="sv-shadow"><h1><strong>Updates</strong></h1></ion-text>
+    </ion-row>
+
+    <ion-card>
+        <ion-list>
+            <ion-list-header>Chats</ion-list-header>
+            <ion-grid>
+                <ion-row class="ion-justify-content-center">
+                    <h4>Your chat updates will appear here.</h4>
+                </ion-row>
+                <ion-row><ion-text>&nbsp;&nbsp;</ion-text></ion-row>
+                <ion-toolbar class="pad10 ion-margin-bottom">
+                    <ion-button color="black" fill="outline" expand="block" shape="round" routerLink="/connected-accounts"><ion-icon src="/assets/chatbubble-000.svg"></ion-icon>&nbsp;&nbsp;New Message</ion-button>
+                </ion-toolbar>
+            </ion-grid>
+        </ion-list>
+    </ion-card>
+
+    <ion-card>
+        <ion-list>
+            <ion-list-header>Feeds</ion-list-header>
+            <ion-grid>
+                <ion-row class="ion-justify-content-center">
+                    <h4>Your feed updates will appear here.</h4>
+                </ion-row>
+                <ion-row><ion-text>&nbsp;&nbsp;</ion-text></ion-row>
+                <ion-toolbar class="pad10 ion-margin-bottom">
+                    <ion-button color="black" fill="outline" expand="block" shape="round" routerLink="/connected-accounts"><ion-icon src="/assets/chatbubble-000.svg"></ion-icon>&nbsp;&nbsp;New Message</ion-button>
+                </ion-toolbar>
+            </ion-grid>
+        </ion-list>
+    </ion-card>
+
+    <ion-card>
+        <ion-list>
+            <ion-list-header>Communities</ion-list-header>
+            <ion-grid>
+                <ion-row class="ion-justify-content-center">
+                    <h4>Your community updates will appear here.</h4>
+                </ion-row>
+                <ion-row><ion-text>&nbsp;&nbsp;</ion-text></ion-row>
+                <ion-toolbar class="pad10 ion-margin-bottom">
+                    <ion-button color="black" fill="outline" expand="block" shape="round" routerLink="/connected-accounts"><ion-icon src="/assets/chatbubble-000.svg"></ion-icon>&nbsp;&nbsp;New Message</ion-button>
+                </ion-toolbar>
+            </ion-grid>
+        </ion-list>
+    </ion-card>
+
+</ion-content>
+
+<ion-tab-bar color="black" slot="bottom" class="ion-no-border">
+    <ion-tab-button routerLink="/calendar" routerDirection="root">
+        <ion-icon src="/assets/home-on.svg" class="sv-shadow"></ion-icon>
+        <ion-label color="brand2">Home</ion-label>
+    </ion-tab-button>
+    <ion-tab-button routerLink="/chat-list" routerDirection="root">
+        <ion-label color="medium">Chats</ion-label>
+        <ion-icon src="/assets/chatbubble-off.svg"></ion-icon>
+    </ion-tab-button>
+    <!--<ion-tab-button routerLink="/connected-accounts" routerDirection="root">
+        <ion-label color="medium">Calls</ion-label>
+        <ion-icon name="call" color="medium"></ion-icon>
+    </ion-tab-button>-->
+
+    <ion-tab-button routerLink="/chat-list-group" routerDirection="root">
+        <ion-label color="medium">Communities</ion-label>
+        <ion-icon src="/assets/earth-off.svg"></ion-icon>
+    </ion-tab-button>
+    <ion-tab-button routerLink="/channel-list" routerDirection="root">
+        <ion-label color="medium">Feeds</ion-label>
+        <ion-icon src="/assets/radio-off.svg"></ion-icon>
+    </ion-tab-button>
+    <ion-tab-button routerLink="/profile-home" routerDirection="root">
+        <ion-label color="medium">Settings</ion-label>
+        <ion-icon src="/assets/settings-off.svg"></ion-icon>
+    </ion-tab-button>
+</ion-tab-bar>

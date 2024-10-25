@@ -731,6 +731,10 @@ const routes: Routes = [
     path: 'verify-id-selfie',
     loadChildren: () => import('./verify-id-selfie/verify-id-selfie.module').then( m => m.VerifyIdSelfiePageModule)
   },
+  {
+    path: 'home',
+    loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
+  },
 ];
 
 @NgModule({
